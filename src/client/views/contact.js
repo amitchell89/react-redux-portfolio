@@ -3,9 +3,10 @@ export default class Contact extends Component {
   render() {
     return (
       <div>
-        <p>
+        <h2>
         Contact
-        </p>
+        </h2>
+        <p>Want to talk? Send me a message and let's get the conversation started.</p>
       </div>
     )
   }

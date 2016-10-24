@@ -4,8 +4,9 @@
   "description": "Aaron Mitchell's Online Portfolio",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline",
-    "build": "webpack -p"
+    "webpack": "./node_modules/.bin/webpack -d --watch",
+    "build": "webpack -p",
+    "start" : "webpack-dev-server --hot --inline"
   },
   "author": "Aaron Mitchell",
   "license": "ISC",

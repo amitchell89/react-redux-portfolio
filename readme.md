@@ -3,11 +3,12 @@
 ## Built with
 - Node
 - React
+- React Router
+- Webpack
+- Babel
 
-## Script Commands
-`npm run dev` : Build and Watch
-`npm run build` : Build
-
-## installation
+## Setup
 `npm i`
-`npm run dev`
+`npm run webpack` : Starts Webpack
+`npm run start`: Starts server
+Visit localhost:8080

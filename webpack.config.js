@@ -12,23 +12,30 @@ var config = {
   ],
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js',
-    publicPath: 'http://localhost:8080'
+    filename: 'bundle.js'
   },
-    module : {
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.css', 'png', 'svg'],
+    modulesDirectories: ['node_modules']
+  },
+  module : {
     loaders : [
       {
         test : /\.jsx?/,
         include : APP_DIR,
-         loaders: ["babel-loader"]
+        loaders: [
+          'babel'
+        ]
       }
     ]
   },
   devServer: {
     contentBase: "./src/client",
     hot: true
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+  ]
 };
-
 
 module.exports = config;

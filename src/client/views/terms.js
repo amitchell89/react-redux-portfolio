@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-export default class Gallery extends Component {
+export default class Terms extends Component {
   render() {
     return (
       <div>
         <h2>
-        Gallery
+        Terms & Conditions
         </h2>
       </div>
     )

@@ -2,9 +2,16 @@
 
 /* Base Styles */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #eeeeee;
-  font-family: arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -12,23 +19,77 @@ a {
   color: #0066ff;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+}
+
 .site_wrapper {
   background: #ffffff;
   width: 100%;
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.content_wrapper {
+  margin: 2rem 0;
+  clear: both;
 }
 
 /* Header Styles */
 
 header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #eeeeee;
+  height: calc(2rem + 40px);
+  padding-top: 2rem;
+}
+
+header h1 {
+  float: left;
+}
+
+.header__nav {
+  float: right;
+  margin-top: 0.75rem;
+}
+.header__nav a {
+  margin-left: 1rem;
+}
+
+footer {
+  clear: both;
+  text-align: center;
   padding: 2rem 0;
 }
 
-header a {
-  margin-right: 1rem;
+/* Gallery Styles */
+
+.gallery__nav {
+  width: 136px;
+  float: left;
+}
+.gallery__nav li {
+  margin-bottom: 0.5rem;
+}
+.gallery__container {
+  width: calc(100% - 136px - 2rem);
+  float: right;
+  margin-left: 2rem;
+}
+.gallery__item {
+  width: 210px;
+  height: 210px;
+  background: #eeeeee;
+  float: left;
+  margin: 0 1rem 2rem 1rem;
 }
 
 /* Media Queries */

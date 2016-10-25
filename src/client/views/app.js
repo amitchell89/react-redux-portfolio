@@ -17,7 +17,7 @@ class AppContainer extends Component {
     return (
       <div className="site_wrapper">
         <Header />
-        <div class="content_wrapper">
+        <div className="content_wrapper">
           {this.props.children}
         </div>
         <Footer />

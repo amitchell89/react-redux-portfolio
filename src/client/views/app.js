@@ -9,8 +9,6 @@ import About from './about'
 import Contact from './contact'
 import Terms from './terms'
 import NotFound from './notFound'
-console.log('fire')
-
 
 class AppContainer extends Component {
   render() {

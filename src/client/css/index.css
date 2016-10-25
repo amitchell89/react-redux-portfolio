@@ -87,7 +87,8 @@ footer {
 .gallery__item {
   width: 210px;
   height: 210px;
-  background: #eeeeee;
+  background-size: cover;
+  background-position: center;
   float: left;
   margin: 0 1rem 2rem 1rem;
 }

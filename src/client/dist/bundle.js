@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "eae4eb0fe460f0d2008e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4b062cc4eca15820548c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -30396,19 +30396,19 @@
 	
 	var _gallery2 = _interopRequireDefault(_gallery);
 	
-	var _about = __webpack_require__(/*! ./about */ 316);
+	var _about = __webpack_require__(/*! ./about */ 317);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _contact = __webpack_require__(/*! ./contact */ 317);
+	var _contact = __webpack_require__(/*! ./contact */ 318);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _terms = __webpack_require__(/*! ./terms */ 318);
+	var _terms = __webpack_require__(/*! ./terms */ 319);
 	
 	var _terms2 = _interopRequireDefault(_terms);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 319);
+	var _notFound = __webpack_require__(/*! ./notFound */ 320);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
@@ -30419,8 +30419,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	console.log('fire');
 	
 	var AppContainer = function (_Component) {
 	  _inherits(AppContainer, _Component);
@@ -36640,7 +36638,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 320);
+	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 316);
 	
 	var _galleryItem2 = _interopRequireDefault(_galleryItem);
 	
@@ -36662,8 +36660,25 @@
 	  }
 	
 	  _createClass(Gallery, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.setState({});
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	
+	      var paintings = [{ url: "Aaron_Mitchell_Painting_2011_700.jpg" }, { url: "Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg" }, { url: "Aaron_Mitchell_Painting_In_Between_700.jpg" }, { url: "Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg" }, { url: "Aaron_Mitchell_Painting_Reach_700.jpg" }];
+	      var illustrations = [{ url: "Aaron_Mitchell_Best_Hotel_700.jpg" }, { url: "Aaron_Mitchell_Black_Gold_700.jpg" }, { url: "Aaron_Mitchell_Phish_Poster_700.jpg" }, { url: "Aaron_Mitchell_The_Ring_700.jpg" }];
+	
+	      var galleryItems = _react2.default.createElement(
+	        'div',
+	        { className: 'gallery__container' },
+	        paintings.map(function (s, i) {
+	          return _react2.default.createElement(_galleryItem2.default, { image: s.url });
+	        }.bind(this))
+	      );
+	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -36686,14 +36701,7 @@
 	            'Portfolio 3'
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'gallery__container' },
-	          _react2.default.createElement(_galleryItem2.default, null),
-	          _react2.default.createElement(_galleryItem2.default, null),
-	          _react2.default.createElement(_galleryItem2.default, null),
-	          _react2.default.createElement(_galleryItem2.default, null)
-	        )
+	        galleryItems
 	      );
 	    }
 	  }]);
@@ -36719,6 +36727,75 @@
 
 /***/ },
 /* 316 */
+/*!*****************************************!*\
+  !*** ./src/client/views/galleryItem.js ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var GalleryItem = function (_Component) {
+	  _inherits(GalleryItem, _Component);
+	
+	  function GalleryItem() {
+	    _classCallCheck(this, GalleryItem);
+	
+	    return _possibleConstructorReturn(this, (GalleryItem.__proto__ || Object.getPrototypeOf(GalleryItem)).apply(this, arguments));
+	  }
+	
+	  _createClass(GalleryItem, [{
+	    key: 'render',
+	    value: function render() {
+	      var image = this.props.image;
+	
+	
+	      var bkgdImg = {
+	        backgroundImage: 'url(../images/paintings/' + image + ')'
+	      };
+	
+	      return _react2.default.createElement('div', { className: 'gallery__item', style: bkgdImg });
+	    }
+	  }]);
+	
+	  return GalleryItem;
+	}(_react.Component);
+	
+	var _default = GalleryItem;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(GalleryItem, 'GalleryItem', '/Users/amitchell/src2/portfolio/src/client/views/galleryItem.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/client/views/galleryItem.js');
+	}();
+
+	;
+
+/***/ },
+/* 317 */
 /*!***********************************!*\
   !*** ./src/client/views/about.js ***!
   \***********************************/
@@ -36815,7 +36892,7 @@
 	;
 
 /***/ },
-/* 317 */
+/* 318 */
 /*!*************************************!*\
   !*** ./src/client/views/contact.js ***!
   \*************************************/
@@ -36890,7 +36967,7 @@
 	;
 
 /***/ },
-/* 318 */
+/* 319 */
 /*!***********************************!*\
   !*** ./src/client/views/terms.js ***!
   \***********************************/
@@ -36960,7 +37037,7 @@
 	;
 
 /***/ },
-/* 319 */
+/* 320 */
 /*!**************************************!*\
   !*** ./src/client/views/notFound.js ***!
   \**************************************/
@@ -37025,68 +37102,6 @@
 	  __REACT_HOT_LOADER__.register(NotFound, 'NotFound', '/Users/amitchell/src2/portfolio/src/client/views/notFound.js');
 	
 	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/client/views/notFound.js');
-	}();
-
-	;
-
-/***/ },
-/* 320 */
-/*!*****************************************!*\
-  !*** ./src/client/views/galleryItem.js ***!
-  \*****************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var GalleryItem = function (_Component) {
-	  _inherits(GalleryItem, _Component);
-	
-	  function GalleryItem() {
-	    _classCallCheck(this, GalleryItem);
-	
-	    return _possibleConstructorReturn(this, (GalleryItem.__proto__ || Object.getPrototypeOf(GalleryItem)).apply(this, arguments));
-	  }
-	
-	  _createClass(GalleryItem, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement("div", { className: "gallery__item" });
-	    }
-	  }]);
-	
-	  return GalleryItem;
-	}(_react.Component);
-	
-	var _default = GalleryItem;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(GalleryItem, "GalleryItem", "/Users/amitchell/src2/portfolio/src/client/views/galleryItem.js");
-	
-	  __REACT_HOT_LOADER__.register(_default, "default", "/Users/amitchell/src2/portfolio/src/client/views/galleryItem.js");
 	}();
 
 	;

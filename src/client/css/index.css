@@ -55,6 +55,9 @@ header {
 header h1 {
   float: left;
 }
+header h1 a {
+  color: #333333;
+}
 
 .header__nav {
   float: right;

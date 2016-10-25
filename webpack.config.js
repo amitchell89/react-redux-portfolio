@@ -12,7 +12,8 @@ var config = {
   ],
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: "'http://localhost:8080/'"
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.css', 'png', 'svg'],
@@ -31,7 +32,8 @@ var config = {
   },
   devServer: {
     contentBase: "./src/client",
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

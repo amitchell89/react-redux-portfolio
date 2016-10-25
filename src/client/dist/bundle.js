@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4b062cc4eca15820548c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d5bc43aa1119ec6a99ce"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -570,7 +570,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "'http://localhost:8080/'";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -36490,7 +36490,11 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'Aaron Mitchell'
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/' },
+	            'Aaron Mitchell'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',

@@ -1,8 +1,12 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/dist');
-var APP_DIR = path.resolve(__dirname, 'src/client');
+var BUILD_DIR = path.resolve(__dirname, 'src/dist');
+var APP_DIR = path.resolve(__dirname, 'src');
+
+var devFlagPlugin = new webpack.DefinePlugin({
+  __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
+});
 
 var config = {
     entry: [
@@ -27,16 +31,22 @@ var config = {
         loaders: [
           'babel'
         ]
-      }
+      },
+      {
+        test: /\.scss$/,
+         loader: 'style!css!sass?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+      },
     ]
   },
   devServer: {
-    contentBase: "./src/client",
+    contentBase: "./src",
     hot: true,
     historyApiFallback: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    devFlagPlugin,
   ]
 };
 

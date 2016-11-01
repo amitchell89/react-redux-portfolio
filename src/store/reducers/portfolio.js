@@ -2,7 +2,6 @@ import * as types from '../constants/ActionTypes';
 
 const initialState = {
   portfolio: 'paintings test',
-
 };
 
 export default function portfolio(state = initialState, action) {

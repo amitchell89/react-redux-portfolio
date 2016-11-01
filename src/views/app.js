@@ -16,21 +16,16 @@ import * as reducers from '../store/reducers';
 const reducer = combineReducers(reducers);
 const store = createStore(reducer);
 
-console.log('A', store)
 import { updatePortfolio } from '../store/actions/UpdatePortfolio';
 
-// import { connect } from 'react-redux';
-// import { bindActionCreators } from 'redux';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
+@connect(state => ({
+  portfolio: state.portfolio
+}))
 
 class AppContainer extends Component {
-
-  // @connect(state => ({
-  //   portfolio: state.portfolio
-  // }))
-  // static propTypes = {
-  //   portfolio: PropTypes.object.isRequired,
-  //   dispatch: PropTypes.func.isRequired
-  // }
 
   testFunction = () => {
     console.log('test function fired')
@@ -53,11 +48,21 @@ class AppContainer extends Component {
 
 
 class Routes extends Component {
+
+  componentDidMount() {
+    let state = store.getState()
+    this.setState({ currentPortfolio: state.portfolio.portfolio})
+  }
+
   render() {
+    if (!this.state) {
+      return null;
+    }
+    console.log('before', this.state.currentPortfolio)
     return (
       <Router history={browserHistory}>
         <Route path='/' component={AppContainer}>
-          <IndexRoute component={Gallery} />
+          <IndexRoute component={Gallery} gallery={this.state.currentPortfolio} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
           <Route path='/terms' component={Terms} />
@@ -67,6 +72,7 @@ class Routes extends Component {
     )
   }
 }
+
 export default class App extends Component {
   constructor(props) {
     super(props);

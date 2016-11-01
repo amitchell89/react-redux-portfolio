@@ -29,7 +29,7 @@ export default class Gallery extends Component {
         )}.bind(this))}
       </div>
     )
-
+    console.log('this', this.props.gallery)
 
     return (
       <div>
@@ -38,6 +38,7 @@ export default class Gallery extends Component {
           <li>Portfolio 2</li>
           <li>Portfolio 3</li>
         </ul>
+        <p>Current: {this.props.gallery}</p>
         {galleryItems}
       </div>
     )

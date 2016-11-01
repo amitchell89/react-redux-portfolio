@@ -4,10 +4,6 @@ var path = require('path');
 var BUILD_DIR = path.resolve(__dirname, 'src/dist');
 var APP_DIR = path.resolve(__dirname, 'src');
 
-var devFlagPlugin = new webpack.DefinePlugin({
-  __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
-});
-
 var config = {
     entry: [
     'webpack-dev-server/client?http://localhost:8080',
@@ -34,7 +30,7 @@ var config = {
       },
       {
         test: /\.scss$/,
-         loader: 'style!css!sass?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+        loader: 'style!css!sass?modules&localIdentName=[name]---[local]---[hash:base64:5]'
       },
     ]
   },
@@ -45,8 +41,6 @@ var config = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    devFlagPlugin,
   ]
 };
 

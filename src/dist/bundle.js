@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8e0097825eebbe2495cb"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "130f1232e880e183b71d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -30483,49 +30483,8 @@
 	  return AppContainer;
 	}(_react.Component);
 	
-	var Routes = function (_Component2) {
-	  _inherits(Routes, _Component2);
-	
-	  function Routes() {
-	    _classCallCheck(this, Routes);
-	
-	    return _possibleConstructorReturn(this, (Routes.__proto__ || Object.getPrototypeOf(Routes)).apply(this, arguments));
-	  }
-	
-	  _createClass(Routes, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var state = store.getState();
-	      this.setState({ currentPortfolio: state.portfolio.portfolio });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      if (!this.state) {
-	        return null;
-	      }
-	      console.log('before', this.state.currentPortfolio);
-	      return _react2.default.createElement(
-	        _reactRouter.Router,
-	        { history: _reactRouter.browserHistory },
-	        _react2.default.createElement(
-	          _reactRouter.Route,
-	          { path: '/', component: AppContainer },
-	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _gallery2.default, gallery: this.state.currentPortfolio }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default })
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Routes;
-	}(_react.Component);
-	
-	var App = function (_Component3) {
-	  _inherits(App, _Component3);
+	var App = function (_Component2) {
+	  _inherits(App, _Component2);
 	
 	  function App(props) {
 	    _classCallCheck(this, App);
@@ -30539,7 +30498,19 @@
 	      return _react2.default.createElement(
 	        _reactRedux.Provider,
 	        { store: store },
-	        _react2.default.createElement(Routes, null)
+	        _react2.default.createElement(
+	          _reactRouter.Router,
+	          { history: _reactRouter.browserHistory },
+	          _react2.default.createElement(
+	            _reactRouter.Route,
+	            { path: '/', component: AppContainer },
+	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _gallery2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default })
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -30561,8 +30532,6 @@
 	  __REACT_HOT_LOADER__.register(store, 'store', '/Users/amitchell/src2/portfolio/src/views/app.js');
 	
 	  __REACT_HOT_LOADER__.register(AppContainer, 'AppContainer', '/Users/amitchell/src2/portfolio/src/views/app.js');
-	
-	  __REACT_HOT_LOADER__.register(Routes, 'Routes', '/Users/amitchell/src2/portfolio/src/views/app.js');
 	
 	  __REACT_HOT_LOADER__.register(App, 'App', '/Users/amitchell/src2/portfolio/src/views/app.js');
 	
@@ -38146,6 +38115,8 @@
 	
 	var _galleryItem2 = _interopRequireDefault(_galleryItem);
 	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38153,6 +38124,11 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function mapStateToProps(state) {
+	  console.log('state', state);
+	  return { portfolio: state.portfolio.portfolio };
+	}
 	
 	var Gallery = function (_Component) {
 	  _inherits(Gallery, _Component);
@@ -38182,7 +38158,7 @@
 	          return _react2.default.createElement(_galleryItem2.default, { image: s.url });
 	        }.bind(this))
 	      );
-	      console.log('this', this.props.gallery);
+	      console.log('this', this.props.portfolio);
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -38210,7 +38186,7 @@
 	          'p',
 	          null,
 	          'Current: ',
-	          this.props.gallery
+	          this.props.portfolio
 	        ),
 	        galleryItems
 	      );
@@ -38220,7 +38196,8 @@
 	  return Gallery;
 	}(_react.Component);
 	
-	var _default = Gallery;
+	var _default = (0, _reactRedux.connect)(mapStateToProps)(Gallery);
+	
 	exports.default = _default;
 	;
 	
@@ -38228,6 +38205,8 @@
 	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
 	    return;
 	  }
+	
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/gallery.js');
 	
 	  __REACT_HOT_LOADER__.register(Gallery, 'Gallery', '/Users/amitchell/src2/portfolio/src/views/gallery.js');
 	

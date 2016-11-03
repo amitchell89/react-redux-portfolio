@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
 import GalleryItem from './galleryItem'
 
-export default class Gallery extends Component {
+import { connect } from 'react-redux';
+
+function mapStateToProps(state) {
+   console.log('state', state)
+   return {portfolio: state.portfolio.portfolio};
+}
+
+class Gallery extends Component {
   componentWillMount() {
     this.setState({})
   }
@@ -29,7 +36,7 @@ export default class Gallery extends Component {
         )}.bind(this))}
       </div>
     )
-    console.log('this', this.props.gallery)
+    console.log('this', this.props.portfolio)
 
     return (
       <div>
@@ -38,9 +45,10 @@ export default class Gallery extends Component {
           <li>Portfolio 2</li>
           <li>Portfolio 3</li>
         </ul>
-        <p>Current: {this.props.gallery}</p>
+        <p>Current: {this.props.portfolio}</p>
         {galleryItems}
       </div>
     )
   }
 }
+export default connect(mapStateToProps)(Gallery);

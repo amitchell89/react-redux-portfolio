@@ -13,8 +13,11 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    onClick: (gallery, e) => {
-      dispatch(updatePortfolio(gallery))
+    // onClick: (gallery, e) => {
+    //   dispatch(updatePortfolio(gallery))
+    // }
+    filterGallery: (event) => {
+      dispatch(updatePortfolio(event.target.value))
     }
   }
 }
@@ -42,16 +45,28 @@ class Gallery extends Component {
         )}.bind(this))}
       </div>
     )
-    console.log('this', this.props)
+
+    let filters = (
+      <select title="select" onChange={this.props.filterGallery}>
+        <option selected disabled>Choose one</option>
+        <option value="paintings">Paintings</option>
+        <option value="illustrations">Illustrations</option>
+      </select>
+    )
+
+    // let list = (
+    //   <ul className="gallery__nav">
+    //     <li onClick={this.props.onClick.bind(this, 'paintings')}>Paintings</li>
+    //     <li onClick={this.props.onClick.bind(this, 'illustrations')}>Illustrations</li>
+    //     <li>Portfolio 3</li>
+    //   </ul>
+    // )
 
     return (
       <div>
-        <ul className="gallery__nav">
-          <li onClick={this.props.onClick.bind(this, 'paintings')}>Paintings</li>
-          <li onClick={this.props.onClick.bind(this, 'illustrations')}>Illustrations</li>
-          <li>Portfolio 3</li>
-        </ul>
-        <p>Current: {this.props.portfolio}</p>
+        {filters}
+        <p>Set: {this.props.portfolio}</p>
+        <p>Year: </p>
         {galleryItems}
       </div>
     )

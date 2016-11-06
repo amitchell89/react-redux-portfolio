@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "bbec251bf5501a6a35fe"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0c64dd23271f3e500db3"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -38114,8 +38114,11 @@
 	
 	function mapDispatchToProps(dispatch) {
 	  return {
-	    onClick: function onClick(gallery, e) {
-	      dispatch((0, _UpdatePortfolio.updatePortfolio)(gallery));
+	    // onClick: (gallery, e) => {
+	    //   dispatch(updatePortfolio(gallery))
+	    // }
+	    filterGallery: function filterGallery(event) {
+	      dispatch((0, _UpdatePortfolio.updatePortfolio)(event.target.value));
 	    }
 	  };
 	}
@@ -38154,35 +38157,49 @@
 	          return _react2.default.createElement(_galleryItem2.default, { image: s.url });
 	        }.bind(this))
 	      );
-	      console.log('this', this.props);
+	
+	      var filters = _react2.default.createElement(
+	        'select',
+	        { title: 'select', onChange: this.props.filterGallery },
+	        _react2.default.createElement(
+	          'option',
+	          { selected: true, disabled: true },
+	          'Choose one'
+	        ),
+	        _react2.default.createElement(
+	          'option',
+	          { value: 'paintings' },
+	          'Paintings'
+	        ),
+	        _react2.default.createElement(
+	          'option',
+	          { value: 'illustrations' },
+	          'Illustrations'
+	        )
+	      );
+	
+	      // let list = (
+	      //   <ul className="gallery__nav">
+	      //     <li onClick={this.props.onClick.bind(this, 'paintings')}>Paintings</li>
+	      //     <li onClick={this.props.onClick.bind(this, 'illustrations')}>Illustrations</li>
+	      //     <li>Portfolio 3</li>
+	      //   </ul>
+	      // )
 	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        filters,
 	        _react2.default.createElement(
-	          'ul',
-	          { className: 'gallery__nav' },
-	          _react2.default.createElement(
-	            'li',
-	            { onClick: this.props.onClick.bind(this, 'paintings') },
-	            'Paintings'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { onClick: this.props.onClick.bind(this, 'illustrations') },
-	            'Illustrations'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            'Portfolio 3'
-	          )
+	          'p',
+	          null,
+	          'Set: ',
+	          this.props.portfolio
 	        ),
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Current: ',
-	          this.props.portfolio
+	          'Year: '
 	        ),
 	        galleryItems
 	      );

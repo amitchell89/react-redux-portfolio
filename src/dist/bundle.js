@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0c64dd23271f3e500db3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1d04dd4345e517d38c47"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -38159,22 +38159,26 @@
 	      );
 	
 	      var filters = _react2.default.createElement(
-	        'select',
-	        { title: 'select', onChange: this.props.filterGallery },
+	        'span',
+	        { className: 'select-wrapper' },
 	        _react2.default.createElement(
-	          'option',
-	          { selected: true, disabled: true },
-	          'Choose one'
-	        ),
-	        _react2.default.createElement(
-	          'option',
-	          { value: 'paintings' },
-	          'Paintings'
-	        ),
-	        _react2.default.createElement(
-	          'option',
-	          { value: 'illustrations' },
-	          'Illustrations'
+	          'select',
+	          { title: 'select', onChange: this.props.filterGallery },
+	          _react2.default.createElement(
+	            'option',
+	            { selected: true, disabled: true },
+	            'Select a Portfolio'
+	          ),
+	          _react2.default.createElement(
+	            'option',
+	            { value: 'paintings' },
+	            'Paintings'
+	          ),
+	          _react2.default.createElement(
+	            'option',
+	            { value: 'illustrations' },
+	            'Illustrations'
+	          )
 	        )
 	      );
 	
@@ -38199,7 +38203,7 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Year: '
+	          'Year: test'
 	        ),
 	        galleryItems
 	      );
@@ -38351,7 +38355,12 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	          'Hello! My name is Aaron Mitchell and I\'m a User Interface Designer working at Cogo Labs, a startup incubator in Cambridge, MA. My primary responsibilities include designing websites and emails, front end coding and branding work for new projects and verticals. Before joining Cogo Labs in June 2014 I worked as a web designer for Liquid Wireless, a mobile marketing startup owned by Publishers Clearing House.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'I graduated Summa Cum laude from the New Hampshire Institute of Art in 2011 with a major in Illustration. While my primary focus is working digitally, I\'ve also studied oil painting and have shown my work in several exhibitions.'
 	        ),
 	        _react2.default.createElement(
 	          'p',

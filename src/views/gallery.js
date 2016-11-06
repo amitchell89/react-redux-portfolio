@@ -47,11 +47,13 @@ class Gallery extends Component {
     )
 
     let filters = (
-      <select title="select" onChange={this.props.filterGallery}>
-        <option selected disabled>Choose one</option>
-        <option value="paintings">Paintings</option>
-        <option value="illustrations">Illustrations</option>
-      </select>
+      <span className="select-wrapper">
+        <select title="select" onChange={this.props.filterGallery}>
+          <option selected disabled>Select a Portfolio</option>
+          <option value="paintings">Paintings</option>
+          <option value="illustrations">Illustrations</option>
+        </select>
+      </span>
     )
 
     // let list = (
@@ -66,7 +68,7 @@ class Gallery extends Component {
       <div>
         {filters}
         <p>Set: {this.props.portfolio}</p>
-        <p>Year: </p>
+        <p>Year: test</p>
         {galleryItems}
       </div>
     )

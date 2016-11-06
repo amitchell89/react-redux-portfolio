@@ -8,7 +8,10 @@
 - Babel
 
 ## Setup
-`npm i`
+`npm install`
+
 `npm run webpack` : Starts Webpack
+
 `npm run start`: Starts server
+
 Visit localhost:8080

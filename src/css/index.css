@@ -25,6 +25,42 @@ ul {
   margin: 0;
 }
 
+li {
+  cursor: pointer;
+}
+select {
+  padding: 10px 30px 10px 10px;
+  font-size: 1rem;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   position: relative;
+   text-align: left;
+}
+
+select:focus, select:active {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.select-wrapper:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #000;
+  position: relative;
+  top: 15px;
+  right: 20px;
+  pointer-events: none
+}
+
 h1 {
   font-weight: 300;
   margin: 0;

@@ -20,10 +20,15 @@
     "react-bootstrap": "^0.30.5",
     "react-dom": "^15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
+    "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.3.1",
     "webpack": "^1.13.2"
   },
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
     "webpack-dev-server": "^1.16.2"
   }
 }

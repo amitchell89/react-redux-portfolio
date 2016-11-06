@@ -1,17 +1,27 @@
 import React, {Component} from 'react';
-import GalleryItem from './galleryItem'
-
 import { connect } from 'react-redux';
+import GalleryItem from './galleryItem'
+import { bindActionCreators } from 'redux'
+import { updatePortfolio } from '../store/actions/UpdatePortfolio'
 
 function mapStateToProps(state) {
    console.log('state', state)
    return {portfolio: state.portfolio.portfolio};
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onClick: (gallery, e) => {
+      dispatch(updatePortfolio(gallery))
+    }
+  }
+}
+
 class Gallery extends Component {
   componentWillMount() {
     this.setState({})
   }
+
   render() {
 
     let paintings = [
@@ -36,13 +46,13 @@ class Gallery extends Component {
         )}.bind(this))}
       </div>
     )
-    console.log('this', this.props.portfolio)
+    console.log('this', this.props)
 
     return (
       <div>
         <ul className="gallery__nav">
-          <li>Portfolio 1</li>
-          <li>Portfolio 2</li>
+          <li onClick={this.props.onClick.bind(this, 'paintings')}>Paintings</li>
+          <li onClick={this.props.onClick.bind(this, 'illustration')}>Illustrations</li>
           <li>Portfolio 3</li>
         </ul>
         <p>Current: {this.props.portfolio}</p>
@@ -51,4 +61,4 @@ class Gallery extends Component {
     )
   }
 }
-export default connect(mapStateToProps)(Gallery);
+export default connect(mapStateToProps, mapDispatchToProps)(Gallery);

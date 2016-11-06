@@ -24,6 +24,9 @@ ul {
   padding: 0;
   margin: 0;
 }
+li {
+  cursor: pointer;
+}
 
 h1 {
   font-weight: 300;

@@ -13,19 +13,11 @@ import * as reducers from '../store/reducers';
 const reducer = combineReducers(reducers);
 const store = createStore(reducer);
 
-import { updatePortfolio } from '../store/actions/UpdatePortfolio';
-
 class AppContainer extends Component {
-
-  testFunction = () => {
-    console.log('test function fired')
-    store.dispatch(updatePortfolio('Does this work?'));
-  }
 
   render() {
     return (
       <div className="site_wrapper">
-        <button onClick={this.testFunction}>click me</button>
         <Header />
         <div className="content_wrapper">
           {this.props.children}

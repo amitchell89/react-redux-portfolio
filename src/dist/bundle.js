@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "130f1232e880e183b71d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "33201f1433d13d5942f0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -30416,8 +30416,6 @@
 	
 	var reducers = _interopRequireWildcard(_reducers);
 	
-	var _UpdatePortfolio = __webpack_require__(/*! ../store/actions/UpdatePortfolio */ 344);
-	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -30435,40 +30433,17 @@
 	  _inherits(AppContainer, _Component);
 	
 	  function AppContainer() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
 	    _classCallCheck(this, AppContainer);
 	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).call.apply(_ref, [this].concat(args))), _this), _this.testFunction = function () {
-	      var _this2;
-	
-	      return (_this2 = _this).__testFunction__REACT_HOT_LOADER__.apply(_this2, arguments);
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));
 	  }
 	
 	  _createClass(AppContainer, [{
-	    key: '__testFunction__REACT_HOT_LOADER__',
-	    value: function __testFunction__REACT_HOT_LOADER__() {
-	      console.log('test function fired');
-	      store.dispatch((0, _UpdatePortfolio.updatePortfolio)('Does this work?'));
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'site_wrapper' },
-	        _react2.default.createElement(
-	          'button',
-	          { onClick: this.testFunction },
-	          'click me'
-	        ),
 	        _react2.default.createElement(_header2.default, null),
 	        _react2.default.createElement(
 	          'div',
@@ -30522,7 +30497,7 @@
 	exports.default = _default;
 	;
 	
-	var _temp2 = function () {
+	var _temp = function () {
 	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
 	    return;
 	  }
@@ -38111,11 +38086,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
 	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 336);
 	
 	var _galleryItem2 = _interopRequireDefault(_galleryItem);
 	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	var _redux = __webpack_require__(/*! redux */ 249);
+	
+	var _UpdatePortfolio = __webpack_require__(/*! ../store/actions/UpdatePortfolio */ 344);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -38129,6 +38108,14 @@
 	  console.log('state', state);
 	  return { portfolio: state.portfolio.portfolio };
 	}
+	
+	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	  return {
+	    onClick: function onClick(gallery, e) {
+	      dispatch((0, _UpdatePortfolio.updatePortfolio)(gallery));
+	    }
+	  };
+	};
 	
 	var Gallery = function (_Component) {
 	  _inherits(Gallery, _Component);
@@ -38158,7 +38145,7 @@
 	          return _react2.default.createElement(_galleryItem2.default, { image: s.url });
 	        }.bind(this))
 	      );
-	      console.log('this', this.props.portfolio);
+	      console.log('this', this.props);
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -38168,13 +38155,13 @@
 	          { className: 'gallery__nav' },
 	          _react2.default.createElement(
 	            'li',
-	            null,
-	            'Portfolio 1'
+	            { onClick: this.props.onClick.bind(this, 'paintings') },
+	            'Paintings'
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            null,
-	            'Portfolio 2'
+	            { onClick: this.props.onClick.bind(this, 'illustration') },
+	            'Illustrations'
 	          ),
 	          _react2.default.createElement(
 	            'li',
@@ -38196,7 +38183,7 @@
 	  return Gallery;
 	}(_react.Component);
 	
-	var _default = (0, _reactRedux.connect)(mapStateToProps)(Gallery);
+	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Gallery);
 	
 	exports.default = _default;
 	;
@@ -38207,6 +38194,8 @@
 	  }
 	
 	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/amitchell/src2/portfolio/src/views/gallery.js');
 	
 	  __REACT_HOT_LOADER__.register(Gallery, 'Gallery', '/Users/amitchell/src2/portfolio/src/views/gallery.js');
 	

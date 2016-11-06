@@ -1,7 +1,7 @@
 import * as types from '../constants/ActionTypes';
 
 const initialState = {
-  portfolio: 'paintings test',
+  portfolio: 'paintings',
 };
 
 export default function portfolio(state = initialState, action) {

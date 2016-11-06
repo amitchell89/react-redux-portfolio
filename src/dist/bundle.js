@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "33201f1433d13d5942f0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "bbec251bf5501a6a35fe"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -38096,6 +38096,8 @@
 	
 	var _UpdatePortfolio = __webpack_require__(/*! ../store/actions/UpdatePortfolio */ 344);
 	
+	var _images = __webpack_require__(/*! ../store/constants/images */ 345);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38105,17 +38107,18 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	function mapStateToProps(state) {
-	  console.log('state', state);
-	  return { portfolio: state.portfolio.portfolio };
+	  return {
+	    portfolio: state.portfolio.portfolio
+	  };
 	}
 	
-	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+	function mapDispatchToProps(dispatch) {
 	  return {
 	    onClick: function onClick(gallery, e) {
 	      dispatch((0, _UpdatePortfolio.updatePortfolio)(gallery));
 	    }
 	  };
-	};
+	}
 	
 	var Gallery = function (_Component) {
 	  _inherits(Gallery, _Component);
@@ -38134,14 +38137,20 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var portfolio = this.props.portfolio;
 	
-	      var paintings = [{ url: "Aaron_Mitchell_Painting_2011_700.jpg" }, { url: "Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg" }, { url: "Aaron_Mitchell_Painting_In_Between_700.jpg" }, { url: "Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg" }, { url: "Aaron_Mitchell_Painting_Reach_700.jpg" }];
-	      var illustrations = [{ url: "Aaron_Mitchell_Best_Hotel_700.jpg" }, { url: "Aaron_Mitchell_Black_Gold_700.jpg" }, { url: "Aaron_Mitchell_Phish_Poster_700.jpg" }, { url: "Aaron_Mitchell_The_Ring_700.jpg" }];
+	      var currentPortfolio = _images.Images;
+	
+	      currentPortfolio = currentPortfolio.filter(function (x, i) {
+	        if (currentPortfolio[i].set == portfolio) {
+	          return currentPortfolio[i].url;
+	        }
+	      });
 	
 	      var galleryItems = _react2.default.createElement(
 	        'div',
 	        { className: 'gallery__container' },
-	        paintings.map(function (s, i) {
+	        currentPortfolio.map(function (s, i) {
 	          return _react2.default.createElement(_galleryItem2.default, { image: s.url });
 	        }.bind(this))
 	      );
@@ -38160,7 +38169,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
-	            { onClick: this.props.onClick.bind(this, 'illustration') },
+	            { onClick: this.props.onClick.bind(this, 'illustrations') },
 	            'Illustrations'
 	          ),
 	          _react2.default.createElement(
@@ -38247,7 +38256,7 @@
 	
 	
 	      var bkgdImg = {
-	        backgroundImage: 'url(../images/paintings/' + image + ')'
+	        backgroundImage: 'url(../images/' + image + ')'
 	      };
 	
 	      return _react2.default.createElement('div', { className: 'gallery__item', style: bkgdImg });
@@ -38643,7 +38652,7 @@
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	var initialState = {
-	  portfolio: 'paintings test'
+	  portfolio: 'paintings'
 	};
 	
 	function portfolio() {
@@ -38736,6 +38745,31 @@
 	  }
 	
 	  __REACT_HOT_LOADER__.register(updatePortfolio, 'updatePortfolio', '/Users/amitchell/src2/portfolio/src/store/actions/UpdatePortfolio.js');
+	}();
+
+	;
+
+/***/ },
+/* 345 */
+/*!***************************************!*\
+  !*** ./src/store/constants/images.js ***!
+  \***************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	          value: true
+	});
+	var Images = exports.Images = [{ url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }];
+	;
+	
+	var _temp = function () {
+	          if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	                    return;
+	          }
+	
+	          __REACT_HOT_LOADER__.register(Images, "Images", "/Users/amitchell/src2/portfolio/src/store/constants/images.js");
 	}();
 
 	;

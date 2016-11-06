@@ -6,7 +6,7 @@ export default class GalleryItem extends Component {
     const { image } = this.props;
 
     const bkgdImg = {
-      backgroundImage: 'url(../images/paintings/' + image + ')',
+      backgroundImage: 'url(../images/' + image + ')',
     }
 
     return (

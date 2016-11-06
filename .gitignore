@@ -6,3 +6,4 @@ node_modules
 # Ignore hot-update files
 src/dist/*hot-update.json
 src/dist/*hot-update.js
+src/dist/*hot-update.js.map

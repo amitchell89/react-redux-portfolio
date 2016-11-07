@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "6efae952263bdb976e82"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f698719cb15e62d369a0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -37997,7 +37997,7 @@
 	        'div',
 	        { className: 'gallery__container' },
 	        currentPortfolio.map(function (s, i) {
-	          return _react2.default.createElement(_galleryItem2.default, { image: s.url });
+	          return _react2.default.createElement(_galleryItem2.default, { image: s.url, id: s.id });
 	        }.bind(this))
 	      );
 	
@@ -38125,6 +38125,8 @@
 	
 	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 347);
 	
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 351);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38139,8 +38141,9 @@
 	
 	function mapDispatchToProps(dispatch) {
 	  return {
-	    openModal: function openModal(e) {
+	    openModal: function openModal(id, e) {
 	      dispatch((0, _ToggleModal.openModal)(e));
+	      dispatch((0, _SetImage.setImage)(id));
 	    }
 	  };
 	}
@@ -38157,14 +38160,16 @@
 	  _createClass(GalleryItem, [{
 	    key: 'render',
 	    value: function render() {
-	      var image = this.props.image;
+	      var _props = this.props;
+	      var image = _props.image;
+	      var id = _props.id;
 	
 	
 	      var bkgdImg = {
 	        backgroundImage: 'url(../images/' + image + ')'
 	      };
 	
-	      return _react2.default.createElement('div', { className: 'gallery__item', style: bkgdImg, onClick: this.props.openModal });
+	      return _react2.default.createElement('div', { className: 'gallery__item', style: bkgdImg, onClick: this.props.openModal.bind(this, id) });
 	    }
 	  }]);
 	
@@ -38539,6 +38544,15 @@
 	    return _interopRequireDefault(_portfolioModal).default;
 	  }
 	});
+	
+	var _modalImage = __webpack_require__(/*! ./modalImage */ 352);
+	
+	Object.defineProperty(exports, 'modalImage', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_modalImage).default;
+	  }
+	});
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38622,6 +38636,7 @@
 	  value: true
 	});
 	var UPDATE_PORTFOLIO = exports.UPDATE_PORTFOLIO = 'UPDATE_PORTFOLIO';
+	var SET_IMAGE = exports.SET_IMAGE = 'SET_IMAGE';
 	var OPEN_MODAL = exports.OPEN_MODAL = 'OPEN_MODAL';
 	var CLOSE_MODAL = exports.CLOSE_MODAL = 'CLOSE_MODAL';
 	;
@@ -38632,6 +38647,8 @@
 	  }
 	
 	  __REACT_HOT_LOADER__.register(UPDATE_PORTFOLIO, 'UPDATE_PORTFOLIO', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
+	
+	  __REACT_HOT_LOADER__.register(SET_IMAGE, 'SET_IMAGE', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
 	
 	  __REACT_HOT_LOADER__.register(OPEN_MODAL, 'OPEN_MODAL', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
 	
@@ -38691,7 +38708,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	          value: true
 	});
-	var Images = exports.Images = [{ url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }];
+	var Images = exports.Images = [{ id: 1, url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { id: 2, url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { id: 3, url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { id: 4, url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { id: 5, url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { id: 6, url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { id: 7, url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { id: 8, url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { id: 9, url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { id: 10, url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { id: 11, url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { id: 12, url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { id: 13, url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { id: 14, url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { id: 15, url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { id: 16, url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { id: 17, url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { id: 18, url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { id: 19, url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { id: 20, url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { id: 21, url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { id: 22, url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { id: 23, url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { id: 24, url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { id: 25, url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { id: 26, url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { id: 27, url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { id: 28, url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { id: 29, url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { id: 30, url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { id: 31, url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { id: 32, url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }];
 	;
 	
 	var _temp = function () {
@@ -38838,6 +38855,8 @@
 	
 	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 347);
 	
+	var _images = __webpack_require__(/*! ../store/constants/images */ 345);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38847,7 +38866,9 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	function mapStateToProps(state) {
-	  return {};
+	  return {
+	    modalImage: state.modalImage.modalImage
+	  };
 	}
 	
 	function mapDispatchToProps(dispatch) {
@@ -38870,6 +38891,14 @@
 	  _createClass(Modal, [{
 	    key: 'render',
 	    value: function render() {
+	      var modalImage = this.props.modalImage;
+	
+	
+	      var image = _images.Images.find(function (s) {
+	        return s.id == modalImage;
+	      });
+	
+	      var imgUrl = '../images/' + image.url;
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -38877,6 +38906,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'site_wrapper' },
+	          _react2.default.createElement('img', { src: imgUrl }),
 	          _react2.default.createElement(
 	            'button',
 	            { onClick: this.props.closeModal },
@@ -39137,6 +39167,102 @@
 	  __REACT_HOT_LOADER__.register(AppContainer, 'AppContainer', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
 	
 	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
+	}();
+
+	;
+
+/***/ },
+/* 351 */
+/*!***************************************!*\
+  !*** ./src/store/actions/SetImage.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.setImage = setImage;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function setImage(id) {
+	  console.log('action dispatched', id);
+	  return {
+	    type: types.SET_IMAGE,
+	    id: id
+	  };
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(setImage, 'setImage', '/Users/amitchell/src2/portfolio/src/store/actions/SetImage.js');
+	}();
+
+	;
+
+/***/ },
+/* 352 */
+/*!******************************************!*\
+  !*** ./src/store/reducers/modalImage.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	exports.default = modalImage;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	var initialState = {
+	  modalImage: null
+	};
+	
+	function modalImage() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+	  var action = arguments[1];
+	
+	  console.log('reducer fired', action.type);
+	  switch (action.type) {
+	
+	    case types.SET_IMAGE:
+	      return _extends({}, state, {
+	        modalImage: action.id
+	      });
+	
+	    default:
+	      return state;
+	  }
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(initialState, 'initialState', '/Users/amitchell/src2/portfolio/src/store/reducers/modalImage.js');
+	
+	  __REACT_HOT_LOADER__.register(modalImage, 'modalImage', '/Users/amitchell/src2/portfolio/src/store/reducers/modalImage.js');
 	}();
 
 	;

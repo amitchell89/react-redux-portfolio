@@ -40,7 +40,7 @@ class Gallery extends Component {
       <div className="gallery__container">
         {currentPortfolio.map(function (s, i) {
           return (
-          <GalleryItem image={s.url} />
+          <GalleryItem image={s.url} id={s.id}/>
         )}.bind(this))}
       </div>
     )

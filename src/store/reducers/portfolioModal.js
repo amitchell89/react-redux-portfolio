@@ -4,7 +4,7 @@ const initialState = {
   modal: false,
 };
 
-export function openModal(state = initialState, action) {
+export default function modal(state = initialState, action) {
   console.log('reducer fired', action.type)
   switch (action.type) {
 

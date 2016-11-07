@@ -1,2 +1,2 @@
 export { default as portfolio } from './portfolio';
-export { default as openModal } from './portfolioModal';
+export { default as modal } from './portfolioModal';

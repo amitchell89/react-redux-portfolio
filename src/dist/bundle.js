@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2a66b7015739d693e6c8"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6efae952263bdb976e82"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -8651,13 +8651,13 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _app = __webpack_require__(/*! ./views/app */ 248);
+	var _router = __webpack_require__(/*! ./views/router */ 349);
 	
-	var _app2 = _interopRequireDefault(_app);
+	var _router2 = _interopRequireDefault(_router);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	_reactDom2.default.render(_react2.default.createElement(_app2.default, null), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_router2.default, null), document.getElementById('app'));
 	;
 
 	var _temp = function () {
@@ -30360,162 +30360,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 14)))
 
 /***/ },
-/* 248 */
-/*!**************************!*\
-  !*** ./src/views/app.js ***!
-  \**************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _redux = __webpack_require__(/*! redux */ 249);
-	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 272);
-	
-	var _header = __webpack_require__(/*! ./header */ 333);
-	
-	var _header2 = _interopRequireDefault(_header);
-	
-	var _footer = __webpack_require__(/*! ./footer */ 334);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
-	var _gallery = __webpack_require__(/*! ./gallery */ 335);
-	
-	var _gallery2 = _interopRequireDefault(_gallery);
-	
-	var _about = __webpack_require__(/*! ./about */ 337);
-	
-	var _about2 = _interopRequireDefault(_about);
-	
-	var _contact = __webpack_require__(/*! ./contact */ 338);
-	
-	var _contact2 = _interopRequireDefault(_contact);
-	
-	var _terms = __webpack_require__(/*! ./terms */ 339);
-	
-	var _terms2 = _interopRequireDefault(_terms);
-	
-	var _notFound = __webpack_require__(/*! ./notFound */ 340);
-	
-	var _notFound2 = _interopRequireDefault(_notFound);
-	
-	var _reducers = __webpack_require__(/*! ../store/reducers */ 341);
-	
-	var reducers = _interopRequireWildcard(_reducers);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var reducer = (0, _redux.combineReducers)(reducers);
-	var store = (0, _redux.createStore)(reducer);
-	
-	var AppContainer = function (_Component) {
-	  _inherits(AppContainer, _Component);
-	
-	  function AppContainer() {
-	    _classCallCheck(this, AppContainer);
-	
-	    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));
-	  }
-	
-	  _createClass(AppContainer, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'site_wrapper' },
-	        _react2.default.createElement(_header2.default, null),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'content_wrapper' },
-	          this.props.children
-	        ),
-	        _react2.default.createElement(_footer2.default, null)
-	      );
-	    }
-	  }]);
-	
-	  return AppContainer;
-	}(_react.Component);
-	
-	var App = function (_Component2) {
-	  _inherits(App, _Component2);
-	
-	  function App(props) {
-	    _classCallCheck(this, App);
-	
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
-	  }
-	
-	  _createClass(App, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        _reactRedux.Provider,
-	        { store: store },
-	        _react2.default.createElement(
-	          _reactRouter.Router,
-	          { history: _reactRouter.browserHistory },
-	          _react2.default.createElement(
-	            _reactRouter.Route,
-	            { path: '/', component: AppContainer },
-	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _gallery2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default })
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return App;
-	}(_react.Component);
-	
-	var _default = App;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(reducer, 'reducer', '/Users/amitchell/src2/portfolio/src/views/app.js');
-	
-	  __REACT_HOT_LOADER__.register(store, 'store', '/Users/amitchell/src2/portfolio/src/views/app.js');
-	
-	  __REACT_HOT_LOADER__.register(AppContainer, 'AppContainer', '/Users/amitchell/src2/portfolio/src/views/app.js');
-	
-	  __REACT_HOT_LOADER__.register(App, 'App', '/Users/amitchell/src2/portfolio/src/views/app.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/app.js');
-	}();
-
-	;
-
-/***/ },
+/* 248 */,
 /* 249 */
 /*!******************************!*\
   !*** ./~/redux/lib/index.js ***!
@@ -38688,7 +38533,7 @@
 	
 	var _portfolioModal = __webpack_require__(/*! ./portfolioModal */ 346);
 	
-	Object.defineProperty(exports, 'openModal', {
+	Object.defineProperty(exports, 'modal', {
 	  enumerable: true,
 	  get: function get() {
 	    return _interopRequireDefault(_portfolioModal).default;
@@ -38874,7 +38719,7 @@
 	
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 	
-	exports.openModal = openModal;
+	exports.default = modal;
 	
 	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
 	
@@ -38886,7 +38731,7 @@
 	  modal: false
 	};
 	
-	function openModal() {
+	function modal() {
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
 	  var action = arguments[1];
 	
@@ -38917,7 +38762,7 @@
 	
 	  __REACT_HOT_LOADER__.register(initialState, 'initialState', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolioModal.js');
 	
-	  __REACT_HOT_LOADER__.register(openModal, 'openModal', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolioModal.js');
+	  __REACT_HOT_LOADER__.register(modal, 'modal', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolioModal.js');
 	}();
 
 	;
@@ -38966,6 +38811,332 @@
 	  __REACT_HOT_LOADER__.register(openModal, 'openModal', '/Users/amitchell/src2/portfolio/src/store/actions/ToggleModal.js');
 	
 	  __REACT_HOT_LOADER__.register(closeModal, 'closeModal', '/Users/amitchell/src2/portfolio/src/store/actions/ToggleModal.js');
+	}();
+
+	;
+
+/***/ },
+/* 348 */
+/*!****************************!*\
+  !*** ./src/views/modal.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 347);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function mapStateToProps(state) {
+	  return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	  return {
+	    closeModal: function closeModal(e) {
+	      dispatch((0, _ToggleModal.closeModal)(e));
+	    }
+	  };
+	}
+	
+	var Modal = function (_Component) {
+	  _inherits(Modal, _Component);
+	
+	  function Modal() {
+	    _classCallCheck(this, Modal);
+	
+	    return _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).apply(this, arguments));
+	  }
+	
+	  _createClass(Modal, [{
+	    key: 'render',
+	    value: function render() {
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'modal' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'site_wrapper' },
+	          _react2.default.createElement(
+	            'button',
+	            { onClick: this.props.closeModal },
+	            'Close Modal'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Modal;
+	}(_react.Component);
+	
+	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Modal);
+	
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/amitchell/src2/portfolio/src/views/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(Modal, 'Modal', '/Users/amitchell/src2/portfolio/src/views/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/modal.js');
+	}();
+
+	;
+
+/***/ },
+/* 349 */
+/*!*****************************!*\
+  !*** ./src/views/router.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _redux = __webpack_require__(/*! redux */ 249);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 272);
+	
+	var _appContainer = __webpack_require__(/*! ./appContainer */ 350);
+	
+	var _appContainer2 = _interopRequireDefault(_appContainer);
+	
+	var _gallery = __webpack_require__(/*! ./gallery */ 335);
+	
+	var _gallery2 = _interopRequireDefault(_gallery);
+	
+	var _about = __webpack_require__(/*! ./about */ 337);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	var _contact = __webpack_require__(/*! ./contact */ 338);
+	
+	var _contact2 = _interopRequireDefault(_contact);
+	
+	var _terms = __webpack_require__(/*! ./terms */ 339);
+	
+	var _terms2 = _interopRequireDefault(_terms);
+	
+	var _notFound = __webpack_require__(/*! ./notFound */ 340);
+	
+	var _notFound2 = _interopRequireDefault(_notFound);
+	
+	var _reducers = __webpack_require__(/*! ../store/reducers */ 341);
+	
+	var reducers = _interopRequireWildcard(_reducers);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var reducer = (0, _redux.combineReducers)(reducers);
+	var store = (0, _redux.createStore)(reducer);
+	
+	var Routes = function (_Component) {
+	  _inherits(Routes, _Component);
+	
+	  function Routes(props) {
+	    _classCallCheck(this, Routes);
+	
+	    return _possibleConstructorReturn(this, (Routes.__proto__ || Object.getPrototypeOf(Routes)).call(this, props));
+	  }
+	
+	  _createClass(Routes, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactRedux.Provider,
+	        { store: store },
+	        _react2.default.createElement(
+	          _reactRouter.Router,
+	          { history: _reactRouter.browserHistory },
+	          _react2.default.createElement(
+	            _reactRouter.Route,
+	            { path: '/', component: _appContainer2.default },
+	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _gallery2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default })
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Routes;
+	}(_react.Component);
+	
+	var _default = Routes;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(reducer, 'reducer', '/Users/amitchell/src2/portfolio/src/views/router.js');
+	
+	  __REACT_HOT_LOADER__.register(store, 'store', '/Users/amitchell/src2/portfolio/src/views/router.js');
+	
+	  __REACT_HOT_LOADER__.register(Routes, 'Routes', '/Users/amitchell/src2/portfolio/src/views/router.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/router.js');
+	}();
+
+	;
+
+/***/ },
+/* 350 */
+/*!***********************************!*\
+  !*** ./src/views/appContainer.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _redux = __webpack_require__(/*! redux */ 249);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
+	var _header = __webpack_require__(/*! ./header */ 333);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
+	var _footer = __webpack_require__(/*! ./footer */ 334);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	var _modal = __webpack_require__(/*! ./modal */ 348);
+	
+	var _modal2 = _interopRequireDefault(_modal);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function mapStateToProps(state) {
+	  return {
+	    modal: state.modal.modal
+	  };
+	}
+	
+	var AppContainer = function (_Component) {
+	  _inherits(AppContainer, _Component);
+	
+	  function AppContainer() {
+	    _classCallCheck(this, AppContainer);
+	
+	    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));
+	  }
+	
+	  _createClass(AppContainer, [{
+	    key: 'render',
+	    value: function render() {
+	      var modal = null;
+	
+	      if (this.props.modal) {
+	        modal = _react2.default.createElement(_modal2.default, null);
+	      }
+	      console.log('store', this.props.modal);
+	
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        modal,
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'site_wrapper site-wrapper--main' },
+	          _react2.default.createElement(_header2.default, null),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content_wrapper' },
+	            this.props.children
+	          ),
+	          _react2.default.createElement(_footer2.default, null)
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return AppContainer;
+	}(_react.Component);
+	
+	var _default = (0, _reactRedux.connect)(mapStateToProps)(AppContainer);
+	
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
+	
+	  __REACT_HOT_LOADER__.register(AppContainer, 'AppContainer', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
 	}();
 
 	;

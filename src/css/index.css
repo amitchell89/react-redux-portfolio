@@ -28,6 +28,7 @@ ul {
 li {
   cursor: pointer;
 }
+
 select {
   padding: 10px 30px 10px 10px;
   font-size: 1rem;
@@ -67,12 +68,14 @@ h1 {
 }
 
 .site_wrapper {
-  background: #ffffff;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
+}
+.site_wrapper--main {
+  background: #ffffff;
 }
 
 .content_wrapper {
@@ -107,6 +110,21 @@ footer {
   clear: both;
   text-align: center;
   padding: 2rem 0;
+}
+
+/* Modal Styles */
+
+.modal {
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal_wrapper {
+
 }
 
 /* Gallery Styles */

@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1d04dd4345e517d38c47"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2a66b7015739d693e6c8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -38092,8 +38092,6 @@
 	
 	var _galleryItem2 = _interopRequireDefault(_galleryItem);
 	
-	var _redux = __webpack_require__(/*! redux */ 249);
-	
 	var _UpdatePortfolio = __webpack_require__(/*! ../store/actions/UpdatePortfolio */ 344);
 	
 	var _images = __webpack_require__(/*! ../store/constants/images */ 345);
@@ -38178,6 +38176,31 @@
 	            'option',
 	            { value: 'illustrations' },
 	            'Illustrations'
+	          ),
+	          _react2.default.createElement(
+	            'option',
+	            { value: 'comics' },
+	            'Comics'
+	          ),
+	          _react2.default.createElement(
+	            'option',
+	            { value: 'design' },
+	            'Design'
+	          ),
+	          _react2.default.createElement(
+	            'option',
+	            { value: 'circular' },
+	            'Circular'
+	          ),
+	          _react2.default.createElement(
+	            'option',
+	            { value: 'drawings' },
+	            'Drawings'
+	          ),
+	          _react2.default.createElement(
+	            'option',
+	            { value: 'drawings' },
+	            'Collage'
 	          )
 	        )
 	      );
@@ -38253,6 +38276,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 347);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38260,6 +38287,18 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function mapStateToProps(state) {
+	  return {};
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	  return {
+	    openModal: function openModal(e) {
+	      dispatch((0, _ToggleModal.openModal)(e));
+	    }
+	  };
+	}
 	
 	var GalleryItem = function (_Component) {
 	  _inherits(GalleryItem, _Component);
@@ -38280,14 +38319,15 @@
 	        backgroundImage: 'url(../images/' + image + ')'
 	      };
 	
-	      return _react2.default.createElement('div', { className: 'gallery__item', style: bkgdImg });
+	      return _react2.default.createElement('div', { className: 'gallery__item', style: bkgdImg, onClick: this.props.openModal });
 	    }
 	  }]);
 	
 	  return GalleryItem;
 	}(_react.Component);
 	
-	var _default = GalleryItem;
+	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(GalleryItem);
+	
 	exports.default = _default;
 	;
 	
@@ -38295,6 +38335,10 @@
 	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
 	    return;
 	  }
+	
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/galleryItem.js');
+	
+	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/amitchell/src2/portfolio/src/views/galleryItem.js');
 	
 	  __REACT_HOT_LOADER__.register(GalleryItem, 'GalleryItem', '/Users/amitchell/src2/portfolio/src/views/galleryItem.js');
 	
@@ -38641,6 +38685,15 @@
 	    return _interopRequireDefault(_portfolio).default;
 	  }
 	});
+	
+	var _portfolioModal = __webpack_require__(/*! ./portfolioModal */ 346);
+	
+	Object.defineProperty(exports, 'openModal', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_portfolioModal).default;
+	  }
+	});
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38724,6 +38777,8 @@
 	  value: true
 	});
 	var UPDATE_PORTFOLIO = exports.UPDATE_PORTFOLIO = 'UPDATE_PORTFOLIO';
+	var OPEN_MODAL = exports.OPEN_MODAL = 'OPEN_MODAL';
+	var CLOSE_MODAL = exports.CLOSE_MODAL = 'CLOSE_MODAL';
 	;
 	
 	var _temp = function () {
@@ -38732,6 +38787,10 @@
 	  }
 	
 	  __REACT_HOT_LOADER__.register(UPDATE_PORTFOLIO, 'UPDATE_PORTFOLIO', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
+	
+	  __REACT_HOT_LOADER__.register(OPEN_MODAL, 'OPEN_MODAL', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
+	
+	  __REACT_HOT_LOADER__.register(CLOSE_MODAL, 'CLOSE_MODAL', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
 	}();
 
 	;
@@ -38787,7 +38846,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	          value: true
 	});
-	var Images = exports.Images = [{ url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }];
+	var Images = exports.Images = [{ url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }];
 	;
 	
 	var _temp = function () {
@@ -38796,6 +38855,117 @@
 	          }
 	
 	          __REACT_HOT_LOADER__.register(Images, "Images", "/Users/amitchell/src2/portfolio/src/store/constants/images.js");
+	}();
+
+	;
+
+/***/ },
+/* 346 */
+/*!**********************************************!*\
+  !*** ./src/store/reducers/portfolioModal.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	exports.openModal = openModal;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	var initialState = {
+	  modal: false
+	};
+	
+	function openModal() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+	  var action = arguments[1];
+	
+	  console.log('reducer fired', action.type);
+	  switch (action.type) {
+	
+	    case types.OPEN_MODAL:
+	      console.log('reducer open modal');
+	      return _extends({}, state, {
+	        modal: true
+	      });
+	    case types.CLOSE_MODAL:
+	      console.log('reducer close modal');
+	      return _extends({}, state, {
+	        modal: false
+	      });
+	
+	    default:
+	      return state;
+	  }
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(initialState, 'initialState', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolioModal.js');
+	
+	  __REACT_HOT_LOADER__.register(openModal, 'openModal', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolioModal.js');
+	}();
+
+	;
+
+/***/ },
+/* 347 */
+/*!******************************************!*\
+  !*** ./src/store/actions/ToggleModal.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.openModal = openModal;
+	exports.closeModal = closeModal;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function openModal() {
+	  console.log('action dispatched: open modal');
+	  return {
+	    type: types.OPEN_MODAL
+	  };
+	}
+	
+	function closeModal() {
+	  console.log('action dispatched: close modal');
+	  return {
+	    type: types.CLOSE_MODAL
+	  };
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(openModal, 'openModal', '/Users/amitchell/src2/portfolio/src/store/actions/ToggleModal.js');
+	
+	  __REACT_HOT_LOADER__.register(closeModal, 'closeModal', '/Users/amitchell/src2/portfolio/src/store/actions/ToggleModal.js');
 	}();
 
 	;

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import GalleryItem from './galleryItem'
-import { bindActionCreators } from 'redux'
 import { updatePortfolio } from '../store/actions/UpdatePortfolio'
 import { Images } from '../store/constants/images'
 
@@ -52,6 +51,11 @@ class Gallery extends Component {
           <option selected disabled>Select a Portfolio</option>
           <option value="paintings">Paintings</option>
           <option value="illustrations">Illustrations</option>
+          <option value="comics">Comics</option>
+          <option value="design">Design</option>
+          <option value="circular">Circular</option>
+          <option value="drawings">Drawings</option>
+          <option value="drawings">Collage</option>
         </select>
       </span>
     )

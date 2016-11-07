@@ -115,7 +115,7 @@ footer {
 /* Modal Styles */
 
 .modal {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.9);
   position: fixed;
   z-index: 10;
   top: 0;
@@ -123,6 +123,26 @@ footer {
   right: 0;
   bottom: 0;
   overflow: auto;
+  padding: 2rem 0;
+}
+.modal__info {
+  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 1rem;
+  margin-right: 2rem;
+  width: 300px;
+  float: left;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+.modal__img {
+  float: left;
+  width: calc(100% - 300px - 2rem);
+}
+.modal__img img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
 }
 
 /* Gallery Styles */

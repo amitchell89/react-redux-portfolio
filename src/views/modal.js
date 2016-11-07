@@ -31,8 +31,18 @@ class Modal extends Component {
     return (
       <div className="modal">
         <div className="site_wrapper">
-          <img src={imgUrl} />
-          <button onClick={this.props.closeModal}>Close Modal</button>
+          <div className="modal__info">
+            <p>Name: {image.name}</p>
+            <p>Year: </p>
+            <p>Medium: </p>
+            <p>Description: </p>
+            <button>Previous</button>
+            <button>Next</button>
+            <button onClick={this.props.closeModal}>Close Modal</button>
+          </div>
+          <div className="modal__img">
+            <img src={imgUrl} />
+          </div>
         </div>
       </div>
     )

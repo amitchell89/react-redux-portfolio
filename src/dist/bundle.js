@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f698719cb15e62d369a0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "66b9a4aadbee99482b67"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -38708,7 +38708,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	          value: true
 	});
-	var Images = exports.Images = [{ id: 1, url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { id: 2, url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { id: 3, url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { id: 4, url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { id: 5, url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { id: 6, url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { id: 7, url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { id: 8, url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { id: 9, url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { id: 10, url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { id: 11, url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { id: 12, url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { id: 13, url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { id: 14, url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { id: 15, url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { id: 16, url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { id: 17, url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { id: 18, url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { id: 19, url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { id: 20, url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { id: 21, url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { id: 22, url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { id: 23, url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { id: 24, url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { id: 25, url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { id: 26, url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { id: 27, url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { id: 28, url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { id: 29, url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { id: 30, url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { id: 31, url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { id: 32, url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }];
+	var Images = exports.Images = [{ id: 1, name: "2011", url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { id: 2, name: "Does This Look Good", url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { id: 3, name: "In Between", url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { id: 4, name: "Is It Fresh", url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { id: 5, name: "Reach", url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { id: 6, name: "The Black Ring", url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { id: 7, name: "What Did You Say", url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { id: 8, name: "Will It Stay", url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { id: 9, url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { id: 10, url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { id: 11, url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { id: 12, url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { id: 13, url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { id: 14, url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { id: 15, url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { id: 16, url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { id: 17, url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { id: 18, url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { id: 19, url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { id: 20, url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { id: 21, url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { id: 22, url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { id: 23, url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { id: 24, url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { id: 25, url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { id: 26, url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { id: 27, url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { id: 28, url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { id: 29, url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { id: 30, url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { id: 31, url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { id: 32, url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }];
 	;
 	
 	var _temp = function () {
@@ -38906,11 +38906,50 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'site_wrapper' },
-	          _react2.default.createElement('img', { src: imgUrl }),
 	          _react2.default.createElement(
-	            'button',
-	            { onClick: this.props.closeModal },
-	            'Close Modal'
+	            'div',
+	            { className: 'modal__info' },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Name: ',
+	              image.name
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Year: '
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Medium: '
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Description: '
+	            ),
+	            _react2.default.createElement(
+	              'button',
+	              null,
+	              'Previous'
+	            ),
+	            _react2.default.createElement(
+	              'button',
+	              null,
+	              'Next'
+	            ),
+	            _react2.default.createElement(
+	              'button',
+	              { onClick: this.props.closeModal },
+	              'Close Modal'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'modal__img' },
+	            _react2.default.createElement('img', { src: imgUrl })
 	          )
 	        )
 	      );

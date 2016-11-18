@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "66b9a4aadbee99482b67"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "83b6dc7a9bb781b0cd52"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -8651,7 +8651,7 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _router = __webpack_require__(/*! ./views/router */ 349);
+	var _router = __webpack_require__(/*! ./views/router */ 248);
 	
 	var _router2 = _interopRequireDefault(_router);
 	
@@ -30360,7 +30360,132 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 14)))
 
 /***/ },
-/* 248 */,
+/* 248 */
+/*!*****************************!*\
+  !*** ./src/views/router.js ***!
+  \*****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _redux = __webpack_require__(/*! redux */ 249);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 272);
+	
+	var _appContainer = __webpack_require__(/*! ./appContainer */ 333);
+	
+	var _appContainer2 = _interopRequireDefault(_appContainer);
+	
+	var _gallery = __webpack_require__(/*! ./gallery */ 340);
+	
+	var _gallery2 = _interopRequireDefault(_gallery);
+	
+	var _code = __webpack_require__(/*! ./code */ 352);
+	
+	var _code2 = _interopRequireDefault(_code);
+	
+	var _about = __webpack_require__(/*! ./about */ 344);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	var _contact = __webpack_require__(/*! ./contact */ 345);
+	
+	var _contact2 = _interopRequireDefault(_contact);
+	
+	var _terms = __webpack_require__(/*! ./terms */ 346);
+	
+	var _terms2 = _interopRequireDefault(_terms);
+	
+	var _notFound = __webpack_require__(/*! ./notFound */ 347);
+	
+	var _notFound2 = _interopRequireDefault(_notFound);
+	
+	var _reducers = __webpack_require__(/*! ../store/reducers */ 348);
+	
+	var reducers = _interopRequireWildcard(_reducers);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var reducer = (0, _redux.combineReducers)(reducers);
+	var store = (0, _redux.createStore)(reducer);
+	
+	var Routes = function (_Component) {
+	  _inherits(Routes, _Component);
+	
+	  function Routes(props) {
+	    _classCallCheck(this, Routes);
+	
+	    return _possibleConstructorReturn(this, (Routes.__proto__ || Object.getPrototypeOf(Routes)).call(this, props));
+	  }
+	
+	  _createClass(Routes, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactRedux.Provider,
+	        { store: store },
+	        _react2.default.createElement(
+	          _reactRouter.Router,
+	          { history: _reactRouter.browserHistory },
+	          _react2.default.createElement(
+	            _reactRouter.Route,
+	            { path: '/', component: _appContainer2.default },
+	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _gallery2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _code2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default })
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Routes;
+	}(_react.Component);
+	
+	var _default = Routes;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(reducer, 'reducer', '/Users/amitchell/src2/portfolio/src/views/router.js');
+	
+	  __REACT_HOT_LOADER__.register(store, 'store', '/Users/amitchell/src2/portfolio/src/views/router.js');
+	
+	  __REACT_HOT_LOADER__.register(Routes, 'Routes', '/Users/amitchell/src2/portfolio/src/views/router.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/router.js');
+	}();
+
+	;
+
+/***/ },
 /* 249 */
 /*!******************************!*\
   !*** ./~/redux/lib/index.js ***!
@@ -37734,6 +37859,115 @@
 
 /***/ },
 /* 333 */
+/*!***********************************!*\
+  !*** ./src/views/appContainer.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _redux = __webpack_require__(/*! redux */ 249);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
+	var _header = __webpack_require__(/*! ./header */ 334);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
+	var _footer = __webpack_require__(/*! ./footer */ 335);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	var _modal = __webpack_require__(/*! ./modal */ 336);
+	
+	var _modal2 = _interopRequireDefault(_modal);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function mapStateToProps(state) {
+	  return {
+	    modal: state.modal.modal
+	  };
+	}
+	
+	var AppContainer = function (_Component) {
+	  _inherits(AppContainer, _Component);
+	
+	  function AppContainer() {
+	    _classCallCheck(this, AppContainer);
+	
+	    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));
+	  }
+	
+	  _createClass(AppContainer, [{
+	    key: 'render',
+	    value: function render() {
+	      var modal = null;
+	
+	      if (this.props.modal) {
+	        modal = _react2.default.createElement(_modal2.default, null);
+	      }
+	      console.log('store', this.props.modal);
+	
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        modal,
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'site_wrapper site_wrapper--main' },
+	          _react2.default.createElement(_header2.default, null),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'content_wrapper' },
+	            this.props.children
+	          ),
+	          _react2.default.createElement(_footer2.default, null)
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return AppContainer;
+	}(_react.Component);
+	
+	var _default = (0, _reactRedux.connect)(mapStateToProps)(AppContainer);
+	
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
+	
+	  __REACT_HOT_LOADER__.register(AppContainer, 'AppContainer', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
+	}();
+
+	;
+
+/***/ },
+/* 334 */
 /*!*****************************!*\
   !*** ./src/views/header.js ***!
   \*****************************/
@@ -37795,6 +38029,11 @@
 	          ),
 	          _react2.default.createElement(
 	            _reactRouter.Link,
+	            { to: 'code' },
+	            'Code'
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
 	            { to: 'about' },
 	            'About'
 	          ),
@@ -37833,7 +38072,7 @@
 	;
 
 /***/ },
-/* 334 */
+/* 335 */
 /*!*****************************!*\
   !*** ./src/views/footer.js ***!
   \*****************************/
@@ -37913,7 +38152,262 @@
 	;
 
 /***/ },
-/* 335 */
+/* 336 */
+/*!****************************!*\
+  !*** ./src/views/modal.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
+	
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 337);
+	
+	var _images = __webpack_require__(/*! ../store/constants/images */ 339);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function mapStateToProps(state) {
+	  return {
+	    modalImage: state.modalImage.modalImage
+	  };
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	  return {
+	    closeModal: function closeModal(e) {
+	      dispatch((0, _ToggleModal.closeModal)(e));
+	    }
+	  };
+	}
+	
+	var Modal = function (_Component) {
+	  _inherits(Modal, _Component);
+	
+	  function Modal() {
+	    _classCallCheck(this, Modal);
+	
+	    return _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).apply(this, arguments));
+	  }
+	
+	  _createClass(Modal, [{
+	    key: 'render',
+	    value: function render() {
+	      var modalImage = this.props.modalImage;
+	
+	
+	      var image = _images.Images.find(function (s) {
+	        return s.id == modalImage;
+	      });
+	
+	      var imgUrl = '../images/' + image.url;
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'modal' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'site_wrapper' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'modal__info' },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Name: ',
+	              image.name
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Year: '
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Medium: '
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Description: '
+	            ),
+	            _react2.default.createElement(
+	              'button',
+	              null,
+	              'Previous'
+	            ),
+	            _react2.default.createElement(
+	              'button',
+	              null,
+	              'Next'
+	            ),
+	            _react2.default.createElement(
+	              'button',
+	              { onClick: this.props.closeModal },
+	              'Close Modal'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'modal__img' },
+	            _react2.default.createElement('img', { src: imgUrl })
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Modal;
+	}(_react.Component);
+	
+	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Modal);
+	
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/amitchell/src2/portfolio/src/views/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(Modal, 'Modal', '/Users/amitchell/src2/portfolio/src/views/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/modal.js');
+	}();
+
+	;
+
+/***/ },
+/* 337 */
+/*!******************************************!*\
+  !*** ./src/store/actions/ToggleModal.js ***!
+  \******************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.openModal = openModal;
+	exports.closeModal = closeModal;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function openModal() {
+	  console.log('action dispatched: open modal');
+	  return {
+	    type: types.OPEN_MODAL
+	  };
+	}
+	
+	function closeModal() {
+	  console.log('action dispatched: close modal');
+	  return {
+	    type: types.CLOSE_MODAL
+	  };
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(openModal, 'openModal', '/Users/amitchell/src2/portfolio/src/store/actions/ToggleModal.js');
+	
+	  __REACT_HOT_LOADER__.register(closeModal, 'closeModal', '/Users/amitchell/src2/portfolio/src/store/actions/ToggleModal.js');
+	}();
+
+	;
+
+/***/ },
+/* 338 */
+/*!********************************************!*\
+  !*** ./src/store/constants/ActionTypes.js ***!
+  \********************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var UPDATE_PORTFOLIO = exports.UPDATE_PORTFOLIO = 'UPDATE_PORTFOLIO';
+	var SET_IMAGE = exports.SET_IMAGE = 'SET_IMAGE';
+	var OPEN_MODAL = exports.OPEN_MODAL = 'OPEN_MODAL';
+	var CLOSE_MODAL = exports.CLOSE_MODAL = 'CLOSE_MODAL';
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(UPDATE_PORTFOLIO, 'UPDATE_PORTFOLIO', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
+	
+	  __REACT_HOT_LOADER__.register(SET_IMAGE, 'SET_IMAGE', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
+	
+	  __REACT_HOT_LOADER__.register(OPEN_MODAL, 'OPEN_MODAL', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
+	
+	  __REACT_HOT_LOADER__.register(CLOSE_MODAL, 'CLOSE_MODAL', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
+	}();
+
+	;
+
+/***/ },
+/* 339 */
+/*!***************************************!*\
+  !*** ./src/store/constants/images.js ***!
+  \***************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	          value: true
+	});
+	var Images = exports.Images = [{ id: 1, name: "2011", url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { id: 2, name: "Does This Look Good", url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { id: 3, name: "In Between", url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { id: 4, name: "Is It Fresh", url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { id: 5, name: "Reach", url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { id: 6, name: "The Black Ring", url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { id: 7, name: "What Did You Say", url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { id: 8, name: "Will It Stay", url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { id: 9, url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { id: 10, url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { id: 11, url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { id: 12, url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { id: 13, url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { id: 14, url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { id: 15, url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { id: 16, url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { id: 17, url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { id: 18, url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { id: 19, url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { id: 20, url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { id: 21, url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { id: 22, url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { id: 23, url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { id: 24, url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { id: 25, url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { id: 26, url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { id: 27, url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { id: 28, url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { id: 29, url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { id: 30, url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { id: 31, url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { id: 32, url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }];
+	;
+	
+	var _temp = function () {
+	          if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	                    return;
+	          }
+	
+	          __REACT_HOT_LOADER__.register(Images, "Images", "/Users/amitchell/src2/portfolio/src/store/constants/images.js");
+	}();
+
+	;
+
+/***/ },
+/* 340 */
 /*!******************************!*\
   !*** ./src/views/gallery.js ***!
   \******************************/
@@ -37933,13 +38427,13 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
 	
-	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 336);
+	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 341);
 	
 	var _galleryItem2 = _interopRequireDefault(_galleryItem);
 	
-	var _UpdatePortfolio = __webpack_require__(/*! ../store/actions/UpdatePortfolio */ 344);
+	var _UpdatePortfolio = __webpack_require__(/*! ../store/actions/UpdatePortfolio */ 343);
 	
-	var _images = __webpack_require__(/*! ../store/constants/images */ 345);
+	var _images = __webpack_require__(/*! ../store/constants/images */ 339);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -38103,7 +38597,7 @@
 	;
 
 /***/ },
-/* 336 */
+/* 341 */
 /*!**********************************!*\
   !*** ./src/views/galleryItem.js ***!
   \**********************************/
@@ -38123,9 +38617,9 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
 	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 347);
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 337);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 351);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 342);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -38198,7 +38692,85 @@
 	;
 
 /***/ },
-/* 337 */
+/* 342 */
+/*!***************************************!*\
+  !*** ./src/store/actions/SetImage.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.setImage = setImage;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function setImage(id) {
+	  console.log('action dispatched', id);
+	  return {
+	    type: types.SET_IMAGE,
+	    id: id
+	  };
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(setImage, 'setImage', '/Users/amitchell/src2/portfolio/src/store/actions/SetImage.js');
+	}();
+
+	;
+
+/***/ },
+/* 343 */
+/*!**********************************************!*\
+  !*** ./src/store/actions/UpdatePortfolio.js ***!
+  \**********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.updatePortfolio = updatePortfolio;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function updatePortfolio(name) {
+	  console.log('action dispatched', name);
+	  return {
+	    type: types.UPDATE_PORTFOLIO,
+	    name: name
+	  };
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(updatePortfolio, 'updatePortfolio', '/Users/amitchell/src2/portfolio/src/store/actions/UpdatePortfolio.js');
+	}();
+
+	;
+
+/***/ },
+/* 344 */
 /*!****************************!*\
   !*** ./src/views/about.js ***!
   \****************************/
@@ -38300,7 +38872,7 @@
 	;
 
 /***/ },
-/* 338 */
+/* 345 */
 /*!******************************!*\
   !*** ./src/views/contact.js ***!
   \******************************/
@@ -38375,7 +38947,7 @@
 	;
 
 /***/ },
-/* 339 */
+/* 346 */
 /*!****************************!*\
   !*** ./src/views/terms.js ***!
   \****************************/
@@ -38445,7 +39017,7 @@
 	;
 
 /***/ },
-/* 340 */
+/* 347 */
 /*!*******************************!*\
   !*** ./src/views/notFound.js ***!
   \*******************************/
@@ -38515,7 +39087,7 @@
 	;
 
 /***/ },
-/* 341 */
+/* 348 */
 /*!*************************************!*\
   !*** ./src/store/reducers/index.js ***!
   \*************************************/
@@ -38527,7 +39099,7 @@
 	  value: true
 	});
 	
-	var _portfolio = __webpack_require__(/*! ./portfolio */ 342);
+	var _portfolio = __webpack_require__(/*! ./portfolio */ 349);
 	
 	Object.defineProperty(exports, 'portfolio', {
 	  enumerable: true,
@@ -38536,7 +39108,7 @@
 	  }
 	});
 	
-	var _portfolioModal = __webpack_require__(/*! ./portfolioModal */ 346);
+	var _portfolioModal = __webpack_require__(/*! ./portfolioModal */ 350);
 	
 	Object.defineProperty(exports, 'modal', {
 	  enumerable: true,
@@ -38545,7 +39117,7 @@
 	  }
 	});
 	
-	var _modalImage = __webpack_require__(/*! ./modalImage */ 352);
+	var _modalImage = __webpack_require__(/*! ./modalImage */ 351);
 	
 	Object.defineProperty(exports, 'modalImage', {
 	  enumerable: true,
@@ -38567,7 +39139,7 @@
 	;
 
 /***/ },
-/* 342 */
+/* 349 */
 /*!*****************************************!*\
   !*** ./src/store/reducers/portfolio.js ***!
   \*****************************************/
@@ -38583,7 +39155,7 @@
 	
 	exports.default = portfolio;
 	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
 	
 	var types = _interopRequireWildcard(_ActionTypes);
 	
@@ -38624,105 +39196,7 @@
 	;
 
 /***/ },
-/* 343 */
-/*!********************************************!*\
-  !*** ./src/store/constants/ActionTypes.js ***!
-  \********************************************/
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var UPDATE_PORTFOLIO = exports.UPDATE_PORTFOLIO = 'UPDATE_PORTFOLIO';
-	var SET_IMAGE = exports.SET_IMAGE = 'SET_IMAGE';
-	var OPEN_MODAL = exports.OPEN_MODAL = 'OPEN_MODAL';
-	var CLOSE_MODAL = exports.CLOSE_MODAL = 'CLOSE_MODAL';
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(UPDATE_PORTFOLIO, 'UPDATE_PORTFOLIO', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
-	
-	  __REACT_HOT_LOADER__.register(SET_IMAGE, 'SET_IMAGE', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
-	
-	  __REACT_HOT_LOADER__.register(OPEN_MODAL, 'OPEN_MODAL', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
-	
-	  __REACT_HOT_LOADER__.register(CLOSE_MODAL, 'CLOSE_MODAL', '/Users/amitchell/src2/portfolio/src/store/constants/ActionTypes.js');
-	}();
-
-	;
-
-/***/ },
-/* 344 */
-/*!**********************************************!*\
-  !*** ./src/store/actions/UpdatePortfolio.js ***!
-  \**********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.updatePortfolio = updatePortfolio;
-	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function updatePortfolio(name) {
-	  console.log('action dispatched', name);
-	  return {
-	    type: types.UPDATE_PORTFOLIO,
-	    name: name
-	  };
-	}
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(updatePortfolio, 'updatePortfolio', '/Users/amitchell/src2/portfolio/src/store/actions/UpdatePortfolio.js');
-	}();
-
-	;
-
-/***/ },
-/* 345 */
-/*!***************************************!*\
-  !*** ./src/store/constants/images.js ***!
-  \***************************************/
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	          value: true
-	});
-	var Images = exports.Images = [{ id: 1, name: "2011", url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { id: 2, name: "Does This Look Good", url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { id: 3, name: "In Between", url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { id: 4, name: "Is It Fresh", url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { id: 5, name: "Reach", url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { id: 6, name: "The Black Ring", url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { id: 7, name: "What Did You Say", url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { id: 8, name: "Will It Stay", url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { id: 9, url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { id: 10, url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { id: 11, url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { id: 12, url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { id: 13, url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { id: 14, url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { id: 15, url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { id: 16, url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { id: 17, url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { id: 18, url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { id: 19, url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { id: 20, url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { id: 21, url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { id: 22, url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { id: 23, url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { id: 24, url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { id: 25, url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { id: 26, url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { id: 27, url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { id: 28, url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { id: 29, url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { id: 30, url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { id: 31, url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { id: 32, url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }];
-	;
-	
-	var _temp = function () {
-	          if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	                    return;
-	          }
-	
-	          __REACT_HOT_LOADER__.register(Images, "Images", "/Users/amitchell/src2/portfolio/src/store/constants/images.js");
-	}();
-
-	;
-
-/***/ },
-/* 346 */
+/* 350 */
 /*!**********************************************!*\
   !*** ./src/store/reducers/portfolioModal.js ***!
   \**********************************************/
@@ -38738,7 +39212,7 @@
 	
 	exports.default = modal;
 	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
 	
 	var types = _interopRequireWildcard(_ActionTypes);
 	
@@ -38785,472 +39259,7 @@
 	;
 
 /***/ },
-/* 347 */
-/*!******************************************!*\
-  !*** ./src/store/actions/ToggleModal.js ***!
-  \******************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.openModal = openModal;
-	exports.closeModal = closeModal;
-	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function openModal() {
-	  console.log('action dispatched: open modal');
-	  return {
-	    type: types.OPEN_MODAL
-	  };
-	}
-	
-	function closeModal() {
-	  console.log('action dispatched: close modal');
-	  return {
-	    type: types.CLOSE_MODAL
-	  };
-	}
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(openModal, 'openModal', '/Users/amitchell/src2/portfolio/src/store/actions/ToggleModal.js');
-	
-	  __REACT_HOT_LOADER__.register(closeModal, 'closeModal', '/Users/amitchell/src2/portfolio/src/store/actions/ToggleModal.js');
-	}();
-
-	;
-
-/***/ },
-/* 348 */
-/*!****************************!*\
-  !*** ./src/views/modal.js ***!
-  \****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
-	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 347);
-	
-	var _images = __webpack_require__(/*! ../store/constants/images */ 345);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	function mapStateToProps(state) {
-	  return {
-	    modalImage: state.modalImage.modalImage
-	  };
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	  return {
-	    closeModal: function closeModal(e) {
-	      dispatch((0, _ToggleModal.closeModal)(e));
-	    }
-	  };
-	}
-	
-	var Modal = function (_Component) {
-	  _inherits(Modal, _Component);
-	
-	  function Modal() {
-	    _classCallCheck(this, Modal);
-	
-	    return _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).apply(this, arguments));
-	  }
-	
-	  _createClass(Modal, [{
-	    key: 'render',
-	    value: function render() {
-	      var modalImage = this.props.modalImage;
-	
-	
-	      var image = _images.Images.find(function (s) {
-	        return s.id == modalImage;
-	      });
-	
-	      var imgUrl = '../images/' + image.url;
-	
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'modal' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'site_wrapper' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'modal__info' },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Name: ',
-	              image.name
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Year: '
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Medium: '
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Description: '
-	            ),
-	            _react2.default.createElement(
-	              'button',
-	              null,
-	              'Previous'
-	            ),
-	            _react2.default.createElement(
-	              'button',
-	              null,
-	              'Next'
-	            ),
-	            _react2.default.createElement(
-	              'button',
-	              { onClick: this.props.closeModal },
-	              'Close Modal'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'modal__img' },
-	            _react2.default.createElement('img', { src: imgUrl })
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Modal;
-	}(_react.Component);
-	
-	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Modal);
-	
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/modal.js');
-	
-	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/amitchell/src2/portfolio/src/views/modal.js');
-	
-	  __REACT_HOT_LOADER__.register(Modal, 'Modal', '/Users/amitchell/src2/portfolio/src/views/modal.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/modal.js');
-	}();
-
-	;
-
-/***/ },
-/* 349 */
-/*!*****************************!*\
-  !*** ./src/views/router.js ***!
-  \*****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _redux = __webpack_require__(/*! redux */ 249);
-	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 272);
-	
-	var _appContainer = __webpack_require__(/*! ./appContainer */ 350);
-	
-	var _appContainer2 = _interopRequireDefault(_appContainer);
-	
-	var _gallery = __webpack_require__(/*! ./gallery */ 335);
-	
-	var _gallery2 = _interopRequireDefault(_gallery);
-	
-	var _about = __webpack_require__(/*! ./about */ 337);
-	
-	var _about2 = _interopRequireDefault(_about);
-	
-	var _contact = __webpack_require__(/*! ./contact */ 338);
-	
-	var _contact2 = _interopRequireDefault(_contact);
-	
-	var _terms = __webpack_require__(/*! ./terms */ 339);
-	
-	var _terms2 = _interopRequireDefault(_terms);
-	
-	var _notFound = __webpack_require__(/*! ./notFound */ 340);
-	
-	var _notFound2 = _interopRequireDefault(_notFound);
-	
-	var _reducers = __webpack_require__(/*! ../store/reducers */ 341);
-	
-	var reducers = _interopRequireWildcard(_reducers);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var reducer = (0, _redux.combineReducers)(reducers);
-	var store = (0, _redux.createStore)(reducer);
-	
-	var Routes = function (_Component) {
-	  _inherits(Routes, _Component);
-	
-	  function Routes(props) {
-	    _classCallCheck(this, Routes);
-	
-	    return _possibleConstructorReturn(this, (Routes.__proto__ || Object.getPrototypeOf(Routes)).call(this, props));
-	  }
-	
-	  _createClass(Routes, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        _reactRedux.Provider,
-	        { store: store },
-	        _react2.default.createElement(
-	          _reactRouter.Router,
-	          { history: _reactRouter.browserHistory },
-	          _react2.default.createElement(
-	            _reactRouter.Route,
-	            { path: '/', component: _appContainer2.default },
-	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _gallery2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _about2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default })
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Routes;
-	}(_react.Component);
-	
-	var _default = Routes;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(reducer, 'reducer', '/Users/amitchell/src2/portfolio/src/views/router.js');
-	
-	  __REACT_HOT_LOADER__.register(store, 'store', '/Users/amitchell/src2/portfolio/src/views/router.js');
-	
-	  __REACT_HOT_LOADER__.register(Routes, 'Routes', '/Users/amitchell/src2/portfolio/src/views/router.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/router.js');
-	}();
-
-	;
-
-/***/ },
-/* 350 */
-/*!***********************************!*\
-  !*** ./src/views/appContainer.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _redux = __webpack_require__(/*! redux */ 249);
-	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
-	
-	var _header = __webpack_require__(/*! ./header */ 333);
-	
-	var _header2 = _interopRequireDefault(_header);
-	
-	var _footer = __webpack_require__(/*! ./footer */ 334);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
-	var _modal = __webpack_require__(/*! ./modal */ 348);
-	
-	var _modal2 = _interopRequireDefault(_modal);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	function mapStateToProps(state) {
-	  return {
-	    modal: state.modal.modal
-	  };
-	}
-	
-	var AppContainer = function (_Component) {
-	  _inherits(AppContainer, _Component);
-	
-	  function AppContainer() {
-	    _classCallCheck(this, AppContainer);
-	
-	    return _possibleConstructorReturn(this, (AppContainer.__proto__ || Object.getPrototypeOf(AppContainer)).apply(this, arguments));
-	  }
-	
-	  _createClass(AppContainer, [{
-	    key: 'render',
-	    value: function render() {
-	      var modal = null;
-	
-	      if (this.props.modal) {
-	        modal = _react2.default.createElement(_modal2.default, null);
-	      }
-	      console.log('store', this.props.modal);
-	
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        modal,
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'site_wrapper site-wrapper--main' },
-	          _react2.default.createElement(_header2.default, null),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'content_wrapper' },
-	            this.props.children
-	          ),
-	          _react2.default.createElement(_footer2.default, null)
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return AppContainer;
-	}(_react.Component);
-	
-	var _default = (0, _reactRedux.connect)(mapStateToProps)(AppContainer);
-	
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
-	
-	  __REACT_HOT_LOADER__.register(AppContainer, 'AppContainer', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/appContainer.js');
-	}();
-
-	;
-
-/***/ },
 /* 351 */
-/*!***************************************!*\
-  !*** ./src/store/actions/SetImage.js ***!
-  \***************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.setImage = setImage;
-	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function setImage(id) {
-	  console.log('action dispatched', id);
-	  return {
-	    type: types.SET_IMAGE,
-	    id: id
-	  };
-	}
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(setImage, 'setImage', '/Users/amitchell/src2/portfolio/src/store/actions/SetImage.js');
-	}();
-
-	;
-
-/***/ },
-/* 352 */
 /*!******************************************!*\
   !*** ./src/store/reducers/modalImage.js ***!
   \******************************************/
@@ -39266,7 +39275,7 @@
 	
 	exports.default = modalImage;
 	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 343);
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
 	
 	var types = _interopRequireWildcard(_ActionTypes);
 	
@@ -39302,6 +39311,230 @@
 	  __REACT_HOT_LOADER__.register(initialState, 'initialState', '/Users/amitchell/src2/portfolio/src/store/reducers/modalImage.js');
 	
 	  __REACT_HOT_LOADER__.register(modalImage, 'modalImage', '/Users/amitchell/src2/portfolio/src/store/reducers/modalImage.js');
+	}();
+
+	;
+
+/***/ },
+/* 352 */
+/*!***************************!*\
+  !*** ./src/views/code.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 272);
+	
+	var _projects = __webpack_require__(/*! ../store/constants/projects */ 353);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Code = function (_Component) {
+	  _inherits(Code, _Component);
+	
+	  function Code() {
+	    _classCallCheck(this, Code);
+	
+	    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
+	  }
+	
+	  _createClass(Code, [{
+	    key: 'render',
+	    value: function render() {
+	
+	      var projects = _react2.default.createElement(
+	        'div',
+	        null,
+	        _projects.Projects.map(function (s, i) {
+	
+	          var url = s.url == true ? _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: s.url_link },
+	              s.url_link
+	            )
+	          ) : _react2.default.createElement(
+	            'div',
+	            null,
+	            s.url_link
+	          );
+	          var git = s.git == true ? _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: s.git_link },
+	              s.git_link
+	            )
+	          ) : _react2.default.createElement(
+	            'div',
+	            null,
+	            s.git_link
+	          );
+	
+	          return _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              s.name
+	            ),
+	            url,
+	            git,
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              s.about
+	            )
+	          );
+	        }.bind(this))
+	      );
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Code Portfolio'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Below is a list of projects I have worked on as both a freelancer and as an employee at Cogo Labs.'
+	        ),
+	        projects
+	      );
+	    }
+	  }]);
+	
+	  return Code;
+	}(_react.Component);
+	
+	var _default = Code;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(Code, 'Code', '/Users/amitchell/src2/portfolio/src/views/code.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/code.js');
+	}();
+
+	;
+
+/***/ },
+/* 353 */
+/*!*****************************************!*\
+  !*** ./src/store/constants/projects.js ***!
+  \*****************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	   value: true
+	});
+	var Projects = exports.Projects = [{
+	   name: "My Personal Portfolio",
+	   url: true,
+	   url_link: "www.mitchellaaron.com",
+	   git: true,
+	   git_link: "https://github.com/amitchell89/react-redux-portfolio",
+	   about: "This website is built using React and Redux."
+	}, {
+	   name: "Link Ventures",
+	   url: true,
+	   url_link: "www.linkventures.com",
+	   git: false,
+	   git_link: "Work Project (Code Not Public)",
+	   about: "Link Ventures is a portfolio site for the investment group that backed my work Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS."
+	}, {
+	   name: "Umbrella Check",
+	   url: true,
+	   url_link: "www.umbrellacheck.com",
+	   git: false,
+	   git_link: "Work Project (Code Not Public)",
+	   about: "Umbrella Check is a weather site I worked on at Cogo Labs. I created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker."
+	}, {
+	   name: "Thrive Medicare",
+	   url: true,
+	   url_link: "www.thrivemedicare.com",
+	   git: false,
+	   git_link: "Work Project (Code Not Public)",
+	   about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery."
+	}, {
+	   name: "Cogo Labs 404 Page",
+	   url: true,
+	   url_link: "www.cogolabs.com/404",
+	   git: false,
+	   git_link: "Work Project (Code Not Public)",
+	   about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse."
+	}, {
+	   name: "Schillaci Guitars",
+	   url: true,
+	   url_link: "www.schillaciguitars.com",
+	   git: true,
+	   git_link: "https://github.com/amitchell89/schillaci_guitars",
+	   about: "Schillaci Guitars is a website I designed and built as a freelancer in 2012. It was made for a guitar luthier to showcase his past projects and to promote sales. It was built using PHP without a framework or CMS. It utilizes fancybox for the modal gallery on each guitar page and a phpMyAdmin database for serving up images and information about the different guitars. The site is still in use and occasionally updated."
+	}, {
+	   name: "Fuck 2016",
+	   url: true,
+	   url_link: "www.fuck2016.com",
+	   git: true,
+	   git_link: "https://github.com/amitchell89/fuck2016",
+	   about: "Fuck2016 is brand I developed to capitalize on the 2016 presidential election. The site was quickly stood up without a framework to host a Shopify iframed online store. The products were created using theprintful.com, a site that allows you to upload designs, create products based on those designs, and fulfill individually printed orders received from your Shopify store. The site features Facebook and Twitter widgets, as well as Google Analytics tracking. I also maintained Facebook and Twitter pages for the brand. For advertising I was shut out of my initial plan to advertise on Facebook due to their profanity guidelines, but did end up seeing some sales from my Facebook page, Reddit and organic traffic after the results of the election and a John Oliver segment that happened to use the same message."
+	}, {
+	   name: "Table Flipper",
+	   url: false,
+	   url_link: "Command Line Tool. No UI",
+	   git: false,
+	   git_link: "Work Project (Code Not Public)",
+	   about: "Table Flipper is a node command line interface tool that I built to make coding emails easier and faster. It allows you to code emails using Jade for the markup, Sass for inline styles and Json for declaring variables and rendering options. The code is compiled into two versions, a clean production version, and a populated version for testing. It includes options to manipulate the final html by randomizing class names, shuffling html attributes and deleting unused classes.Table Flipper also provides a library of common partials for reusable elements and email fixes, and allows users to create blueprints, or starter templates for an even faster workflow. It utilizes nodemon for watching for changes and AWS syncing for quickly uploading images to Amazon S3."
+	}, {
+	   name: "Offer Coffer",
+	   url: false,
+	   url_link: "Internal Tool. Not Public Facing",
+	   git: false,
+	   git_link: "Work Project (Code Not Public)",
+	   about: "Offer Coffer is a React / Flux / Bootstrap internal tool that is used to manage, edit and review email offers and associated assets (subject lines, email templates etc). I was tasked with designing a new site layout and UI, adding react router, adding filtering to our main list view (along with URL query filtering), enabling multiple items to be saved simultaneously (even though they were still processed individually by the API), redesigning alerts and updating the UI to allow permissions to be set on an granular level for every asset within an offer."
+	}];
+	;
+	
+	var _temp = function () {
+	   if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	      return;
+	   }
+	
+	   __REACT_HOT_LOADER__.register(Projects, "Projects", "/Users/amitchell/src2/portfolio/src/store/constants/projects.js");
 	}();
 
 	;

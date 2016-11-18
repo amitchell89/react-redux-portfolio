@@ -26,7 +26,7 @@ class AppContainer extends Component {
     return (
       <div>
         {modal}
-        <div className="site_wrapper site-wrapper--main">
+        <div className="site_wrapper site_wrapper--main">
           <Header />
           <div className="content_wrapper">
             {this.props.children}

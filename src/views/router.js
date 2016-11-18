@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router'
 import AppContainer from './appContainer'
 import Gallery from './gallery'
+import Code from './code'
 import About from './about'
 import Contact from './contact'
 import Terms from './terms'
@@ -24,6 +25,7 @@ export default class Routes extends Component {
         <Router history={browserHistory}>
           <Route path='/' component={AppContainer}>
             <IndexRoute component={Gallery} />
+            <Route path='/code' component={Code} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/terms' component={Terms} />

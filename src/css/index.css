@@ -19,6 +19,10 @@ a {
   color: #0066ff;
 }
 
+p {
+  line-height: 1.5;
+}
+
 ul {
   list-style: none;
   padding: 0;

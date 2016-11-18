@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d57fa6a4fe6322dd77a2"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "7763ebda380ed6dd888f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -38174,6 +38174,8 @@
 	
 	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 337);
 	
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 342);
+	
 	var _images = __webpack_require__(/*! ../store/constants/images */ 339);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -38194,6 +38196,10 @@
 	  return {
 	    closeModal: function closeModal(e) {
 	      dispatch((0, _ToggleModal.closeModal)(e));
+	    },
+	    switchImage: function switchImage(id) {
+	      console.log('hit');
+	      dispatch((0, _SetImage.setImage)(id));
 	    }
 	  };
 	}
@@ -38217,6 +38223,8 @@
 	        return s.id == modalImage;
 	      });
 	
+	      var imgPrev = modalImage - 1;
+	      var imgNext = modalImage + 1;
 	      var imgUrl = '../images/' + image.url;
 	
 	      return _react2.default.createElement(
@@ -38251,12 +38259,12 @@
 	            ),
 	            _react2.default.createElement(
 	              'button',
-	              null,
+	              { onClick: this.props.switchImage.bind(this, imgPrev) },
 	              'Previous'
 	            ),
 	            _react2.default.createElement(
 	              'button',
-	              null,
+	              { onClick: this.props.switchImage.bind(this, imgNext) },
 	              'Next'
 	            ),
 	            _react2.default.createElement(

@@ -51,11 +51,12 @@ class Gallery extends Component {
           <option selected disabled>Select a Portfolio</option>
           <option value="paintings">Paintings</option>
           <option value="illustrations">Illustrations</option>
-          <option value="comics">Comics</option>
           <option value="design">Design</option>
+          <option value="posters">Posters</option>
+          <option value="comics">Comics</option>
           <option value="circular">Circular</option>
           <option value="drawings">Drawings</option>
-          <option value="drawings">Collage</option>
+          <option value="collage">Collage</option>
         </select>
       </span>
     )

@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "83b6dc7a9bb781b0cd52"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d57fa6a4fe6322dd77a2"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -38393,7 +38393,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	          value: true
 	});
-	var Images = exports.Images = [{ id: 1, name: "2011", url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { id: 2, name: "Does This Look Good", url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { id: 3, name: "In Between", url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { id: 4, name: "Is It Fresh", url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { id: 5, name: "Reach", url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { id: 6, name: "The Black Ring", url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { id: 7, name: "What Did You Say", url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { id: 8, name: "Will It Stay", url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { id: 9, url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { id: 10, url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { id: 11, url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { id: 12, url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { id: 13, url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { id: 14, url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { id: 15, url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { id: 16, url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { id: 17, url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { id: 18, url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { id: 19, url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { id: 20, url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { id: 21, url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { id: 22, url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { id: 23, url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { id: 24, url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { id: 25, url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { id: 26, url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { id: 27, url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { id: 28, url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { id: 29, url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { id: 30, url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { id: 31, url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { id: 32, url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }];
+	var Images = exports.Images = [{ id: 1, name: "2011", url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { id: 2, name: "Does This Look Good", url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { id: 3, name: "In Between", url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { id: 4, name: "Is It Fresh", url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { id: 5, name: "Reach", url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { id: 6, name: "The Black Ring", url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { id: 7, name: "What Did You Say", url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { id: 8, name: "Will It Stay", url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { id: 9, url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { id: 10, url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { id: 11, url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { id: 12, url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { id: 13, url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { id: 14, url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { id: 15, url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { id: 16, url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { id: 17, url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { id: 18, url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { id: 19, url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { id: 20, url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { id: 21, url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { id: 22, url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { id: 23, url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { id: 24, url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { id: 25, url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { id: 26, url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { id: 27, url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { id: 28, url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { id: 29, url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { id: 30, url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { id: 31, url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { id: 32, url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }, { id: 37, url: "posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg", set: "posters" }, { id: 38, url: "posters/Aaron_Mitchell_Boogarins_Middle_East_Cambridge.jpg", set: "posters" }, { id: 39, url: "posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg", set: "posters" }, { id: 40, url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg", set: "posters" }, { id: 41, url: "posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg", set: "posters" }, { id: 42, url: "posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg", set: "posters" }, { id: 43, url: "posters/Aaron_Mitchell_Morgan_Delt_Middle_East_Cambridge.jpg", set: "posters" }, { id: 44, url: "posters/Aaron_Mitchell_Nobunny_Middle_East_Cambridge.jpg", set: "posters" }, { id: 45, url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg", set: "posters" }, { id: 46, url: "posters/Aaron_Mitchell_Sunflower_Beam_Middle_East_Cambridge.jpg", set: "posters" }, { id: 47, url: "posters/Aaron_Mitchell_Tobias_Jessos_Jr_Middle_East_Cambridge.jpg", set: "posters" }];
 	;
 	
 	var _temp = function () {
@@ -38518,13 +38518,18 @@
 	          ),
 	          _react2.default.createElement(
 	            'option',
-	            { value: 'comics' },
-	            'Comics'
+	            { value: 'design' },
+	            'Design'
 	          ),
 	          _react2.default.createElement(
 	            'option',
-	            { value: 'design' },
-	            'Design'
+	            { value: 'posters' },
+	            'Posters'
+	          ),
+	          _react2.default.createElement(
+	            'option',
+	            { value: 'comics' },
+	            'Comics'
 	          ),
 	          _react2.default.createElement(
 	            'option',
@@ -38538,7 +38543,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'option',
-	            { value: 'drawings' },
+	            { value: 'collage' },
 	            'Collage'
 	          )
 	        )

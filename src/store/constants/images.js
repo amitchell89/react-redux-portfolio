@@ -36,5 +36,19 @@ export const Images = [
           {id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design"},
           {id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design"},
           {id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design"},
-          {id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design"}
+          {id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design"},
+
+          {id: 37, url: "posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg", set: "posters"},
+          {id: 38, url: "posters/Aaron_Mitchell_Boogarins_Middle_East_Cambridge.jpg", set: "posters"},
+          {id: 39, url: "posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg", set: "posters"},
+          {id: 40, url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg", set: "posters"},
+          {id: 41, url: "posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg", set: "posters"},
+          {id: 42, url: "posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg", set: "posters"},
+          {id: 43, url: "posters/Aaron_Mitchell_Morgan_Delt_Middle_East_Cambridge.jpg", set: "posters"},
+          {id: 44, url: "posters/Aaron_Mitchell_Nobunny_Middle_East_Cambridge.jpg", set: "posters"},
+          {id: 45, url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg", set: "posters"},
+          {id: 46, url: "posters/Aaron_Mitchell_Sunflower_Beam_Middle_East_Cambridge.jpg", set: "posters"},
+          {id: 47, url: "posters/Aaron_Mitchell_Tobias_Jessos_Jr_Middle_East_Cambridge.jpg", set: "posters"},
+
+
         ]

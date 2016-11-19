@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7763ebda380ed6dd888f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "815ca2f707f50cb60750"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -30388,31 +30388,31 @@
 	
 	var _appContainer2 = _interopRequireDefault(_appContainer);
 	
-	var _gallery = __webpack_require__(/*! ./gallery */ 340);
+	var _gallery = __webpack_require__(/*! ./gallery */ 341);
 	
 	var _gallery2 = _interopRequireDefault(_gallery);
 	
-	var _code = __webpack_require__(/*! ./code */ 352);
+	var _code = __webpack_require__(/*! ./code */ 344);
 	
 	var _code2 = _interopRequireDefault(_code);
 	
-	var _about = __webpack_require__(/*! ./about */ 344);
+	var _about = __webpack_require__(/*! ./about */ 346);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _contact = __webpack_require__(/*! ./contact */ 345);
+	var _contact = __webpack_require__(/*! ./contact */ 347);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _terms = __webpack_require__(/*! ./terms */ 346);
+	var _terms = __webpack_require__(/*! ./terms */ 348);
 	
 	var _terms2 = _interopRequireDefault(_terms);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 347);
+	var _notFound = __webpack_require__(/*! ./notFound */ 349);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
-	var _reducers = __webpack_require__(/*! ../store/reducers */ 348);
+	var _reducers = __webpack_require__(/*! ../store/reducers */ 350);
 	
 	var reducers = _interopRequireWildcard(_reducers);
 	
@@ -37902,7 +37902,7 @@
 	
 	function mapStateToProps(state) {
 	  return {
-	    modal: state.modal.modal
+	    modal: state.modal.display
 	  };
 	}
 	
@@ -37923,7 +37923,7 @@
 	      if (this.props.modal) {
 	        modal = _react2.default.createElement(_modal2.default, null);
 	      }
-	      console.log('store', this.props.modal);
+	      console.log('store', this.props);
 	
 	      return _react2.default.createElement(
 	        'div',
@@ -38174,9 +38174,7 @@
 	
 	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 337);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 342);
-	
-	var _images = __webpack_require__(/*! ../store/constants/images */ 339);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 339);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -38188,7 +38186,9 @@
 	
 	function mapStateToProps(state) {
 	  return {
-	    modalImage: state.modalImage.modalImage
+	    selectedImage: state.modal.selectedImage,
+	    selectedGallery: state.gallery.selected,
+	    images: state.gallery.images
 	  };
 	}
 	
@@ -38198,7 +38198,6 @@
 	      dispatch((0, _ToggleModal.closeModal)(e));
 	    },
 	    switchImage: function switchImage(id) {
-	      console.log('hit');
 	      dispatch((0, _SetImage.setImage)(id));
 	    }
 	  };
@@ -38216,15 +38215,18 @@
 	  _createClass(Modal, [{
 	    key: 'render',
 	    value: function render() {
-	      var modalImage = this.props.modalImage;
+	      var _props = this.props;
+	      var selectedImage = _props.selectedImage;
+	      var selectedGallery = _props.selectedGallery;
+	      var images = _props.images;
 	
 	
-	      var image = _images.Images.find(function (s) {
-	        return s.id == modalImage;
+	      var image = images[selectedGallery].find(function (s) {
+	        return s.id == selectedImage;
 	      });
 	
-	      var imgPrev = modalImage - 1;
-	      var imgNext = modalImage + 1;
+	      var imgPrev = image.id - 1;
+	      var imgNext = image.id + 1;
 	      var imgUrl = '../images/' + image.url;
 	
 	      return _react2.default.createElement(
@@ -38392,6 +38394,45 @@
 /***/ },
 /* 339 */
 /*!***************************************!*\
+  !*** ./src/store/actions/SetImage.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.setImage = setImage;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function setImage(id) {
+	  console.log('action dispatched', id);
+	  return {
+	    type: types.SET_IMAGE,
+	    id: id
+	  };
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(setImage, 'setImage', '/Users/amitchell/src2/portfolio/src/store/actions/SetImage.js');
+	}();
+
+	;
+
+/***/ },
+/* 340 */
+/*!***************************************!*\
   !*** ./src/store/constants/images.js ***!
   \***************************************/
 /***/ function(module, exports) {
@@ -38399,23 +38440,31 @@
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
-	          value: true
+	  value: true
 	});
-	var Images = exports.Images = [{ id: 1, name: "2011", url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg", set: "paintings" }, { id: 2, name: "Does This Look Good", url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg", set: "paintings" }, { id: 3, name: "In Between", url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg", set: "paintings" }, { id: 4, name: "Is It Fresh", url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg", set: "paintings" }, { id: 5, name: "Reach", url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg", set: "paintings" }, { id: 6, name: "The Black Ring", url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg", set: "paintings" }, { id: 7, name: "What Did You Say", url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg", set: "paintings" }, { id: 8, name: "Will It Stay", url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg", set: "paintings" }, { id: 9, url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg", set: "illustrations" }, { id: 10, url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg", set: "illustrations" }, { id: 11, url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg", set: "illustrations" }, { id: 12, url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg", set: "illustrations" }, { id: 13, url: "illustrations/Aaron_Mitchell_Deer_700.jpg", set: "illustrations" }, { id: 14, url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg", set: "illustrations" }, { id: 15, url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { id: 16, url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg", set: "illustrations" }, { id: 17, url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg", set: "illustrations" }, { id: 18, url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg", set: "illustrations" }, { id: 19, url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg", set: "illustrations" }, { id: 20, url: "illustrations/Aaron_Mitchell_Jess_700.jpg", set: "illustrations" }, { id: 21, url: "illustrations/Aaron_Mitchell_Lobster_700.jpg", set: "illustrations" }, { id: 22, url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg", set: "illustrations" }, { id: 23, url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg", set: "illustrations" }, { id: 24, url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg", set: "illustrations" }, { id: 25, url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg", set: "illustrations" }, { id: 26, url: "illustrations/Aaron_Mitchell_Towers.jpg", set: "illustrations" }, { id: 27, url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg", set: "design" }, { id: 28, url: "design/Aaron_Mitchell_Fuck_2016_700.jpg", set: "design" }, { id: 29, url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg", set: "design" }, { id: 30, url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg", set: "design" }, { id: 31, url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg", set: "design" }, { id: 32, url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg", set: "design" }, { id: 33, url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg", set: "design" }, { id: 34, url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg", set: "design" }, { id: 35, url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg", set: "design" }, { id: 36, url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg", set: "design" }, { id: 37, url: "posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg", set: "posters" }, { id: 38, url: "posters/Aaron_Mitchell_Boogarins_Middle_East_Cambridge.jpg", set: "posters" }, { id: 39, url: "posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg", set: "posters" }, { id: 40, url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg", set: "posters" }, { id: 41, url: "posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg", set: "posters" }, { id: 42, url: "posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg", set: "posters" }, { id: 43, url: "posters/Aaron_Mitchell_Morgan_Delt_Middle_East_Cambridge.jpg", set: "posters" }, { id: 44, url: "posters/Aaron_Mitchell_Nobunny_Middle_East_Cambridge.jpg", set: "posters" }, { id: 45, url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg", set: "posters" }, { id: 46, url: "posters/Aaron_Mitchell_Sunflower_Beam_Middle_East_Cambridge.jpg", set: "posters" }, { id: 47, url: "posters/Aaron_Mitchell_Tobias_Jessos_Jr_Middle_East_Cambridge.jpg", set: "posters" }];
+	var images = exports.images = {
+	  paintings: [{ name: "2011", url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg" }, { name: "Does This Look Good", url: "paintings/Aaron_Mitchell_Painting_Does_This_Look_Good_700.jpg" }, { name: "In Between", url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg" }, { name: "Is It Fresh", url: "paintings/Aaron_Mitchell_Painting_Is_It_Fresh_700.jpg" }, { name: "Reach", url: "paintings/Aaron_Mitchell_Painting_Reach_700.jpg" }, { name: "The Black Ring", url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg" }, { name: "What Did You Say", url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg" }, { name: "Will It Stay", url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg" }],
+	
+	  illustrations: [{ url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg" }, { url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Deer_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations" }, { url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Jess_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Lobster_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg" }, { url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg" }, { url: "illustrations/Aaron_Mitchell_Towers.jpg" }],
+	
+	  design: [{ url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg" }, { url: "design/Aaron_Mitchell_Fuck_2016_700.jpg" }, { url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg" }, { url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg" }, { url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg" }, { url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg" }, { url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg" }, { url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg" }, { url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg" }, { url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg" }],
+	
+	  posters: [{ url: "posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_Boogarins_Middle_East_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_Morgan_Delt_Middle_East_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_Nobunny_Middle_East_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_Sunflower_Beam_Middle_East_Cambridge.jpg" }, { url: "posters/Aaron_Mitchell_Tobias_Jessos_Jr_Middle_East_Cambridge.jpg" }]
+	};
 	;
 	
 	var _temp = function () {
-	          if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	                    return;
-	          }
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
 	
-	          __REACT_HOT_LOADER__.register(Images, "Images", "/Users/amitchell/src2/portfolio/src/store/constants/images.js");
+	  __REACT_HOT_LOADER__.register(images, "images", "/Users/amitchell/src2/portfolio/src/store/constants/images.js");
 	}();
 
 	;
 
 /***/ },
-/* 340 */
+/* 341 */
 /*!******************************!*\
   !*** ./src/views/gallery.js ***!
   \******************************/
@@ -38435,13 +38484,13 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 263);
 	
-	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 341);
+	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 342);
 	
 	var _galleryItem2 = _interopRequireDefault(_galleryItem);
 	
 	var _UpdatePortfolio = __webpack_require__(/*! ../store/actions/UpdatePortfolio */ 343);
 	
-	var _images = __webpack_require__(/*! ../store/constants/images */ 339);
+	var _images = __webpack_require__(/*! ../store/constants/images */ 340);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -38452,8 +38501,10 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	function mapStateToProps(state) {
+	  console.log('state: ', state);
 	  return {
-	    portfolio: state.portfolio.portfolio
+	    images: state.gallery.images,
+	    selectedGallery: state.gallery.selected
 	  };
 	}
 	
@@ -38485,15 +38536,12 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var portfolio = this.props.portfolio;
+	      var _props = this.props;
+	      var images = _props.images;
+	      var selectedGallery = _props.selectedGallery;
 	
-	      var currentPortfolio = _images.Images;
 	
-	      currentPortfolio = currentPortfolio.filter(function (x, i) {
-	        if (currentPortfolio[i].set == portfolio) {
-	          return currentPortfolio[i].url;
-	        }
-	      });
+	      var currentPortfolio = images[selectedGallery];
 	
 	      var galleryItems = _react2.default.createElement(
 	        'div',
@@ -38610,7 +38658,7 @@
 	;
 
 /***/ },
-/* 341 */
+/* 342 */
 /*!**********************************!*\
   !*** ./src/views/galleryItem.js ***!
   \**********************************/
@@ -38632,7 +38680,7 @@
 	
 	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 337);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 342);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 339);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -38705,45 +38753,6 @@
 	;
 
 /***/ },
-/* 342 */
-/*!***************************************!*\
-  !*** ./src/store/actions/SetImage.js ***!
-  \***************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.setImage = setImage;
-	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function setImage(id) {
-	  console.log('action dispatched', id);
-	  return {
-	    type: types.SET_IMAGE,
-	    id: id
-	  };
-	}
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(setImage, 'setImage', '/Users/amitchell/src2/portfolio/src/store/actions/SetImage.js');
-	}();
-
-	;
-
-/***/ },
 /* 343 */
 /*!**********************************************!*\
   !*** ./src/store/actions/UpdatePortfolio.js ***!
@@ -38784,552 +38793,6 @@
 
 /***/ },
 /* 344 */
-/*!****************************!*\
-  !*** ./src/views/about.js ***!
-  \****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 272);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var About = function (_Component) {
-	  _inherits(About, _Component);
-	
-	  function About() {
-	    _classCallCheck(this, About);
-	
-	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
-	  }
-	
-	  _createClass(About, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'About'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Hello! My name is Aaron Mitchell and I\'m a User Interface Designer working at Cogo Labs, a startup incubator in Cambridge, MA. My primary responsibilities include designing websites and emails, front end coding and branding work for new projects and verticals. Before joining Cogo Labs in June 2014 I worked as a web designer for Liquid Wireless, a mobile marketing startup owned by Publishers Clearing House.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'I graduated Summa Cum laude from the New Hampshire Institute of Art in 2011 with a major in Illustration. While my primary focus is working digitally, I\'ve also studied oil painting and have shown my work in several exhibitions.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Want to know more? ',
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '' },
-	            'Check out my resume'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          ' Want to talk? ',
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: 'contact' },
-	            'Send me a message'
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return About;
-	}(_react.Component);
-	
-	var _default = About;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(About, 'About', '/Users/amitchell/src2/portfolio/src/views/about.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/about.js');
-	}();
-
-	;
-
-/***/ },
-/* 345 */
-/*!******************************!*\
-  !*** ./src/views/contact.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Contact = function (_Component) {
-	  _inherits(Contact, _Component);
-	
-	  function Contact() {
-	    _classCallCheck(this, Contact);
-	
-	    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
-	  }
-	
-	  _createClass(Contact, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'Contact'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Want to talk? Send me a message and let\'s get the conversation started.'
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Contact;
-	}(_react.Component);
-	
-	var _default = Contact;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(Contact, 'Contact', '/Users/amitchell/src2/portfolio/src/views/contact.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/contact.js');
-	}();
-
-	;
-
-/***/ },
-/* 346 */
-/*!****************************!*\
-  !*** ./src/views/terms.js ***!
-  \****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Terms = function (_Component) {
-	  _inherits(Terms, _Component);
-	
-	  function Terms() {
-	    _classCallCheck(this, Terms);
-	
-	    return _possibleConstructorReturn(this, (Terms.__proto__ || Object.getPrototypeOf(Terms)).apply(this, arguments));
-	  }
-	
-	  _createClass(Terms, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'Terms & Conditions'
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Terms;
-	}(_react.Component);
-	
-	var _default = Terms;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(Terms, 'Terms', '/Users/amitchell/src2/portfolio/src/views/terms.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/terms.js');
-	}();
-
-	;
-
-/***/ },
-/* 347 */
-/*!*******************************!*\
-  !*** ./src/views/notFound.js ***!
-  \*******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 78);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var NotFound = function (_Component) {
-	  _inherits(NotFound, _Component);
-	
-	  function NotFound() {
-	    _classCallCheck(this, NotFound);
-	
-	    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
-	  }
-	
-	  _createClass(NotFound, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          '404. Page Not Found.'
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return NotFound;
-	}(_react.Component);
-	
-	var _default = NotFound;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(NotFound, 'NotFound', '/Users/amitchell/src2/portfolio/src/views/notFound.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/notFound.js');
-	}();
-
-	;
-
-/***/ },
-/* 348 */
-/*!*************************************!*\
-  !*** ./src/store/reducers/index.js ***!
-  \*************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _portfolio = __webpack_require__(/*! ./portfolio */ 349);
-	
-	Object.defineProperty(exports, 'portfolio', {
-	  enumerable: true,
-	  get: function get() {
-	    return _interopRequireDefault(_portfolio).default;
-	  }
-	});
-	
-	var _portfolioModal = __webpack_require__(/*! ./portfolioModal */ 350);
-	
-	Object.defineProperty(exports, 'modal', {
-	  enumerable: true,
-	  get: function get() {
-	    return _interopRequireDefault(_portfolioModal).default;
-	  }
-	});
-	
-	var _modalImage = __webpack_require__(/*! ./modalImage */ 351);
-	
-	Object.defineProperty(exports, 'modalImage', {
-	  enumerable: true,
-	  get: function get() {
-	    return _interopRequireDefault(_modalImage).default;
-	  }
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	;
-
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	}();
-
-	;
-
-/***/ },
-/* 349 */
-/*!*****************************************!*\
-  !*** ./src/store/reducers/portfolio.js ***!
-  \*****************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	exports.default = portfolio;
-	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	var initialState = {
-	  portfolio: 'paintings'
-	};
-	
-	function portfolio() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-	  var action = arguments[1];
-	
-	  console.log('reducer fired', action.type);
-	  switch (action.type) {
-	
-	    case types.UPDATE_PORTFOLIO:
-	      return _extends({}, state, {
-	        portfolio: action.name
-	      });
-	
-	    default:
-	      return state;
-	  }
-	}
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(initialState, 'initialState', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolio.js');
-	
-	  __REACT_HOT_LOADER__.register(portfolio, 'portfolio', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolio.js');
-	}();
-
-	;
-
-/***/ },
-/* 350 */
-/*!**********************************************!*\
-  !*** ./src/store/reducers/portfolioModal.js ***!
-  \**********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	exports.default = modal;
-	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	var initialState = {
-	  modal: false
-	};
-	
-	function modal() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-	  var action = arguments[1];
-	
-	  console.log('reducer fired', action.type);
-	  switch (action.type) {
-	
-	    case types.OPEN_MODAL:
-	      console.log('reducer open modal');
-	      return _extends({}, state, {
-	        modal: true
-	      });
-	    case types.CLOSE_MODAL:
-	      console.log('reducer close modal');
-	      return _extends({}, state, {
-	        modal: false
-	      });
-	
-	    default:
-	      return state;
-	  }
-	}
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(initialState, 'initialState', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolioModal.js');
-	
-	  __REACT_HOT_LOADER__.register(modal, 'modal', '/Users/amitchell/src2/portfolio/src/store/reducers/portfolioModal.js');
-	}();
-
-	;
-
-/***/ },
-/* 351 */
-/*!******************************************!*\
-  !*** ./src/store/reducers/modalImage.js ***!
-  \******************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	exports.default = modalImage;
-	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	var initialState = {
-	  modalImage: null
-	};
-	
-	function modalImage() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-	  var action = arguments[1];
-	
-	  console.log('reducer fired', action.type);
-	  switch (action.type) {
-	
-	    case types.SET_IMAGE:
-	      return _extends({}, state, {
-	        modalImage: action.id
-	      });
-	
-	    default:
-	      return state;
-	  }
-	}
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(initialState, 'initialState', '/Users/amitchell/src2/portfolio/src/store/reducers/modalImage.js');
-	
-	  __REACT_HOT_LOADER__.register(modalImage, 'modalImage', '/Users/amitchell/src2/portfolio/src/store/reducers/modalImage.js');
-	}();
-
-	;
-
-/***/ },
-/* 352 */
 /*!***************************!*\
   !*** ./src/views/code.js ***!
   \***************************/
@@ -39349,7 +38812,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 272);
 	
-	var _projects = __webpack_require__(/*! ../store/constants/projects */ 353);
+	var _projects = __webpack_require__(/*! ../store/constants/projects */ 345);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -39465,7 +38928,7 @@
 	;
 
 /***/ },
-/* 353 */
+/* 345 */
 /*!*****************************************!*\
   !*** ./src/store/constants/projects.js ***!
   \*****************************************/
@@ -39548,6 +39011,541 @@
 	   }
 	
 	   __REACT_HOT_LOADER__.register(Projects, "Projects", "/Users/amitchell/src2/portfolio/src/store/constants/projects.js");
+	}();
+
+	;
+
+/***/ },
+/* 346 */
+/*!****************************!*\
+  !*** ./src/views/about.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 272);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var About = function (_Component) {
+	  _inherits(About, _Component);
+	
+	  function About() {
+	    _classCallCheck(this, About);
+	
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	  }
+	
+	  _createClass(About, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'About'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Hello! My name is Aaron Mitchell and I\'m a User Interface Designer working at Cogo Labs, a startup incubator in Cambridge, MA. My primary responsibilities include designing websites and emails, front end coding and branding work for new projects and verticals. Before joining Cogo Labs in June 2014 I worked as a web designer for Liquid Wireless, a mobile marketing startup owned by Publishers Clearing House.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'I graduated Summa Cum laude from the New Hampshire Institute of Art in 2011 with a major in Illustration. While my primary focus is working digitally, I\'ve also studied oil painting and have shown my work in several exhibitions.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Want to know more? ',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '' },
+	            'Check out my resume'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          ' Want to talk? ',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'contact' },
+	            'Send me a message'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return About;
+	}(_react.Component);
+	
+	var _default = About;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(About, 'About', '/Users/amitchell/src2/portfolio/src/views/about.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/about.js');
+	}();
+
+	;
+
+/***/ },
+/* 347 */
+/*!******************************!*\
+  !*** ./src/views/contact.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Contact = function (_Component) {
+	  _inherits(Contact, _Component);
+	
+	  function Contact() {
+	    _classCallCheck(this, Contact);
+	
+	    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+	  }
+	
+	  _createClass(Contact, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Contact'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Want to talk? Send me a message and let\'s get the conversation started.'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Contact;
+	}(_react.Component);
+	
+	var _default = Contact;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(Contact, 'Contact', '/Users/amitchell/src2/portfolio/src/views/contact.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/contact.js');
+	}();
+
+	;
+
+/***/ },
+/* 348 */
+/*!****************************!*\
+  !*** ./src/views/terms.js ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Terms = function (_Component) {
+	  _inherits(Terms, _Component);
+	
+	  function Terms() {
+	    _classCallCheck(this, Terms);
+	
+	    return _possibleConstructorReturn(this, (Terms.__proto__ || Object.getPrototypeOf(Terms)).apply(this, arguments));
+	  }
+	
+	  _createClass(Terms, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Terms & Conditions'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Terms;
+	}(_react.Component);
+	
+	var _default = Terms;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(Terms, 'Terms', '/Users/amitchell/src2/portfolio/src/views/terms.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/terms.js');
+	}();
+
+	;
+
+/***/ },
+/* 349 */
+/*!*******************************!*\
+  !*** ./src/views/notFound.js ***!
+  \*******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 78);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var NotFound = function (_Component) {
+	  _inherits(NotFound, _Component);
+	
+	  function NotFound() {
+	    _classCallCheck(this, NotFound);
+	
+	    return _possibleConstructorReturn(this, (NotFound.__proto__ || Object.getPrototypeOf(NotFound)).apply(this, arguments));
+	  }
+	
+	  _createClass(NotFound, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          '404. Page Not Found.'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return NotFound;
+	}(_react.Component);
+	
+	var _default = NotFound;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(NotFound, 'NotFound', '/Users/amitchell/src2/portfolio/src/views/notFound.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/notFound.js');
+	}();
+
+	;
+
+/***/ },
+/* 350 */
+/*!*************************************!*\
+  !*** ./src/store/reducers/index.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _gallery = __webpack_require__(/*! ./gallery */ 355);
+	
+	Object.defineProperty(exports, 'gallery', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_gallery).default;
+	  }
+	});
+	
+	var _modal = __webpack_require__(/*! ./modal */ 356);
+	
+	Object.defineProperty(exports, 'modal', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_modal).default;
+	  }
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	;
+
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	}();
+
+	;
+
+/***/ },
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */
+/*!***************************************!*\
+  !*** ./src/store/reducers/gallery.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _redux = __webpack_require__(/*! redux */ 249);
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	var _images = __webpack_require__(/*! ../constants/images */ 340);
+	
+	var allImages = _interopRequireWildcard(_images);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
+	var mappedImages = allImages.images;
+	
+	for (var key in mappedImages) {
+	  mappedImages[key].map(function (image, i) {
+	    image.id = i;
+	    return image;
+	  });
+	}
+	
+	var images = function images() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : mappedImages;
+	  var action = arguments[1];
+	
+	  switch (action.type) {
+	    case types.WHATEVER:
+	      return [].concat(_toConsumableArray(state), [action.images]);
+	    default:
+	      return state;
+	  }
+	};
+	
+	var selected = function selected() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'paintings';
+	  var action = arguments[1];
+	
+	  console.log('reducer fired', action.type);
+	  switch (action.type) {
+	    case types.UPDATE_PORTFOLIO:
+	      return action.name;
+	    default:
+	      return state;
+	  }
+	};
+	
+	var gallery = (0, _redux.combineReducers)({
+	  images: images,
+	  selected: selected
+	});
+	
+	var _default = gallery;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(mappedImages, 'mappedImages', '/Users/amitchell/src2/portfolio/src/store/reducers/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(key, 'key', '/Users/amitchell/src2/portfolio/src/store/reducers/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(images, 'images', '/Users/amitchell/src2/portfolio/src/store/reducers/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(selected, 'selected', '/Users/amitchell/src2/portfolio/src/store/reducers/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(gallery, 'gallery', '/Users/amitchell/src2/portfolio/src/store/reducers/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/store/reducers/gallery.js');
+	}();
+
+	;
+
+/***/ },
+/* 356 */
+/*!*************************************!*\
+  !*** ./src/store/reducers/modal.js ***!
+  \*************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _redux = __webpack_require__(/*! redux */ 249);
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 338);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	var display = function display() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+	  var action = arguments[1];
+	
+	  console.log('reducer fired', action.type);
+	  switch (action.type) {
+	
+	    case types.OPEN_MODAL:
+	      console.log('reducer open modal', state);
+	      return true;
+	
+	    case types.CLOSE_MODAL:
+	      console.log('reducer close modal');
+	      return false;
+	
+	    default:
+	      return state;
+	  }
+	};
+	
+	var selectedImage = function selectedImage() {
+	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+	  var action = arguments[1];
+	
+	  console.log('reducer fired', action.type);
+	  switch (action.type) {
+	
+	    case types.SET_IMAGE:
+	      return action.id;
+	
+	    default:
+	      return state;
+	  }
+	};
+	
+	var modal = (0, _redux.combineReducers)({
+	  display: display,
+	  selectedImage: selectedImage
+	});
+	
+	var _default = modal;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(display, 'display', '/Users/amitchell/src2/portfolio/src/store/reducers/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(selectedImage, 'selectedImage', '/Users/amitchell/src2/portfolio/src/store/reducers/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(modal, 'modal', '/Users/amitchell/src2/portfolio/src/store/reducers/modal.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/store/reducers/modal.js');
 	}();
 
 	;

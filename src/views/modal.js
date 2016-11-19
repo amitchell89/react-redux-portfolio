@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { closeModal } from '../store/actions/ToggleModal'
 import { setImage } from '../store/actions/SetImage'
-import { Images } from '../store/constants/images'
 
 function mapStateToProps(state) {
    return {
-      modalImage: state.modalImage.modalImage
+      selectedImage: state.modal.selectedImage,
+      selectedGallery: state.gallery.selected,
+      images: state.gallery.images
    };
 }
 
@@ -16,7 +17,6 @@ function mapDispatchToProps(dispatch) {
       dispatch(closeModal(e))
     },
     switchImage: (id) => {
-      console.log('hit')
       dispatch(setImage(id))
     }
   }
@@ -25,14 +25,14 @@ function mapDispatchToProps(dispatch) {
 class Modal extends Component {
 
   render() {
-    const {modalImage} = this.props;
+    const { selectedImage, selectedGallery, images } = this.props;
 
-    let image = Images.find(function(s) {
-      return s.id == modalImage;
+    let image = images[selectedGallery].find(function(s) {
+      return s.id == selectedImage;
     });
 
-    const imgPrev = modalImage - 1;
-    const imgNext = modalImage + 1;
+    const imgPrev = image.id - 1;
+    const imgNext = image.id + 1;
     const imgUrl = '../images/' + image.url;
 
     return (

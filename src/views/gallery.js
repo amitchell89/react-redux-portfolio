@@ -2,11 +2,13 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import GalleryItem from './galleryItem'
 import { updatePortfolio } from '../store/actions/UpdatePortfolio'
-import { Images } from '../store/constants/images'
+import { images } from '../store/constants/images'
 
 function mapStateToProps(state) {
+  console.log('state: ', state)
    return {
-    portfolio: state.portfolio.portfolio
+    images: state.gallery.images,
+    selectedGallery: state.gallery.selected
   };
 }
 
@@ -27,14 +29,9 @@ class Gallery extends Component {
   }
 
   render() {
-    const {portfolio} = this.props;
-    let currentPortfolio = Images;
+    const { images, selectedGallery } = this.props;
 
-    currentPortfolio = currentPortfolio.filter(function (x, i) {
-      if (currentPortfolio[i].set == portfolio) {
-        return currentPortfolio[i].url
-      }
-    });
+    let currentPortfolio = images[selectedGallery];
 
     let galleryItems = (
       <div className="gallery__container">

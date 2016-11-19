@@ -7,7 +7,7 @@ import Modal from './modal'
 
 function mapStateToProps(state) {
    return {
-    modal: state.modal.modal
+    modal: state.modal.display
   };
 }
 
@@ -21,7 +21,7 @@ class AppContainer extends Component {
         <Modal />
       );
     }
-    console.log('store', this.props.modal)
+    console.log('store', this.props)
 
     return (
       <div>

@@ -1,13 +1,19 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router'
-import { Projects } from '../store/constants/projects'
 
-export default class Code extends Component {
+function mapStateToProps(state) {
+   return {
+    projects: state.projects
+  };
+}
+class Code extends Component {
   render() {
+    const { projects } = this.props;
 
-    let projects = (
+    let projectsList = (
       <div>
-        {Projects.map(function (s, i) {
+        {projects.map(function (s, i) {
 
           let url = s.url == true ? <div><a href={s.url_link}>{s.url_link}</a></div> : <div>{s.url_link}</div>
           let git = s.git == true ? <div><a href={s.git_link}>{s.git_link}</a></div> : <div>{s.git_link}</div>
@@ -33,8 +39,9 @@ export default class Code extends Component {
         <p>
         Below is a list of projects I have worked on as both a freelancer and as an employee at Cogo Labs.
         </p>
-        {projects}
+        {projectsList}
       </div>
     )
   }
 }
+export default connect(mapStateToProps)(Code);

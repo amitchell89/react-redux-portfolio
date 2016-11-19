@@ -5,7 +5,6 @@ import { updatePortfolio } from '../store/actions/UpdatePortfolio'
 import { images } from '../store/constants/images'
 
 function mapStateToProps(state) {
-  console.log('state: ', state)
    return {
     images: state.gallery.images,
     selectedGallery: state.gallery.selected
@@ -24,10 +23,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 class Gallery extends Component {
-  componentWillMount() {
-    this.setState({})
-  }
-
   render() {
     const { images, selectedGallery } = this.props;
 

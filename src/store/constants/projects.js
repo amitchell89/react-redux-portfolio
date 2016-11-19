@@ -1,4 +1,4 @@
-export const Projects = [
+export const projects = [
     {
        name: "My Personal Portfolio",
        url: true,

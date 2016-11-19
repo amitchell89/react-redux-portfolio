@@ -10,7 +10,7 @@ export const images = {
     {name: "Will It Stay", url: "paintings/Aaron_Mitchell_Painting_Will_It_Stay_700.jpg"}
   ],
 
-  illustrations: [
+  illustration: [
     {url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg"},
     {url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg"},
     {url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg"},

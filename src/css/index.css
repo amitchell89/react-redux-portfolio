@@ -34,7 +34,7 @@ li {
 }
 
 select {
-  padding: 10px 30px 10px 10px;
+  padding: 10px 30px 10px 0px;
   font-size: 1rem;
   background: none;
   border: 0;
@@ -45,6 +45,7 @@ select {
    appearance: none;
    position: relative;
    text-align: left;
+  cursor: pointer;
 }
 
 select:focus, select:active {
@@ -53,6 +54,9 @@ select:focus, select:active {
   border-bottom: 1px solid black;
 }
 
+.select-wrapper {
+  position: relative;
+}
 .select-wrapper:after {
   content: "";
   width: 0;
@@ -60,9 +64,9 @@ select:focus, select:active {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 10px solid #000;
-  position: relative;
-  top: 15px;
-  right: 20px;
+  position: absolute;
+  top: 7px;
+  right: 0;
   pointer-events: none
 }
 
@@ -174,6 +178,22 @@ footer {
   background-position: center;
   float: left;
   margin: 0 1rem 2rem 1rem;
+  cursor: pointer;
+}
+
+/* About Styles */
+.about--portrait {
+  float: left;
+  width: 300px;
+}
+.about--portrait img {
+  width: 100%;
+  height: auto;
+}
+.about--copy {
+  float: left;
+  margin-left: 2rem;
+  width: calc(100% - 300px - 2rem);
 }
 
 /* Media Queries */

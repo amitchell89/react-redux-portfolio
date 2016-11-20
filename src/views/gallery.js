@@ -58,14 +58,14 @@ class Gallery extends Component {
       </span>
     )
 
-          // <option value="paintings">Paintings</option>
-          // <option value="illustrations">Illustrations</option>
-          // <option value="design">Design</option>
-          // <option value="posters">Posters</option>
-          // <option value="comics">Comics</option>
-          // <option value="circular">Circular</option>
-          // <option value="drawings">Drawings</option>
-          // <option value="collage">Collage</option>
+    // <option value="paintings">Paintings</option>
+    // <option value="illustrations">Illustrations</option>
+    // <option value="design">Design</option>
+    // <option value="posters">Posters</option>
+    // <option value="comics">Comics</option>
+    // <option value="circular">Circular</option>
+    // <option value="drawings">Drawings</option>
+    // <option value="collage">Collage</option>
 
     // let list = (
     //   <ul className="gallery__nav">
@@ -79,9 +79,11 @@ class Gallery extends Component {
 
     return (
       <div>
+        <div className="gallery__nav">
         {filters}
         <p>Set: {selectedGalleryClean}</p>
         <p>Year: test</p>
+        </div>
         {galleryItems}
       </div>
     )

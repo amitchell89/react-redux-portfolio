@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import GalleryItem from './galleryItem'
-import { updatePortfolio } from '../store/actions/UpdatePortfolio'
+import { updateGallery } from '../store/actions/UpdateGallery'
 import { images } from '../store/constants/images'
+import { browserHistory } from 'react-router'
+
 
 function mapStateToProps(state) {
    return {
@@ -17,12 +19,28 @@ function mapDispatchToProps(dispatch) {
     //   dispatch(updatePortfolio(gallery))
     // }
     filterGallery: (event) => {
-      dispatch(updatePortfolio(event.target.value))
+      dispatch(updateGallery(event.target.value))
+      browserHistory.push('/gallery/' + event.target.value)
+    },
+    updateGalleryOnLoad: (gallery) => {
+      dispatch(updateGallery(gallery))
     }
   }
 }
 
 class Gallery extends Component {
+
+  componentDidMount() {
+    if (this.props.params.set) {
+      for (var key in this.props.images) {
+        if (this.props.params.set == key ) {
+          this.props.updateGalleryOnLoad(this.props.params.set);
+          break;
+        }
+      }
+    }
+  }
+
   render() {
     const { images, selectedGallery } = this.props;
 

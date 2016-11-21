@@ -35,7 +35,7 @@ var config = {
     ]
   },
   devServer: {
-    contentBase: "./src",
+    contentBase: APP_DIR,
     hot: true,
     historyApiFallback: true
   },

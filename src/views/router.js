@@ -25,7 +25,7 @@ export default class Routes extends Component {
         <Router history={browserHistory}>
           <Route path='/' component={AppContainer}>
             <IndexRoute component={About} />
-            <Route path='/gallery' component={Gallery} />
+            <Route path='/gallery(/:set)' component={Gallery} />
             <Route path='/code' component={Code} />
             <Route path='/contact' component={Contact} />
             <Route path='/terms' component={Terms} />

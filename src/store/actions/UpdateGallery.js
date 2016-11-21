@@ -1,9 +1,9 @@
 import * as types from '../constants/ActionTypes';
 
-export function updatePortfolio(name) {
+export function updateGallery(name) {
   console.log('action dispatched', name)
   return {
-    type: types.UPDATE_PORTFOLIO,
+    type: types.UPDATE_GALLERY,
     name
   };
 }

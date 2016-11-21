@@ -26,7 +26,7 @@ const images = (state = mappedImages, action) => {
 const selected = (state = 'paintings', action) => {
   console.log('reducer fired', action.type)
   switch (action.type) {
-    case types.UPDATE_PORTFOLIO:
+    case types.UPDATE_GALLERY:
       return action.name;
     default:
       return state;

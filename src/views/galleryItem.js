@@ -9,8 +9,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    openModal: (id, e) => {
-      dispatch(openModal(e))
+    openModal: (id) => {
+      dispatch(openModal())
       dispatch(setImage(id))
     }
   }

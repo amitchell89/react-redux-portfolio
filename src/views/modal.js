@@ -33,7 +33,7 @@ class Modal extends Component {
 
     const imgPrev = image.id - 1;
     const imgNext = image.id + 1;
-    const imgUrl = '../images/' + image.url;
+    const imgUrl = '/../images/' + image.url;
 
     return (
       <div className="modal">

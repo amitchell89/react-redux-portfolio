@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import GalleryItem from './galleryItem'
-import { updateGallery } from '../store/actions/UpdateGallery'
-import { images } from '../store/constants/images'
 import { browserHistory } from 'react-router'
+import { updateGallery } from '../store/actions/UpdateGallery'
+import { openModal } from '../store/actions/ToggleModal'
+import { setImage } from '../store/actions/SetImage'
+import GalleryItem from './galleryItem'
 
 
 function mapStateToProps(state) {
@@ -24,6 +25,10 @@ function mapDispatchToProps(dispatch) {
     },
     updateGalleryOnLoad: (gallery) => {
       dispatch(updateGallery(gallery))
+    },
+    openModal: (id) => {
+      dispatch(openModal())
+      dispatch(setImage(id))
     }
   }
 }
@@ -38,6 +43,9 @@ class Gallery extends Component {
           break;
         }
       }
+    }
+    if (this.props.params.image) {
+      this.props.openModal(this.props.params.image)
     }
   }
 
@@ -54,8 +62,6 @@ class Gallery extends Component {
         )}.bind(this))}
       </div>
     )
-
-    console.log('images', images)
 
     let galleryList = [];
 

@@ -4,12 +4,14 @@ import { design } from './gallery_design'
 import { posters } from './gallery_posters'
 import { collage } from './gallery_collage'
 import { circular } from './gallery_circular'
+import { comics } from './gallery_comics'
 
 export const images = {
   illustration: illustration,
   design: design,
   paintings: paintings,
   posters: posters,
+  comics: comics,
   collage: collage,
   circular: circular
 }

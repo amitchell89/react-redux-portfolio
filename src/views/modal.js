@@ -40,9 +40,9 @@ class Modal extends Component {
         <div className="site_wrapper">
           <div className="modal__info">
             <p>Name: {image.name}</p>
-            <p>Year: </p>
-            <p>Medium: </p>
-            <p>Description: </p>
+            <p>Year: {image.year}</p>
+            <p>Medium: {image.medium}</p>
+            <p>Description: {image.about}</p>
             <button onClick={this.props.switchImage.bind(this, imgPrev)}>Previous</button>
             <button onClick={this.props.switchImage.bind(this, imgNext)}>Next</button>
             <button onClick={this.props.closeModal}>Close Modal</button>

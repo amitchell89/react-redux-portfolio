@@ -159,6 +159,9 @@ footer {
 
 /* Gallery Styles */
 
+.list--selected {
+  font-weight: bold;
+}
 .gallery__nav {
   width: 136px;
   float: left;

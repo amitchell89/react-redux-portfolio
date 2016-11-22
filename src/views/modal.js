@@ -48,11 +48,15 @@ class Modal extends Component {
 
     let prevClass = 'btn--modal'
     let nextClass = 'btn--modal'
+    let prevDisabled = false;
+    let nextDisabled = false;
     if (prevId < 0) {
       prevClass = prevClass + ' btn--modal--disabled'
+      prevDisabled = true;
     }
     if (nextId >= images[selectedGallery].length) {
       nextClass = nextClass + ' btn--modal--disabled'
+      nextDisabled = true;
     }
 
     return (
@@ -64,8 +68,8 @@ class Modal extends Component {
             <p>Medium: {image.medium}</p>
             <p>Description: {image.about}</p>
             <div className="modal__buttons">
-              <button className={prevClass} onClick={this.props.switchImage.bind(this, selectedGallery, prevId)}>&lsaquo;</button>
-              <button className={nextClass} onClick={this.props.switchImage.bind(this, selectedGallery, nextId)}>&rsaquo;</button>
+              <button className={prevClass} disabled={prevDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, prevId)}>&lsaquo;</button>
+              <button className={nextClass} disabled={nextDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, nextId)}>&rsaquo;</button>
               <button className="btn--modal" onClick={this.props.closeModal.bind(this, selectedGallery)}>x</button>
             </div>
           </div>

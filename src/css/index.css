@@ -177,11 +177,13 @@ footer {
 .modal__info {
   color: #ffffff;
   font-size: 0.875rem;
-  padding: 1rem;
+  padding: 2rem;
   margin-right: 2rem;
   width: 300px;
   float: left;
   box-sizing: border-box;
+  background: #111;
+  box-shadow: 0 0 25px #000000;
 }
 .modal__img {
   float: left;
@@ -191,6 +193,7 @@ footer {
 .modal__img img {
   height: 100%;
   width: auto;
+  box-shadow: 0 0 25px #000000;
 }
 .modal__buttons {
   margin-top: 3rem;

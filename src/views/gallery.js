@@ -18,6 +18,7 @@ function mapDispatchToProps(dispatch) {
   return {
     onClick: (gallery) => {
       dispatch(updateGallery(gallery))
+       browserHistory.push('/gallery/' + gallery)
     },
     // filterGallery: (event) => {
     //   dispatch(updateGallery(event.target.value))

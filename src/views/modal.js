@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router'
 import { closeModal } from '../store/actions/ToggleModal'
 import { setImage } from '../store/actions/SetImage'
 
@@ -13,11 +14,16 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    closeModal: (e) => {
-      dispatch(closeModal(e))
+    closeModal: (gallery, e) => {
+      dispatch(closeModal())
+      browserHistory.push('/gallery/' + gallery)
     },
-    switchImage: (id) => {
+    switchImage: (gallery, id) => {
+      if (id < 0) {
+        return;
+      }
       dispatch(setImage(id))
+      browserHistory.push('/gallery/' + gallery + '/' + id)
     }
   }
 }
@@ -30,6 +36,11 @@ class Modal extends Component {
     let image = images[selectedGallery].find(function(s) {
       return s.id == selectedImage;
     });
+
+    if (image == null) {
+      // close modal if id is not found
+      this.props.closeModal(selectedGallery)
+    }
 
     const prevId = image.id - 1;
     const nextId = image.id + 1;
@@ -53,9 +64,9 @@ class Modal extends Component {
             <p>Medium: {image.medium}</p>
             <p>Description: {image.about}</p>
             <div className="modal__buttons">
-              <button className={prevClass} onClick={this.props.switchImage.bind(this, prevId)}>&lsaquo;</button>
-              <button className={nextClass} onClick={this.props.switchImage.bind(this, nextId)}>&rsaquo;</button>
-              <button className="btn--modal" onClick={this.props.closeModal}>x</button>
+              <button className={prevClass} onClick={this.props.switchImage.bind(this, selectedGallery, prevId)}>&lsaquo;</button>
+              <button className={nextClass} onClick={this.props.switchImage.bind(this, selectedGallery, nextId)}>&rsaquo;</button>
+              <button className="btn--modal" onClick={this.props.closeModal.bind(this, selectedGallery)}>x</button>
             </div>
           </div>
           <div className="modal__img">

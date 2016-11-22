@@ -7,7 +7,7 @@ export const paintings =  [
     url: "paintings/Aaron_Mitchell_Painting_2011_700.jpg"
   },
   {
-    name: "Does This Look Good",
+    name: "Does This Look Good?",
     year: "2011",
     medium: "Oil",
     about: "",
@@ -21,7 +21,7 @@ export const paintings =  [
     url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg"
   },
   {
-    name: "Is It Fresh",
+    name: "Is It Fresh?",
     year: "2011",
     medium: "Oil",
     about: "",
@@ -42,14 +42,14 @@ export const paintings =  [
     url: "paintings/Aaron_Mitchell_Painting_The_Black_Ring_700.jpg"
   },
   {
-    name: "What Did You Say",
+    name: "What Did You Say?",
     year: "2011",
     medium: "Oil",
     about: "",
     url: "paintings/Aaron_Mitchell_Painting_What_Did_You_Say_700.jpg"
   },
   {
-    name: "Will It Stay",
+    name: "Will It Stay?",
     year: "2011",
     medium: "Oil",
     about: "",

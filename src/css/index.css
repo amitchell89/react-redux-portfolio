@@ -57,6 +57,7 @@ select:focus, select:active {
 .select-wrapper {
   position: relative;
 }
+
 .select-wrapper:after {
   content: "";
   width: 0;
@@ -70,11 +71,20 @@ select:focus, select:active {
   pointer-events: none
 }
 
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
 h1 {
   font-weight: 300;
   margin: 0;
   font-family: 'Ubuntu', helvetica, arial, sans-serif;
 }
+
 h2, h4 {
   font-family: 'Ubuntu', helvetica, arial, sans-serif;
 }
@@ -124,39 +134,6 @@ footer {
   padding: 2rem 0;
 }
 
-/* Modal Styles */
-
-.modal {
-  background: rgba(0,0,0,0.9);
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: auto;
-  padding: 2rem 0;
-}
-.modal__info {
-  color: #ffffff;
-  font-size: 0.875rem;
-  padding: 1rem;
-  margin-right: 2rem;
-  width: 300px;
-  float: left;
-  border: 1px solid white;
-  box-sizing: border-box;
-}
-.modal__img {
-  float: left;
-  width: calc(100% - 300px - 2rem);
-}
-.modal__img img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-}
-
 /* Gallery Styles */
 
 .list--selected {
@@ -184,7 +161,57 @@ footer {
   cursor: pointer;
 }
 
+/* Modal Styles */
+
+.modal {
+  background: rgba(0,0,0,0.9);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  padding: 2rem 0;
+}
+.modal__info {
+  color: #ffffff;
+  font-size: 0.875rem;
+  padding: 1rem;
+  margin-right: 2rem;
+  width: 300px;
+  float: left;
+  box-sizing: border-box;
+}
+.modal__img {
+  float: left;
+  width: calc(100% - 300px - 2rem);
+  height: calc(100vh - 4rem);
+}
+.modal__img img {
+  height: 100%;
+  width: auto;
+}
+.modal__buttons {
+  margin-top: 3rem;
+}
+
+.btn--modal {
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-right: 1rem;
+  padding: 0.25rem 1rem 0.5rem;
+  font-size: 1.5rem;
+}
+.btn--modal--disabled {
+  color: #444444;
+  border: 2px solid #444444;
+}
+
 /* About Styles */
+
 .about--portrait {
   float: left;
   width: 300px;
@@ -198,5 +225,3 @@ footer {
   margin-left: 2rem;
   width: calc(100% - 300px - 2rem);
 }
-
-/* Media Queries */

@@ -82,15 +82,6 @@ class Gallery extends Component {
     //   </span>
     // )
 
-    // <option value="paintings">Paintings</option>
-    // <option value="illustrations">Illustrations</option>
-    // <option value="design">Design</option>
-    // <option value="posters">Posters</option>
-    // <option value="comics">Comics</option>
-    // <option value="circular">Circular</option>
-    // <option value="drawings">Drawings</option>
-    // <option value="collage">Collage</option>
-
     let list = (
       <ul className="gallery__nav">
         {galleryList.map(function (s, i) {
@@ -104,8 +95,6 @@ class Gallery extends Component {
         )}.bind(this))}
       </ul>
     )
-
-    let selectedGalleryClean = this.props.selectedGallery[0].toUpperCase() + this.props.selectedGallery.slice(1);
 
     return (
       <div>

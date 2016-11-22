@@ -31,9 +31,18 @@ class Modal extends Component {
       return s.id == selectedImage;
     });
 
-    const imgPrev = image.id - 1;
-    const imgNext = image.id + 1;
+    const prevId = image.id - 1;
+    const nextId = image.id + 1;
     const imgUrl = '/../images/' + image.url;
+
+    let prevClass = 'btn--modal'
+    let nextClass = 'btn--modal'
+    if (prevId < 0) {
+      prevClass = prevClass + ' btn--modal--disabled'
+    }
+    if (nextId >= images[selectedGallery].length) {
+      nextClass = nextClass + ' btn--modal--disabled'
+    }
 
     return (
       <div className="modal">
@@ -43,9 +52,11 @@ class Modal extends Component {
             <p>Year: {image.year}</p>
             <p>Medium: {image.medium}</p>
             <p>Description: {image.about}</p>
-            <button onClick={this.props.switchImage.bind(this, imgPrev)}>Previous</button>
-            <button onClick={this.props.switchImage.bind(this, imgNext)}>Next</button>
-            <button onClick={this.props.closeModal}>Close Modal</button>
+            <div className="modal__buttons">
+              <button className={prevClass} onClick={this.props.switchImage.bind(this, prevId)}>&lsaquo;</button>
+              <button className={nextClass} onClick={this.props.switchImage.bind(this, nextId)}>&rsaquo;</button>
+              <button className="btn--modal" onClick={this.props.closeModal}>x</button>
+            </div>
           </div>
           <div className="modal__img">
             <img src={imgUrl} />

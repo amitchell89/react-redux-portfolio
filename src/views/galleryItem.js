@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router'
 import { openModal } from '../store/actions/ToggleModal'
 import { setImage } from '../store/actions/SetImage'
 
 function mapStateToProps(state) {
-   return {};
+   return {
+    selectedGallery: state.gallery.selected
+   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    openModal: (id, e) => {
-      dispatch(openModal(e))
+    openModal: (gallery, id) => {
+      dispatch(openModal())
       dispatch(setImage(id))
+      browserHistory.push('/gallery/' + gallery + '/' + id)
     }
   }
 }
@@ -19,14 +23,14 @@ function mapDispatchToProps(dispatch) {
 class GalleryItem extends Component {
   render() {
 
-    const { image, id } = this.props;
+    const { image, id, selectedGallery } = this.props;
 
     const bkgdImg = {
       backgroundImage: 'url(../images/' + image + ')',
     }
 
     return (
-      <div className="gallery__item" style={bkgdImg} onClick={this.props.openModal.bind(this, id)}>
+      <div className="gallery__item" style={bkgdImg} onClick={this.props.openModal.bind(this, selectedGallery, id)}>
       </div>
     )
   }

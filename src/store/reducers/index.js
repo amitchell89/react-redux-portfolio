@@ -1,3 +1,14 @@
-export { default as gallery } from './gallery';
-export { default as modal } from './modal'
-export { default as projects } from './projects'
+import { combineReducers, createStore } from 'redux';
+import gallery from './gallery';
+import modal from './modal'
+import projects from './projects'
+
+const reducer = combineReducers({
+  gallery,
+  modal,
+  projects
+});
+
+const store = createStore(reducer);
+
+export default store;

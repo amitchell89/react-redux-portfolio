@@ -6,7 +6,7 @@ const display = (state = false, action) => {
   switch (action.type) {
 
     case types.OPEN_MODAL:
-      console.log('reducer open modal', state)
+      console.log('reducer open modal')
       return true;
 
     case types.CLOSE_MODAL:
@@ -19,7 +19,7 @@ const display = (state = false, action) => {
 }
 
 const selectedImage = (state = null, action) => {
-  console.log('reducer fired', action.type)
+  console.log('reducer fired', action.type, action.id)
   switch (action.type) {
 
     case types.SET_IMAGE:

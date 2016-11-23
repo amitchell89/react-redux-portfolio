@@ -5,10 +5,13 @@ import * as allImages from '../constants/images';
 let mappedImages = allImages.images;
 
 for (var key in mappedImages) {
+  mappedImages[key] = mappedImages[key].filter((image, i) => {
+    return image.hidden !== true;
+  });
   mappedImages[key].map((image, i) => {
     image.id = i;
     return image;
-  })
+  });
 }
 
 const images = (state = mappedImages, action) => {
@@ -23,7 +26,7 @@ const images = (state = mappedImages, action) => {
   }
 }
 
-const selected = (state = 'paintings', action) => {
+const selected = (state = 'illustration', action) => {
   console.log('reducer fired', action.type)
   switch (action.type) {
     case types.UPDATE_GALLERY:

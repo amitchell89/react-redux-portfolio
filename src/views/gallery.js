@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import GalleryItem from './galleryItem'
-import { updateGallery } from '../store/actions/UpdateGallery'
-import { images } from '../store/constants/images'
 import { browserHistory } from 'react-router'
+import { updateGallery } from '../store/actions/UpdateGallery'
+import { openModal } from '../store/actions/ToggleModal'
+import { setImage } from '../store/actions/SetImage'
+import GalleryItem from './galleryItem'
 
 
 function mapStateToProps(state) {
@@ -15,15 +16,20 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    // onClick: (gallery, e) => {
-    //   dispatch(updatePortfolio(gallery))
-    // }
-    filterGallery: (event) => {
-      dispatch(updateGallery(event.target.value))
-      browserHistory.push('/gallery/' + event.target.value)
+    onClick: (gallery) => {
+      dispatch(updateGallery(gallery))
+       browserHistory.push('/gallery/' + gallery)
     },
+    // filterGallery: (event) => {
+    //   dispatch(updateGallery(event.target.value))
+    //   browserHistory.push('/gallery/' + event.target.value)
+    // },
     updateGalleryOnLoad: (gallery) => {
       dispatch(updateGallery(gallery))
+    },
+    openModal: (id) => {
+      dispatch(openModal())
+      dispatch(setImage(id))
     }
   }
 }
@@ -38,6 +44,9 @@ class Gallery extends Component {
           break;
         }
       }
+    }
+    if (this.props.params.image) {
+      this.props.openModal(this.props.params.image)
     }
   }
 
@@ -55,52 +64,43 @@ class Gallery extends Component {
       </div>
     )
 
-    console.log('images', images)
-
     let galleryList = [];
 
     for (var key in images) {
       galleryList.push(key)
     }
 
-    let filters = (
-      <span className="select-wrapper">
-        <select title="select" onChange={this.props.filterGallery}>
-          <option selected disabled>Select a Portfolio</option>
-          {galleryList.map(function (s, i) {
-            let name = s[0].toUpperCase() + s.slice(1);
-            return (
-            <option value={s}>{name}</option>
-          )}.bind(this))}
-        </select>
-      </span>
-    )
-
-    // <option value="paintings">Paintings</option>
-    // <option value="illustrations">Illustrations</option>
-    // <option value="design">Design</option>
-    // <option value="posters">Posters</option>
-    // <option value="comics">Comics</option>
-    // <option value="circular">Circular</option>
-    // <option value="drawings">Drawings</option>
-    // <option value="collage">Collage</option>
-
-    // let list = (
-    //   <ul className="gallery__nav">
-    //     <li onClick={this.props.onClick.bind(this, 'paintings')}>Paintings</li>
-    //     <li onClick={this.props.onClick.bind(this, 'illustrations')}>Illustrations</li>
-    //     <li>Portfolio 3</li>
-    //   </ul>
+    // let filters = (
+    //   <span className="select-wrapper">
+    //     <select title="select" onChange={this.props.filterGallery}>
+    //       <option selected disabled>Select a Portfolio</option>
+    //       {galleryList.map(function (s, i) {
+    //         let name = s[0].toUpperCase() + s.slice(1);
+    //         return (
+    //         <option value={s}>{name}</option>
+    //       )}.bind(this))}
+    //     </select>
+    //   </span>
     // )
 
-    let selectedGalleryClean = this.props.selectedGallery[0].toUpperCase() + this.props.selectedGallery.slice(1);
+    let list = (
+      <ul className="gallery__nav">
+        {galleryList.map(function (s, i) {
+          let name = s[0].toUpperCase() + s.slice(1);
+          let listClass = null;
+          if (s == selectedGallery) {
+            listClass = 'list--selected'
+          }
+          return (
+           <li className={listClass} onClick={this.props.onClick.bind(this, s)}>{name}</li>
+        )}.bind(this))}
+      </ul>
+    )
 
     return (
       <div>
         <div className="gallery__nav">
-        {filters}
-        <p>Set: {selectedGalleryClean}</p>
-        <p>Year: test</p>
+        {list}
         </div>
         {galleryItems}
       </div>

@@ -9,13 +9,15 @@ export default class Contact extends Component {
         Contact
         </h2>
         <p>Want to talk? Send me a message and let's get the conversation started.</p>
-        <label>Your Name</label>
-        <input placeholder="Your Name"></input>
-        <label>Your Email Address</label>
-        <input placeholder="Your Email"></input>
-        <label>Your Message</label>
-        <textarea placeholder="Your Message" rows="7"></textarea>
-        <button className="btn--contact" onclick={this.props.transporter.sendMail}>Send Message</button>
+        <form id="contact_form" method="post">
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="Your Name"></input>
+          <label>Your Email Address</label>
+          <input type="text" name="email" placeholder="Your Email"></input>
+          <label>Your Message</label>
+          <textarea type="text" name="message" placeholder="Your Message" rows="7"></textarea>
+          <button type="submit" form="contact_form" value="Submit" className="btn--contact">Send Message</button>
+        </form>
       </div>
     )
   }

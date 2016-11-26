@@ -5,3 +5,6 @@ node_modules
 
 # Ignore hot-update files
 src/dist
+
+# Ignore debug
+npm-debug.log

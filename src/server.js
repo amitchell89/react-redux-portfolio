@@ -11,10 +11,13 @@ app.use(bodyParser.json());
 // create reusable transporter object using the default SMTP transport
 // NodeMailer 0.7
 let password = process.env.PASSWORD
+let user = process.env.USER
+let service = process.env.SERVICE
+
 var transporter = nodemailer.createTransport("SMTP", {
-    service: 'AOL',
+    service: service,
     auth: {
-        user: "sendmeyothings@aol.com",
+        user: user,
         pass: password
     }
 });
@@ -24,7 +27,7 @@ app.get('/*', function (req, res) {
 })
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+  console.log('Site listening on port 3000!')
 })
 
 app.post('/contact', function(req, res) {
@@ -44,10 +47,11 @@ app.post('/contact', function(req, res) {
 
   // send mail with defined transport object
   transporter.sendMail(mailOptions, function(error, info){
-      if(error){
-          return console.log(error);
-      }
-      console.log('Message sent: ' + info);
+    if(error){
+        res.redirect('/post?post=fail')
+        return console.log(error);
+    }
+    res.redirect('/post?post=success')
   });
   transporter.close();
 });

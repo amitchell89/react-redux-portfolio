@@ -38,7 +38,7 @@ app.post('/contact', function(req, res) {
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-      from: '"Aaron Mitchells Portfolio" <sendmeyothings@aol.com>', // sender address
+      from: '"Aaron Mitchells Portfolio" <' + user + '>', // sender address
       to: 'aaronmitchellart@gmail.com', // list of receivers
       subject: 'New Message From Your Portfolio Site', // Subject line
       text: email_message, // plaintext body

@@ -15,8 +15,8 @@ class Code extends Component {
       <div>
         {projects.map(function (s, i) {
 
-          let url = s.url == true ? <div><a href={s.url_link}>{s.url_link}</a></div> : <div>{s.url_link}</div>
-          let git = s.git == true ? <div><a href={s.git_link}>{s.git_link}</a></div> : <div>{s.git_link}</div>
+          let url = s.url == true ? <div><a href={s.url_link} target="_blank">{s.url_link}</a></div> : <div>{s.url_link}</div>
+          let git = s.git == true ? <div><a href={s.git_link} target="_blank">{s.git_link}</a></div> : <div>{s.git_link}</div>
 
           return (
           <div>

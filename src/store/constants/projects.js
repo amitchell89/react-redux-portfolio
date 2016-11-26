@@ -2,7 +2,7 @@ export const projects = [
     {
        name: "My Personal Portfolio",
        url: true,
-       url_link: "www.mitchellaaron.com",
+       url_link: "http://www.mitchellaaron.com",
        git: true,
        git_link: "https://github.com/amitchell89/react-redux-portfolio",
        about: "This website is built using React and Redux."
@@ -10,7 +10,7 @@ export const projects = [
     {
        name: "Link Ventures",
        url: true,
-       url_link: "www.linkventures.com",
+       url_link: "http://www.linkventures.com",
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "Link Ventures is a portfolio site for the investment group that backed my work Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS."
@@ -18,7 +18,7 @@ export const projects = [
     {
        name: "Umbrella Check",
        url: true,
-       url_link: "www.umbrellacheck.com",
+       url_link: "http://www.umbrellacheck.com",
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "Umbrella Check is a weather site I worked on at Cogo Labs. I created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker."
@@ -26,7 +26,7 @@ export const projects = [
     {
        name: "Thrive Medicare",
        url: true,
-       url_link: "www.thrivemedicare.com",
+       url_link: "http://www.thrivemedicare.com",
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery."
@@ -34,7 +34,7 @@ export const projects = [
     {
        name: "Cogo Labs 404 Page",
        url: true,
-       url_link: "www.cogolabs.com/404",
+       url_link: "http://www.cogolabs.com/404",
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse."
@@ -42,7 +42,7 @@ export const projects = [
     {
        name: "Schillaci Guitars",
        url: true,
-       url_link: "www.schillaciguitars.com",
+       url_link: "http://www.schillaciguitars.com",
        git: true,
        git_link: "https://github.com/amitchell89/schillaci_guitars",
        about: "Schillaci Guitars is a website I designed and built as a freelancer in 2012. It was made for a guitar luthier to showcase his past projects and to promote sales. It was built using PHP without a framework or CMS. It utilizes fancybox for the modal gallery on each guitar page and a phpMyAdmin database for serving up images and information about the different guitars. The site is still in use and occasionally updated."
@@ -50,7 +50,7 @@ export const projects = [
     {
        name: "Fuck 2016",
        url: true,
-       url_link: "www.fuck2016.com",
+       url_link: "http://www.fuck2016.com",
        git: true,
        git_link: "https://github.com/amitchell89/fuck2016",
        about: "Fuck2016 is brand I developed to capitalize on the 2016 presidential election. The site was quickly stood up without a framework to host a Shopify iframed online store. The products were created using theprintful.com, a site that allows you to upload designs, create products based on those designs, and fulfill individually printed orders received from your Shopify store. The site features Facebook and Twitter widgets, as well as Google Analytics tracking. I also maintained Facebook and Twitter pages for the brand. For advertising I was shut out of my initial plan to advertise on Facebook due to their profanity guidelines, but did end up seeing some sales from my Facebook page, Reddit and organic traffic after the results of the election and a John Oliver segment that happened to use the same message."

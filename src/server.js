@@ -3,7 +3,9 @@ var app = express()
 var path    = require("path");
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+var helmet = require('helmet')
 
+app.use(helmet())
 app.use(express.static('src'))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -15,11 +17,11 @@ let user = process.env.USER
 let service = process.env.SERVICE
 
 var transporter = nodemailer.createTransport("SMTP", {
-    service: service,
-    auth: {
-        user: user,
-        pass: password
-    }
+  service: service,
+  auth: {
+    user: user,
+    pass: password
+  }
 });
 
 app.get('/*', function (req, res) {
@@ -32,17 +34,15 @@ app.listen(3000, function () {
 
 app.post('/contact', function(req, res) {
   var payload = req.body;
-  console.log('post recieved', payload)
-
-  var email_message = 'From: ' + payload.name + '<br />Email: ' + payload.email + '<br />Message: ' + payload.message;
+  var email_message = '<b>From:</b> ' + payload.name + '<br /><br /><b>Email:</b> ' + payload.email + '<br /><br /><b>Message:</b> ' + payload.message;
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-      from: '"Aaron Mitchells Portfolio" <' + user + '>', // sender address
-      to: 'aaronmitchellart@gmail.com', // list of receivers
-      subject: 'New Message From Your Portfolio Site', // Subject line
-      text: email_message, // plaintext body
-      html: email_message // html body
+    from: '"Aaron Mitchells Portfolio" <' + user + '>', // sender address
+    to: 'aaronmitchellart@gmail.com', // list of receivers
+    subject: 'New Message From Your Portfolio Site', // Subject line
+    text: email_message, // plaintext body
+    html: email_message // html body
   };
 
   // send mail with defined transport object
@@ -55,6 +55,3 @@ app.post('/contact', function(req, res) {
   });
   transporter.close();
 });
-
-
-

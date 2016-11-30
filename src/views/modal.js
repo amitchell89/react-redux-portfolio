@@ -63,10 +63,10 @@ class Modal extends Component {
       <div className="modal">
         <div className="site_wrapper">
           <div className="modal__info">
-            <p>Name: {image.name}</p>
-            <p>Year: {image.year}</p>
-            <p>Medium: {image.medium}</p>
-            <p>Description: {image.about}</p>
+            <p>{image.name}</p>
+            <p>{image.medium}</p>
+            <p>{image.year}</p>
+            <p>{image.about}</p>
             <div className="modal__buttons">
               <button className={prevClass} disabled={prevDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, prevId)}>&lsaquo;</button>
               <button className={nextClass} disabled={nextDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, nextId)}>&rsaquo;</button>

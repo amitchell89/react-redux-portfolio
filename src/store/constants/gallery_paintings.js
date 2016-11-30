@@ -16,7 +16,7 @@ export const paintings =  [
   {
     name: "In Between",
     year: "2011",
-    medium: "",
+    medium: "Oil",
     about: "",
     url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg"
   },

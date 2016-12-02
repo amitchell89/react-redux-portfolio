@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": "./node_modules/.bin/webpack -d --watch",
     "build": "webpack -p",
-    "start": "webpack-dev-server --hot --inline",
+    "start--old": "webpack-dev-server --hot --inline",
     "server": "node src/server.js"
   },
   "author": "Aaron Mitchell",

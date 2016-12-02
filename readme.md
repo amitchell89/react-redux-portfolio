@@ -2,6 +2,7 @@
 
 ## Built with
 - Node
+- Express
 - React
 - React Router
 - Webpack
@@ -12,6 +13,6 @@
 
 `npm run webpack` : Starts Webpack
 
-`npm run start`: Starts server
+`npm run server`: Starts express server
 
-Visit localhost:8080
+Visit localhost:3000

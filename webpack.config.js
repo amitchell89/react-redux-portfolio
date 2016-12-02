@@ -6,8 +6,6 @@ var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/only-dev-server',
     APP_DIR + '/index.js'
   ],
   output: {
@@ -33,15 +31,7 @@ var config = {
         loader: 'style!css!sass?modules&localIdentName=[name]---[local]---[hash:base64:5]'
       },
     ]
-  },
-  devServer: {
-    contentBase: APP_DIR,
-    hot: true,
-    historyApiFallback: true
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ]
+  }
 };
 
 module.exports = config;

@@ -3,8 +3,8 @@
 #node js
 node_modules
 
-# Ignore hot-update files
-src/dist
-
 # Ignore debug
 npm-debug.log
+
+# Ignore Caddy
+Caddyfile

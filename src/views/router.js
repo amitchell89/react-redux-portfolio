@@ -9,6 +9,7 @@ import Code from './code'
 import About from './about'
 import Contact from './contact'
 import Terms from './terms'
+import Post from './post'
 import NotFound from './notFound'
 
 export default class Routes extends Component {
@@ -26,6 +27,7 @@ export default class Routes extends Component {
             <Route path='/code' component={Code} />
             <Route path='/contact' component={Contact} />
             <Route path='/terms' component={Terms} />
+            <Route path='/post' component={Post} />
             <Route path='*' component={NotFound} />
           </Route>
         </Router>

@@ -22053,7 +22053,7 @@
 	          { history: _reactRouter.browserHistory },
 	          _react2.default.createElement(
 	            _reactRouter.Route,
-	            { path: '/', component: _appContainer2.default },
+	            { path: '/*', component: _appContainer2.default },
 	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _about2.default }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/gallery(/:set)(/:image)', component: _gallery2.default }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _code2.default }),

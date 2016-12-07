@@ -12,9 +12,9 @@ app.use(bodyParser.json());
 
 // create reusable transporter object using the default SMTP transport
 // NodeMailer 0.7
-let password = process.env.PASSWORD
-let user = process.env.USER
-let service = process.env.SERVICE
+var password = process.env.PASSWORD || null
+var user = process.env.USER || null
+var service = process.env.SERVICE || null
 
 var transporter = nodemailer.createTransport("SMTP", {
   service: service,

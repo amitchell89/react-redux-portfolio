@@ -1,0 +1,26 @@
+/* Gallery Styles */
+
+.list--selected {
+  font-weight: bold;
+}
+.gallery__nav {
+  width: 136px;
+  float: left;
+}
+.gallery__nav li {
+  margin-bottom: 0.5rem;
+}
+.gallery__container {
+  width: calc(100% - 136px - 2rem);
+  float: right;
+  margin-left: 2rem;
+}
+.gallery__item {
+  width: 210px;
+  height: 210px;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 0 1rem 2rem 1rem;
+  cursor: pointer;
+}

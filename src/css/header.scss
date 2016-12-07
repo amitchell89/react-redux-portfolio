@@ -1,0 +1,28 @@
+/* Header Styles */
+
+header {
+  border-bottom: 1px solid #eeeeee;
+  height: calc(2rem + 40px);
+  padding-top: 2rem;
+}
+
+header h1 {
+  float: left;
+}
+header h1 a {
+  color: #333333;
+}
+
+.header__nav {
+  float: right;
+  margin-top: 0.75rem;
+}
+.header__nav a {
+  margin-left: 1rem;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 2rem 0;
+}

@@ -11,7 +11,7 @@ var config = {
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
-    publicPath: "'http://localhost:8080/'"
+    publicPath: "http://localhost:3000/dist/"
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.css', 'png', 'svg'],
@@ -30,6 +30,10 @@ var config = {
         test: /\.scss$/,
         loader: 'style!css!sass?sourceMap'
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file?name=[name].[ext]'
+      }
     ]
   }
 };

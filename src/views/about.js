@@ -5,9 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <div className="about--portrait">
-          <img src="../images/Aaron_Mitchell_Portrait.jpg" alt="Aaron Mitchell" />
-        </div>
+        <div className="about--portrait"></div>
         <div className="about--copy">
           <p>
             Hello! My name is Aaron Mitchell and I'm a User Interface Designer working at Cogo Labs, a startup incubator in Cambridge, MA. My primary responsibilities include designing websites and emails, front end coding and branding work for new projects and verticals. Before joining Cogo Labs in June 2014 I worked as a web designer for Liquid Wireless, a mobile marketing startup owned by Publishers Clearing House.

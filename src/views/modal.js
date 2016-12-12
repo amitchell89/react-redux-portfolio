@@ -44,7 +44,9 @@ class Modal extends Component {
 
     const prevId = image.id - 1;
     const nextId = image.id + 1;
-    const imgUrl = '/../images/' + image.url;
+    const bkgdImg = {
+      backgroundImage: 'url(/../images/' + image.url + ')',
+    }
 
     let prevClass = 'btn--modal'
     let nextClass = 'btn--modal'
@@ -67,15 +69,14 @@ class Modal extends Component {
             <p>{image.medium}</p>
             <p>{image.year}</p>
             <p>{image.about}</p>
-            <div className="modal__buttons">
-              <button className={prevClass} disabled={prevDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, prevId)}>&lsaquo;</button>
-              <button className={nextClass} disabled={nextDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, nextId)}>&rsaquo;</button>
-              <button className="btn--modal" onClick={this.props.closeModal.bind(this, selectedGallery)}>x</button>
-            </div>
           </div>
-          <div className="modal__img">
-            <img src={imgUrl} />
+          <div className="modal__buttons">
+            <button className="btn--modal btn--modal--info"><i className="fa fa-info" aria-hidden="true"></i></button>
+            <button className={prevClass} disabled={prevDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, prevId)}><i className="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button className={nextClass} disabled={nextDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, nextId)}><i className="fa fa-chevron-right" aria-hidden="true"></i></button>
+            <button className="btn--modal btn--modal--close" onClick={this.props.closeModal.bind(this, selectedGallery)}><i className="fa fa-times" aria-hidden="true"></i></button>
           </div>
+          <div className="modal__img" style={bkgdImg}></div>
         </div>
       </div>
     )

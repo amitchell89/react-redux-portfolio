@@ -65,8 +65,8 @@
 @media (max-width: 767px) {
   .gallery__nav {
     float: none;
-    width: 150px;
-    margin-bottom: 2rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
   .gallery__container  {
     float: none;
@@ -103,9 +103,6 @@
 }
 
 @media (max-width: 414px) {
-  .gallery__nav {
-    width: 100%;
-  }
   .gallery__item {
     height: calc(100vw - 3rem);
     width: calc(100vw - 3rem);

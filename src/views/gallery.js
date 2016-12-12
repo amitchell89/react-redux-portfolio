@@ -70,21 +70,21 @@ class Gallery extends Component {
       galleryList.push(key)
     }
 
-    // let filters = (
-    //   <span className="select-wrapper">
-    //     <select title="select" onChange={this.props.filterGallery}>
-    //       <option selected disabled>Select a Portfolio</option>
-    //       {galleryList.map(function (s, i) {
-    //         let name = s[0].toUpperCase() + s.slice(1);
-    //         return (
-    //         <option value={s}>{name}</option>
-    //       )}.bind(this))}
-    //     </select>
-    //   </span>
-    // )
+    let filters = (
+      <div className="select-wrapper gallery__nav--select">
+        <select title="select" onChange={this.props.filterGallery}>
+          <option selected disabled>Select a Portfolio</option>
+          {galleryList.map(function (s, i) {
+            let name = s[0].toUpperCase() + s.slice(1);
+            return (
+            <option value={s}>{name}</option>
+          )}.bind(this))}
+        </select>
+      </div>
+    )
 
     let list = (
-      <ul className="gallery__nav">
+      <ul className="gallery__nav--list">
         {galleryList.map(function (s, i) {
           let name = s[0].toUpperCase() + s.slice(1);
           let listClass = null;
@@ -100,6 +100,7 @@ class Gallery extends Component {
     return (
       <div>
         <div className="gallery__nav">
+        {filters}
         {list}
         </div>
         {galleryItems}

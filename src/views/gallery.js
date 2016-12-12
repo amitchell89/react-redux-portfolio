@@ -20,10 +20,10 @@ function mapDispatchToProps(dispatch) {
       dispatch(updateGallery(gallery))
        browserHistory.push('/gallery/' + gallery)
     },
-    // filterGallery: (event) => {
-    //   dispatch(updateGallery(event.target.value))
-    //   browserHistory.push('/gallery/' + event.target.value)
-    // },
+    filterGallery: (event) => {
+      dispatch(updateGallery(event.target.value))
+      browserHistory.push('/gallery/' + event.target.value)
+    },
     updateGalleryOnLoad: (gallery) => {
       dispatch(updateGallery(gallery))
     },

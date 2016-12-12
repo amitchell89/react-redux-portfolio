@@ -18,7 +18,7 @@ header h1 a {
   float: right;
   margin-top: 0.75rem;
 }
-.header__nav a {
+.header__nav a:nth-child(n+2) {
   margin-left: 1rem;
 }
 
@@ -26,4 +26,30 @@ footer {
   clear: both;
   text-align: center;
   padding: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 28px;
+  }
+  .header__nav {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  header {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+  header h1 {
+    float: none;
+    text-align: center;
+  }
+  .header__nav {
+    float: none;
+    text-align: center;
+    margin-top: 0.75rem;
+  }
 }

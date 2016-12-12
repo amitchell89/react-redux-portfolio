@@ -44,6 +44,7 @@ select {
    position: relative;
    text-align: left;
   cursor: pointer;
+  width: 100%;
 }
 
 select:focus, select:active {
@@ -102,4 +103,15 @@ h2, h4 {
 .content_wrapper {
   margin: 2rem 0;
   clear: both;
+}
+
+@media (max-width: 767px) {
+  .content_wrapper {
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 414px) {
+  .site_wrapper {
+    padding: 0 1rem;
+  }
 }

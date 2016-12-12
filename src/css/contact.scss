@@ -24,3 +24,12 @@
   color: #0099ff;
   padding: 1rem;
 }
+
+@media (max-width: 767px) {
+  .contact {
+    max-width: 100%;
+  }
+  .btn--contact {
+    width: 100%;
+  }
+}

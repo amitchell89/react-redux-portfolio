@@ -103,9 +103,12 @@
 }
 
 @media (max-width: 414px) {
+  .gallery__nav {
+    width: 100%;
+  }
   .gallery__item {
-    height: calc(100vw - 4rem);
-    width: calc(100vw - 4rem);
+    height: calc(100vw - 3rem);
+    width: calc(100vw - 3rem);
   }
   .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {
     margin-left: 0;

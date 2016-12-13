@@ -10,7 +10,8 @@ import GalleryItem from './galleryItem'
 function mapStateToProps(state) {
    return {
     images: state.gallery.images,
-    selectedGallery: state.gallery.selected
+    selectedGallery: state.gallery.selected,
+    modal: state.modal.display
   };
 }
 
@@ -49,6 +50,10 @@ class Gallery extends Component {
       this.props.openModal(this.props.params.image)
     }
   }
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   console.log('check', this.props.modal !== nextProps.modal)
+  //   return (this.props.modal !== nextProps.modal)
+  // }
 
   render() {
     const { images, selectedGallery } = this.props;

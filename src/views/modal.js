@@ -30,6 +30,14 @@ function mapDispatchToProps(dispatch) {
 
 class Modal extends Component {
 
+  componentWillMount() {
+    this.setState({info: false})
+  }
+
+  toggleInfo = () => {
+    this.setState({info: !this.state.info})
+  }
+
   render() {
     const { selectedImage, selectedGallery, images } = this.props;
 
@@ -60,18 +68,22 @@ class Modal extends Component {
       nextClass = nextClass + ' btn--modal--disabled'
       nextDisabled = true;
     }
+    let modal__info_classes = 'modal__info'
+    if (this.state.info == true) {
+      modal__info_classes = 'modal__info modal__info--show'
+    }
 
     return (
       <div className="modal">
         <div className="site_wrapper">
-          <div className="modal__info">
+          <div className={modal__info_classes}>
             <p>{image.name}</p>
             <p>{image.medium}</p>
             <p>{image.year}</p>
             <p>{image.about}</p>
           </div>
           <div className="modal__buttons">
-            <button className="btn--modal btn--modal--info"><i className="fa fa-info" aria-hidden="true"></i></button>
+            <button className="btn--modal btn--modal--info" onClick={this.toggleInfo}><i className="fa fa-info" aria-hidden="true"></i></button>
             <button className={prevClass} disabled={prevDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, prevId)}><i className="fa fa-chevron-left" aria-hidden="true"></i></button>
             <button className={nextClass} disabled={nextDisabled} onClick={this.props.switchImage.bind(this, selectedGallery, nextId)}><i className="fa fa-chevron-right" aria-hidden="true"></i></button>
             <button className="btn--modal btn--modal--close" onClick={this.props.closeModal.bind(this, selectedGallery)}><i className="fa fa-times" aria-hidden="true"></i></button>

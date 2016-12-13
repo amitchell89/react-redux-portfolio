@@ -21,7 +21,6 @@ class AppContainer extends Component {
         <Modal />
       );
     }
-    console.log('store', this.props)
 
     return (
       <div>

@@ -73,6 +73,18 @@
   }
   .modal__info {
     display: none;
+    width: 250px;
+    background: rgba(17, 17, 17, 0.9);
+    border: 2px solid #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+  .modal__info--show {
+    display: block;
   }
   .modal__img {
      width: calc(100%);

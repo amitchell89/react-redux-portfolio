@@ -5,7 +5,7 @@ export const projects = [
        url_link: "http://www.mitchellaaron.com",
        git: true,
        git_link: "https://github.com/amitchell89/react-redux-portfolio",
-       about: "This website is built using React and Redux."
+       about: "This website is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css."
     },
     {
        name: "Link Ventures",

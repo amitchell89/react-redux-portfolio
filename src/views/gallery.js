@@ -58,7 +58,9 @@ class Gallery extends Component {
   render() {
     const { images, selectedGallery } = this.props;
 
-    let currentPortfolio = images[selectedGallery];
+    let currentPortfolio = images[selectedGallery].filter(function(n) {
+      return n.hidden !== true;
+    });
 
     let galleryItems = (
       <div className="gallery__container">

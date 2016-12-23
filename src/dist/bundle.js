@@ -73,7 +73,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	__webpack_require__(/*! ./css/index.scss */ 288);
+	__webpack_require__(/*! ./css/index.scss */ 289);
 	
 	_reactDom2.default.render(_react2.default.createElement(_router2.default, null), document.getElementById('app'));
 	;
@@ -22019,15 +22019,15 @@
 	
 	var _terms2 = _interopRequireDefault(_terms);
 	
-	var _privacy = __webpack_require__(/*! ./privacy */ 293);
+	var _privacy = __webpack_require__(/*! ./privacy */ 286);
 	
 	var _privacy2 = _interopRequireDefault(_privacy);
 	
-	var _post = __webpack_require__(/*! ./post */ 286);
+	var _post = __webpack_require__(/*! ./post */ 287);
 	
 	var _post2 = _interopRequireDefault(_post);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 287);
+	var _notFound = __webpack_require__(/*! ./notFound */ 288);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
@@ -29805,133 +29805,155 @@
 	  year: "2015",
 	  medium: "Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Halloween_Shirt.jpg"
+	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Halloween_Shirt.jpg",
+	  hidden: true
 	}, {
 	  name: "Cogo Labs Rocket Shirt",
 	  year: "2014",
 	  medium: "Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Shirt.jpg"
+	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Shirt.jpg",
+	  hidden: true
 	}, {
 	  name: "Cogo Labs 404 Page",
 	  year: "2015",
 	  medium: "Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg"
+	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
+	  hidden: true
 	}, {
 	  name: "Coog Labs Rocket Stickers",
 	  year: "2016",
 	  medium: "Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Sticker.jpg"
+	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Sticker.jpg",
+	  hidden: true
 	}, {
 	  name: "The Best Hotel",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Black Gold",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Fish in Fall",
 	  year: "2010",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg",
+	  hidden: false
 	}, {
 	  name: "The Ring",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg",
+	  hidden: false
 	}, {
 	  name: "The Watch",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Deer",
 	  year: "2012",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Deer_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Deer_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Covered in Bees Homage to Dead Milkmen Shirt",
 	  year: "2013",
 	  medium: "Pen",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Stone Church Burger",
 	  year: "2013",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg", set: "illustrations"
+	  url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Baseball Banner",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Cinderlla Sews",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Cinderella's Carriage",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Heart of Darkness",
 	  year: "2010",
 	  medium: "Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Jess",
 	  year: "2010",
 	  medium: "Pen & Ink / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Jess_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Jess_700.jpg",
+	  hidden: false
 	}, {
 	  name: "The Lobster",
 	  year: "2011",
 	  medium: "Pen / Digital / Collage",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Lobster_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Lobster_700.jpg",
+	  hidden: false
 	}, {
 	  name: "The Manchester Flag",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Rocky",
 	  year: "2010",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Self Portrait with Basketball",
 	  year: "2010",
 	  medium: "Pen & Ink / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg"
+	  url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Towers",
 	  year: "2010",
 	  medium: "Pen & Ink / Digital",
 	  about: "",
-	  url: "illustrations/Aaron_Mitchell_Towers.jpg"
+	  url: "illustrations/Aaron_Mitchell_Towers.jpg",
+	  hidden: false
 	}];
 	;
 	
@@ -29962,61 +29984,71 @@
 	  year: "2012",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg"
+	  url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Fuck 2016 Logo",
 	  year: "2015",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Fuck_2016_700.jpg"
+	  url: "design/Aaron_Mitchell_Fuck_2016_700.jpg",
+	  hidden: false
 	}, {
 	  name: "MacCallum Group Insurance Logo",
 	  year: "2016",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg"
+	  url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Ghost Hunter Logo",
 	  year: "2016",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg"
+	  url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg",
+	  hidden: false
 	}, {
 	  name: "MGS Design Logo",
 	  year: "2015",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg"
+	  url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Afghan Strangers Album Cover",
 	  year: "2013",
 	  medium: "Photo / Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg"
+	  url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Coastal Farms Logo",
 	  year: "2011",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg"
+	  url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg",
+	  hidden: false
 	}, {
 	  name: "2011 Lobster Fest 10k Shirt",
 	  year: "2011",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg"
+	  url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg",
+	  hidden: false
 	}, {
 	  name: "Hingham & Hull Rotary Golf Tournament Logo",
 	  year: "2014",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg"
+	  url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg",
+	  hidden: false
 	}, {
 	  name: "SL Logix Logo",
 	  year: "2012",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg"
+	  url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg",
+	  hidden: false
 	}];
 	;
 	
@@ -30047,67 +30079,78 @@
 	  year: "2016",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "King Gizzard at The Middle East in Cambridge, MA",
 	  year: "2015",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "Tobias Jessos Jr at The Middle East in Cambridge, MA",
 	  year: "2015",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_Tobias_Jessos_Jr_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_Tobias_Jessos_Jr_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "Boogarins at The Middle East in Cambridge, MA",
 	  year: "2016",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_Boogarins_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_Boogarins_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "Halloween Show at The Middle East in Cambridge, MA",
 	  year: "2015",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "Jacco Gardner at The Middle East in Cambridge, MA",
 	  year: "2015",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "Morgan Delte at The Middle East in Cambridge, MA",
 	  year: "2016",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_Morgan_Delt_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_Morgan_Delt_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "Nobunny at The Middle East in Cambridge, MA",
 	  year: "2016",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_Nobunny_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_Nobunny_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "Pile at The Middle East in Cambridge, MA",
 	  year: "2015",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "Sunflower Beam at The Middle East in Cambridge, MA",
 	  year: "2016",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_Sunflower_Beam_Middle_East_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_Sunflower_Beam_Middle_East_Cambridge.jpg",
+	  hidden: false
 	}, {
 	  name: "All of the Animals at John Harvards in Cambridge, MA",
 	  year: "2016",
 	  medium: "",
 	  about: "",
-	  url: "posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg"
+	  url: "posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg",
+	  hidden: false
 	}];
 	;
 	
@@ -30138,91 +30181,106 @@
 	  year: "2012",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Calm_Down_Billy.jpg"
+	  url: "collage/Aaron_Mitchell_Calm_Down_Billy.jpg",
+	  hidden: false
 	}, {
 	  name: "Failure Failure",
 	  year: "2012",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Failure_Failure.jpg"
+	  url: "collage/Aaron_Mitchell_Failure_Failure.jpg",
+	  hidden: false
 	}, {
 	  name: "Floating on the Bottom of the Sky",
 	  year: "2009",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Floating_On_The_Bottom_Of_The_Sky.jpg"
+	  url: "collage/Aaron_Mitchell_Floating_On_The_Bottom_Of_The_Sky.jpg",
+	  hidden: false
 	}, {
 	  name: "I Wish We Had Predator Drones",
 	  year: "2009",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_I_Wish_We_Had_Predator_Drones.jpg"
+	  url: "collage/Aaron_Mitchell_I_Wish_We_Had_Predator_Drones.jpg",
+	  hidden: false
 	}, {
 	  name: "In Love With a Machine",
 	  year: "2009",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_In_Love_with_a_Machine.jpg"
+	  url: "collage/Aaron_Mitchell_In_Love_with_a_Machine.jpg",
+	  hidden: false
 	}, {
 	  name: "Injection",
 	  year: "2009",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Injection.jpg"
+	  url: "collage/Aaron_Mitchell_Injection.jpg",
+	  hidden: false
 	}, {
 	  name: "Orbit The Sun",
 	  year: "2010",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Orbit_The_Sun.jpg"
+	  url: "collage/Aaron_Mitchell_Orbit_The_Sun.jpg",
+	  hidden: false
 	}, {
 	  name: "Salmon",
 	  year: "2011",
 	  medium: "Collage / Pen & Ink",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Salmon.jpg"
+	  url: "collage/Aaron_Mitchell_Salmon.jpg",
+	  hidden: false
 	}, {
 	  name: "Sampson and the Light",
 	  year: "2012",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Sampson_And_The_Light.jpg"
+	  url: "collage/Aaron_Mitchell_Sampson_And_The_Light.jpg",
+	  hidden: false
 	}, {
 	  name: "The Eye",
 	  year: "2010",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_The_Eye.jpg"
+	  url: "collage/Aaron_Mitchell_The_Eye.jpg",
+	  hidden: false
 	}, {
 	  name: "The Sinking Sound",
 	  year: "2009",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_The_Sinking_Sound.jpg"
+	  url: "collage/Aaron_Mitchell_The_Sinking_Sound.jpg",
+	  hidden: false
 	}, {
 	  name: "Things Fall Apart",
 	  year: "2011",
 	  medium: "Digital Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Things_Fall_Apart.jpg"
+	  url: "collage/Aaron_Mitchell_Things_Fall_Apart.jpg",
+	  hidden: false
 	}, {
 	  name: "Disco Sargent",
 	  year: "2010",
 	  medium: "Digital Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Disco_Sargent.jpg"
+	  url: "collage/Aaron_Mitchell_Disco_Sargent.jpg",
+	  hidden: false
 	}, {
 	  name: "Piper",
 	  year: "2010",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Piper.jpg"
+	  url: "collage/Aaron_Mitchell_Piper.jpg",
+	  hidden: false
 	}, {
 	  name: "Walk to School",
 	  year: "2010",
 	  medium: "Collage",
 	  about: "",
-	  url: "collage/Aaron_Mitchell_Walk_To_School.jpg"
+	  url: "collage/Aaron_Mitchell_Walk_To_School.jpg",
+	  hidden: false
 	}];
 	;
 	
@@ -30253,121 +30311,141 @@
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_1.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_1.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular II",
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_2.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_2.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular III",
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_3.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_3.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular IV",
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_4.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_4.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular V",
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_5.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_5.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular VI",
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_6.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_6.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular IX",
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_9.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_9.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular X",
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_10.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_10.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XI",
 	  year: "2011",
 	  medium: "Pen, Marker & Watercolor",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_11.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_11.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XII",
 	  year: "2011",
 	  medium: "Pen, Marker & Watercolor",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_12.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_12.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XIII",
 	  year: "2011",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_13.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_13.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XIV (Acadia)",
 	  year: "2011",
 	  medium: "Pen, Marker & Found Map",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_14_Acadia.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_14_Acadia.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XV",
 	  year: "2011",
 	  medium: "Pen, Marker & Watercolor",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_15.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_15.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XVI",
 	  year: "2012",
 	  medium: "Pen & Colored Pencil",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_16.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_16.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XVII",
 	  year: "2012",
 	  medium: "Pen, Marker & Watercolor",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_17.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_17.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XVIII",
 	  year: "2012",
 	  medium: "Pen, Marker & Watercolor",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_18.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_18.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular XIX",
 	  year: "2012",
 	  medium: "Pen, Marker, Watercolor & Wallpaper",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_19.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_19.jpg",
+	  hidden: false
 	}, {
 	  name: "Things Fall Apart I",
 	  year: "2012",
 	  medium: "Pen & Wallpaper",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_Things_Fall_Apart_I.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_Things_Fall_Apart_I.jpg",
+	  hidden: false
 	}, {
 	  name: "Things Fall Apart II",
 	  year: "2012",
 	  medium: "Pen & Wallpaper",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_Things_Fall_Apart_II.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_Things_Fall_Apart_II.jpg",
+	  hidden: false
 	}, {
 	  name: "Circular: The Arcane Comedy",
 	  year: "2012",
 	  medium: "Digital",
 	  about: "",
-	  url: "circular/Aaron_Mitchell_Circular_The_Arcane_Comedy.jpg"
+	  url: "circular/Aaron_Mitchell_Circular_The_Arcane_Comedy.jpg",
+	  hidden: false
 	}];
 	;
 	
@@ -30398,37 +30476,43 @@
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "comics/Aaron_Mitchell_I_Am_Thinking_of_a_Wave.jpg"
+	  url: "comics/Aaron_Mitchell_I_Am_Thinking_of_a_Wave.jpg",
+	  hidden: false
 	}, {
 	  name: "The Ptrousist",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "comics/Aaron_Mitchell_Ptourists.jpg"
+	  url: "comics/Aaron_Mitchell_Ptourists.jpg",
+	  hidden: false
 	}, {
 	  name: "She Wore Razor Red",
 	  year: "2010",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "comics/Aaron_Mitchell_She_Wore_Razor_Red.jpg"
+	  url: "comics/Aaron_Mitchell_She_Wore_Razor_Red.jpg",
+	  hidden: false
 	}, {
 	  name: "Ending is Better than Mending",
 	  year: "2011",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "comics/Aaron_Mitchell_Ending_Is_Better_Than_Mending.jpg"
+	  url: "comics/Aaron_Mitchell_Ending_Is_Better_Than_Mending.jpg",
+	  hidden: false
 	}, {
 	  name: "Dumb and Dumber",
 	  year: "2010",
 	  medium: "Pen / Digital",
 	  about: "",
-	  url: "comics/Aaron_Mitchell_Dumb_And_Dumber.jpg"
+	  url: "comics/Aaron_Mitchell_Dumb_And_Dumber.jpg",
+	  hidden: false
 	}, {
 	  name: "Safe Inside The Gates",
 	  year: "2012",
 	  medium: "Pen & Watercolor",
 	  about: "",
-	  url: "comics/Aaron_Mitchell_Safe_Inside_The_Gates.jpg"
+	  url: "comics/Aaron_Mitchell_Safe_Inside_The_Gates.jpg",
+	  hidden: false
 	}];
 	;
 	
@@ -30582,63 +30666,72 @@
 	   url_link: "http://www.mitchellaaron.com",
 	   git: true,
 	   git_link: "https://github.com/amitchell89/react-redux-portfolio",
-	   about: "This website is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css."
+	   about: "This website is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css.",
+	   hidden: false
 	}, {
 	   name: "Link Ventures",
 	   url: true,
 	   url_link: "http://www.linkventures.com",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
-	   about: "Link Ventures is a portfolio site for the investment firm that backs my Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS."
+	   about: "Link Ventures is a portfolio site for the investment firm that backs my Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
+	   hidden: true
 	}, {
 	   name: "Umbrella Check",
 	   url: true,
 	   url_link: "http://www.umbrellacheck.com",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
-	   about: "Umbrella Check is a weather site I worked on at Cogo Labs. I created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker."
+	   about: "Umbrella Check is a weather site I worked on at Cogo Labs. I created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker.",
+	   hidden: true
 	}, {
 	   name: "Thrive Medicare",
 	   url: true,
 	   url_link: "http://www.thrivemedicare.com",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
-	   about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery."
+	   about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery.",
+	   hidden: true
 	}, {
 	   name: "Cogo Labs 404 Page",
 	   url: true,
 	   url_link: "http://www.cogolabs.com/404",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
-	   about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse."
+	   about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse.",
+	   hidden: true
 	}, {
 	   name: "Schillaci Guitars",
 	   url: true,
 	   url_link: "http://www.schillaciguitars.com",
 	   git: true,
 	   git_link: "https://github.com/amitchell89/schillaci_guitars",
-	   about: "Schillaci Guitars is a website I designed and built as a freelancer in 2012. It was made for a guitar luthier to showcase his past projects and to promote sales. It was built using PHP without a framework or CMS. It utilizes fancybox for the modal gallery on each guitar page and a phpMyAdmin database for serving up images and information about the different guitars. The site is still in use and occasionally updated."
+	   about: "Schillaci Guitars is a website I designed and built as a freelancer in 2012. It was made for a guitar luthier to showcase his past projects and to promote sales. It was built using PHP without a framework or CMS. It utilizes fancybox for the modal gallery on each guitar page and a phpMyAdmin database for serving up images and information about the different guitars. The site is still in use and occasionally updated.",
+	   hidden: false
 	}, {
 	   name: "Fuck 2016",
 	   url: true,
 	   url_link: "http://www.fuck2016.com",
 	   git: true,
 	   git_link: "https://github.com/amitchell89/fuck2016",
-	   about: "Fuck2016 is brand I developed to capitalize on the 2016 presidential election. The site was quickly stood up without a framework to host a Shopify iframed online store. The products were created using theprintful.com, a site that allows you to upload designs, create products based on those designs, and fulfill individually printed orders received from your Shopify store. The site features Facebook and Twitter widgets, as well as Google Analytics tracking. I also maintained Facebook and Twitter pages for the brand. For advertising I was shut out of my initial plan to advertise on Facebook due to their profanity guidelines, but did end up seeing some sales from my Facebook page, Reddit and organic traffic after the results of the election and a John Oliver segment that happened to use the same message."
+	   about: "Fuck2016 is brand I developed to capitalize on the 2016 presidential election. The site was quickly stood up without a framework to host a Shopify iframed online store. The products were created using theprintful.com, a site that allows you to upload designs, create products based on those designs, and fulfill individually printed orders received from your Shopify store. The site features Facebook and Twitter widgets, as well as Google Analytics tracking. I also maintained Facebook and Twitter pages for the brand. For advertising I was shut out of my initial plan to advertise on Facebook due to their profanity guidelines, but did end up seeing some sales from my Facebook page, Reddit and organic traffic after the results of the election and a John Oliver segment that happened to use the same message.",
+	   hidden: false
 	}, {
 	   name: "Table Flipper",
 	   url: false,
 	   url_link: "Command Line Tool. No UI",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
-	   about: "Table Flipper is a node command line interface tool that I built to make coding emails easier and faster. It allows you to code emails using Jade for the markup, Sass for inline styles and Json for declaring variables and rendering options. The code is compiled into two versions, a clean production version, and a populated version for testing. It includes options to manipulate the final html by randomizing class names, shuffling html attributes and deleting unused classes.Table Flipper also provides a library of common partials for reusable elements and email fixes, and allows users to create blueprints, or starter templates for an even faster workflow. It utilizes nodemon for watching for changes and AWS syncing for quickly uploading images to Amazon S3."
+	   about: "Table Flipper is a node command line interface tool that I built to make coding emails easier and faster. It allows you to code emails using Jade for the markup, Sass for inline styles and Json for declaring variables and rendering options. The code is compiled into two versions, a clean production version, and a populated version for testing. It includes options to manipulate the final html by randomizing class names, shuffling html attributes and deleting unused classes.Table Flipper also provides a library of common partials for reusable elements and email fixes, and allows users to create blueprints, or starter templates for an even faster workflow. It utilizes nodemon for watching for changes and AWS syncing for quickly uploading images to Amazon S3.",
+	   hidden: true
 	}, {
 	   name: "Offer Coffer",
 	   url: false,
 	   url_link: "Internal Tool. Not Public Facing",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
-	   about: "Offer Coffer is a React / Flux / Bootstrap internal tool that is used to manage, edit and review email offers and associated assets (subject lines, email templates etc). I was tasked with designing a new site layout and UI, adding react router, adding filtering to our main list view (along with URL query filtering), enabling multiple items to be saved simultaneously (even though they were still processed individually by the API), redesigning alerts and updating the UI to allow permissions to be set on an granular level for every asset within an offer."
+	   about: "Offer Coffer is a React / Flux / Bootstrap internal tool that is used to manage, edit and review email offers and associated assets (subject lines, email templates etc). I was tasked with designing a new site layout and UI, adding react router, adding filtering to our main list view (along with URL query filtering), enabling multiple items to be saved simultaneously (even though they were still processed individually by the API), redesigning alerts and updating the UI to allow permissions to be set on an granular level for every asset within an offer.",
+	   hidden: true
 	}];
 	;
 	
@@ -31359,7 +31452,9 @@
 	      var selectedGallery = _props.selectedGallery;
 	
 	
-	      var currentPortfolio = images[selectedGallery];
+	      var currentPortfolio = images[selectedGallery].filter(function (n) {
+	        return n.hidden !== true;
+	      });
 	
 	      var galleryItems = _react2.default.createElement(
 	        'div',
@@ -31643,6 +31738,10 @@
 	    value: function render() {
 	      var projects = this.props.projects;
 	
+	
+	      projects = projects.filter(function (n) {
+	        return n.hidden !== true;
+	      });
 	
 	      var projectsList = _react2.default.createElement(
 	        'div',
@@ -32188,6 +32287,94 @@
 
 /***/ },
 /* 286 */
+/*!******************************!*\
+  !*** ./src/views/privacy.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 198);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Privacy = function (_Component) {
+	  _inherits(Privacy, _Component);
+	
+	  function Privacy() {
+	    _classCallCheck(this, Privacy);
+	
+	    return _possibleConstructorReturn(this, (Privacy.__proto__ || Object.getPrototypeOf(Privacy)).apply(this, arguments));
+	  }
+	
+	  _createClass(Privacy, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Privacy Policy'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Last Updated 12/22/2016'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We do not store your data. All information collected via the ',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'contact' },
+	            'contact form'
+	          ),
+	          ' (\'name\', \'email\', \'message\') is used to generate an automated message sent to Aaron Mitchell, the site owner and administrator. Information sent in this manner is used solely for the purpose of contacting and following up on inquiries from said form. This data is not collected in a database. We do not sell or otherwise distribute this data. Any changes to the collection of data that expand upon these uses will result in an updated privacy policy at that time.'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Privacy;
+	}(_react.Component);
+	
+	var _default = Privacy;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(Privacy, 'Privacy', '/Users/amitchell/src2/portfolio/src/views/privacy.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/privacy.js');
+	}();
+
+	;
+
+/***/ },
+/* 287 */
 /*!***************************!*\
   !*** ./src/views/post.js ***!
   \***************************/
@@ -32207,7 +32394,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 198);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 287);
+	var _notFound = __webpack_require__(/*! ./notFound */ 288);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
@@ -32297,7 +32484,7 @@
 	;
 
 /***/ },
-/* 287 */
+/* 288 */
 /*!*******************************!*\
   !*** ./src/views/notFound.js ***!
   \*******************************/
@@ -32367,7 +32554,7 @@
 	;
 
 /***/ },
-/* 288 */
+/* 289 */
 /*!****************************!*\
   !*** ./src/css/index.scss ***!
   \****************************/
@@ -32376,10 +32563,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?sourceMap!./index.scss */ 289);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?sourceMap!./index.scss */ 290);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 292)(content, {});
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 293)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -32396,24 +32583,24 @@
 	}
 
 /***/ },
-/* 289 */
+/* 290 */
 /*!*********************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader?sourceMap!./src/css/index.scss ***!
   \*********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 290)();
+	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 291)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n/* Base Styles */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #eeeeee;\n  font-family: 'Open Sans', helvetica, arial, sans-serif;\n  font-weight: 300;\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #0066ff; }\n\np {\n  line-height: 1.5; }\n\nul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nli {\n  cursor: pointer; }\n\nselect {\n  padding: 0.75rem 1rem;\n  font-size: 1rem;\n  background: none;\n  border: 0;\n  border-radius: 0;\n  border: 1px solid #aaa;\n  border-radius: 10px;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  position: relative;\n  text-align: left;\n  cursor: pointer;\n  width: 100%; }\n\nselect:focus, select:active {\n  outline: none;\n  border: 1px solid #aaa; }\n\n.select-wrapper {\n  position: relative; }\n\n.select-wrapper:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-left: 8px solid transparent;\n  border-right: 8px solid transparent;\n  border-top: 10px solid #aaa;\n  position: absolute;\n  top: 20px;\n  right: 1rem;\n  pointer-events: none; }\n\nbutton {\n  cursor: pointer;\n  font-size: 1rem; }\n\nbutton:focus {\n  outline: 0; }\n\nh1 {\n  font-weight: 300;\n  margin: 0;\n  font-family: 'Ubuntu', helvetica, arial, sans-serif; }\n\nh2, h4 {\n  font-family: 'Ubuntu', helvetica, arial, sans-serif; }\n\n.site_wrapper {\n  width: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 2rem;\n  box-sizing: border-box; }\n\n.site_wrapper--main {\n  background: #ffffff; }\n\n.content_wrapper {\n  margin: 2rem 0;\n  clear: both; }\n\n@media (max-width: 767px) {\n  .content_wrapper {\n    margin: 1rem 0; } }\n\n@media (max-width: 414px) {\n  .site_wrapper {\n    padding: 0 1rem; } }\n\n/* About Styles */\n.about--portrait {\n  float: left;\n  width: 300px;\n  height: 300px;\n  background-image: url(" + __webpack_require__(/*! ../images/Aaron_Mitchell_Portrait.jpg */ 291) + ");\n  background-size: cover;\n  border-radius: 50%;\n  overflow: hidden; }\n\n.about--copy {\n  float: left;\n  margin-left: 2rem;\n  width: calc(100% - 300px - 2rem); }\n\n@media screen and (max-width: 767px) {\n  .about--portrait {\n    float: none;\n    margin: 0 auto; }\n  .about--copy {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Gallery Styles */\n.list--selected {\n  font-weight: bold; }\n\n.gallery__nav {\n  width: 96px;\n  float: left; }\n\n.gallery__nav li {\n  margin-bottom: 0.5rem; }\n\n.gallery__nav--select {\n  display: none; }\n\n.gallery__container {\n  width: calc(100% - 96px - 2rem);\n  float: right;\n  margin-left: 2rem; }\n\n.gallery__item {\n  height: calc((100vw - 96px - 13rem) / 4);\n  width: calc((100vw - 96px - 13rem) / 4);\n  max-width: 224px;\n  max-height: 224px;\n  background-size: cover;\n  background-position: center;\n  float: left;\n  margin-bottom: 2rem;\n  cursor: pointer; }\n\n.gallery__item:nth-child(4n - 6) {\n  margin-left: 2rem;\n  margin-right: 1rem; }\n\n.gallery__item:nth-child(4n - 5) {\n  margin-left: 1rem;\n  margin-right: 2rem; }\n\n@media (max-width: 967px) {\n  .gallery__item {\n    height: calc((100vw - 96px - 11rem) / 3);\n    width: calc((100vw - 96px - 11rem) / 3);\n    max-width: none;\n    max-height: none; }\n  .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 2rem;\n    margin-right: 2rem; } }\n\n@media (max-width: 767px) {\n  .gallery__nav {\n    float: none;\n    width: 100%;\n    margin-bottom: 1.5rem; }\n  .gallery__container {\n    float: none;\n    width: 100%;\n    margin-left: 0; }\n  .gallery__nav--select {\n    display: block; }\n  .gallery__nav--list {\n    display: none; }\n  .gallery__item {\n    height: calc((100vw - 9rem) / 3);\n    width: calc((100vw - 9rem) / 3); } }\n\n@media (max-width: 575px) {\n  .gallery__item {\n    height: calc((100vw - 7rem) / 2);\n    width: calc((100vw - 7rem) / 2); }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(odd) {\n    margin-right: 1rem; }\n  .gallery__item:nth-child(even) {\n    margin-left: 1rem; } }\n\n@media (max-width: 414px) {\n  .gallery__item {\n    height: calc(100vw - 3rem);\n    width: calc(100vw - 3rem); }\n  .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {\n    margin-left: 0;\n    margin-right: 0; } }\n\n/* Header Styles */\nheader {\n  border-bottom: 1px solid #eeeeee;\n  height: calc(2rem + 40px);\n  padding-bottom: 4rem;\n  padding-top: 2rem; }\n\nheader h1 {\n  float: left; }\n\nheader h1 a {\n  color: #333333; }\n\n.header__nav {\n  float: right;\n  margin-top: 0.5rem; }\n\n.header__nav a:nth-child(n+2) {\n  margin-left: 1rem; }\n\nfooter {\n  clear: both;\n  text-align: center;\n  padding: 2rem 0; }\n\n@media (max-width: 767px) {\n  header h1 {\n    font-size: 28px; }\n  .header__nav {\n    font-size: 0.875rem;\n    margin-top: 0.5rem; } }\n\n@media (max-width: 575px) {\n  header {\n    padding-top: 1rem;\n    padding-bottom: 5rem; }\n  header h1 {\n    float: none;\n    text-align: center; }\n  .header__nav {\n    float: none;\n    text-align: center;\n    margin-top: 0.75rem; } }\n\n/* Modal Styles */\n.modal {\n  background: rgba(0, 0, 0, 0.9);\n  position: fixed;\n  z-index: 10;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: auto;\n  padding: 2rem 0; }\n\n.modal__info {\n  color: #ffffff;\n  font-size: 0.875rem;\n  padding: 2rem;\n  margin-right: 2rem;\n  width: 230px;\n  float: left;\n  box-sizing: border-box;\n  background: #111;\n  border-radius: 10px; }\n\n.modal__img {\n  float: left;\n  width: calc(100% - 230px - 2rem);\n  height: calc(100vh - 4rem);\n  background-size: contain;\n  background-repeat: no-repeat; }\n\n.modal__buttons {\n  position: absolute;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  text-align: center;\n  background: #111;\n  padding: 0.75rem 1rem 0.5rem;\n  width: 230px;\n  border-radius: 10px 10px 0 0; }\n\n.btn--modal {\n  background: none;\n  border: 2px solid #ffffff;\n  color: #ffffff;\n  border-radius: 10px;\n  padding: 0 0.5rem;\n  font-size: 0.825rem;\n  vertical-align: middle;\n  height: 42px;\n  width: 42px; }\n\n.btn--modal:nth-child(n+2) {\n  margin-left: 1rem; }\n\n.btn--modal--disabled {\n  color: #444444;\n  border: 2px solid #444444; }\n\n.btn--modal--info {\n  display: none; }\n\n@media (max-width: 767px) {\n  .modal {\n    padding: 1rem 0; }\n  .modal__info {\n    display: none;\n    width: 250px;\n    background: rgba(17, 17, 17, 0.9);\n    border: 2px solid #fff;\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 6rem;\n    margin: 0 auto;\n    padding: 1rem 2rem; }\n  .modal__info--show {\n    display: block; }\n  .modal__img {\n    width: calc(100%);\n    background-position: center;\n    height: calc(100vh - 6rem); }\n  .modal__buttons {\n    left: 0;\n    margin: 0 auto;\n    background: rgba(17, 17, 17, 0.75);\n    width: 250px; }\n  .btn--modal--info {\n    display: inline; } }\n\n/* Contact Styles */\n.contact {\n  width: 100%;\n  max-width: 400px;\n  margin-bottom: 2rem; }\n\n.contact input, .contact textarea {\n  display: block;\n  font-size: 0.875rem;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #aaaaaa;\n  width: 100%; }\n\n.contact label {\n  display: block;\n  margin-bottom: 0.5rem; }\n\n.btn--contact {\n  background: none;\n  border: 2px solid #0099ff;\n  border-radius: 10px;\n  color: #0099ff;\n  padding: 1rem; }\n\n@media (max-width: 767px) {\n  .contact {\n    max-width: 100%; }\n  .btn--contact {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, "/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n/* Base Styles */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #eeeeee;\n  font-family: 'Open Sans', helvetica, arial, sans-serif;\n  font-weight: 300;\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #0066ff; }\n\np {\n  line-height: 1.5; }\n\nul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nli {\n  cursor: pointer; }\n\nselect {\n  padding: 0.75rem 1rem;\n  font-size: 1rem;\n  background: none;\n  border: 0;\n  border-radius: 0;\n  border: 1px solid #aaa;\n  border-radius: 10px;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  position: relative;\n  text-align: left;\n  cursor: pointer;\n  width: 100%; }\n\nselect:focus, select:active {\n  outline: none;\n  border: 1px solid #aaa; }\n\n.select-wrapper {\n  position: relative; }\n\n.select-wrapper:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-left: 8px solid transparent;\n  border-right: 8px solid transparent;\n  border-top: 10px solid #aaa;\n  position: absolute;\n  top: 20px;\n  right: 1rem;\n  pointer-events: none; }\n\nbutton {\n  cursor: pointer;\n  font-size: 1rem; }\n\nbutton:focus {\n  outline: 0; }\n\nh1 {\n  font-weight: 300;\n  margin: 0;\n  font-family: 'Ubuntu', helvetica, arial, sans-serif; }\n\nh2, h4 {\n  font-family: 'Ubuntu', helvetica, arial, sans-serif; }\n\n.site_wrapper {\n  width: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 2rem;\n  box-sizing: border-box; }\n\n.site_wrapper--main {\n  background: #ffffff; }\n\n.content_wrapper {\n  margin: 2rem 0;\n  clear: both; }\n\n@media (max-width: 767px) {\n  .content_wrapper {\n    margin: 1rem 0; } }\n\n@media (max-width: 414px) {\n  .site_wrapper {\n    padding: 0 1rem; } }\n\n/* About Styles */\n.about--portrait {\n  float: left;\n  width: 300px;\n  height: 300px;\n  background-image: url(" + __webpack_require__(/*! ../images/Aaron_Mitchell_Portrait.jpg */ 292) + ");\n  background-size: cover;\n  border-radius: 50%;\n  overflow: hidden; }\n\n.about--copy {\n  float: left;\n  margin-left: 2rem;\n  width: calc(100% - 300px - 2rem); }\n\n@media screen and (max-width: 767px) {\n  .about--portrait {\n    float: none;\n    margin: 0 auto; }\n  .about--copy {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Gallery Styles */\n.list--selected {\n  font-weight: bold; }\n\n.gallery__nav {\n  width: 96px;\n  float: left; }\n\n.gallery__nav li {\n  margin-bottom: 0.5rem; }\n\n.gallery__nav--select {\n  display: none; }\n\n.gallery__container {\n  width: calc(100% - 96px - 2rem);\n  float: right;\n  margin-left: 2rem; }\n\n.gallery__item {\n  height: calc((100vw - 96px - 13rem) / 4);\n  width: calc((100vw - 96px - 13rem) / 4);\n  max-width: 224px;\n  max-height: 224px;\n  background-size: cover;\n  background-position: center;\n  float: left;\n  margin-bottom: 2rem;\n  cursor: pointer; }\n\n.gallery__item:nth-child(4n - 6) {\n  margin-left: 2rem;\n  margin-right: 1rem; }\n\n.gallery__item:nth-child(4n - 5) {\n  margin-left: 1rem;\n  margin-right: 2rem; }\n\n@media (max-width: 967px) {\n  .gallery__item {\n    height: calc((100vw - 96px - 11rem) / 3);\n    width: calc((100vw - 96px - 11rem) / 3);\n    max-width: none;\n    max-height: none; }\n  .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 2rem;\n    margin-right: 2rem; } }\n\n@media (max-width: 767px) {\n  .gallery__nav {\n    float: none;\n    width: 100%;\n    margin-bottom: 1.5rem; }\n  .gallery__container {\n    float: none;\n    width: 100%;\n    margin-left: 0; }\n  .gallery__nav--select {\n    display: block; }\n  .gallery__nav--list {\n    display: none; }\n  .gallery__item {\n    height: calc((100vw - 9rem) / 3);\n    width: calc((100vw - 9rem) / 3); } }\n\n@media (max-width: 575px) {\n  .gallery__item {\n    height: calc((100vw - 7rem) / 2);\n    width: calc((100vw - 7rem) / 2); }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(odd) {\n    margin-right: 1rem; }\n  .gallery__item:nth-child(even) {\n    margin-left: 1rem; } }\n\n@media (max-width: 414px) {\n  .gallery__item {\n    height: calc(100vw - 3rem);\n    width: calc(100vw - 3rem); }\n  .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {\n    margin-left: 0;\n    margin-right: 0; } }\n\n/* Header Styles */\nheader {\n  border-bottom: 1px solid #eeeeee;\n  height: calc(2rem + 40px);\n  padding-bottom: 4rem;\n  padding-top: 2rem; }\n\nheader h1 {\n  float: left; }\n\nheader h1 a {\n  color: #333333; }\n\n.header__nav {\n  float: right;\n  margin-top: 0.5rem; }\n\n.header__nav a:nth-child(n+2) {\n  margin-left: 1rem; }\n\nfooter {\n  clear: both;\n  text-align: center;\n  padding: 2rem 0; }\n\n@media (max-width: 767px) {\n  header h1 {\n    font-size: 28px; }\n  .header__nav {\n    font-size: 0.875rem;\n    margin-top: 0.5rem; } }\n\n@media (max-width: 575px) {\n  header {\n    padding-top: 1rem;\n    padding-bottom: 5rem; }\n  header h1 {\n    float: none;\n    text-align: center; }\n  .header__nav {\n    float: none;\n    text-align: center;\n    margin-top: 0.75rem; } }\n\n/* Modal Styles */\n.modal {\n  background: rgba(0, 0, 0, 0.9);\n  position: fixed;\n  z-index: 10;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: auto;\n  padding: 2rem 0; }\n\n.modal__info {\n  color: #ffffff;\n  font-size: 0.875rem;\n  padding: 2rem;\n  margin-right: 2rem;\n  width: 230px;\n  float: left;\n  box-sizing: border-box;\n  background: #111;\n  border-radius: 10px; }\n\n.modal__img {\n  float: left;\n  width: calc(100% - 230px - 2rem);\n  height: calc(100vh - 4rem);\n  background-size: contain;\n  background-repeat: no-repeat; }\n\n.modal__buttons {\n  position: absolute;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  text-align: center;\n  background: #111;\n  padding: 0.75rem 1rem 0.5rem;\n  width: 230px;\n  border-radius: 10px 10px 0 0; }\n\n.btn--modal {\n  background: none;\n  border: 2px solid #ffffff;\n  color: #ffffff;\n  border-radius: 10px;\n  padding: 0 0.5rem;\n  font-size: 0.825rem;\n  vertical-align: middle;\n  height: 42px;\n  width: 42px; }\n\n.btn--modal:nth-child(n+2) {\n  margin-left: 1rem; }\n\n.btn--modal--disabled {\n  color: #444444;\n  border: 2px solid #444444; }\n\n.btn--modal--info {\n  display: none; }\n\n@media (max-width: 767px) {\n  .modal {\n    padding: 1rem 0; }\n  .modal__info {\n    display: none;\n    width: 250px;\n    background: rgba(17, 17, 17, 0.9);\n    border: 2px solid #fff;\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 6rem;\n    margin: 0 auto;\n    padding: 1rem 2rem; }\n  .modal__info--show {\n    display: block; }\n  .modal__img {\n    width: calc(100%);\n    background-position: center;\n    height: calc(100vh - 6rem); }\n  .modal__buttons {\n    left: 0;\n    margin: 0 auto;\n    background: rgba(17, 17, 17, 0.75);\n    width: 250px; }\n  .btn--modal--info {\n    display: inline; } }\n\n/* Contact Styles */\n.contact {\n  width: 100%;\n  max-width: 400px;\n  margin-bottom: 2rem; }\n\n.contact input, .contact textarea {\n  display: block;\n  font-size: 0.875rem;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #aaaaaa;\n  width: 100%; }\n\n.contact label {\n  display: block;\n  margin-bottom: 0.5rem; }\n\n.btn--contact {\n  background: none;\n  border: 2px solid #0099ff;\n  border-radius: 10px;\n  color: #0099ff;\n  padding: 1rem; }\n\n@media (max-width: 767px) {\n  .contact {\n    max-width: 100%; }\n  .btn--contact {\n    width: 100%; } }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 290 */
+/* 291 */
 /*!**************************************!*\
   !*** ./~/css-loader/lib/css-base.js ***!
   \**************************************/
@@ -32472,7 +32659,7 @@
 
 
 /***/ },
-/* 291 */
+/* 292 */
 /*!************************************************!*\
   !*** ./src/images/Aaron_Mitchell_Portrait.jpg ***!
   \************************************************/
@@ -32481,7 +32668,7 @@
 	module.exports = __webpack_require__.p + "Aaron_Mitchell_Portrait.jpg";
 
 /***/ },
-/* 292 */
+/* 293 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/
@@ -32734,94 +32921,6 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
-
-/***/ },
-/* 293 */
-/*!******************************!*\
-  !*** ./src/views/privacy.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 198);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Privacy = function (_Component) {
-	  _inherits(Privacy, _Component);
-	
-	  function Privacy() {
-	    _classCallCheck(this, Privacy);
-	
-	    return _possibleConstructorReturn(this, (Privacy.__proto__ || Object.getPrototypeOf(Privacy)).apply(this, arguments));
-	  }
-	
-	  _createClass(Privacy, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'Privacy Policy'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Last Updated 12/22/2016'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'We do not store your data. All information collected via the ',
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: 'contact' },
-	            'contact form'
-	          ),
-	          ' (\'name\', \'email\', \'message\') is used to generate an automated message sent to Aaron Mitchell, the site owner and administrator. Information sent in this manner is used solely for the purpose of contacting and following up on inquiries from said form. This data is not collected in a database. We do not sell or otherwise distribute this data. Any changes to the collection of data that expand upon these uses will result in an updated privacy policy at that time.'
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Privacy;
-	}(_react.Component);
-	
-	var _default = Privacy;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(Privacy, 'Privacy', '/Users/amitchell/src2/portfolio/src/views/privacy.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/privacy.js');
-	}();
-
-	;
 
 /***/ }
 /******/ ]);

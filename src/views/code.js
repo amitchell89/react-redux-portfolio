@@ -9,7 +9,11 @@ function mapStateToProps(state) {
 }
 class Code extends Component {
   render() {
-    const { projects } = this.props;
+    var { projects } = this.props;
+
+    projects = projects.filter(function(n) {
+      return n.hidden !== true;
+    });
 
     let projectsList = (
       <div>

@@ -35,7 +35,8 @@
     "redux-devtools": "^3.3.1",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "xss": "^0.3.3"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.16.0",

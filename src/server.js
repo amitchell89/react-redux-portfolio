@@ -4,7 +4,9 @@ var path    = require("path");
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var helmet = require('helmet')
+var xss = require('xss');
 
+// Helmet setup
 app.use(helmet())
 app.use(express.static('src'))
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -34,7 +36,12 @@ app.listen(3000, function () {
 
 app.post('/contact', function(req, res) {
   var payload = req.body;
-  var email_message = '<b>From:</b> ' + payload.name + '<br /><br /><b>Email:</b> ' + payload.email + '<br /><br /><b>Message:</b> ' + payload.message;
+  var name = xss(payload.name)
+  var email = xss(payload.email)
+  var message = xss(payload.message)
+
+
+  var email_message = '<b>From:</b> ' + name + '<br /><br /><b>Email:</b> ' + email + '<br /><br /><b>Message:</b> ' + message;
 
   // setup e-mail data with unicode symbols
   var mailOptions = {

@@ -13,7 +13,7 @@ export const projects = [
        url_link: "http://www.linkventures.com",
        git: false,
        git_link: "Work Project (Code Not Public)",
-       about: "Link Ventures is a portfolio site for the investment group that backed my work Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS."
+       about: "Link Ventures is a portfolio site for the investment firm that backs my Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS."
     },
     {
        name: "Umbrella Check",

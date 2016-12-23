@@ -22,27 +22,36 @@ class Code extends Component {
           let url = s.url == true ? <div><a href={s.url_link} target="_blank">{s.url_link}</a></div> : <div>{s.url_link}</div>
           let git = s.git == true ? <div><a href={s.git_link} target="_blank">{s.git_link}</a></div> : <div>{s.git_link}</div>
 
+          let bkgdImg = {
+            backgroundImage: 'url(../images/' + s.image + ')',
+          }
+
           return (
-          <div>
-            <h4>{s.name}</h4>
-            {url}
-            {git}
-            <p>{s.about}</p>
+          <div className="project">
+            <div className="project__img" style={bkgdImg}></div>
+            <div className="project__info">
+              <h4>{s.name}</h4>
+              {url}
+              {git}
+              <p>{s.about}</p>
+            </div>
           </div>
         )}.bind(this))}
       </div>
     )
     return (
       <div>
-        <h2>
-        Code Portfolio
-        </h2>
-        <p>
-        As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.
-        </p>
-        <p>
-        Below is a list of projects I have worked on as both a freelancer and as an employee at Cogo Labs.
-        </p>
+        <div className="code__header">
+          <h2>
+          Code Portfolio
+          </h2>
+          <p>
+          As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.
+          </p>
+          <p>
+          Below is a list of projects I have worked on as both a freelancer and as an employee at Cogo Labs.
+          </p>
+        </div>
         {projectsList}
       </div>
     )

@@ -1,0 +1,55 @@
+/* Code Projects Stles */
+
+.code__header {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1rem;
+}
+
+.project {
+  border-bottom: 1px solid #eeeeee;
+  padding: 2rem 0 1rem;
+  @include clearfix()
+}
+
+.project__img {
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+
+.project__info {
+  width: calc(100% - 200px - 2rem);
+  float: left;
+  margin-left: 2rem;
+  h4 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .project__img {
+    width: 150px;
+    height: 150px;
+  }
+  .project__info {
+    width: calc(100% - 150px - 1rem);
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project__img {
+    float: none;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  .project__info {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}

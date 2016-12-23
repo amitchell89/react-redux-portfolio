@@ -6,7 +6,7 @@ export default class Footer extends Component {
     let year = new Date().getFullYear();
     return (
       <footer>
-        <p>&copy; {year} Aaron Mitchell <Link to="terms">Terms & Conditions</Link></p>
+        <p>&copy; {year} Aaron Mitchell <Link to="terms">Terms & Conditions</Link> | <Link to="privacy">Privacy Policy</Link></p>
       </footer>
     )
   }

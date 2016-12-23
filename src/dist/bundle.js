@@ -22019,6 +22019,10 @@
 	
 	var _terms2 = _interopRequireDefault(_terms);
 	
+	var _privacy = __webpack_require__(/*! ./privacy */ 293);
+	
+	var _privacy2 = _interopRequireDefault(_privacy);
+	
 	var _post = __webpack_require__(/*! ./post */ 286);
 	
 	var _post2 = _interopRequireDefault(_post);
@@ -22061,6 +22065,7 @@
 	            _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _code2.default }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/privacy', component: _privacy2.default }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/post', component: _post2.default }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default })
 	          )
@@ -30915,6 +30920,12 @@
 	            _reactRouter.Link,
 	            { to: 'terms' },
 	            'Terms & Conditions'
+	          ),
+	          ' | ',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'privacy' },
+	            'Privacy Policy'
 	          )
 	        )
 	      );
@@ -31952,6 +31963,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(/*! react-router */ 198);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31979,6 +31992,176 @@
 	          'h2',
 	          null,
 	          'Terms & Conditions'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Last Updates 12/22/2016'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'mitchellaaron.com is owned and operated by the artist, Aaron Mitchell.  Throughout the site, the terms \u201Cwe\u201D, \u201Cus\u201D and \u201Cour\u201D refer to Aaron Mitchell. Aaron Mitchell offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here. If you disagree with these terms and conditions or any part of these terms and conditions, you are not permitted to use this website.'
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Intellectual property rights'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Unless otherwise stated or agreed upon, we are the owner or the licensee of all intellectual property rights in the Website, and in the material published on it. For the purposes of these General Terms, \u201Cmaterial\u201D means material including, without limitation, text, graphics, images, video and sound material. Those works are protected by copyright and other intellectual property laws and treaties around the world. All such rights are reserved.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Client work reproduced on this website is subject to its own terms agreed upon between Aaron Mitchell and that party. These terms and conditions apply for all other parties.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'You may view, download for caching purposes only, and print pages or other content from the website for your own personal use, subject to the restrictions set out below and elsewhere in these terms and conditions.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'You are not allowed to do any of the following without our explicit prior permission.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'A - Republish, distribute, transmit or disseminate any part of the material from this website (including republication on another website);'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'B - Sell, rent or sub-license material from the website;'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'C - Show any material from the website in public;'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'D - Reproduce, duplicate, copy or otherwise exploit material on our website for a commercial purpose;'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'E - Edit or otherwise modify the paper or digital copies of any material on the website;'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'F - Download or print the material or extracts from it in a systematic or regular manner or otherwise so as to create a database in electronic or paper format comprising all or part of the material appearing on the Website.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'If you print off, copy or download any part of the Website in breach of these General Terms, your right to use the Website will cease immediately and you must, at our option, return or destroy any copies of the materials you have made.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'If you wish to make any use of material on our site, please send us a message using the ',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'contact' },
+	            'contact form.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Acceptable Use'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'You must not use our website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website; or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'You must not use our website to copy, store, host, transmit, send, use, publish or distribute any material which consists of (or is linked to) any spyware, computer virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'You must not conduct any systematic or automated data collection activities (including without limitation scraping, data mining, data extraction and data harvesting) on or in relation to our website without our express written consent.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'You must not use our website to transmit or send unsolicited commercial communications.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'You must not use our website for any purposes related to marketing without our express written consent.'
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Indemnity'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'You hereby indemnify us and undertake to keep us indemnified against any losses, damages, costs, liabilities and expenses (including without limitation legal expenses and any amounts paid by us to a third party in settlement of a claim or dispute on the advice of our legal advisers) incurred or suffered by us arising out of any breach by you of any provision of these terms and conditions, or arising out of any claim that you have breached any provision of these terms and conditions'
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Breaches of these Terms and Conditions'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Without prejudice to our other rights under these terms and conditions, if you breach these terms and conditions in any way, we may take such action as we deem appropriate to deal with the breach, including suspending your access to the website, prohibiting you from accessing the website, blocking computers using your IP address from accessing the website, contacting your internet service provider to request that they block your access to the website and/or bringing court proceedings against you.'
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Variation'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We may revise these terms and conditions from time-to-time. Revised terms and conditions will apply to the use of our website from the date of the publication of the revised terms and conditions on our website. Please check this page regularly to ensure you are familiar with the current version.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We aim to update the Website regularly, and may change the content at any time. If the need arises, we may suspend access to the Website or close it indefinitely. Any of the material on the Website may be out of date at any given time, and we are under no obligation to update such material.'
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Severability'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'If a provision of these terms and conditions is determined by any court or other competent authority to be unlawful and/or unenforceable, the other provisions will continue in effect. If any unlawful and/or unenforceable provision would be lawful or enforceable if part of it were deleted, that part will be deemed to be deleted, and the rest of the provision will continue in effect.'
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Contact'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'For more information, question about use of material on our site and all other inquiries please send us a message using the ',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'contact' },
+	            'contact form.'
+	          )
 	        )
 	      );
 	    }
@@ -32551,6 +32734,94 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 293 */
+/*!******************************!*\
+  !*** ./src/views/privacy.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 198);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Privacy = function (_Component) {
+	  _inherits(Privacy, _Component);
+	
+	  function Privacy() {
+	    _classCallCheck(this, Privacy);
+	
+	    return _possibleConstructorReturn(this, (Privacy.__proto__ || Object.getPrototypeOf(Privacy)).apply(this, arguments));
+	  }
+	
+	  _createClass(Privacy, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Privacy Policy'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Last Updated 12/22/2016'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We do not store your data. All information collected via the ',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'contact' },
+	            'contact form'
+	          ),
+	          ' (\'name\', \'email\', \'message\') is used to generate an automated message sent to Aaron Mitchell, the site owner and administrator. Information sent in this manner is used solely for the purpose of contacting and following up on inquiries from said form. This data is not collected in a database. We do not sell or otherwise distribute this data. Any changes to the collection of data that expand upon these uses will result in an updated privacy policy at that time.'
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Privacy;
+	}(_react.Component);
+	
+	var _default = Privacy;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(Privacy, 'Privacy', '/Users/amitchell/src2/portfolio/src/views/privacy.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/amitchell/src2/portfolio/src/views/privacy.js');
+	}();
+
+	;
 
 /***/ }
 /******/ ]);

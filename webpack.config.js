@@ -11,7 +11,7 @@ var config = {
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
-    publicPath: "http://localhost:3000/dist/"
+    publicPath: "../images/"
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.css', 'png', 'svg'],

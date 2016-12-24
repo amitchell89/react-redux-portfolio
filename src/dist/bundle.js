@@ -32365,6 +32365,21 @@
 	            'contact form'
 	          ),
 	          ' (\'name\', \'email\', \'message\') is used to generate an automated message sent to Aaron Mitchell, the site owner and administrator. Information sent in this manner is used solely for the purpose of contacting and following up on inquiries from said form. This data is not collected in a database. We do not sell or otherwise distribute this data. Any changes to the collection of data that expand upon these uses will result in an updated privacy policy at that time.'
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          'Google Analytics'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Like millions of other website owners, I use Google Analytics on mitchellaaron.com. Google Analytics is a piece of software that grabs data about visitors to this site. It\u2019s something like an advanced server log. It will record what website you came from to get here and what kind of computer you\u2019re using among other things. The tracking information allows me to better understand the kind of people who come to my site and what content they\u2019re viewing. This allows me to make better decisions about improving this website. Occasionally, I will compile aggregate statistics about the number of visitors this site receives and browsers being used. No personally identifying data is included in this type of reporting. All data collected by Google Analytics is stored and maintained by Google, not me. All of my activity falls within the bounds of the ',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.google.com/analytics/terms/us.html', target: '_blank' },
+	            'Google Analytics Terms of Service.'
+	          )
 	        )
 	      );
 	    }

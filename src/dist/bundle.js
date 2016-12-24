@@ -30944,11 +30944,6 @@
 	          ),
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '' },
-	            'Resume'
-	          ),
-	          _react2.default.createElement(
-	            _reactRouter.Link,
 	            { to: '/contact' },
 	            'Contact'
 	          )
@@ -31926,16 +31921,6 @@
 	            'p',
 	            null,
 	            'I graduated Summa Cum laude from the New Hampshire Institute of Art in 2011 with a major in Illustration. While my primary focus is working digitally, I\'ve also studied oil painting and have shown my work in several exhibitions.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Want to know more? ',
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '' },
-	              'Check out my resume'
-	            )
 	          ),
 	          _react2.default.createElement(
 	            'p',

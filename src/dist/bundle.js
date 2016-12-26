@@ -30750,6 +30750,15 @@
 	   git_link: "https://github.com/amitchell89/arduino-keyboard",
 	   about: "Using Arduino I built a tone generating keyboard. Its powered by a Mega Arduino 2560, which allows you more I/O than your standard arduino (54 pins). It features two octaves of Buttons and an up and down Octave Switch which moves the whole keyboard by one Octave. Its powered by battery and has both speaker and 1/4\" jacks so you can plug into your favorite amplifier.",
 	   hidden: false
+	}, {
+	   name: "Kenobot",
+	   image: "projects/keno_logo.png",
+	   url: false,
+	   url_link: "Node CLI App",
+	   git: true,
+	   git_link: "https://github.com/amitchell89/kenobot",
+	   about: "A Node App for scraping and analyzing Massachusetts Keno Data.",
+	   hidden: false
 	}];
 	;
 	

@@ -3,10 +3,20 @@ export const projects = [
        name: "My Personal Portfolio",
        image: "projects/react__logo.jpg",
        url: true,
-       url_link: "http://www.mitchellaaron.com",
+       url_link: "https://mitchellaaron.com",
        git: true,
        git_link: "https://github.com/amitchell89/react-redux-portfolio",
        about: "This website is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css.",
+       hidden: false
+    },
+    {
+       name: "Ombrely",
+       image: "projects/ombrely_logo.png",
+       url: true,
+       url_link: "https://ombrely.com",
+       git: true,
+       git_link: "https://github.com/amitchell89/ombrely",
+       about: "Ombrély is a simple website built using Vue JS that allows users to generate random gradients with the ability to view the css and copy that code to the clipboard.",
        hidden: false
     },
     {

@@ -30664,10 +30664,19 @@
 	   name: "My Personal Portfolio",
 	   image: "projects/react__logo.jpg",
 	   url: true,
-	   url_link: "http://www.mitchellaaron.com",
+	   url_link: "https://mitchellaaron.com",
 	   git: true,
 	   git_link: "https://github.com/amitchell89/react-redux-portfolio",
 	   about: "This website is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css.",
+	   hidden: false
+	}, {
+	   name: "Ombrely",
+	   image: "projects/ombrely_logo.png",
+	   url: true,
+	   url_link: "https://ombrely.com",
+	   git: true,
+	   git_link: "https://github.com/amitchell89/ombrely",
+	   about: "Ombrély is a simple website built using Vue JS that allows users to generate random gradients with the ability to view the css and copy that code to the clipboard.",
 	   hidden: false
 	}, {
 	   name: "Link Ventures",
@@ -31838,7 +31847,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.'
+	            'As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Vue, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.'
 	          ),
 	          _react2.default.createElement(
 	            'p',

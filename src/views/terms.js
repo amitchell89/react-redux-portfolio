@@ -6,7 +6,14 @@ export default class Terms extends Component {
   render() {
     return (
       <div>
-        <Helmet title="Aaron Mitchell: Terms of Service" />
+        <Helmet
+            title="Aaron Mitchell: Terms of Service"
+            meta={ [
+            { name: "description", content: this.props.route.meta.meta_terms },
+            { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Terms and Conditions'},
+            { property: "og:url", content: 'https://mitchellaaron.com/terms/'},
+          ] }
+        />
         <h2>
         Terms & Conditions
         </h2>

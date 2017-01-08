@@ -6,7 +6,14 @@ export default class Privacy extends Component {
   render() {
     return (
       <div>
-        <Helmet title="Aaron Mitchell: Privacy Policy" />
+        <Helmet
+          title="Aaron Mitchell: Privacy Policy"
+          meta={ [
+            { name: "description", content: this.props.route.meta.meta_privacy },
+            { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Privacy Policy'},
+            { property: "og:url", content: 'https://mitchellaaron.com/privacy/'},
+          ] }
+        />
         <h2>
         Privacy Policy
         </h2>

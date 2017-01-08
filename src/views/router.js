@@ -12,6 +12,7 @@ import Terms from './terms'
 import Privacy from './privacy'
 import Post from './post'
 import NotFound from './notFound'
+import * as meta from '../store/constants/meta_info'
 
 export default class Routes extends Component {
   constructor(props) {
@@ -22,15 +23,15 @@ export default class Routes extends Component {
     return (
       <Provider store={store}>
         <Router history={browserHistory}>
-          <Route path='/' component={AppContainer}>
-            <IndexRoute component={About} />
-            <Route path='/gallery(/:set)(/:image)' component={Gallery} />
-            <Route path='/code' component={Code} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/terms' component={Terms} />
-            <Route path='/privacy' component={Privacy} />
+          <Route path='/' component={AppContainer} meta={meta}>
+            <IndexRoute component={About} meta={meta} />
+            <Route path='/gallery(/:set)(/:image)' component={Gallery} meta={meta} />
+            <Route path='/code' component={Code} meta={meta} />
+            <Route path='/contact' component={Contact} meta={meta} />
+            <Route path='/terms' component={Terms} meta={meta} />
+            <Route path='/privacy' component={Privacy} meta={meta} />
             <Route path='/post' component={Post} />
-            <Route path='*' component={NotFound} />
+            <Route path='*' component={NotFound} meta={meta} />
           </Route>
         </Router>
       </Provider>

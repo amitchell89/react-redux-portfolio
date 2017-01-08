@@ -74,10 +74,20 @@ class Modal extends Component {
       modal__info_classes = 'modal__info modal__info--show'
     }
     let helmet_title = 'Aaron Mitchell: ' + image.name;
+    let helmet_og_title = image.name + ' by Aaron Mitchell. ' + image.medium + '. ' + image.year + '.'
+    let helmet_desc = helmet_og_title + ' ' + this.props.meta.meta_standard
 
     return (
       <div className="modal">
-        <Helmet title={helmet_title} />
+        <Helmet
+          title={helmet_title}
+          meta={ [
+            { name: "description", content: helmet_desc },
+            { property: "og:title", content: helmet_og_title },
+            { property: "og:url", content: 'https://mitchellaaron.com/gallery/' + selectedGallery + '/' + image.id},
+            { property: "og:image", content: 'https://mitchellaaron.com/images/' + image.url},
+          ] }
+        />
         <div className="site_wrapper">
           <div className={modal__info_classes}>
             <p>{image.name}</p>

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { combineReducers, createStore } from 'redux';
 import { connect } from 'react-redux';
+import Helmet from "react-helmet";
 import Header from './header'
 import Footer from './footer'
 import Modal from './modal'
@@ -18,12 +19,18 @@ class AppContainer extends Component {
 
     if (this.props.modal) {
       modal = (
-        <Modal />
+        <Modal meta={this.props.route.meta}/>
       );
     }
 
     return (
       <div>
+        <Helmet
+          meta={ [
+            { property: "og:site_name", content: 'Aaron Mitchell\'s Online Portfolio'},
+            { property: "og:type", content: 'website'},
+          ] }
+        />
         {modal}
         <div className="site_wrapper site_wrapper--main">
           <Header />

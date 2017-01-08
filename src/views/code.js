@@ -43,7 +43,14 @@ class Code extends Component {
 
     return (
       <div>
-        <Helmet title="Aaron Mitchell: Code Gallery" />
+        <Helmet
+          title="Aaron Mitchell: Coding Projects"
+          meta={ [
+            { name: "description", content: this.props.route.meta.meta_code },
+            { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Coding Projects'},
+            { property: "og:url", content: 'https://mitchellaaron.com/code/'},
+          ] }
+        />
         <div className="code__header">
           <h2>
           Code Portfolio

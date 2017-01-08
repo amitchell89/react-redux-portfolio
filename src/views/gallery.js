@@ -105,9 +105,19 @@ class Gallery extends Component {
       </ul>
     )
 
+    let og_image = currentPortfolio[0].url
+
     return (
       <div>
-        <Helmet title="Aaron Mitchell: Gallery" />
+        <Helmet
+          title="Aaron Mitchell: Gallery"
+          meta={ [
+            { name: "description", content: this.props.route.meta.meta_gallery },
+            { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Gallery'},
+            { property: "og:url", content: 'https://mitchellaaron.com/gallery/' + selectedGallery},
+            { property: "og:image", content: 'https://mitchellaaron.com/images/' + og_image},
+          ] }
+        />
         <div className="gallery__nav">
         {filters}
         {list}

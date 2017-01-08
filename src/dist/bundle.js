@@ -22031,6 +22031,12 @@
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
+	var _meta_info = __webpack_require__(/*! ../store/constants/meta_info */ 300);
+	
+	var meta = _interopRequireWildcard(_meta_info);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22059,15 +22065,15 @@
 	          { history: _reactRouter.browserHistory },
 	          _react2.default.createElement(
 	            _reactRouter.Route,
-	            { path: '/', component: _appContainer2.default },
-	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _about2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/gallery(/:set)(/:image)', component: _gallery2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _code2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/privacy', component: _privacy2.default }),
+	            { path: '/', component: _appContainer2.default, meta: meta },
+	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _about2.default, meta: meta }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/gallery(/:set)(/:image)', component: _gallery2.default, meta: meta }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _code2.default, meta: meta }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default, meta: meta }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default, meta: meta }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/privacy', component: _privacy2.default, meta: meta }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/post', component: _post2.default }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default })
+	            _react2.default.createElement(_reactRouter.Route, { path: '*', component: _notFound2.default, meta: meta })
 	          )
 	        )
 	      );
@@ -30804,6 +30810,10 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 189);
 	
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 294);
+	
+	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+	
 	var _header = __webpack_require__(/*! ./header */ 274);
 	
 	var _header2 = _interopRequireDefault(_header);
@@ -30845,12 +30855,15 @@
 	      var modal = null;
 	
 	      if (this.props.modal) {
-	        modal = _react2.default.createElement(_modal2.default, null);
+	        modal = _react2.default.createElement(_modal2.default, { meta: this.props.route.meta });
 	      }
 	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        _react2.default.createElement(_reactHelmet2.default, {
+	          meta: [{ property: "og:site_name", content: 'Aaron Mitchell\'s Online Portfolio' }, { property: "og:type", content: 'website' }]
+	        }),
 	        modal,
 	        _react2.default.createElement(
 	          'div',
@@ -31210,11 +31223,16 @@
 	        modal__info_classes = 'modal__info modal__info--show';
 	      }
 	      var helmet_title = 'Aaron Mitchell: ' + image.name;
+	      var helmet_og_title = image.name + ' by Aaron Mitchell. ' + image.medium + '. ' + image.year + '.';
+	      var helmet_desc = helmet_og_title + ' ' + this.props.meta.meta_standard;
 	
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'modal' },
-	        _react2.default.createElement(_reactHelmet2.default, { title: helmet_title }),
+	        _react2.default.createElement(_reactHelmet2.default, {
+	          title: helmet_title,
+	          meta: [{ name: "description", content: helmet_desc }, { property: "og:title", content: helmet_og_title }, { property: "og:url", content: 'https://mitchellaaron.com/gallery/' + selectedGallery + '/' + image.id }, { property: "og:image", content: 'https://mitchellaaron.com/images/' + image.url }]
+	        }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'site_wrapper' },
@@ -31550,10 +31568,15 @@
 	        }.bind(this))
 	      );
 	
+	      var og_image = currentPortfolio[0].url;
+	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_reactHelmet2.default, { title: 'Aaron Mitchell: Gallery' }),
+	        _react2.default.createElement(_reactHelmet2.default, {
+	          title: 'Aaron Mitchell: Gallery',
+	          meta: [{ name: "description", content: this.props.route.meta.meta_gallery }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Gallery' }, { property: "og:url", content: 'https://mitchellaaron.com/gallery/' + selectedGallery }, { property: "og:image", content: 'https://mitchellaaron.com/images/' + og_image }]
+	        }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'gallery__nav' },
@@ -31852,7 +31875,10 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_reactHelmet2.default, { title: 'Aaron Mitchell: Code Gallery' }),
+	        _react2.default.createElement(_reactHelmet2.default, {
+	          title: 'Aaron Mitchell: Coding Projects',
+	          meta: [{ name: "description", content: this.props.route.meta.meta_code }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Coding Projects' }, { property: "og:url", content: 'https://mitchellaaron.com/code/' }]
+	        }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'code__header' },
@@ -31951,7 +31977,10 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'about--copy' },
-	          _react2.default.createElement(_reactHelmet2.default, { title: 'Aaron Mitchell: About' }),
+	          _react2.default.createElement(_reactHelmet2.default, {
+	            title: 'Aaron Mitchell: About',
+	            meta: [{ name: "description", content: this.props.route.meta.meta_about }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: About the Artist' }, { property: "og:url", content: 'https://mitchellaaron.com/' }, { property: "og:image", content: 'https://mitchellaaron.com/images/Aaron_Mitchell_Portrait.jpg' }]
+	          }),
 	          _react2.default.createElement(
 	            'p',
 	            null,
@@ -32043,7 +32072,10 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "contact" },
-	        _react2.default.createElement(_reactHelmet2.default, { title: "Aaron Mitchell: Contact" }),
+	        _react2.default.createElement(_reactHelmet2.default, {
+	          title: "Aaron Mitchell: Contact",
+	          meta: [{ name: "description", content: this.props.route.meta.meta_contact }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Contact the Artist' }, { property: "og:url", content: 'https://mitchellaaron.com/contact/' }]
+	        }),
 	        _react2.default.createElement(
 	          "h2",
 	          null,
@@ -32152,7 +32184,10 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_reactHelmet2.default, { title: 'Aaron Mitchell: Terms of Service' }),
+	        _react2.default.createElement(_reactHelmet2.default, {
+	          title: 'Aaron Mitchell: Terms of Service',
+	          meta: [{ name: "description", content: this.props.route.meta.meta_terms }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Terms and Conditions' }, { property: "og:url", content: 'https://mitchellaaron.com/terms/' }]
+	        }),
 	        _react2.default.createElement(
 	          'h2',
 	          null,
@@ -32399,7 +32434,10 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_reactHelmet2.default, { title: 'Aaron Mitchell: Privacy Policy' }),
+	        _react2.default.createElement(_reactHelmet2.default, {
+	          title: 'Aaron Mitchell: Privacy Policy',
+	          meta: [{ name: "description", content: this.props.route.meta.meta_privacy }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Privacy Policy' }, { property: "og:url", content: 'https://mitchellaaron.com/privacy/' }]
+	        }),
 	        _react2.default.createElement(
 	          'h2',
 	          null,
@@ -33903,6 +33941,59 @@
 	
 	exports.default = PlainComponent;
 	module.exports = exports["default"];
+
+/***/ },
+/* 300 */
+/*!******************************************!*\
+  !*** ./src/store/constants/meta_info.js ***!
+  \******************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var meta_standard = exports.meta_standard = 'Aaron Mitchell is a UI Designer, Front End Developer, Illustrator and Fine Artist currently working in Cambridge, MA.';
+	
+	var meta_about = exports.meta_about = meta_standard + ' Explore galleries of work, view code samples and learn more about the artist.';
+	
+	var meta_contact = exports.meta_contact = 'Contact Aaron Mitchell for more information about his work or collaborating together. ' + meta_standard;
+	
+	var meta_gallery = exports.meta_gallery = 'Explore work from Aaron Mitchell inlcuding Graphic Design, Illustration, Oil Paintings, Concert Posters, Comics, Collages and Abstract Work. ' + meta_standard;
+	
+	var meta_code = exports.meta_code = 'View Code samples from Aaron Mitchell including work using Javascript, React, Redux, VueJs, Arduino and more. ' + meta_standard;
+	
+	var meta_terms = exports.meta_terms = 'View Terms and Service for mitchellaaron.com. ' + meta_standard;
+	
+	var meta_privacy = exports.meta_privacy = 'View Privacy Policy for mitchellaaron.com. ' + meta_standard;
+	
+	var meta_404 = exports.meta_404 = 'Womp womp. Looks like this link is broken. I promise there\'s more good stuff at https://mitchellaaron.com. Go check it out!';
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(meta_standard, 'meta_standard', '/Users/amitchell/src2/portfolio/src/store/constants/meta_info.js');
+	
+	  __REACT_HOT_LOADER__.register(meta_about, 'meta_about', '/Users/amitchell/src2/portfolio/src/store/constants/meta_info.js');
+	
+	  __REACT_HOT_LOADER__.register(meta_contact, 'meta_contact', '/Users/amitchell/src2/portfolio/src/store/constants/meta_info.js');
+	
+	  __REACT_HOT_LOADER__.register(meta_gallery, 'meta_gallery', '/Users/amitchell/src2/portfolio/src/store/constants/meta_info.js');
+	
+	  __REACT_HOT_LOADER__.register(meta_code, 'meta_code', '/Users/amitchell/src2/portfolio/src/store/constants/meta_info.js');
+	
+	  __REACT_HOT_LOADER__.register(meta_terms, 'meta_terms', '/Users/amitchell/src2/portfolio/src/store/constants/meta_info.js');
+	
+	  __REACT_HOT_LOADER__.register(meta_privacy, 'meta_privacy', '/Users/amitchell/src2/portfolio/src/store/constants/meta_info.js');
+	
+	  __REACT_HOT_LOADER__.register(meta_404, 'meta_404', '/Users/amitchell/src2/portfolio/src/store/constants/meta_info.js');
+	}();
+
+	;
 
 /***/ }
 /******/ ]);

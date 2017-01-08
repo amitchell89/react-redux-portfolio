@@ -6,7 +6,14 @@ export default class Contact extends Component {
 
     return (
       <div className="contact">
-        <Helmet title="Aaron Mitchell: Contact" />
+        <Helmet
+          title="Aaron Mitchell: Contact"
+          meta={ [
+            { name: "description", content: this.props.route.meta.meta_contact },
+            { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Contact the Artist'},
+            { property: "og:url", content: 'https://mitchellaaron.com/contact/'},
+          ] }
+          />
         <h2>
         Contact
         </h2>

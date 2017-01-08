@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { browserHistory } from 'react-router'
-import { updateGallery } from '../store/actions/UpdateGallery'
-import { openModal } from '../store/actions/ToggleModal'
-import { setImage } from '../store/actions/SetImage'
-import GalleryItem from './galleryItem'
+import { browserHistory } from 'react-router';
+import Helmet from "react-helmet";
+import { updateGallery } from '../store/actions/UpdateGallery';
+import { openModal } from '../store/actions/ToggleModal';
+import { setImage } from '../store/actions/SetImage';
+import GalleryItem from './galleryItem';
 
 
 function mapStateToProps(state) {
@@ -106,6 +107,7 @@ class Gallery extends Component {
 
     return (
       <div>
+        <Helmet title="Aaron Mitchell: Gallery" />
         <div className="gallery__nav">
         {filters}
         {list}

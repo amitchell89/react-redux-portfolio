@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router'
+import Helmet from "react-helmet";
 
 export default class Privacy extends Component {
   render() {
     return (
       <div>
+        <Helmet title="Aaron Mitchell: Privacy Policy" />
         <h2>
         Privacy Policy
         </h2>

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { browserHistory } from 'react-router'
+import Helmet from "react-helmet";
 import { closeModal } from '../store/actions/ToggleModal'
 import { setImage } from '../store/actions/SetImage'
 
@@ -72,9 +73,11 @@ class Modal extends Component {
     if (this.state.info == true) {
       modal__info_classes = 'modal__info modal__info--show'
     }
+    let helmet_title = 'Aaron Mitchell: ' + image.name;
 
     return (
       <div className="modal">
+        <Helmet title={helmet_title} />
         <div className="site_wrapper">
           <div className={modal__info_classes}>
             <p>{image.name}</p>

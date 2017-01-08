@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router'
+import Helmet from "react-helmet";
 
 function mapStateToProps(state) {
    return {
@@ -39,8 +40,10 @@ class Code extends Component {
         )}.bind(this))}
       </div>
     )
+
     return (
       <div>
+        <Helmet title="Aaron Mitchell: Code Gallery" />
         <div className="code__header">
           <h2>
           Code Portfolio

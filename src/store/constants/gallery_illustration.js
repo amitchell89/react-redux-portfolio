@@ -5,7 +5,7 @@ export const illustration = [
     medium: "Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Cogo_Labs_Halloween_Shirt.jpg",
-    hidden: true
+    hidden: false
   },
   {
     name: "Cogo Labs Rocket Shirt",
@@ -13,7 +13,7 @@ export const illustration = [
     medium: "Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Shirt.jpg",
-    hidden: true
+    hidden: false
   },
   {
     name: "Cogo Labs 404 Page",
@@ -21,7 +21,7 @@ export const illustration = [
     medium: "Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
-    hidden: true
+    hidden: false
   },
   {
     name: "Coog Labs Rocket Stickers",
@@ -29,7 +29,7 @@ export const illustration = [
     medium: "Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Sticker.jpg",
-    hidden: true
+    hidden: false
   },
   {
     name: "The Best Hotel",

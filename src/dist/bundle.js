@@ -29812,28 +29812,28 @@
 	  medium: "Digital",
 	  about: "",
 	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Halloween_Shirt.jpg",
-	  hidden: true
+	  hidden: false
 	}, {
 	  name: "Cogo Labs Rocket Shirt",
 	  year: "2014",
 	  medium: "Digital",
 	  about: "",
 	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Shirt.jpg",
-	  hidden: true
+	  hidden: false
 	}, {
 	  name: "Cogo Labs 404 Page",
 	  year: "2015",
 	  medium: "Digital",
 	  about: "",
 	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
-	  hidden: true
+	  hidden: false
 	}, {
 	  name: "Coog Labs Rocket Stickers",
 	  year: "2016",
 	  medium: "Digital",
 	  about: "",
 	  url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Sticker.jpg",
-	  hidden: true
+	  hidden: false
 	}, {
 	  name: "The Best Hotel",
 	  year: "2011",
@@ -30014,6 +30014,34 @@
 	  url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg",
 	  hidden: false
 	}, {
+	  name: "Rekindld Logo",
+	  year: "2016",
+	  medium: "Digital",
+	  about: "",
+	  url: "design/Aaron_Mitchell_Rekindld_Logo_700.jpg",
+	  hidden: false
+	}, {
+	  name: "Thrive Medicare Logo",
+	  year: "2016",
+	  medium: "Digital",
+	  about: "",
+	  url: "design/Aaron_Mitchell_Thrive_Medicare_Logo_700.jpg",
+	  hidden: false
+	}, {
+	  name: "SL Logix Logo",
+	  year: "2012",
+	  medium: "Digital",
+	  about: "",
+	  url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg",
+	  hidden: false
+	}, {
+	  name: "Dorbly Logo",
+	  year: "2015",
+	  medium: "Digital",
+	  about: "",
+	  url: "design/Aaron_Mitchell_Dorbly_Logo_700.jpg",
+	  hidden: false
+	}, {
 	  name: "MGS Design Logo",
 	  year: "2015",
 	  medium: "Digital",
@@ -30021,11 +30049,18 @@
 	  url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg",
 	  hidden: false
 	}, {
-	  name: "Afghan Strangers Album Cover",
-	  year: "2013",
-	  medium: "Photo / Digital",
+	  name: "Hingham & Hull Rotary Golf Tournament Logo",
+	  year: "2014",
+	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg",
+	  url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg",
+	  hidden: false
+	}, {
+	  name: "Link Ventures Logo",
+	  year: "2015",
+	  medium: "Digital",
+	  about: "",
+	  url: "design/Aaron_Mitchell_Link_Ventures_Logo_700.jpg",
 	  hidden: false
 	}, {
 	  name: "Coastal Farms Logo",
@@ -30042,18 +30077,18 @@
 	  url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg",
 	  hidden: false
 	}, {
-	  name: "Hingham & Hull Rotary Golf Tournament Logo",
-	  year: "2014",
+	  name: "Dagreez Logo",
+	  year: "2016",
 	  medium: "Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg",
+	  url: "design/Aaron_Mitchell_Dagreez_Logo_700.jpg",
 	  hidden: false
 	}, {
-	  name: "SL Logix Logo",
-	  year: "2012",
-	  medium: "Digital",
+	  name: "Afghan Strangers Album Cover",
+	  year: "2013",
+	  medium: "Photo / Digital",
 	  about: "",
-	  url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg",
+	  url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg",
 	  hidden: false
 	}];
 	;
@@ -30688,29 +30723,29 @@
 	   name: "Link Ventures",
 	   url: true,
 	   url_link: "http://www.linkventures.com",
-	   image: "projects/cogo_labs_logo.jpg",
+	   image: "projects/link_ventures.jpg",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
 	   about: "Link Ventures is a portfolio site for the investment firm that backs my Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
-	   hidden: true
+	   hidden: false
 	}, {
 	   name: "Umbrella Check",
-	   image: "projects/cogo_labs_logo.jpg",
+	   image: "projects/umbrella_check.jpg",
 	   url: true,
 	   url_link: "http://www.umbrellacheck.com",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
 	   about: "Umbrella Check is a weather site I worked on at Cogo Labs. I created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker.",
-	   hidden: true
+	   hidden: false
 	}, {
 	   name: "Thrive Medicare",
-	   image: "projects/cogo_labs_logo.jpg",
+	   image: "projects/thrive_medicare.jpg",
 	   url: true,
 	   url_link: "http://www.thrivemedicare.com",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
 	   about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery.",
-	   hidden: true
+	   hidden: false
 	}, {
 	   name: "Cogo Labs 404 Page",
 	   image: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
@@ -30719,7 +30754,7 @@
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
 	   about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse.",
-	   hidden: true
+	   hidden: false
 	}, {
 	   name: "Schillaci Guitars",
 	   image: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
@@ -30740,13 +30775,13 @@
 	   hidden: false
 	}, {
 	   name: "Table Flipper",
-	   image: "projects/cogo_labs_logo.jpg",
+	   image: "projects/table_flipper.jpg",
 	   url: false,
 	   url_link: "Command Line Tool. No UI",
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
 	   about: "Table Flipper is a node command line interface tool that I built to make coding emails easier and faster. It allows you to code emails using Jade for the markup, Sass for inline styles and Json for declaring variables and rendering options. The code is compiled into two versions, a clean production version, and a populated version for testing. It includes options to manipulate the final html by randomizing class names, shuffling html attributes and deleting unused classes.Table Flipper also provides a library of common partials for reusable elements and email fixes, and allows users to create blueprints, or starter templates for an even faster workflow. It utilizes nodemon for watching for changes and AWS syncing for quickly uploading images to Amazon S3.",
-	   hidden: true
+	   hidden: false
 	}, {
 	   name: "Offer Coffer",
 	   image: "projects/cogo_labs_logo.jpg",
@@ -32791,7 +32826,13 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'Below is a list of projects I have worked on as both a freelancer and as an employee at Cogo Labs.'
+	            'Below is a list of projects I have worked on as both a freelancer and as an employee at Cogo Labs. For more information on a project, or to request wireframes and mockups, please ',
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'contact' },
+	              'send me a message'
+	            ),
+	            '.'
 	          )
 	        ),
 	        projectsList

@@ -32,6 +32,38 @@ export const design = [
     hidden: false
   },
   {
+    name: "Rekindld Logo",
+    year: "2016",
+    medium: "Digital",
+    about: "",
+    url: "design/Aaron_Mitchell_Rekindld_Logo_700.jpg",
+    hidden: false
+  },
+  {
+    name: "Thrive Medicare Logo",
+    year: "2016",
+    medium: "Digital",
+    about: "",
+    url: "design/Aaron_Mitchell_Thrive_Medicare_Logo_700.jpg",
+    hidden: false
+  },
+  {
+    name: "SL Logix Logo",
+    year: "2012",
+    medium: "Digital",
+    about: "",
+    url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg",
+    hidden: false
+  },
+  {
+    name: "Dorbly Logo",
+    year: "2015",
+    medium: "Digital",
+    about: "",
+    url: "design/Aaron_Mitchell_Dorbly_Logo_700.jpg",
+    hidden: false
+  },
+  {
     name: "MGS Design Logo",
     year: "2015",
     medium: "Digital",
@@ -40,11 +72,19 @@ export const design = [
     hidden: false
   },
   {
-    name: "Afghan Strangers Album Cover",
-    year: "2013",
-    medium: "Photo / Digital",
+    name: "Hingham & Hull Rotary Golf Tournament Logo",
+    year: "2014",
+    medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg",
+    url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg",
+    hidden: false
+  },
+  {
+    name: "Link Ventures Logo",
+    year: "2015",
+    medium: "Digital",
+    about: "",
+    url: "design/Aaron_Mitchell_Link_Ventures_Logo_700.jpg",
     hidden: false
   },
   {
@@ -64,19 +104,19 @@ export const design = [
     hidden: false
   },
   {
-    name: "Hingham & Hull Rotary Golf Tournament Logo",
-    year: "2014",
+    name: "Dagreez Logo",
+    year: "2016",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg",
+    url: "design/Aaron_Mitchell_Dagreez_Logo_700.jpg",
     hidden: false
   },
   {
-    name: "SL Logix Logo",
-    year: "2012",
-    medium: "Digital",
+    name: "Afghan Strangers Album Cover",
+    year: "2013",
+    medium: "Photo / Digital",
     about: "",
-    url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg",
+    url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg",
     hidden: false
-  }
+  },
 ]

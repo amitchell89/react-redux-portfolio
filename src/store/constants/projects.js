@@ -23,31 +23,31 @@ export const projects = [
        name: "Link Ventures",
        url: true,
        url_link: "http://www.linkventures.com",
-       image: "projects/cogo_labs_logo.jpg",
+       image: "projects/link_ventures.jpg",
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "Link Ventures is a portfolio site for the investment firm that backs my Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
-       hidden: true
+       hidden: false
     },
     {
        name: "Umbrella Check",
-       image: "projects/cogo_labs_logo.jpg",
+       image: "projects/umbrella_check.jpg",
        url: true,
        url_link: "http://www.umbrellacheck.com",
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "Umbrella Check is a weather site I worked on at Cogo Labs. I created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker.",
-       hidden: true
+       hidden: false
     },
     {
        name: "Thrive Medicare",
-       image: "projects/cogo_labs_logo.jpg",
+       image: "projects/thrive_medicare.jpg",
        url: true,
        url_link: "http://www.thrivemedicare.com",
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery.",
-       hidden: true
+       hidden: false
     },
     {
        name: "Cogo Labs 404 Page",
@@ -57,7 +57,7 @@ export const projects = [
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse.",
-       hidden: true
+       hidden: false
     },
     {
        name: "Schillaci Guitars",
@@ -81,13 +81,13 @@ export const projects = [
     },
     {
        name: "Table Flipper",
-       image: "projects/cogo_labs_logo.jpg",
+       image: "projects/table_flipper.jpg",
        url: false,
        url_link: "Command Line Tool. No UI",
        git: false,
        git_link: "Work Project (Code Not Public)",
        about: "Table Flipper is a node command line interface tool that I built to make coding emails easier and faster. It allows you to code emails using Jade for the markup, Sass for inline styles and Json for declaring variables and rendering options. The code is compiled into two versions, a clean production version, and a populated version for testing. It includes options to manipulate the final html by randomizing class names, shuffling html attributes and deleting unused classes.Table Flipper also provides a library of common partials for reusable elements and email fixes, and allows users to create blueprints, or starter templates for an even faster workflow. It utilizes nodemon for watching for changes and AWS syncing for quickly uploading images to Amazon S3.",
-       hidden: true
+       hidden: false
     },
     {
        name: "Offer Coffer",

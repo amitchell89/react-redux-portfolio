@@ -31004,7 +31004,7 @@
 	   git: false,
 	   git_link: "Work Project (Code Not Public)",
 	   about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery.",
-	   hidden: false
+	   hidden: true
 	}, {
 	   name: "Cogo Labs 404 Page",
 	   image: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",

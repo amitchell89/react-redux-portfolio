@@ -73,7 +73,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	__webpack_require__(/*! ./css/index.scss */ 312);
+	__webpack_require__(/*! ./css/index.scss */ 313);
 	
 	_reactDom2.default.render(_react2.default.createElement(_router2.default, null), document.getElementById('app'));
 	;
@@ -22080,43 +22080,43 @@
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
-	var _appContainer = __webpack_require__(/*! ./appContainer */ 285);
+	var _appContainer = __webpack_require__(/*! ./appContainer */ 286);
 	
 	var _appContainer2 = _interopRequireDefault(_appContainer);
 	
-	var _gallery = __webpack_require__(/*! ./gallery */ 301);
+	var _gallery = __webpack_require__(/*! ./gallery */ 302);
 	
 	var _gallery2 = _interopRequireDefault(_gallery);
 	
-	var _code = __webpack_require__(/*! ./code */ 304);
+	var _code = __webpack_require__(/*! ./code */ 305);
 	
 	var _code2 = _interopRequireDefault(_code);
 	
-	var _about = __webpack_require__(/*! ./about */ 305);
+	var _about = __webpack_require__(/*! ./about */ 306);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _contact = __webpack_require__(/*! ./contact */ 306);
+	var _contact = __webpack_require__(/*! ./contact */ 307);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _terms = __webpack_require__(/*! ./terms */ 307);
+	var _terms = __webpack_require__(/*! ./terms */ 308);
 	
 	var _terms2 = _interopRequireDefault(_terms);
 	
-	var _privacy = __webpack_require__(/*! ./privacy */ 308);
+	var _privacy = __webpack_require__(/*! ./privacy */ 309);
 	
 	var _privacy2 = _interopRequireDefault(_privacy);
 	
-	var _post = __webpack_require__(/*! ./post */ 309);
+	var _post = __webpack_require__(/*! ./post */ 310);
 	
 	var _post2 = _interopRequireDefault(_post);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 310);
+	var _notFound = __webpack_require__(/*! ./notFound */ 311);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
-	var _meta_info = __webpack_require__(/*! ../store/constants/meta_info */ 311);
+	var _meta_info = __webpack_require__(/*! ../store/constants/meta_info */ 312);
 	
 	var meta = _interopRequireWildcard(_meta_info);
 	
@@ -29761,11 +29761,11 @@
 	
 	var _gallery2 = _interopRequireDefault(_gallery);
 	
-	var _modal = __webpack_require__(/*! ./modal */ 282);
+	var _modal = __webpack_require__(/*! ./modal */ 283);
 	
 	var _modal2 = _interopRequireDefault(_modal);
 	
-	var _projects = __webpack_require__(/*! ./projects */ 283);
+	var _projects = __webpack_require__(/*! ./projects */ 284);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
@@ -29952,6 +29952,8 @@
 	
 	var _gallery_comics = __webpack_require__(/*! ./gallery_comics */ 281);
 	
+	var _gallery_photos = __webpack_require__(/*! ./gallery_photos */ 282);
+	
 	var images = exports.images = {
 	  illustration: _gallery_illustration.illustration,
 	  design: _gallery_design.design,
@@ -29959,7 +29961,8 @@
 	  posters: _gallery_posters.posters,
 	  comics: _gallery_comics.comics,
 	  collage: _gallery_collage.collage,
-	  circular: _gallery_circular.circular
+	  circular: _gallery_circular.circular,
+	  photos: _gallery_photos.photos
 	};
 	;
 	
@@ -30828,6 +30831,103 @@
 
 /***/ },
 /* 282 */
+/*!***********************************************!*\
+  !*** ./src/store/constants/gallery_photos.js ***!
+  \***********************************************/
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var photos = exports.photos = [{
+	  name: "Defend Progress",
+	  year: "2017",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Defend_Progress.jpg"
+	}, {
+	  name: "This Country Is Falling Apart",
+	  year: "2016",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_This_Country_Is_Falling_Apart.jpg"
+	}, {
+	  name: "Boston",
+	  year: "2016",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Boston_By_Boat.jpg"
+	}, {
+	  name: "Boston",
+	  year: "2016",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Boston_In_The_Fog.jpg"
+	}, {
+	  name: "Seattle",
+	  year: "2017",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Seattle.jpg"
+	}, {
+	  name: "Boston",
+	  year: "2017",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Boston.jpg"
+	}, {
+	  name: "Boston",
+	  year: "2015",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Boston_Skyline.jpg"
+	}, {
+	  name: "Lake Michigan",
+	  year: "2016",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Lake_Michigan.jpg"
+	}, {
+	  name: "Night_Moves",
+	  year: "2015",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Night_Moves.jpg"
+	}, {
+	  name: "Rain",
+	  year: "2016",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Rain_On_Window.jpg"
+	}, {
+	  name: "The Yellow Lamp",
+	  year: "2011",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_The_Yellow_Lamp.jpg"
+	}, {
+	  name: "Black Square Study",
+	  year: "2011",
+	  medium: "Photo",
+	  about: "",
+	  url: "photos/Aaron_Mitchell_Black_Square_Study.jpg"
+	}];
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(photos, "photos", "/Users/aaronmitchell/src/react-redux-portfolio/src/store/constants/gallery_photos.js");
+	}();
+
+	;
+
+/***/ },
+/* 283 */
 /*!*************************************!*\
   !*** ./src/store/reducers/modal.js ***!
   \*************************************/
@@ -30908,7 +31008,7 @@
 	;
 
 /***/ },
-/* 283 */
+/* 284 */
 /*!****************************************!*\
   !*** ./src/store/reducers/projects.js ***!
   \****************************************/
@@ -30921,7 +31021,7 @@
 	});
 	exports.default = projects;
 	
-	var _projects = __webpack_require__(/*! ../constants/projects */ 284);
+	var _projects = __webpack_require__(/*! ../constants/projects */ 285);
 	
 	var allProjects = _interopRequireWildcard(_projects);
 	
@@ -30949,7 +31049,7 @@
 	;
 
 /***/ },
-/* 284 */
+/* 285 */
 /*!*****************************************!*\
   !*** ./src/store/constants/projects.js ***!
   \*****************************************/
@@ -31082,7 +31182,7 @@
 	;
 
 /***/ },
-/* 285 */
+/* 286 */
 /*!***********************************!*\
   !*** ./src/views/appContainer.js ***!
   \***********************************/
@@ -31104,19 +31204,19 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 201);
 	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 286);
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _header = __webpack_require__(/*! ./header */ 296);
+	var _header = __webpack_require__(/*! ./header */ 297);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _footer = __webpack_require__(/*! ./footer */ 297);
+	var _footer = __webpack_require__(/*! ./footer */ 298);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _modal = __webpack_require__(/*! ./modal */ 298);
+	var _modal = __webpack_require__(/*! ./modal */ 299);
 	
 	var _modal2 = _interopRequireDefault(_modal);
 	
@@ -31197,7 +31297,7 @@
 	;
 
 /***/ },
-/* 286 */
+/* 287 */
 /*!**************************************!*\
   !*** ./~/react-helmet/lib/Helmet.js ***!
   \**************************************/
@@ -31213,7 +31313,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactSideEffect = __webpack_require__(/*! react-side-effect */ 287);
+	var _reactSideEffect = __webpack_require__(/*! react-side-effect */ 288);
 	
 	var _reactSideEffect2 = _interopRequireDefault(_reactSideEffect);
 	
@@ -31225,9 +31325,9 @@
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _HelmetConstants = __webpack_require__(/*! ./HelmetConstants.js */ 294);
+	var _HelmetConstants = __webpack_require__(/*! ./HelmetConstants.js */ 295);
 	
-	var _PlainComponent = __webpack_require__(/*! ./PlainComponent */ 295);
+	var _PlainComponent = __webpack_require__(/*! ./PlainComponent */ 296);
 	
 	var _PlainComponent2 = _interopRequireDefault(_PlainComponent);
 	
@@ -31738,7 +31838,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 287 */
+/* 288 */
 /*!******************************************!*\
   !*** ./~/react-side-effect/lib/index.js ***!
   \******************************************/
@@ -31758,11 +31858,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _exenv = __webpack_require__(/*! exenv */ 288);
+	var _exenv = __webpack_require__(/*! exenv */ 289);
 	
 	var _exenv2 = _interopRequireDefault(_exenv);
 	
-	var _shallowequal = __webpack_require__(/*! shallowequal */ 289);
+	var _shallowequal = __webpack_require__(/*! shallowequal */ 290);
 	
 	var _shallowequal2 = _interopRequireDefault(_shallowequal);
 	
@@ -31870,7 +31970,7 @@
 	};
 
 /***/ },
-/* 288 */
+/* 289 */
 /*!**************************!*\
   !*** ./~/exenv/index.js ***!
   \**************************/
@@ -31919,7 +32019,7 @@
 
 
 /***/ },
-/* 289 */
+/* 290 */
 /*!*****************************************!*\
   !*** ./~/shallowequal/modules/index.js ***!
   \*****************************************/
@@ -31927,7 +32027,7 @@
 
 	'use strict';
 	
-	var fetchKeys = __webpack_require__(/*! lodash.keys */ 290);
+	var fetchKeys = __webpack_require__(/*! lodash.keys */ 291);
 	
 	module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 	
@@ -31975,7 +32075,7 @@
 	};
 
 /***/ },
-/* 290 */
+/* 291 */
 /*!********************************!*\
   !*** ./~/lodash.keys/index.js ***!
   \********************************/
@@ -31989,9 +32089,9 @@
 	 * Copyright 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
 	 * Available under MIT license <https://lodash.com/license>
 	 */
-	var getNative = __webpack_require__(/*! lodash._getnative */ 291),
-	    isArguments = __webpack_require__(/*! lodash.isarguments */ 292),
-	    isArray = __webpack_require__(/*! lodash.isarray */ 293);
+	var getNative = __webpack_require__(/*! lodash._getnative */ 292),
+	    isArguments = __webpack_require__(/*! lodash.isarguments */ 293),
+	    isArray = __webpack_require__(/*! lodash.isarray */ 294);
 	
 	/** Used to detect unsigned integer values. */
 	var reIsUint = /^\d+$/;
@@ -32220,7 +32320,7 @@
 
 
 /***/ },
-/* 291 */
+/* 292 */
 /*!**************************************!*\
   !*** ./~/lodash._getnative/index.js ***!
   \**************************************/
@@ -32366,7 +32466,7 @@
 
 
 /***/ },
-/* 292 */
+/* 293 */
 /*!***************************************!*\
   !*** ./~/lodash.isarguments/index.js ***!
   \***************************************/
@@ -32604,7 +32704,7 @@
 
 
 /***/ },
-/* 293 */
+/* 294 */
 /*!***********************************!*\
   !*** ./~/lodash.isarray/index.js ***!
   \***********************************/
@@ -32793,7 +32893,7 @@
 
 
 /***/ },
-/* 294 */
+/* 295 */
 /*!***********************************************!*\
   !*** ./~/react-helmet/lib/HelmetConstants.js ***!
   \***********************************************/
@@ -32832,7 +32932,7 @@
 	};
 
 /***/ },
-/* 295 */
+/* 296 */
 /*!**********************************************!*\
   !*** ./~/react-helmet/lib/PlainComponent.js ***!
   \**********************************************/
@@ -32877,7 +32977,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 296 */
+/* 297 */
 /*!*****************************!*\
   !*** ./src/views/header.js ***!
   \*****************************/
@@ -32977,7 +33077,7 @@
 	;
 
 /***/ },
-/* 297 */
+/* 298 */
 /*!*****************************!*\
   !*** ./src/views/footer.js ***!
   \*****************************/
@@ -33063,7 +33163,7 @@
 	;
 
 /***/ },
-/* 298 */
+/* 299 */
 /*!****************************!*\
   !*** ./src/views/modal.js ***!
   \****************************/
@@ -33085,13 +33185,13 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 286);
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 299);
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 300);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 300);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 301);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -33289,7 +33389,7 @@
 	;
 
 /***/ },
-/* 299 */
+/* 300 */
 /*!******************************************!*\
   !*** ./src/store/actions/ToggleModal.js ***!
   \******************************************/
@@ -33337,7 +33437,7 @@
 	;
 
 /***/ },
-/* 300 */
+/* 301 */
 /*!***************************************!*\
   !*** ./src/store/actions/SetImage.js ***!
   \***************************************/
@@ -33376,7 +33476,7 @@
 	;
 
 /***/ },
-/* 301 */
+/* 302 */
 /*!******************************!*\
   !*** ./src/views/gallery.js ***!
   \******************************/
@@ -33398,17 +33498,17 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 286);
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _UpdateGallery = __webpack_require__(/*! ../store/actions/UpdateGallery */ 302);
+	var _UpdateGallery = __webpack_require__(/*! ../store/actions/UpdateGallery */ 303);
 	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 299);
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 300);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 300);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 301);
 	
-	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 303);
+	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 304);
 	
 	var _galleryItem2 = _interopRequireDefault(_galleryItem);
 	
@@ -33587,7 +33687,7 @@
 	;
 
 /***/ },
-/* 302 */
+/* 303 */
 /*!********************************************!*\
   !*** ./src/store/actions/UpdateGallery.js ***!
   \********************************************/
@@ -33626,7 +33726,7 @@
 	;
 
 /***/ },
-/* 303 */
+/* 304 */
 /*!**********************************!*\
   !*** ./src/views/galleryItem.js ***!
   \**********************************/
@@ -33648,9 +33748,9 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 299);
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 300);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 300);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 301);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -33727,7 +33827,7 @@
 	;
 
 /***/ },
-/* 304 */
+/* 305 */
 /*!***************************!*\
   !*** ./src/views/code.js ***!
   \***************************/
@@ -33749,7 +33849,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 286);
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -33906,7 +34006,7 @@
 	;
 
 /***/ },
-/* 305 */
+/* 306 */
 /*!****************************!*\
   !*** ./src/views/about.js ***!
   \****************************/
@@ -33926,7 +34026,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 286);
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -34006,7 +34106,7 @@
 	;
 
 /***/ },
-/* 306 */
+/* 307 */
 /*!******************************!*\
   !*** ./src/views/contact.js ***!
   \******************************/
@@ -34024,7 +34124,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 286);
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -34117,7 +34217,7 @@
 	;
 
 /***/ },
-/* 307 */
+/* 308 */
 /*!****************************!*\
   !*** ./src/views/terms.js ***!
   \****************************/
@@ -34137,7 +34237,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 286);
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -34367,7 +34467,7 @@
 	;
 
 /***/ },
-/* 308 */
+/* 309 */
 /*!******************************!*\
   !*** ./src/views/privacy.js ***!
   \******************************/
@@ -34387,7 +34487,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 286);
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
@@ -34478,7 +34578,7 @@
 	;
 
 /***/ },
-/* 309 */
+/* 310 */
 /*!***************************!*\
   !*** ./src/views/post.js ***!
   \***************************/
@@ -34498,7 +34598,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 310);
+	var _notFound = __webpack_require__(/*! ./notFound */ 311);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
@@ -34588,7 +34688,7 @@
 	;
 
 /***/ },
-/* 310 */
+/* 311 */
 /*!*******************************!*\
   !*** ./src/views/notFound.js ***!
   \*******************************/
@@ -34658,7 +34758,7 @@
 	;
 
 /***/ },
-/* 311 */
+/* 312 */
 /*!******************************************!*\
   !*** ./src/store/constants/meta_info.js ***!
   \******************************************/
@@ -34711,7 +34811,7 @@
 	;
 
 /***/ },
-/* 312 */
+/* 313 */
 /*!****************************!*\
   !*** ./src/css/index.scss ***!
   \****************************/
@@ -34720,10 +34820,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?sourceMap!./index.scss */ 313);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?sourceMap!./index.scss */ 314);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 316)(content, {});
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 317)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -34740,24 +34840,24 @@
 	}
 
 /***/ },
-/* 313 */
+/* 314 */
 /*!*********************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader?sourceMap!./src/css/index.scss ***!
   \*********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 314)();
+	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 315)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n/* Base Styles */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #eeeeee;\n  font-family: 'Open Sans', helvetica, arial, sans-serif;\n  font-weight: 300;\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #0066ff; }\n\np {\n  line-height: 1.5; }\n\nul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nli {\n  cursor: pointer; }\n\nselect {\n  padding: 0.75rem 1rem;\n  font-size: 1rem;\n  background: none;\n  border: 0;\n  border-radius: 0;\n  border: 1px solid #aaa;\n  border-radius: 10px;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  position: relative;\n  text-align: left;\n  cursor: pointer;\n  width: 100%; }\n\nselect:focus, select:active {\n  outline: none;\n  border: 1px solid #aaa; }\n\n.select-wrapper {\n  position: relative; }\n\n.select-wrapper:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-left: 8px solid transparent;\n  border-right: 8px solid transparent;\n  border-top: 10px solid #aaa;\n  position: absolute;\n  top: 20px;\n  right: 1rem;\n  pointer-events: none; }\n\nbutton {\n  cursor: pointer;\n  font-size: 1rem; }\n\nbutton:focus {\n  outline: 0; }\n\nh1 {\n  font-weight: 300;\n  margin: 0;\n  font-family: 'Ubuntu', helvetica, arial, sans-serif; }\n\nh2, h4 {\n  font-family: 'Ubuntu', helvetica, arial, sans-serif; }\n\n.site_wrapper {\n  width: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 2rem;\n  box-sizing: border-box; }\n\n.site_wrapper--main {\n  background: #ffffff; }\n\n.content_wrapper {\n  margin: 2rem 0;\n  clear: both; }\n\n@media (max-width: 767px) {\n  .content_wrapper {\n    margin: 1rem 0; } }\n\n@media (max-width: 414px) {\n  .site_wrapper {\n    padding: 0 1rem; } }\n\n/* About Styles */\n.about--portrait {\n  float: left;\n  width: 300px;\n  height: 300px;\n  background-image: url(" + __webpack_require__(/*! ../images/Aaron_Mitchell_Portrait.jpg */ 315) + ");\n  background-size: cover;\n  border-radius: 50%;\n  overflow: hidden; }\n\n.about--copy {\n  float: left;\n  margin-left: 2rem;\n  width: calc(100% - 300px - 2rem); }\n\n@media screen and (max-width: 767px) {\n  .about--portrait {\n    float: none;\n    margin: 0 auto; }\n  .about--copy {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Gallery Styles */\n.list--selected {\n  font-weight: bold; }\n\n.gallery__nav {\n  width: 96px;\n  float: left; }\n\n.gallery__nav li {\n  margin-bottom: 0.5rem; }\n\n.gallery__nav--select {\n  display: none; }\n\n.gallery__container {\n  width: calc(100% - 96px - 2rem);\n  float: right;\n  margin-left: 2rem; }\n\n.gallery__item {\n  height: calc((100vw - 96px - 13rem) / 4);\n  width: calc((100vw - 96px - 13rem) / 4);\n  max-width: 224px;\n  max-height: 224px;\n  background-size: cover;\n  background-position: center;\n  float: left;\n  margin-bottom: 2rem;\n  cursor: pointer; }\n\n.gallery__item:nth-child(4n - 6) {\n  margin-left: 2rem;\n  margin-right: 1rem; }\n\n.gallery__item:nth-child(4n - 5) {\n  margin-left: 1rem;\n  margin-right: 2rem; }\n\n@media (max-width: 967px) {\n  .gallery__item {\n    height: calc((100vw - 96px - 11rem) / 3);\n    width: calc((100vw - 96px - 11rem) / 3);\n    max-width: none;\n    max-height: none; }\n  .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 2rem;\n    margin-right: 2rem; } }\n\n@media (max-width: 767px) {\n  .gallery__nav {\n    float: none;\n    width: 100%;\n    margin-bottom: 1.5rem; }\n  .gallery__container {\n    float: none;\n    width: 100%;\n    margin-left: 0; }\n  .gallery__nav--select {\n    display: block; }\n  .gallery__nav--list {\n    display: none; }\n  .gallery__item {\n    height: calc((100vw - 9rem) / 3);\n    width: calc((100vw - 9rem) / 3); } }\n\n@media (max-width: 575px) {\n  .gallery__item {\n    height: calc((100vw - 7rem) / 2);\n    width: calc((100vw - 7rem) / 2); }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(odd) {\n    margin-right: 1rem; }\n  .gallery__item:nth-child(even) {\n    margin-left: 1rem; } }\n\n@media (max-width: 414px) {\n  .gallery__item {\n    height: calc(100vw - 3rem);\n    width: calc(100vw - 3rem); }\n  .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {\n    margin-left: 0;\n    margin-right: 0; } }\n\n/* Code Projects Stles */\n.code__header {\n  border-bottom: 1px solid #eeeeee;\n  padding-bottom: 1rem; }\n\n.project {\n  border-bottom: 1px solid #eeeeee;\n  padding: 2rem 0 1rem; }\n  .project:after {\n    content: \"\";\n    display: table;\n    clear: both; }\n\n.project__img {\n  height: 200px;\n  width: 200px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  float: left; }\n\n.project__info {\n  width: calc(100% - 200px - 2rem);\n  float: left;\n  margin-left: 2rem; }\n  .project__info h4 {\n    margin-top: 0; }\n\n@media screen and (max-width: 766px) {\n  .project__img {\n    width: 150px;\n    height: 150px; }\n  .project__info {\n    width: calc(100% - 150px - 1rem);\n    margin-left: 1rem; } }\n\n@media screen and (max-width: 500px) {\n  .project__img {\n    display: none; }\n  .project__info {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Header Styles */\nheader {\n  border-bottom: 1px solid #eeeeee;\n  height: calc(2rem + 40px);\n  padding-bottom: 4rem;\n  padding-top: 2rem; }\n\nheader h1 {\n  float: left; }\n\nheader h1 a {\n  color: #333333; }\n\n.header__nav {\n  float: right;\n  margin-top: 0.5rem; }\n\n.header__nav a:nth-child(n+2) {\n  margin-left: 1rem; }\n\nfooter {\n  clear: both;\n  text-align: center;\n  padding: 2rem 0; }\n\n@media (max-width: 767px) {\n  header h1 {\n    font-size: 28px; }\n  .header__nav {\n    font-size: 0.875rem;\n    margin-top: 0.5rem; } }\n\n@media (max-width: 575px) {\n  header {\n    padding-top: 1rem;\n    padding-bottom: 5rem; }\n  header h1 {\n    float: none;\n    text-align: center; }\n  .header__nav {\n    float: none;\n    text-align: center;\n    margin-top: 0.75rem; } }\n\n/* Modal Styles */\n.modal {\n  background: rgba(0, 0, 0, 0.9);\n  position: fixed;\n  z-index: 10;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: auto;\n  padding: 2rem 0; }\n\n.modal__info {\n  color: #ffffff;\n  font-size: 0.875rem;\n  padding: 2rem;\n  margin-right: 2rem;\n  width: 230px;\n  float: left;\n  box-sizing: border-box;\n  background: #111;\n  border-radius: 10px; }\n\n.modal__img {\n  float: left;\n  width: calc(100% - 230px - 2rem);\n  height: calc(100vh - 4rem);\n  background-size: contain;\n  background-repeat: no-repeat; }\n\n.modal__buttons {\n  position: absolute;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  text-align: center;\n  background: #111;\n  padding: 0.75rem 1rem 0.5rem;\n  width: 230px;\n  border-radius: 10px 10px 0 0; }\n\n.btn--modal {\n  background: none;\n  border: 2px solid #ffffff;\n  color: #ffffff;\n  border-radius: 10px;\n  padding: 0 0.5rem;\n  font-size: 0.825rem;\n  vertical-align: middle;\n  height: 42px;\n  width: 42px; }\n\n.btn--modal:nth-child(n+2) {\n  margin-left: 1rem; }\n\n.btn--modal--disabled {\n  color: #444444;\n  border: 2px solid #444444; }\n\n.btn--modal--info {\n  display: none; }\n\n@media (max-width: 767px) {\n  .modal {\n    padding: 1rem 0; }\n  .modal__info {\n    display: none;\n    width: 250px;\n    background: rgba(17, 17, 17, 0.9);\n    border: 2px solid #fff;\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 6rem;\n    margin: 0 auto;\n    padding: 1rem 2rem; }\n  .modal__info--show {\n    display: block; }\n  .modal__img {\n    width: calc(100%);\n    background-position: center;\n    height: calc(100vh - 6rem); }\n  .modal__buttons {\n    left: 0;\n    margin: 0 auto;\n    background: rgba(17, 17, 17, 0.75);\n    width: 250px; }\n  .btn--modal--info {\n    display: inline; } }\n\n/* Contact Styles */\n.contact {\n  width: 100%;\n  max-width: 400px;\n  margin-bottom: 2rem; }\n\n.contact input, .contact textarea {\n  display: block;\n  font-size: 0.875rem;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #aaaaaa;\n  width: 100%; }\n\n.contact label {\n  display: block;\n  margin-bottom: 0.5rem; }\n\n.btn--contact {\n  background: none;\n  border: 2px solid #0099ff;\n  border-radius: 10px;\n  color: #0099ff;\n  padding: 1rem; }\n\n@media (max-width: 767px) {\n  .contact {\n    max-width: 100%; }\n  .btn--contact {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, "/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n/* Base Styles */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #eeeeee;\n  font-family: 'Open Sans', helvetica, arial, sans-serif;\n  font-weight: 300;\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #0066ff; }\n\np {\n  line-height: 1.5; }\n\nul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nli {\n  cursor: pointer; }\n\nselect {\n  padding: 0.75rem 1rem;\n  font-size: 1rem;\n  background: none;\n  border: 0;\n  border-radius: 0;\n  border: 1px solid #aaa;\n  border-radius: 10px;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  position: relative;\n  text-align: left;\n  cursor: pointer;\n  width: 100%; }\n\nselect:focus, select:active {\n  outline: none;\n  border: 1px solid #aaa; }\n\n.select-wrapper {\n  position: relative; }\n\n.select-wrapper:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-left: 8px solid transparent;\n  border-right: 8px solid transparent;\n  border-top: 10px solid #aaa;\n  position: absolute;\n  top: 20px;\n  right: 1rem;\n  pointer-events: none; }\n\nbutton {\n  cursor: pointer;\n  font-size: 1rem; }\n\nbutton:focus {\n  outline: 0; }\n\nh1 {\n  font-weight: 300;\n  margin: 0;\n  font-family: 'Ubuntu', helvetica, arial, sans-serif; }\n\nh2, h4 {\n  font-family: 'Ubuntu', helvetica, arial, sans-serif; }\n\n.site_wrapper {\n  width: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 2rem;\n  box-sizing: border-box; }\n\n.site_wrapper--main {\n  background: #ffffff; }\n\n.content_wrapper {\n  margin: 2rem 0;\n  clear: both; }\n\n@media (max-width: 767px) {\n  .content_wrapper {\n    margin: 1rem 0; } }\n\n@media (max-width: 414px) {\n  .site_wrapper {\n    padding: 0 1rem; } }\n\n/* About Styles */\n.about--portrait {\n  float: left;\n  width: 300px;\n  height: 300px;\n  background-image: url(" + __webpack_require__(/*! ../images/Aaron_Mitchell_Portrait.jpg */ 316) + ");\n  background-size: cover;\n  border-radius: 50%;\n  overflow: hidden; }\n\n.about--copy {\n  float: left;\n  margin-left: 2rem;\n  width: calc(100% - 300px - 2rem); }\n\n@media screen and (max-width: 767px) {\n  .about--portrait {\n    float: none;\n    margin: 0 auto; }\n  .about--copy {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Gallery Styles */\n.list--selected {\n  font-weight: bold; }\n\n.gallery__nav {\n  width: 96px;\n  float: left; }\n\n.gallery__nav li {\n  margin-bottom: 0.5rem; }\n\n.gallery__nav--select {\n  display: none; }\n\n.gallery__container {\n  width: calc(100% - 96px - 2rem);\n  float: right;\n  margin-left: 2rem; }\n\n.gallery__item {\n  height: calc((100vw - 96px - 13rem) / 4);\n  width: calc((100vw - 96px - 13rem) / 4);\n  max-width: 224px;\n  max-height: 224px;\n  background-size: cover;\n  background-position: center;\n  float: left;\n  margin-bottom: 2rem;\n  cursor: pointer; }\n\n.gallery__item:nth-child(4n - 6) {\n  margin-left: 2rem;\n  margin-right: 1rem; }\n\n.gallery__item:nth-child(4n - 5) {\n  margin-left: 1rem;\n  margin-right: 2rem; }\n\n@media (max-width: 967px) {\n  .gallery__item {\n    height: calc((100vw - 96px - 11rem) / 3);\n    width: calc((100vw - 96px - 11rem) / 3);\n    max-width: none;\n    max-height: none; }\n  .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 2rem;\n    margin-right: 2rem; } }\n\n@media (max-width: 767px) {\n  .gallery__nav {\n    float: none;\n    width: 100%;\n    margin-bottom: 1.5rem; }\n  .gallery__container {\n    float: none;\n    width: 100%;\n    margin-left: 0; }\n  .gallery__nav--select {\n    display: block; }\n  .gallery__nav--list {\n    display: none; }\n  .gallery__item {\n    height: calc((100vw - 9rem) / 3);\n    width: calc((100vw - 9rem) / 3); } }\n\n@media (max-width: 575px) {\n  .gallery__item {\n    height: calc((100vw - 7rem) / 2);\n    width: calc((100vw - 7rem) / 2); }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(odd) {\n    margin-right: 1rem; }\n  .gallery__item:nth-child(even) {\n    margin-left: 1rem; } }\n\n@media (max-width: 414px) {\n  .gallery__item {\n    height: calc(100vw - 3rem);\n    width: calc(100vw - 3rem); }\n  .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {\n    margin-left: 0;\n    margin-right: 0; } }\n\n/* Code Projects Stles */\n.code__header {\n  border-bottom: 1px solid #eeeeee;\n  padding-bottom: 1rem; }\n\n.project {\n  border-bottom: 1px solid #eeeeee;\n  padding: 2rem 0 1rem; }\n  .project:after {\n    content: \"\";\n    display: table;\n    clear: both; }\n\n.project__img {\n  height: 200px;\n  width: 200px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  float: left; }\n\n.project__info {\n  width: calc(100% - 200px - 2rem);\n  float: left;\n  margin-left: 2rem; }\n  .project__info h4 {\n    margin-top: 0; }\n\n@media screen and (max-width: 766px) {\n  .project__img {\n    width: 150px;\n    height: 150px; }\n  .project__info {\n    width: calc(100% - 150px - 1rem);\n    margin-left: 1rem; } }\n\n@media screen and (max-width: 500px) {\n  .project__img {\n    display: none; }\n  .project__info {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Header Styles */\nheader {\n  border-bottom: 1px solid #eeeeee;\n  height: calc(2rem + 40px);\n  padding-bottom: 4rem;\n  padding-top: 2rem; }\n\nheader h1 {\n  float: left; }\n\nheader h1 a {\n  color: #333333; }\n\n.header__nav {\n  float: right;\n  margin-top: 0.5rem; }\n\n.header__nav a:nth-child(n+2) {\n  margin-left: 1rem; }\n\nfooter {\n  clear: both;\n  text-align: center;\n  padding: 2rem 0; }\n\n@media (max-width: 767px) {\n  header h1 {\n    font-size: 28px; }\n  .header__nav {\n    font-size: 0.875rem;\n    margin-top: 0.5rem; } }\n\n@media (max-width: 575px) {\n  header {\n    padding-top: 1rem;\n    padding-bottom: 5rem; }\n  header h1 {\n    float: none;\n    text-align: center; }\n  .header__nav {\n    float: none;\n    text-align: center;\n    margin-top: 0.75rem; } }\n\n/* Modal Styles */\n.modal {\n  background: rgba(0, 0, 0, 0.9);\n  position: fixed;\n  z-index: 10;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: auto;\n  padding: 2rem 0; }\n\n.modal__info {\n  color: #ffffff;\n  font-size: 0.875rem;\n  padding: 2rem;\n  margin-right: 2rem;\n  width: 230px;\n  float: left;\n  box-sizing: border-box;\n  background: #111;\n  border-radius: 10px; }\n\n.modal__img {\n  float: left;\n  width: calc(100% - 230px - 2rem);\n  height: calc(100vh - 4rem);\n  background-size: contain;\n  background-repeat: no-repeat; }\n\n.modal__buttons {\n  position: absolute;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  text-align: center;\n  background: #111;\n  padding: 0.75rem 1rem 0.5rem;\n  width: 230px;\n  border-radius: 10px 10px 0 0; }\n\n.btn--modal {\n  background: none;\n  border: 2px solid #ffffff;\n  color: #ffffff;\n  border-radius: 10px;\n  padding: 0 0.5rem;\n  font-size: 0.825rem;\n  vertical-align: middle;\n  height: 42px;\n  width: 42px; }\n\n.btn--modal:nth-child(n+2) {\n  margin-left: 1rem; }\n\n.btn--modal--disabled {\n  color: #444444;\n  border: 2px solid #444444; }\n\n.btn--modal--info {\n  display: none; }\n\n@media (max-width: 767px) {\n  .modal {\n    padding: 1rem 0; }\n  .modal__info {\n    display: none;\n    width: 250px;\n    background: rgba(17, 17, 17, 0.9);\n    border: 2px solid #fff;\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 6rem;\n    margin: 0 auto;\n    padding: 1rem 2rem; }\n  .modal__info--show {\n    display: block; }\n  .modal__img {\n    width: calc(100%);\n    background-position: center;\n    height: calc(100vh - 6rem); }\n  .modal__buttons {\n    left: 0;\n    margin: 0 auto;\n    background: rgba(17, 17, 17, 0.75);\n    width: 250px; }\n  .btn--modal--info {\n    display: inline; } }\n\n/* Contact Styles */\n.contact {\n  width: 100%;\n  max-width: 400px;\n  margin-bottom: 2rem; }\n\n.contact input, .contact textarea {\n  display: block;\n  font-size: 0.875rem;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #aaaaaa;\n  width: 100%; }\n\n.contact label {\n  display: block;\n  margin-bottom: 0.5rem; }\n\n.btn--contact {\n  background: none;\n  border: 2px solid #0099ff;\n  border-radius: 10px;\n  color: #0099ff;\n  padding: 1rem; }\n\n@media (max-width: 767px) {\n  .contact {\n    max-width: 100%; }\n  .btn--contact {\n    width: 100%; } }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 314 */
+/* 315 */
 /*!**************************************!*\
   !*** ./~/css-loader/lib/css-base.js ***!
   \**************************************/
@@ -34816,7 +34916,7 @@
 
 
 /***/ },
-/* 315 */
+/* 316 */
 /*!************************************************!*\
   !*** ./src/images/Aaron_Mitchell_Portrait.jpg ***!
   \************************************************/
@@ -34825,7 +34925,7 @@
 	module.exports = __webpack_require__.p + "Aaron_Mitchell_Portrait.jpg";
 
 /***/ },
-/* 316 */
+/* 317 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/

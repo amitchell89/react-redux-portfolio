@@ -7,7 +7,7 @@
     "webpack": "./node_modules/.bin/webpack -d --watch",
     "build": "webpack -p",
     "start--old": "webpack-dev-server --hot --inline",
-    "server": "node src/server.js"
+    "server": "node src/server_3000.js"
   },
   "author": "Aaron Mitchell",
   "license": "ISC",

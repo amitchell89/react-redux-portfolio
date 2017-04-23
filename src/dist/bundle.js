@@ -31200,6 +31200,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactDom = __webpack_require__(/*! react-dom */ 33);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
 	var _redux = __webpack_require__(/*! redux */ 180);
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 201);
@@ -31244,6 +31248,17 @@
 	  }
 	
 	  _createClass(AppContainer, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      // Fade In
+	      var elem = _reactDom2.default.findDOMNode(this);
+	      elem.style.opacity = 0;
+	      window.requestAnimationFrame(function () {
+	        elem.style.transition = "opacity 500ms";
+	        elem.style.opacity = 1;
+	      });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var modal = null;
@@ -33494,6 +33509,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactDom = __webpack_require__(/*! react-dom */ 33);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 201);
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
@@ -33571,12 +33590,15 @@
 	      if (this.props.params.image) {
 	        this.props.openModal(this.props.params.image);
 	      }
-	    }
-	    // shouldComponentUpdate(nextProps, nextState) {
-	    //   console.log('check', this.props.modal !== nextProps.modal)
-	    //   return (this.props.modal !== nextProps.modal)
-	    // }
 	
+	      // Fade In
+	      var elem = _reactDom2.default.findDOMNode(this);
+	      elem.style.opacity = 0;
+	      window.requestAnimationFrame(function () {
+	        elem.style.transition = "opacity 500ms";
+	        elem.style.opacity = 1;
+	      });
+	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -33845,6 +33867,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactDom = __webpack_require__(/*! react-dom */ 33);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 201);
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
@@ -33877,6 +33903,17 @@
 	  }
 	
 	  _createClass(Code, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      // Fade In
+	      var elem = _reactDom2.default.findDOMNode(this);
+	      elem.style.opacity = 0;
+	      window.requestAnimationFrame(function () {
+	        elem.style.transition = "opacity 500ms";
+	        elem.style.opacity = 1;
+	      });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var projects = this.props.projects;
@@ -34024,6 +34061,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactDom = __webpack_require__(/*! react-dom */ 33);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
 	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
@@ -34048,6 +34089,17 @@
 	  }
 	
 	  _createClass(About, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      // Fade In
+	      var elem = _reactDom2.default.findDOMNode(this);
+	      elem.style.opacity = 0;
+	      window.requestAnimationFrame(function () {
+	        elem.style.transition = "opacity 500ms";
+	        elem.style.opacity = 1;
+	      });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -34188,7 +34240,7 @@
   \******************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -34199,6 +34251,10 @@
 	var _react = __webpack_require__(/*! react */ 2);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 33);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
 	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
 	
@@ -34222,51 +34278,62 @@
 	  }
 	
 	  _createClass(Contact, [{
-	    key: "render",
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      // Fade In
+	      var elem = _reactDom2.default.findDOMNode(this);
+	      elem.style.opacity = 0;
+	      window.requestAnimationFrame(function () {
+	        elem.style.transition = "opacity 500ms";
+	        elem.style.opacity = 1;
+	      });
+	    }
+	  }, {
+	    key: 'render',
 	    value: function render() {
 	
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "contact" },
+	        'div',
+	        { className: 'contact' },
 	        _react2.default.createElement(_reactHelmet2.default, {
-	          title: "Aaron Mitchell: Contact",
+	          title: 'Aaron Mitchell: Contact',
 	          meta: [{ name: "description", content: this.props.route.meta.meta_contact }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Contact the Artist' }, { property: "og:url", content: 'https://mitchellaaron.com/contact/' }]
 	        }),
 	        _react2.default.createElement(
-	          "h2",
+	          'h2',
 	          null,
-	          "Contact"
+	          'Contact'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "Want to talk? Send me a message and let's get the conversation started."
+	          'Want to talk? Send me a message and let\'s get the conversation started.'
 	        ),
 	        _react2.default.createElement(
-	          "form",
-	          { id: "contact_form", method: "post" },
+	          'form',
+	          { id: 'contact_form', method: 'post' },
 	          _react2.default.createElement(
-	            "label",
+	            'label',
 	            null,
-	            "Your Name"
+	            'Your Name'
 	          ),
-	          _react2.default.createElement("input", { type: "text", name: "name", placeholder: "Your Name" }),
+	          _react2.default.createElement('input', { type: 'text', name: 'name', placeholder: 'Your Name' }),
 	          _react2.default.createElement(
-	            "label",
+	            'label',
 	            null,
-	            "Your Email Address"
+	            'Your Email Address'
 	          ),
-	          _react2.default.createElement("input", { type: "text", name: "email", placeholder: "Your Email" }),
+	          _react2.default.createElement('input', { type: 'text', name: 'email', placeholder: 'Your Email' }),
 	          _react2.default.createElement(
-	            "label",
+	            'label',
 	            null,
-	            "Your Message"
+	            'Your Message'
 	          ),
-	          _react2.default.createElement("textarea", { type: "text", name: "message", placeholder: "Your Message", rows: "7" }),
+	          _react2.default.createElement('textarea', { type: 'text', name: 'message', placeholder: 'Your Message', rows: '7' }),
 	          _react2.default.createElement(
-	            "button",
-	            { type: "submit", form: "contact_form", value: "Submit", className: "btn--contact" },
-	            "Send Message"
+	            'button',
+	            { type: 'submit', form: 'contact_form', value: 'Submit', className: 'btn--contact' },
+	            'Send Message'
 	          )
 	        )
 	      );
@@ -34285,9 +34352,9 @@
 	    return;
 	  }
 	
-	  __REACT_HOT_LOADER__.register(Contact, "Contact", "/Users/aaronmitchell/src/react-redux-portfolio/src/views/contact.js");
+	  __REACT_HOT_LOADER__.register(Contact, 'Contact', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/contact.js');
 	
-	  __REACT_HOT_LOADER__.register(_default, "default", "/Users/aaronmitchell/src/react-redux-portfolio/src/views/contact.js");
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/contact.js');
 	}();
 
 	;

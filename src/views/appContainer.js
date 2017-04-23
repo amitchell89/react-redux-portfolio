@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import { combineReducers, createStore } from 'redux';
 import { connect } from 'react-redux';
 import Helmet from "react-helmet";
@@ -13,6 +14,16 @@ function mapStateToProps(state) {
 }
 
 class AppContainer extends Component {
+
+  componentDidMount() {
+    // Fade In
+    var elem = ReactDOM.findDOMNode(this);
+    elem.style.opacity = 0;
+    window.requestAnimationFrame(function() {
+      elem.style.transition = "opacity 500ms";
+      elem.style.opacity = 1;
+    });
+  }
 
   render() {
     let modal = null;

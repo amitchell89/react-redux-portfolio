@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import { Link } from 'react-router'
 import Helmet from "react-helmet";
@@ -9,6 +10,17 @@ function mapStateToProps(state) {
   };
 }
 class Code extends Component {
+
+  componentDidMount() {
+    // Fade In
+    var elem = ReactDOM.findDOMNode(this);
+    elem.style.opacity = 0;
+    window.requestAnimationFrame(function() {
+      elem.style.transition = "opacity 500ms";
+      elem.style.opacity = 1;
+    });
+  }
+  
   render() {
     var { projects } = this.props;
 

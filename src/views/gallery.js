@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
 import Helmet from "react-helmet";
@@ -20,7 +21,7 @@ function mapDispatchToProps(dispatch) {
   return {
     onClick: (gallery) => {
       dispatch(updateGallery(gallery))
-       browserHistory.push('/gallery/' + gallery)
+      browserHistory.push('/gallery/' + gallery)
     },
     filterGallery: (event) => {
       dispatch(updateGallery(event.target.value))
@@ -50,11 +51,16 @@ class Gallery extends Component {
     if (this.props.params.image) {
       this.props.openModal(this.props.params.image)
     }
+
+    // Fade In
+    var elem = ReactDOM.findDOMNode(this);
+    elem.style.opacity = 0;
+    window.requestAnimationFrame(function() {
+      elem.style.transition = "opacity 500ms";
+      elem.style.opacity = 1;
+    });
+
   }
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   console.log('check', this.props.modal !== nextProps.modal)
-  //   return (this.props.modal !== nextProps.modal)
-  // }
 
   render() {
     const { images, selectedGallery } = this.props;

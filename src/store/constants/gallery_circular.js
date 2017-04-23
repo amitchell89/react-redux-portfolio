@@ -45,7 +45,7 @@ export const circular = [
     medium: "Pen & Colored Pencil",
     about: "",
     url: "circular/Aaron_Mitchell_Circular_6.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Circular IX",
@@ -61,7 +61,7 @@ export const circular = [
     medium: "Pen & Colored Pencil",
     about: "",
     url: "circular/Aaron_Mitchell_Circular_10.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Circular XI",
@@ -109,7 +109,7 @@ export const circular = [
     medium: "Pen & Colored Pencil",
     about: "",
     url: "circular/Aaron_Mitchell_Circular_16.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Circular XVII",
@@ -157,6 +157,6 @@ export const circular = [
     medium: "Digital",
     about: "",
     url: "circular/Aaron_Mitchell_Circular_The_Arcane_Comedy.jpg",
-    hidden: false
+    hidden: true
   }
 ]

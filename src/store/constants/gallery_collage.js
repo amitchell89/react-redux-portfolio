@@ -61,7 +61,7 @@ export const collage = [
     medium: "Collage / Pen & Ink",
     about: "",
     url: "collage/Aaron_Mitchell_Salmon.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Sampson and the Light",
@@ -101,7 +101,7 @@ export const collage = [
     medium: "Digital Collage",
     about: "",
     url: "collage/Aaron_Mitchell_Disco_Sargent.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Piper",
@@ -117,6 +117,6 @@ export const collage = [
     medium: "Collage",
     about: "",
     url: "collage/Aaron_Mitchell_Walk_To_School.jpg",
-    hidden: false
+    hidden: true
   }
 ]

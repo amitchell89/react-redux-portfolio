@@ -117,6 +117,6 @@ export const design = [
     medium: "Photo / Digital",
     about: "",
     url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg",
-    hidden: false
+    hidden: true
   },
 ]

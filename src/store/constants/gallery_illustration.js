@@ -101,7 +101,7 @@ export const illustration = [
     medium: "Pen / Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Cinderlla Sews",
@@ -125,7 +125,7 @@ export const illustration = [
     medium: "Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Jess",
@@ -133,7 +133,7 @@ export const illustration = [
     medium: "Pen & Ink / Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Jess_700.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "The Lobster",
@@ -149,7 +149,7 @@ export const illustration = [
     medium: "Pen / Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Rocky",
@@ -157,7 +157,7 @@ export const illustration = [
     medium: "Pen / Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Self Portrait with Basketball",
@@ -173,6 +173,6 @@ export const illustration = [
     medium: "Pen & Ink / Digital",
     about: "",
     url: "illustrations/Aaron_Mitchell_Towers.jpg",
-    hidden: false
+    hidden: true
   }
 ]

@@ -12,7 +12,6 @@
   padding: 2rem 0;
 }
 .modal__info {
-  color: #ffffff;
   font-size: 0.875rem;
   padding: 2rem;
   margin-right: 2rem;
@@ -21,6 +20,9 @@
   box-sizing: border-box;
   background: #111;
   border-radius: 10px;
+}
+.modal__info p {
+  color: $white;
 }
 .modal__img {
   float: left;

@@ -10,7 +10,7 @@
   font-size: 0.875rem;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 1px solid #aaaaaa;
+  border: 1px solid $color-gray-mid;
   width: 100%;
 }
 .contact label {
@@ -19,9 +19,9 @@
 }
 .btn--contact {
   background: none;
-  border: 2px solid #0099ff;
+  border: 2px solid $color-link;
   border-radius: 10px;
-  color: #0099ff;
+  color: $color-link;
   padding: 1rem;
 }
 

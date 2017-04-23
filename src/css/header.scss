@@ -1,7 +1,7 @@
 /* Header Styles */
 
 header {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid $color-gray-light;
   height: calc(2rem + 40px);
   padding-bottom: 4rem;
   padding-top: 2rem;
@@ -11,7 +11,7 @@ header h1 {
   float: left;
 }
 header h1 a {
-  color: #333333;
+  color: $color-gray-dark;
 }
 
 .header__nav {

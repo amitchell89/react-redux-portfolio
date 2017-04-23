@@ -1,7 +1,7 @@
 /* Modal Styles */
 
 .modal {
-  background: rgba(0,0,0,0.9);
+  background: $modal-background;
   position: fixed;
   z-index: 10;
   top: 0;
@@ -44,8 +44,8 @@
 
 .btn--modal {
   background: none;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid $white;
+  color: $white;
   border-radius: 10px;
   padding: 0 0.5rem;
   font-size: 0.825rem;
@@ -59,8 +59,8 @@
 }
 
 .btn--modal--disabled {
-  color: #444444;
-  border: 2px solid #444444;
+  color: $color-gray-dark;
+  border: 2px solid $color-gray-dark;
 }
 
 .btn--modal--info {
@@ -75,7 +75,7 @@
     display: none;
     width: 250px;
     background: rgba(17, 17, 17, 0.9);
-    border: 2px solid #fff;
+    border: 2px solid $white;
     position: absolute;
     left: 0;
     right: 0;

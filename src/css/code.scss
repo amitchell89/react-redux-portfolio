@@ -1,12 +1,12 @@
 /* Code Projects Stles */
 
 .code__header {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid $color-gray-light;
   padding-bottom: 1rem;
 }
 
 .project {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid $color-gray-light;
   padding: 2rem 0 1rem;
   @include clearfix()
 }

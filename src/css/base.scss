@@ -5,8 +5,8 @@
 }
 
 body {
-  background: #eeeeee;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  background: $color-gray-light;
+  font-family: $font-primary;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -14,11 +14,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #0066ff;
+  color: $color-link;
 }
 
 p {
   line-height: 1.5;
+  color: $color-gray-dark;
 }
 
 ul {
@@ -37,7 +38,7 @@ select {
   background: none;
   border: 0;
   border-radius: 0;
-  border: 1px solid #aaa;
+  border: 1px solid $color-gray-mid;
   border-radius: 10px;
   -webkit-appearance: none;
    -moz-appearance: none;
@@ -50,7 +51,7 @@ select {
 
 select:focus, select:active {
   outline: none;
-  border: 1px solid #aaa;
+  border: 1px solid $color-gray-mid;
 }
 
 .select-wrapper {
@@ -63,7 +64,7 @@ select:focus, select:active {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 10px solid #aaa;
+  border-top: 10px solid $color-gray-mid;
   position: absolute;
   top: 20px;
   right: 1rem;
@@ -82,15 +83,14 @@ button:focus {
 h1 {
   font-weight: 300;
   margin: 0;
-  font-family: 'Ubuntu', helvetica, arial, sans-serif;
 }
 
-h2, h4 {
-  font-family: 'Ubuntu', helvetica, arial, sans-serif;
+h1, h2, h4 {
+  font-family: $font-headline;
 }
 
 .highlight {
-  color: #ff3300;
+  color: $color-primary;
 }
 
 .site_wrapper {

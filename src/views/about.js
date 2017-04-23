@@ -18,10 +18,16 @@ export default class About extends Component {
             ] }
           />
           <p>
-            Hello! My name is Aaron Mitchell and I'm a User Interface Designer working at Cogo Labs, a startup incubator in Cambridge, MA. My primary responsibilities include designing websites and emails, front end coding and branding work for new projects and verticals. Before joining Cogo Labs in June 2014 I worked as a web designer for Liquid Wireless, a mobile marketing startup owned by Publishers Clearing House.
+          Hello! My name is Aaron Mitchell and I’m a <span className="highlight">Senior UI Designer</span> at Cogo Labs, a startup accelerator in Cambridge, MA. I also do freelance illustration, design, branding and web development.
           </p>
           <p>
-            I graduated Summa Cum laude from the New Hampshire Institute of Art in 2011 with a major in Illustration. While my primary focus is working digitally, I've also studied oil painting and have shown my work in several exhibitions.
+          At Cogo Labs I was responsible for a wide variety of tasks and ownership at all stages of the web development pipeline including <span className="highlight">Brainstorming, Brand Development, Logo Design, Wireframing, Prototyping, Web Design, Front End Development, Email Design & Development, A/B Testing and User Testing.</span> Working at a startup accelerator has allowed me to contribute to lots of diverse, fast moving projects in markets such as <span className="highlight">Social Networking, Healthcare, Financial Services, Online Dating, Apartment Rentals,</span> and <span className="highlight">Weather</span> among others. I have also had the opportunity to mentor interns and fellow designers.
+          </p>
+          <p>
+          Before joining Cogo Labs in June 2014 I worked as a web designer for Liquid Wireless, a mobile marketing startup owned by Publishers Clearing House. My responsibilities including <span className="highlight">Designing Mobile Advertisements, Landings Pages, Android Apps</span> and <span className="highlight">B2B marketing Resources</span> as well as <span className="highlight">Email Design & Development.</span> I managed one direct report.
+          </p>
+          <p>
+          One of the most exciting skills I’ve had the chance to learn in the past year is <span className="highlight">Web Development using React and Redux.</span> I have experience working with React on multiple projects at Cogo Labs but have also built several sites from scratch on my own including this one! You can view the <a href="https://github.com/amitchell89/react-redux-portfolio" target="_blank">source code for this project</a>, or explore my <a href="https://github.com/amitchell89" target="_blank">entire github for more projects</a>.
           </p>
           <p> Want to talk? <Link to="contact">Send me a message</Link></p>
         </div>

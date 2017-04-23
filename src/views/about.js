@@ -18,7 +18,7 @@ export default class About extends Component {
             ] }
           />
           <p>
-          Hello! My name is Aaron Mitchell and I’m a <span className="highlight">Senior UI Designer</span> at Cogo Labs, a startup accelerator in Cambridge, MA. I also do freelance illustration, design, branding and web development.
+          Hello! My name is Aaron Mitchell and I’m a <span className="highlight">Senior UI Designer</span> at <a href="https://www.cogolabs.com/" target="_blank">Cogo Labs</a>, a startup accelerator in Cambridge, MA. I also do freelance illustration, design, branding and web development.
           </p>
           <p>
           At Cogo Labs I was responsible for a wide variety of tasks and ownership at all stages of the web development pipeline including <span className="highlight">Brainstorming, Brand Development, Logo Design, Wireframing, Prototyping, Web Design, Front End Development, Email Design & Development, A/B Testing and User Testing.</span> Working at a startup accelerator has allowed me to contribute to lots of diverse, fast moving projects in markets such as <span className="highlight">Social Networking, Healthcare, Financial Services, Online Dating, Apartment Rentals,</span> and <span className="highlight">Weather</span> among others. I have also had the opportunity to mentor interns and fellow designers.

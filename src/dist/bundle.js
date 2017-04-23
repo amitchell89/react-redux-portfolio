@@ -34133,7 +34133,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'At Cogo Labs I was responsible for a wide variety of tasks and ownership at all stages of the web development pipeline including ',
+	            'At Cogo Labs I am responsible for a wide variety of tasks and ownership at all stages of the web development pipeline including ',
 	            _react2.default.createElement(
 	              'span',
 	              { className: 'highlight' },
@@ -34151,7 +34151,7 @@
 	              { className: 'highlight' },
 	              'Weather'
 	            ),
-	            ' among others. I have also had the opportunity to mentor interns and fellow designers.'
+	            ' among others. I have also have had the opportunity to mentor interns and fellow designers.'
 	          ),
 	          _react2.default.createElement(
 	            'p',

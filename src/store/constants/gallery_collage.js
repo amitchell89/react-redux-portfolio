@@ -53,7 +53,7 @@ export const collage = [
     medium: "Collage",
     about: "",
     url: "collage/Aaron_Mitchell_Orbit_The_Sun.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Salmon",

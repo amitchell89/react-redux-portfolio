@@ -30527,7 +30527,7 @@
 	  medium: "Collage",
 	  about: "",
 	  url: "collage/Aaron_Mitchell_Orbit_The_Sun.jpg",
-	  hidden: false
+	  hidden: true
 	}, {
 	  name: "Salmon",
 	  year: "2011",

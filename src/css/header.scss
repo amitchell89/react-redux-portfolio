@@ -4,19 +4,27 @@ header {
   border-bottom: 1px solid $color-gray-light;
   height: calc(2rem + 40px);
   padding-bottom: 4rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
-header h1 {
+.header__logo {
   float: left;
-}
-header h1 a {
-  color: $color-gray-dark;
+  img {
+    width: 100px;
+    height: auto;
+    float: left;
+  }
+  h1 {
+    color: $color-gray-dark;
+    float: left;
+    margin-left: 0.75rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .header__nav {
   float: right;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .header__nav a:nth-child(n+2) {
   margin-left: 1rem;
@@ -41,15 +49,22 @@ footer {
 @media (max-width: 575px) {
   header {
     padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5.5rem;
   }
-  header h1 {
+  .header__logo {
     float: none;
     text-align: center;
+    margin: 0 auto;
+    h1 {
+      display: none;
+    }
+    img {
+      float: none;
+    }
   }
   .header__nav {
     float: none;
     text-align: center;
-    margin-top: 0.75rem;
+    margin-top: 0.25rem;
   }
 }

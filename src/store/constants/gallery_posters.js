@@ -32,6 +32,14 @@ export const posters = [
     hidden: false
   },
   {
+    name: "Jacuzzi Boys at The Lily Pad in Cambridge, MA",
+    year: "2017",
+    medium: "Digital Illustration",
+    about: "",
+    url: "posters/Aaron_Mitchell_Jacuzzi_Boys_Lilypad_Cambridge.jpg",
+    hidden: false
+  },
+  {
     name: "Boogarins at The Middle East in Cambridge, MA",
     year: "2016",
     medium: "Digital Illustration",
@@ -45,14 +53,6 @@ export const posters = [
     medium: "Digital Illustration",
     about: "",
     url: "posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg",
-    hidden: false
-  },
-  {
-    name: "Jacco Gardner at The Middle East in Cambridge, MA",
-    year: "2015",
-    medium: "Digital Illustration",
-    about: "",
-    url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -72,14 +72,6 @@ export const posters = [
     hidden: false
   },
   {
-    name: "Pile at The Middle East in Cambridge, MA",
-    year: "2015",
-    medium: "Digital Illustration",
-    about: "",
-    url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg",
-    hidden: false
-  },
-  {
     name: "Sunflower Beam at The Middle East in Cambridge, MA",
     year: "2016",
     medium: "Digital Illustration",
@@ -88,11 +80,27 @@ export const posters = [
     hidden: false
   },
   {
+    name: "Pile at The Middle East in Cambridge, MA",
+    year: "2015",
+    medium: "Digital Illustration",
+    about: "",
+    url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg",
+    hidden: false
+  },
+  {
+    name: "Jacco Gardner at The Middle East in Cambridge, MA",
+    year: "2015",
+    medium: "Digital Illustration",
+    about: "",
+    url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg",
+    hidden: false
+  },
+  {
     name: "All of the Animals at John Harvards in Cambridge, MA",
     year: "2016",
     medium: "Digital Illustration",
     about: "",
     url: "posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg",
-    hidden: false
+    hidden: true
   }
 ]

@@ -117,6 +117,6 @@ export const projects = [
        git: true,
        git_link: "https://github.com/amitchell89/kenobot",
        about: "A Node App for scraping and analyzing Massachusetts Keno Data.",
-       hidden: false
+       hidden: true
     }
   ]

@@ -31174,7 +31174,7 @@
 	   git: true,
 	   git_link: "https://github.com/amitchell89/kenobot",
 	   about: "A Node App for scraping and analyzing Massachusetts Keno Data.",
-	   hidden: false
+	   hidden: true
 	}];
 	;
 	
@@ -33049,10 +33049,10 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'header__logo' },
-	          _react2.default.createElement('img', { src: _Aaron_Mitchell_Logo2.default }),
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: '/' },
+	            _react2.default.createElement('img', { src: _Aaron_Mitchell_Logo2.default }),
 	            _react2.default.createElement(
 	              'h1',
 	              null,

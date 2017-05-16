@@ -8,8 +8,8 @@ export default class Header extends Component {
     return (
       <header>
         <div className="header__logo">
-          <img src={logo} />
           <Link to="/">
+            <img src={logo} />
             <h1>
               Aaron Mitchell
             </h1>

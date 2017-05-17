@@ -9,7 +9,7 @@ function mapStateToProps(state) {
     projects: state.projects
   };
 }
-class Code extends Component {
+class Projects extends Component {
 
   componentDidMount() {
     // Fade In
@@ -32,8 +32,11 @@ class Code extends Component {
       <div>
         {projects.map(function (s, i) {
 
-          let url = s.url == true ? <div><a href={s.url_link} target="_blank">{s.url_link}</a></div> : <div>{s.url_link}</div>
-          let git = s.git == true ? <div><a href={s.git_link} target="_blank">{s.git_link}</a></div> : <div>{s.git_link}</div>
+          let url = s.url ? <a className="project__link" href={s.url} target="_blank">Website</a> : null;
+          let git = s.git ? <a className="project__link" href={s.git} target="_blank">Git</a> : null;
+          let wireframe = s.wireframe ? <a className="project__link" href={s.wireframe} target="_blank">Wireframe</a> : null;
+          let mockup = s.mockup ? <a className="project__link" href={s.mockup} target="_blank">Mockup</a> : null;
+          let styleGuide = s.styleGuide ? <a className="project__link" href={s.styleGuide} target="_blank">Style Guide</a> : null;
 
           let bkgdImg = {
             backgroundImage: 'url(../images/' + s.image + ')',
@@ -44,8 +47,7 @@ class Code extends Component {
             <div className="project__img" style={bkgdImg}></div>
             <div className="project__info">
               <h4>{s.name}</h4>
-              {url}
-              {git}
+              <div className="project__links">{url} {git} {wireframe} {mockup} {styleGuide}</div>
               <p>{s.about}</p>
             </div>
           </div>
@@ -56,7 +58,7 @@ class Code extends Component {
     return (
       <div>
         <Helmet
-          title="Aaron Mitchell: Coding Projects"
+          title="Aaron Mitchell: Project Portfolio"
           meta={ [
             { name: "description", content: this.props.route.meta.meta_code },
             { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Coding Projects'},
@@ -65,7 +67,7 @@ class Code extends Component {
         />
         <div className="code__header">
           <h2>
-          Code Portfolio
+          Project Portfolio
           </h2>
           <p>
           As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Vue, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.
@@ -79,4 +81,4 @@ class Code extends Component {
     )
   }
 }
-export default connect(mapStateToProps)(Code);
+export default connect(mapStateToProps)(Projects);

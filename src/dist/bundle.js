@@ -73,7 +73,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	__webpack_require__(/*! ./css/index.scss */ 313);
+	__webpack_require__(/*! ./css/index.scss */ 314);
 	
 	_reactDom2.default.render(_react2.default.createElement(_router2.default, null), document.getElementById('app'));
 	;
@@ -22084,39 +22084,39 @@
 	
 	var _appContainer2 = _interopRequireDefault(_appContainer);
 	
-	var _gallery = __webpack_require__(/*! ./gallery */ 302);
+	var _gallery = __webpack_require__(/*! ./gallery */ 303);
 	
 	var _gallery2 = _interopRequireDefault(_gallery);
 	
-	var _code = __webpack_require__(/*! ./code */ 305);
+	var _projects = __webpack_require__(/*! ./projects */ 306);
 	
-	var _code2 = _interopRequireDefault(_code);
+	var _projects2 = _interopRequireDefault(_projects);
 	
-	var _about = __webpack_require__(/*! ./about */ 306);
+	var _about = __webpack_require__(/*! ./about */ 307);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _contact = __webpack_require__(/*! ./contact */ 307);
+	var _contact = __webpack_require__(/*! ./contact */ 308);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _terms = __webpack_require__(/*! ./terms */ 308);
+	var _terms = __webpack_require__(/*! ./terms */ 309);
 	
 	var _terms2 = _interopRequireDefault(_terms);
 	
-	var _privacy = __webpack_require__(/*! ./privacy */ 309);
+	var _privacy = __webpack_require__(/*! ./privacy */ 310);
 	
 	var _privacy2 = _interopRequireDefault(_privacy);
 	
-	var _post = __webpack_require__(/*! ./post */ 310);
+	var _post = __webpack_require__(/*! ./post */ 311);
 	
 	var _post2 = _interopRequireDefault(_post);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 311);
+	var _notFound = __webpack_require__(/*! ./notFound */ 312);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
-	var _meta_info = __webpack_require__(/*! ../store/constants/meta_info */ 312);
+	var _meta_info = __webpack_require__(/*! ../store/constants/meta_info */ 313);
 	
 	var meta = _interopRequireWildcard(_meta_info);
 	
@@ -22153,7 +22153,7 @@
 	            { path: '/', component: _appContainer2.default, meta: meta },
 	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _about2.default, meta: meta }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/gallery(/:set)(/:image)', component: _gallery2.default, meta: meta }),
-	            _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _code2.default, meta: meta }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/projects', component: _projects2.default, meta: meta }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contact2.default, meta: meta }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/terms', component: _terms2.default, meta: meta }),
 	            _react2.default.createElement(_reactRouter.Route, { path: '/privacy', component: _privacy2.default, meta: meta }),
@@ -30276,6 +30276,13 @@
 	  url: "design/Aaron_Mitchell_Rekindld_Logo_700.jpg",
 	  hidden: false
 	}, {
+	  name: "Canoe Logo",
+	  year: "2017",
+	  medium: "Digital",
+	  about: "",
+	  url: "design/Aaron_Mitchell_Canoe_Logo_700.jpg",
+	  hidden: false
+	}, {
 	  name: "Thrive Medicare Logo",
 	  year: "2016",
 	  medium: "Digital",
@@ -30295,6 +30302,13 @@
 	  medium: "Digital",
 	  about: "",
 	  url: "design/Aaron_Mitchell_Dorbly_Logo_700.jpg",
+	  hidden: false
+	}, {
+	  name: "QuizHive Logo",
+	  year: "2015",
+	  medium: "Digital",
+	  about: "",
+	  url: "design/Aaron_Mitchell_QuizHive_Logo_700.jpg",
 	  hidden: false
 	}, {
 	  name: "MGS Design Logo",
@@ -31069,110 +31083,90 @@
 	});
 	var projects = exports.projects = [{
 	   name: "My Personal Portfolio",
-	   image: "projects/react__logo.jpg",
-	   url: true,
-	   url_link: "https://mitchellaaron.com",
-	   git: true,
-	   git_link: "https://github.com/amitchell89/react-redux-portfolio",
+	   image: "projects/logos/react__logo.jpg",
+	   url: "https://mitchellaaron.com",
+	   git: "https://github.com/amitchell89/react-redux-portfolio",
 	   about: "This website is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css.",
 	   hidden: false
 	}, {
 	   name: "Ombrely",
-	   image: "projects/ombrely_logo.png",
-	   url: true,
-	   url_link: "https://ombrely.com",
-	   git: true,
-	   git_link: "https://github.com/amitchell89/ombrely",
+	   image: "projects/logos/ombrely_logo.png",
+	   url: "https://ombrely.com",
+	   git: "https://github.com/amitchell89/ombrely",
 	   about: "Ombrély is a simple website built using Vue JS that allows users to generate random gradients with the ability to view the css and copy that code to the clipboard.",
 	   hidden: false
 	}, {
 	   name: "Link Ventures",
-	   url: true,
-	   url_link: "http://www.linkventures.com",
-	   image: "projects/link_ventures.jpg",
-	   git: false,
-	   git_link: "Work Project (Code Not Public)",
+	   url: "http://www.linkventures.com",
+	   wireframe: "../images/projects/mockups/Link_Ventures_Wireframe.jpg",
+	   mockup: "../images/projects/mockups/Link_Ventures_Mockup.jpg",
+	   image: "projects/logos/link_ventures.jpg",
 	   about: "Link Ventures is a portfolio site for the investment firm that backs my Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
 	   hidden: false
 	}, {
 	   name: "Umbrella Check",
-	   image: "projects/umbrella_check.jpg",
-	   url: true,
-	   url_link: "http://www.umbrellacheck.com",
-	   git: false,
-	   git_link: "Work Project (Code Not Public)",
+	   image: "projects/logos/umbrella_check.jpg",
+	   url: "http://www.umbrellacheck.com",
+	   wireframe: "../images/projects/mockups/Umbrella_Check_Wireframe.png",
+	   mockup: "../images/projects/mockups/Umbrella_Check_Mockup.jpg",
+	   styleGuide: "../images/projects/mockups/Umbrella_Check_Style_Guide.jpg",
 	   about: "Umbrella Check is a weather site I worked on at Cogo Labs. I created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker.",
 	   hidden: false
 	}, {
 	   name: "Thrive Medicare",
-	   image: "projects/thrive_medicare.jpg",
-	   url: true,
-	   url_link: "http://www.thrivemedicare.com",
-	   git: false,
-	   git_link: "Work Project (Code Not Public)",
+	   image: "projects/logos/thrive_medicare.jpg",
+	   wireframe: "../images/projects/mockups/ThriveMedicare_Wireframe.png",
+	   mockup: "../images/projects/mockups/ThriveMedicare_Mockup.jpg",
+	   styleGuide: "../images/projects/mockups/ThriveMedicare_Style_Guide.png",
 	   about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery.",
-	   hidden: true
+	   hidden: false
+	}, {
+	   name: "Rekindld",
+	   wireframe: "../images/projects/mockups/Rekindld_Wireframe.jpg",
+	   mockup: "../images/projects/mockups/Rekindld_Mockup.jpg",
+	   image: "projects/logos/rekindld_logo.jpg",
+	   about: "Rekindld was a senior dating website I worked on at Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup and worked with our engineers to build the site. The site was deprioritized and is no longer active.",
+	   hidden: false
 	}, {
 	   name: "Cogo Labs 404 Page",
 	   image: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
-	   url: true,
-	   url_link: "http://www.cogolabs.com/404",
-	   git: false,
-	   git_link: "Work Project (Code Not Public)",
+	   url: "http://www.cogolabs.com/404",
 	   about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse.",
 	   hidden: false
 	}, {
 	   name: "Schillaci Guitars",
 	   image: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
-	   url: true,
-	   url_link: "http://www.schillaciguitars.com",
-	   git: true,
-	   git_link: "https://github.com/amitchell89/schillaci_guitars",
+	   url: "http://www.schillaciguitars.com",
+	   git: "https://github.com/amitchell89/schillaci_guitars",
 	   about: "Schillaci Guitars is a website I designed and built as a freelancer in 2012. It was made for a guitar luthier to showcase his past projects and to promote sales. It was built using PHP without a framework or CMS. It utilizes fancybox for the modal gallery on each guitar page and a phpMyAdmin database for serving up images and information about the different guitars. The site is still in use and occasionally updated.",
 	   hidden: false
 	}, {
 	   name: "Fuck 2016",
 	   image: "design/Aaron_Mitchell_Fuck_2016_700.jpg",
-	   url: true,
-	   url_link: "http://www.fuck2016.com",
-	   git: true,
-	   git_link: "https://github.com/amitchell89/fuck2016",
+	   url: "http://www.fuck2016.com",
+	   git: "https://github.com/amitchell89/fuck2016",
 	   about: "Fuck2016 is brand I developed to capitalize on the 2016 presidential election. The site was quickly stood up without a framework to host a Shopify iframed online store. The products were created using theprintful.com, a site that allows you to upload designs, create products based on those designs, and fulfill individually printed orders received from your Shopify store. The site features Facebook and Twitter widgets, as well as Google Analytics tracking. I also maintained Facebook and Twitter pages for the brand. For advertising I was shut out of my initial plan to advertise on Facebook due to their profanity guidelines, but did end up seeing some sales from my Facebook page, Reddit and organic traffic after the results of the election and a John Oliver segment that happened to use the same message.",
 	   hidden: false
 	}, {
 	   name: "Table Flipper",
-	   image: "projects/table_flipper.jpg",
-	   url: false,
-	   url_link: "Command Line Tool. No UI",
-	   git: false,
-	   git_link: "Work Project (Code Not Public)",
+	   image: "projects/logos/table_flipper.jpg",
 	   about: "Table Flipper is a node command line interface tool that I built to make coding emails easier and faster. It allows you to code emails using Jade for the markup, Sass for inline styles and Json for declaring variables and rendering options. The code is compiled into two versions, a clean production version, and a populated version for testing. It includes options to manipulate the final html by randomizing class names, shuffling html attributes and deleting unused classes.Table Flipper also provides a library of common partials for reusable elements and email fixes, and allows users to create blueprints, or starter templates for an even faster workflow. It utilizes nodemon for watching for changes and AWS syncing for quickly uploading images to Amazon S3.",
 	   hidden: true
 	}, {
 	   name: "Offer Coffer",
-	   image: "projects/cogo_labs_logo.jpg",
-	   url: false,
-	   url_link: "Internal Tool. Not Public Facing",
-	   git: false,
-	   git_link: "Work Project (Code Not Public)",
+	   image: "projects/logos/cogo_labs_logo.jpg",
 	   about: "Offer Coffer is a React / Flux / Bootstrap internal tool that is used to manage, edit and review email offers and associated assets (subject lines, email templates etc). I was tasked with designing a new site layout and UI, adding react router, adding filtering to our main list view (along with URL query filtering), enabling multiple items to be saved simultaneously (even though they were still processed individually by the API), redesigning alerts and updating the UI to allow permissions to be set on an granular level for every asset within an offer.",
 	   hidden: true
 	}, {
 	   name: "Arduino Keyboard",
-	   image: "projects/Aaron_Mitchell_Arduino_Keyboard.jpg",
-	   url: false,
-	   url_link: "Hardware Project",
-	   git: true,
-	   git_link: "https://github.com/amitchell89/arduino-keyboard",
+	   image: "projects/logos/Aaron_Mitchell_Arduino_Keyboard.jpg",
+	   git: "https://github.com/amitchell89/arduino-keyboard",
 	   about: "Using Arduino I built a tone generating keyboard. Its powered by a Mega Arduino 2560, which allows you more I/O than your standard arduino (54 pins). It features two octaves of Buttons and an up and down Octave Switch which moves the whole keyboard by one Octave. Its powered by battery and has both speaker and 1/4\" jacks so you can plug into your favorite amplifier.",
 	   hidden: false
 	}, {
 	   name: "Kenobot",
-	   image: "projects/keno_logo.png",
-	   url: false,
-	   url_link: "Node CLI App",
-	   git: true,
-	   git_link: "https://github.com/amitchell89/kenobot",
+	   image: "projects/logos/keno_logo.png",
+	   git: "https://github.com/amitchell89/kenobot",
 	   about: "A Node App for scraping and analyzing Massachusetts Keno Data.",
 	   hidden: true
 	}];
@@ -31223,11 +31217,11 @@
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _footer = __webpack_require__(/*! ./footer */ 298);
+	var _footer = __webpack_require__(/*! ./footer */ 299);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _modal = __webpack_require__(/*! ./modal */ 299);
+	var _modal = __webpack_require__(/*! ./modal */ 300);
 	
 	var _modal2 = _interopRequireDefault(_modal);
 	
@@ -33019,7 +33013,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _Aaron_Mitchell_Logo = __webpack_require__(/*! ../images/Aaron_Mitchell_Logo.png */ 318);
+	var _Aaron_Mitchell_Logo = __webpack_require__(/*! ../images/Aaron_Mitchell_Logo.png */ 298);
 	
 	var _Aaron_Mitchell_Logo2 = _interopRequireDefault(_Aaron_Mitchell_Logo);
 	
@@ -33070,8 +33064,8 @@
 	          ),
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/code' },
-	            'Code'
+	            { to: '/projects' },
+	            'Projects'
 	          ),
 	          _react2.default.createElement(
 	            _reactRouter.Link,
@@ -33109,6 +33103,15 @@
 
 /***/ },
 /* 298 */
+/*!********************************************!*\
+  !*** ./src/images/Aaron_Mitchell_Logo.png ***!
+  \********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "Aaron_Mitchell_Logo.png";
+
+/***/ },
+/* 299 */
 /*!*****************************!*\
   !*** ./src/views/footer.js ***!
   \*****************************/
@@ -33194,7 +33197,7 @@
 	;
 
 /***/ },
-/* 299 */
+/* 300 */
 /*!****************************!*\
   !*** ./src/views/modal.js ***!
   \****************************/
@@ -33220,9 +33223,9 @@
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 300);
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 301);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 301);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 302);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -33420,7 +33423,7 @@
 	;
 
 /***/ },
-/* 300 */
+/* 301 */
 /*!******************************************!*\
   !*** ./src/store/actions/ToggleModal.js ***!
   \******************************************/
@@ -33468,7 +33471,7 @@
 	;
 
 /***/ },
-/* 301 */
+/* 302 */
 /*!***************************************!*\
   !*** ./src/store/actions/SetImage.js ***!
   \***************************************/
@@ -33507,7 +33510,7 @@
 	;
 
 /***/ },
-/* 302 */
+/* 303 */
 /*!******************************!*\
   !*** ./src/views/gallery.js ***!
   \******************************/
@@ -33537,13 +33540,13 @@
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _UpdateGallery = __webpack_require__(/*! ../store/actions/UpdateGallery */ 303);
+	var _UpdateGallery = __webpack_require__(/*! ../store/actions/UpdateGallery */ 304);
 	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 300);
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 301);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 301);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 302);
 	
-	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 304);
+	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 305);
 	
 	var _galleryItem2 = _interopRequireDefault(_galleryItem);
 	
@@ -33725,7 +33728,7 @@
 	;
 
 /***/ },
-/* 303 */
+/* 304 */
 /*!********************************************!*\
   !*** ./src/store/actions/UpdateGallery.js ***!
   \********************************************/
@@ -33764,7 +33767,7 @@
 	;
 
 /***/ },
-/* 304 */
+/* 305 */
 /*!**********************************!*\
   !*** ./src/views/galleryItem.js ***!
   \**********************************/
@@ -33786,9 +33789,9 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 300);
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 301);
 	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 301);
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 302);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -33865,10 +33868,10 @@
 	;
 
 /***/ },
-/* 305 */
-/*!***************************!*\
-  !*** ./src/views/code.js ***!
-  \***************************/
+/* 306 */
+/*!*******************************!*\
+  !*** ./src/views/projects.js ***!
+  \*******************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33909,16 +33912,16 @@
 	  };
 	}
 	
-	var Code = function (_Component) {
-	  _inherits(Code, _Component);
+	var Projects = function (_Component) {
+	  _inherits(Projects, _Component);
 	
-	  function Code() {
-	    _classCallCheck(this, Code);
+	  function Projects() {
+	    _classCallCheck(this, Projects);
 	
-	    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).apply(this, arguments));
 	  }
 	
-	  _createClass(Code, [{
+	  _createClass(Projects, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      // Fade In
@@ -33944,32 +33947,31 @@
 	        null,
 	        projects.map(function (s, i) {
 	
-	          var url = s.url == true ? _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: s.url_link, target: '_blank' },
-	              s.url_link
-	            )
-	          ) : _react2.default.createElement(
-	            'div',
-	            null,
-	            s.url_link
-	          );
-	          var git = s.git == true ? _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: s.git_link, target: '_blank' },
-	              s.git_link
-	            )
-	          ) : _react2.default.createElement(
-	            'div',
-	            null,
-	            s.git_link
-	          );
+	          var url = s.url ? _react2.default.createElement(
+	            'a',
+	            { className: 'project__link', href: s.url, target: '_blank' },
+	            'Website'
+	          ) : null;
+	          var git = s.git ? _react2.default.createElement(
+	            'a',
+	            { className: 'project__link', href: s.git, target: '_blank' },
+	            'Git'
+	          ) : null;
+	          var wireframe = s.wireframe ? _react2.default.createElement(
+	            'a',
+	            { className: 'project__link', href: s.wireframe, target: '_blank' },
+	            'Wireframe'
+	          ) : null;
+	          var mockup = s.mockup ? _react2.default.createElement(
+	            'a',
+	            { className: 'project__link', href: s.mockup, target: '_blank' },
+	            'Mockup'
+	          ) : null;
+	          var styleGuide = s.styleGuide ? _react2.default.createElement(
+	            'a',
+	            { className: 'project__link', href: s.styleGuide, target: '_blank' },
+	            'Style Guide'
+	          ) : null;
 	
 	          var bkgdImg = {
 	            backgroundImage: 'url(../images/' + s.image + ')'
@@ -33987,8 +33989,19 @@
 	                null,
 	                s.name
 	              ),
-	              url,
-	              git,
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'project__links' },
+	                url,
+	                ' ',
+	                git,
+	                ' ',
+	                wireframe,
+	                ' ',
+	                mockup,
+	                ' ',
+	                styleGuide
+	              ),
 	              _react2.default.createElement(
 	                'p',
 	                null,
@@ -34003,7 +34016,7 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_reactHelmet2.default, {
-	          title: 'Aaron Mitchell: Coding Projects',
+	          title: 'Aaron Mitchell: Project Portfolio',
 	          meta: [{ name: "description", content: this.props.route.meta.meta_code }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Coding Projects' }, { property: "og:url", content: 'https://mitchellaaron.com/code/' }]
 	        }),
 	        _react2.default.createElement(
@@ -34012,7 +34025,7 @@
 	          _react2.default.createElement(
 	            'h2',
 	            null,
-	            'Code Portfolio'
+	            'Project Portfolio'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -34036,10 +34049,10 @@
 	    }
 	  }]);
 	
-	  return Code;
+	  return Projects;
 	}(_react.Component);
 	
-	var _default = (0, _reactRedux.connect)(mapStateToProps)(Code);
+	var _default = (0, _reactRedux.connect)(mapStateToProps)(Projects);
 	
 	exports.default = _default;
 	;
@@ -34049,17 +34062,17 @@
 	    return;
 	  }
 	
-	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/code.js');
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/projects.js');
 	
-	  __REACT_HOT_LOADER__.register(Code, 'Code', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/code.js');
+	  __REACT_HOT_LOADER__.register(Projects, 'Projects', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/projects.js');
 	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/code.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/projects.js');
 	}();
 
 	;
 
 /***/ },
-/* 306 */
+/* 307 */
 /*!****************************!*\
   !*** ./src/views/about.js ***!
   \****************************/
@@ -34250,7 +34263,7 @@
 	;
 
 /***/ },
-/* 307 */
+/* 308 */
 /*!******************************!*\
   !*** ./src/views/contact.js ***!
   \******************************/
@@ -34376,7 +34389,7 @@
 	;
 
 /***/ },
-/* 308 */
+/* 309 */
 /*!****************************!*\
   !*** ./src/views/terms.js ***!
   \****************************/
@@ -34626,7 +34639,7 @@
 	;
 
 /***/ },
-/* 309 */
+/* 310 */
 /*!******************************!*\
   !*** ./src/views/privacy.js ***!
   \******************************/
@@ -34737,7 +34750,7 @@
 	;
 
 /***/ },
-/* 310 */
+/* 311 */
 /*!***************************!*\
   !*** ./src/views/post.js ***!
   \***************************/
@@ -34757,7 +34770,7 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 210);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 311);
+	var _notFound = __webpack_require__(/*! ./notFound */ 312);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
@@ -34847,7 +34860,7 @@
 	;
 
 /***/ },
-/* 311 */
+/* 312 */
 /*!*******************************!*\
   !*** ./src/views/notFound.js ***!
   \*******************************/
@@ -34917,7 +34930,7 @@
 	;
 
 /***/ },
-/* 312 */
+/* 313 */
 /*!******************************************!*\
   !*** ./src/store/constants/meta_info.js ***!
   \******************************************/
@@ -34970,7 +34983,7 @@
 	;
 
 /***/ },
-/* 313 */
+/* 314 */
 /*!****************************!*\
   !*** ./src/css/index.scss ***!
   \****************************/
@@ -34979,10 +34992,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?sourceMap!./index.scss */ 314);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?sourceMap!./index.scss */ 315);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 317)(content, {});
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 318)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -34999,24 +35012,24 @@
 	}
 
 /***/ },
-/* 314 */
+/* 315 */
 /*!*********************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader?sourceMap!./src/css/index.scss ***!
   \*********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 315)();
+	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 316)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n/* Base Styles */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #eeeeee;\n  font-family: \"Open Sans\", helvetica, arial, sans-serif;\n  font-weight: 300;\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #00AEEF; }\n\na:hover {\n  color: #0076a3; }\n\np {\n  line-height: 1.5;\n  color: #666666; }\n\nul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nli {\n  cursor: pointer; }\n\nselect {\n  padding: 0.75rem 1rem;\n  font-size: 1rem;\n  background: none;\n  border: 0;\n  border-radius: 0;\n  border: 1px solid #aaaaaa;\n  border-radius: 10px;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  position: relative;\n  text-align: left;\n  cursor: pointer;\n  width: 100%; }\n\nselect:focus, select:active {\n  outline: none;\n  border: 1px solid #aaaaaa; }\n\n.select-wrapper {\n  position: relative; }\n\n.select-wrapper:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-left: 8px solid transparent;\n  border-right: 8px solid transparent;\n  border-top: 10px solid #aaaaaa;\n  position: absolute;\n  top: 20px;\n  right: 1rem;\n  pointer-events: none; }\n\nbutton {\n  cursor: pointer;\n  font-size: 1rem; }\n\nbutton:focus {\n  outline: 0; }\n\nh1 {\n  font-weight: 300;\n  margin: 0; }\n\nh1, h2, h4 {\n  font-family: \"Ubuntu\", helvetica, arial, sans-serif; }\n\n.highlight {\n  color: #ED1C24; }\n\n.site_wrapper {\n  width: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 2rem;\n  box-sizing: border-box; }\n\n.site_wrapper--main {\n  background: #ffffff; }\n\n.content_wrapper {\n  margin: 2rem 0;\n  clear: both; }\n\n@media (max-width: 767px) {\n  .content_wrapper {\n    margin: 1rem 0; } }\n\n@media (max-width: 414px) {\n  .site_wrapper {\n    padding: 0 1rem; } }\n\n/* About Styles */\n.about--portrait {\n  float: left;\n  width: 300px;\n  height: 300px;\n  background-image: url(" + __webpack_require__(/*! ../images/Aaron_Mitchell_Portrait.jpg */ 316) + ");\n  background-size: cover;\n  border-radius: 50%;\n  overflow: hidden; }\n\n.about--copy {\n  float: left;\n  margin-left: 2rem;\n  width: calc(100% - 300px - 2rem); }\n\n@media screen and (max-width: 767px) {\n  .about--portrait {\n    float: none;\n    margin: 0 auto; }\n  .about--copy {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Gallery Styles */\n.list--selected {\n  font-weight: bold; }\n\n.gallery__nav {\n  width: 96px;\n  float: left; }\n\n.gallery__nav li {\n  margin-bottom: 0.5rem; }\n\n.gallery__nav--select {\n  display: none; }\n\n.gallery__container {\n  width: calc(100% - 96px - 2rem);\n  float: right;\n  margin-left: 2rem; }\n\n.gallery__item {\n  height: calc((100vw - 96px - 13rem) / 4);\n  width: calc((100vw - 96px - 13rem) / 4);\n  max-width: 224px;\n  max-height: 224px;\n  background-size: cover;\n  background-position: center;\n  float: left;\n  margin-bottom: 2rem;\n  cursor: pointer; }\n\n.gallery__item:nth-child(4n - 6) {\n  margin-left: 2rem;\n  margin-right: 1rem; }\n\n.gallery__item:nth-child(4n - 5) {\n  margin-left: 1rem;\n  margin-right: 2rem; }\n\n@media (max-width: 967px) {\n  .gallery__item {\n    height: calc((100vw - 96px - 11rem) / 3);\n    width: calc((100vw - 96px - 11rem) / 3);\n    max-width: none;\n    max-height: none; }\n  .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 2rem;\n    margin-right: 2rem; } }\n\n@media (max-width: 767px) {\n  .gallery__nav {\n    float: none;\n    width: 100%;\n    margin-bottom: 1.5rem; }\n  .gallery__container {\n    float: none;\n    width: 100%;\n    margin-left: 0; }\n  .gallery__nav--select {\n    display: block; }\n  .gallery__nav--list {\n    display: none; }\n  .gallery__item {\n    height: calc((100vw - 9rem) / 3);\n    width: calc((100vw - 9rem) / 3); } }\n\n@media (max-width: 575px) {\n  .gallery__item {\n    height: calc((100vw - 7rem) / 2);\n    width: calc((100vw - 7rem) / 2); }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(odd) {\n    margin-right: 1rem; }\n  .gallery__item:nth-child(even) {\n    margin-left: 1rem; } }\n\n@media (max-width: 414px) {\n  .gallery__item {\n    height: calc(100vw - 3rem);\n    width: calc(100vw - 3rem); }\n  .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {\n    margin-left: 0;\n    margin-right: 0; } }\n\n/* Code Projects Stles */\n.code__header {\n  border-bottom: 1px solid #eeeeee;\n  padding-bottom: 1rem; }\n\n.project {\n  border-bottom: 1px solid #eeeeee;\n  padding: 2rem 0 1rem; }\n  .project:after {\n    content: \"\";\n    display: table;\n    clear: both; }\n\n.project__img {\n  height: 200px;\n  width: 200px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  float: left; }\n\n.project__info {\n  width: calc(100% - 200px - 2rem);\n  float: left;\n  margin-left: 2rem; }\n  .project__info h4 {\n    margin-top: 0; }\n\n@media screen and (max-width: 766px) {\n  .project__img {\n    width: 150px;\n    height: 150px; }\n  .project__info {\n    width: calc(100% - 150px - 1rem);\n    margin-left: 1rem; } }\n\n@media screen and (max-width: 500px) {\n  .project__img {\n    display: none; }\n  .project__info {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Header Styles */\nheader {\n  border-bottom: 1px solid #eeeeee;\n  height: calc(2rem + 40px);\n  padding-bottom: 4rem;\n  padding-top: 1rem; }\n\n.header__logo {\n  float: left; }\n  .header__logo img {\n    width: 100px;\n    height: auto;\n    float: left; }\n  .header__logo h1 {\n    color: #666666;\n    float: left;\n    margin-left: 0.75rem;\n    margin-top: 0.5rem; }\n\n.header__nav {\n  float: right;\n  margin-top: 1rem; }\n\n.header__nav a:nth-child(n+2) {\n  margin-left: 1rem; }\n\nfooter {\n  clear: both;\n  text-align: center;\n  padding: 2rem 0; }\n\n@media (max-width: 767px) {\n  header h1 {\n    font-size: 28px; }\n  .header__nav {\n    font-size: 0.875rem;\n    margin-top: 0.5rem; } }\n\n@media (max-width: 575px) {\n  header {\n    padding-top: 1rem;\n    padding-bottom: 5.5rem; }\n  .header__logo {\n    float: none;\n    text-align: center;\n    margin: 0 auto; }\n    .header__logo h1 {\n      display: none; }\n    .header__logo img {\n      float: none; }\n  .header__nav {\n    float: none;\n    text-align: center;\n    margin-top: 0.25rem; } }\n\n/* Modal Styles */\n.modal {\n  background: rgba(0, 0, 0, 0.9);\n  position: fixed;\n  z-index: 10;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: auto;\n  padding: 2rem 0; }\n\n.modal__info {\n  font-size: 0.875rem;\n  padding: 2rem;\n  margin-right: 2rem;\n  width: 230px;\n  float: left;\n  box-sizing: border-box;\n  background: #111;\n  border-radius: 10px; }\n\n.modal__info p {\n  color: #ffffff; }\n\n.modal__img {\n  float: left;\n  width: calc(100% - 230px - 2rem);\n  height: calc(100vh - 4rem);\n  background-size: contain;\n  background-repeat: no-repeat; }\n\n.modal__buttons {\n  position: absolute;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  text-align: center;\n  background: #111;\n  padding: 0.75rem 1rem 0.5rem;\n  width: 230px;\n  border-radius: 10px 10px 0 0; }\n\n.btn--modal {\n  background: none;\n  border: 2px solid #ffffff;\n  color: #ffffff;\n  border-radius: 10px;\n  padding: 0 0.5rem;\n  font-size: 0.825rem;\n  vertical-align: middle;\n  height: 42px;\n  width: 42px; }\n\n.btn--modal:nth-child(n+2) {\n  margin-left: 1rem; }\n\n.btn--modal--disabled {\n  color: #666666;\n  border: 2px solid #666666; }\n\n.btn--modal--info {\n  display: none; }\n\n@media (max-width: 767px) {\n  .modal {\n    padding: 1rem 0; }\n  .modal__info {\n    display: none;\n    width: 250px;\n    background: rgba(17, 17, 17, 0.9);\n    border: 2px solid #ffffff;\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 6rem;\n    margin: 0 auto;\n    padding: 1rem 2rem; }\n  .modal__info--show {\n    display: block; }\n  .modal__img {\n    width: calc(100%);\n    background-position: center;\n    height: calc(100vh - 6rem); }\n  .modal__buttons {\n    left: 0;\n    margin: 0 auto;\n    background: rgba(17, 17, 17, 0.75);\n    width: 250px; }\n  .btn--modal--info {\n    display: inline; } }\n\n/* Contact Styles */\n.contact {\n  width: 100%;\n  max-width: 400px;\n  margin-bottom: 2rem; }\n\n.contact input, .contact textarea {\n  display: block;\n  font-size: 0.875rem;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #aaaaaa;\n  width: 100%; }\n\n.contact label {\n  display: block;\n  margin-bottom: 0.5rem; }\n\n.btn--contact {\n  background: none;\n  border: 2px solid #00AEEF;\n  border-radius: 10px;\n  color: #00AEEF;\n  padding: 1rem; }\n\n@media (max-width: 767px) {\n  .contact {\n    max-width: 100%; }\n  .btn--contact {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, "/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n/* Base Styles */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #eeeeee;\n  font-family: \"Open Sans\", helvetica, arial, sans-serif;\n  font-weight: 300;\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #00AEEF; }\n\na:hover {\n  color: #0076a3; }\n\np {\n  line-height: 1.5;\n  color: #666666; }\n\nul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nli {\n  cursor: pointer; }\n\nselect {\n  padding: 0.75rem 1rem;\n  font-size: 1rem;\n  background: none;\n  border: 0;\n  border-radius: 0;\n  border: 1px solid #aaaaaa;\n  border-radius: 10px;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  position: relative;\n  text-align: left;\n  cursor: pointer;\n  width: 100%; }\n\nselect:focus, select:active {\n  outline: none;\n  border: 1px solid #aaaaaa; }\n\n.select-wrapper {\n  position: relative; }\n\n.select-wrapper:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-left: 8px solid transparent;\n  border-right: 8px solid transparent;\n  border-top: 10px solid #aaaaaa;\n  position: absolute;\n  top: 20px;\n  right: 1rem;\n  pointer-events: none; }\n\nbutton {\n  cursor: pointer;\n  font-size: 1rem; }\n\nbutton:focus {\n  outline: 0; }\n\nh1 {\n  font-weight: 300;\n  margin: 0; }\n\nh1, h2, h4 {\n  font-family: \"Ubuntu\", helvetica, arial, sans-serif; }\n\n.highlight {\n  color: #ED1C24; }\n\n.site_wrapper {\n  width: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 2rem;\n  box-sizing: border-box; }\n\n.site_wrapper--main {\n  background: #ffffff; }\n\n.content_wrapper {\n  margin: 2rem 0;\n  clear: both; }\n\n@media (max-width: 767px) {\n  .content_wrapper {\n    margin: 1rem 0; } }\n\n@media (max-width: 414px) {\n  .site_wrapper {\n    padding: 0 1rem; } }\n\n/* About Styles */\n.about--portrait {\n  float: left;\n  width: 300px;\n  height: 300px;\n  background-image: url(" + __webpack_require__(/*! ../images/Aaron_Mitchell_Portrait.jpg */ 317) + ");\n  background-size: cover;\n  border-radius: 50%;\n  overflow: hidden; }\n\n.about--copy {\n  float: left;\n  margin-left: 2rem;\n  width: calc(100% - 300px - 2rem); }\n\n@media screen and (max-width: 767px) {\n  .about--portrait {\n    float: none;\n    margin: 0 auto; }\n  .about--copy {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Gallery Styles */\n.list--selected {\n  font-weight: bold; }\n\n.gallery__nav {\n  width: 96px;\n  float: left; }\n\n.gallery__nav li {\n  margin-bottom: 0.5rem; }\n\n.gallery__nav--select {\n  display: none; }\n\n.gallery__container {\n  width: calc(100% - 96px - 2rem);\n  float: right;\n  margin-left: 2rem; }\n\n.gallery__item {\n  height: calc((100vw - 96px - 13rem) / 4);\n  width: calc((100vw - 96px - 13rem) / 4);\n  max-width: 224px;\n  max-height: 224px;\n  background-size: cover;\n  background-position: center;\n  float: left;\n  margin-bottom: 2rem;\n  cursor: pointer; }\n\n.gallery__item:nth-child(4n - 6) {\n  margin-left: 2rem;\n  margin-right: 1rem; }\n\n.gallery__item:nth-child(4n - 5) {\n  margin-left: 1rem;\n  margin-right: 2rem; }\n\n@media (max-width: 967px) {\n  .gallery__item {\n    height: calc((100vw - 96px - 11rem) / 3);\n    width: calc((100vw - 96px - 11rem) / 3);\n    max-width: none;\n    max-height: none; }\n  .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 2rem;\n    margin-right: 2rem; } }\n\n@media (max-width: 767px) {\n  .gallery__nav {\n    float: none;\n    width: 100%;\n    margin-bottom: 1.5rem; }\n  .gallery__container {\n    float: none;\n    width: 100%;\n    margin-left: 0; }\n  .gallery__nav--select {\n    display: block; }\n  .gallery__nav--list {\n    display: none; }\n  .gallery__item {\n    height: calc((100vw - 9rem) / 3);\n    width: calc((100vw - 9rem) / 3); } }\n\n@media (max-width: 575px) {\n  .gallery__item {\n    height: calc((100vw - 7rem) / 2);\n    width: calc((100vw - 7rem) / 2); }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(odd) {\n    margin-right: 1rem; }\n  .gallery__item:nth-child(even) {\n    margin-left: 1rem; } }\n\n@media (max-width: 414px) {\n  .gallery__item {\n    height: calc(100vw - 3rem);\n    width: calc(100vw - 3rem); }\n  .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {\n    margin-left: 0;\n    margin-right: 0; } }\n\n/* Code Projects Stles */\n.code__header {\n  border-bottom: 1px solid #eeeeee;\n  padding-bottom: 1rem; }\n\n.project {\n  border-bottom: 1px solid #eeeeee;\n  padding: 2rem 0 1rem; }\n  .project:after {\n    content: \"\";\n    display: table;\n    clear: both; }\n\n.project__img {\n  height: 200px;\n  width: 200px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  float: left; }\n\n.project__info {\n  width: calc(100% - 200px - 2rem);\n  float: left;\n  margin-left: 2rem; }\n  .project__info h4 {\n    margin-top: 0; }\n\n.project__link:after {\n  content: \" | \";\n  color: #aaaaaa; }\n\n.project__link:last-child:after {\n  content: \"\"; }\n\n@media screen and (max-width: 766px) {\n  .project__img {\n    width: 150px;\n    height: 150px; }\n  .project__info {\n    width: calc(100% - 150px - 1rem);\n    margin-left: 1rem; } }\n\n@media screen and (max-width: 500px) {\n  .project__img {\n    display: none; }\n  .project__info {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Header Styles */\nheader {\n  border-bottom: 1px solid #eeeeee;\n  height: calc(2rem + 40px);\n  padding-bottom: 4rem;\n  padding-top: 1rem; }\n\n.header__logo {\n  float: left; }\n  .header__logo img {\n    width: 100px;\n    height: auto;\n    float: left; }\n  .header__logo h1 {\n    color: #666666;\n    float: left;\n    margin-left: 0.75rem;\n    margin-top: 0.5rem; }\n\n.header__nav {\n  float: right;\n  margin-top: 1rem; }\n\n.header__nav a:nth-child(n+2) {\n  margin-left: 1rem; }\n\nfooter {\n  clear: both;\n  text-align: center;\n  padding: 2rem 0; }\n\n@media (max-width: 767px) {\n  header h1 {\n    font-size: 28px; }\n  .header__nav {\n    font-size: 0.875rem;\n    margin-top: 0.5rem; } }\n\n@media (max-width: 575px) {\n  header {\n    padding-top: 1rem;\n    padding-bottom: 5.5rem; }\n  .header__logo {\n    float: none;\n    text-align: center;\n    margin: 0 auto; }\n    .header__logo h1 {\n      display: none; }\n    .header__logo img {\n      float: none; }\n  .header__nav {\n    float: none;\n    text-align: center;\n    margin-top: 0.25rem; } }\n\n/* Modal Styles */\n.modal {\n  background: rgba(0, 0, 0, 0.9);\n  position: fixed;\n  z-index: 10;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: auto;\n  padding: 2rem 0; }\n\n.modal__info {\n  font-size: 0.875rem;\n  padding: 2rem;\n  margin-right: 2rem;\n  width: 230px;\n  float: left;\n  box-sizing: border-box;\n  background: #111;\n  border-radius: 10px; }\n\n.modal__info p {\n  color: #ffffff; }\n\n.modal__img {\n  float: left;\n  width: calc(100% - 230px - 2rem);\n  height: calc(100vh - 4rem);\n  background-size: contain;\n  background-repeat: no-repeat; }\n\n.modal__buttons {\n  position: absolute;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  text-align: center;\n  background: #111;\n  padding: 0.75rem 1rem 0.5rem;\n  width: 230px;\n  border-radius: 10px 10px 0 0; }\n\n.btn--modal {\n  background: none;\n  border: 2px solid #ffffff;\n  color: #ffffff;\n  border-radius: 10px;\n  padding: 0 0.5rem;\n  font-size: 0.825rem;\n  vertical-align: middle;\n  height: 42px;\n  width: 42px; }\n\n.btn--modal:nth-child(n+2) {\n  margin-left: 1rem; }\n\n.btn--modal--disabled {\n  color: #666666;\n  border: 2px solid #666666; }\n\n.btn--modal--info {\n  display: none; }\n\n@media (max-width: 767px) {\n  .modal {\n    padding: 1rem 0; }\n  .modal__info {\n    display: none;\n    width: 250px;\n    background: rgba(17, 17, 17, 0.9);\n    border: 2px solid #ffffff;\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 6rem;\n    margin: 0 auto;\n    padding: 1rem 2rem; }\n  .modal__info--show {\n    display: block; }\n  .modal__img {\n    width: calc(100%);\n    background-position: center;\n    height: calc(100vh - 6rem); }\n  .modal__buttons {\n    left: 0;\n    margin: 0 auto;\n    background: rgba(17, 17, 17, 0.75);\n    width: 250px; }\n  .btn--modal--info {\n    display: inline; } }\n\n/* Contact Styles */\n.contact {\n  width: 100%;\n  max-width: 400px;\n  margin-bottom: 2rem; }\n\n.contact input, .contact textarea {\n  display: block;\n  font-size: 0.875rem;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #aaaaaa;\n  width: 100%; }\n\n.contact label {\n  display: block;\n  margin-bottom: 0.5rem; }\n\n.btn--contact {\n  background: none;\n  border: 2px solid #00AEEF;\n  border-radius: 10px;\n  color: #00AEEF;\n  padding: 1rem; }\n\n@media (max-width: 767px) {\n  .contact {\n    max-width: 100%; }\n  .btn--contact {\n    width: 100%; } }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 315 */
+/* 316 */
 /*!**************************************!*\
   !*** ./~/css-loader/lib/css-base.js ***!
   \**************************************/
@@ -35075,7 +35088,7 @@
 
 
 /***/ },
-/* 316 */
+/* 317 */
 /*!************************************************!*\
   !*** ./src/images/Aaron_Mitchell_Portrait.jpg ***!
   \************************************************/
@@ -35084,7 +35097,7 @@
 	module.exports = __webpack_require__.p + "Aaron_Mitchell_Portrait.jpg";
 
 /***/ },
-/* 317 */
+/* 318 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/
@@ -35337,15 +35350,6 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
-
-/***/ },
-/* 318 */
-/*!********************************************!*\
-  !*** ./src/images/Aaron_Mitchell_Logo.png ***!
-  \********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "Aaron_Mitchell_Logo.png";
 
 /***/ }
 /******/ ]);

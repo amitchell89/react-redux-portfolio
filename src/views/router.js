@@ -5,7 +5,7 @@ import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 're
 import store from '../store/reducers';
 import AppContainer from './appContainer'
 import Gallery from './gallery'
-import Code from './code'
+import Projects from './projects'
 import About from './about'
 import Contact from './contact'
 import Terms from './terms'
@@ -26,7 +26,7 @@ export default class Routes extends Component {
           <Route path='/' component={AppContainer} meta={meta}>
             <IndexRoute component={About} meta={meta} />
             <Route path='/gallery(/:set)(/:image)' component={Gallery} meta={meta} />
-            <Route path='/code' component={Code} meta={meta} />
+            <Route path='/projects' component={Projects} meta={meta} />
             <Route path='/contact' component={Contact} meta={meta} />
             <Route path='/terms' component={Terms} meta={meta} />
             <Route path='/privacy' component={Privacy} meta={meta} />

@@ -40,6 +40,14 @@ export const design = [
     hidden: false
   },
   {
+    name: "Canoe Logo",
+    year: "2017",
+    medium: "Digital",
+    about: "",
+    url: "design/Aaron_Mitchell_Canoe_Logo_700.jpg",
+    hidden: false
+  },
+  {
     name: "Thrive Medicare Logo",
     year: "2016",
     medium: "Digital",
@@ -61,6 +69,14 @@ export const design = [
     medium: "Digital",
     about: "",
     url: "design/Aaron_Mitchell_Dorbly_Logo_700.jpg",
+    hidden: false
+  },
+  {
+    name: "QuizHive Logo",
+    year: "2015",
+    medium: "Digital",
+    about: "",
+    url: "design/Aaron_Mitchell_QuizHive_Logo_700.jpg",
     hidden: false
   },
   {

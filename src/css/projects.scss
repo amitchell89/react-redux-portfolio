@@ -29,6 +29,15 @@
   }
 }
 
+.project__link:after {
+  content: " | ";
+  color: $color-gray-mid;
+}
+
+.project__link:last-child:after {
+  content: "";
+}
+
 @media screen and (max-width: 766px) {
   .project__img {
     width: 150px;

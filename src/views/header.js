@@ -19,8 +19,8 @@ export default class Header extends Component {
           <Link to="/gallery">
             Gallery
           </Link>
-          <Link to="/code">
-            Code
+          <Link to="/projects">
+            Projects
           </Link>
           <Link to="/">
             About

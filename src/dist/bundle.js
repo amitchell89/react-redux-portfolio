@@ -34180,7 +34180,7 @@
 	              { className: 'highlight' },
 	              'Weather'
 	            ),
-	            ' among others. As Lead UI Designer I am also responsible for leading the design team, which involves prrioritizing and assigning design tasks, mentoring junior designers and leading the hiring process for new designers.'
+	            ' among others. As Lead UI Designer I am also responsible for leading the design team, which involves prioritizing and assigning design tasks, mentoring junior designers and leading the hiring process for new designers.'
 	          ),
 	          _react2.default.createElement(
 	            'p',

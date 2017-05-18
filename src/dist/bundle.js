@@ -34149,7 +34149,7 @@
 	            _react2.default.createElement(
 	              'span',
 	              { className: 'highlight' },
-	              'Senior UI Designer'
+	              'Lead UI Designer'
 	            ),
 	            ' at ',
 	            _react2.default.createElement(
@@ -34180,7 +34180,7 @@
 	              { className: 'highlight' },
 	              'Weather'
 	            ),
-	            ' among others. I have also have had the opportunity to mentor interns and fellow designers.'
+	            ' among others. As Lead UI Designer I am also responsible for leading the design team, which involves prrioritizing and assigning design tasks, mentoring junior designers and leading the hiring process for new designers.'
 	          ),
 	          _react2.default.createElement(
 	            'p',

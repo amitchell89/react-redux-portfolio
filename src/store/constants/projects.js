@@ -8,6 +8,14 @@ export const projects = [
        hidden: false
     },
     {
+       name: "Schillaci Guitars",
+       image: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
+       url: "http://www.schillaciguitars.com",
+       git: "https://github.com/amitchell89/schillaci_guitars",
+       about: "Schillaci Guitars is a website I designed and built as a freelancer. It was made for a guitar luthier to showcase his past projects and to promote sales. The site is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css.",
+       hidden: false
+    },
+    {
        name: "Ombrely",
        image: "projects/logos/ombrely_logo.png",
        url: "https://ombrely.com",
@@ -56,14 +64,6 @@ export const projects = [
        image: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
        url: "http://www.cogolabs.com/404",
        about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse.",
-       hidden: false
-    },
-    {
-       name: "Schillaci Guitars",
-       image: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
-       url: "http://www.schillaciguitars.com",
-       git: "https://github.com/amitchell89/schillaci_guitars",
-       about: "Schillaci Guitars is a website I designed and built as a freelancer in 2012. It was made for a guitar luthier to showcase his past projects and to promote sales. It was built using PHP without a framework or CMS. It utilizes fancybox for the modal gallery on each guitar page and a phpMyAdmin database for serving up images and information about the different guitars. The site is still in use and occasionally updated.",
        hidden: false
     },
     {

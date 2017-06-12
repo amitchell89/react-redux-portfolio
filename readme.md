@@ -13,6 +13,8 @@
 
 `npm run webpack` : Starts Webpack
 
-`npm run server`: Starts express server
+`npm run server`: Starts Express Server
+
+`npm run start`: Starts Webpack and Express Server
 
 Visit localhost:3000

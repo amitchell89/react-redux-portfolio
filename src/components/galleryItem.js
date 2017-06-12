@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { browserHistory } from 'react-router'
-import { openModal } from '../store/actions/ToggleModal'
-import { setImage } from '../store/actions/SetImage'
+import { browserHistory } from 'react-router';
+import { openModal } from '../store/actions/ToggleModal';
+import { setImage } from '../store/actions/SetImage';
 
 function mapStateToProps(state) {
    return {
@@ -30,7 +30,10 @@ class GalleryItem extends Component {
     }
 
     return (
-      <div className="gallery__item" style={bkgdImg} onClick={this.props.openModal.bind(this, selectedGallery, id)}>
+      <div
+        className="gallery__item"
+        style={bkgdImg}
+        onClick={this.props.openModal.bind(this, selectedGallery, id)}>
       </div>
     )
   }

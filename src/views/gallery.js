@@ -7,6 +7,7 @@ import { updateGallery } from '../store/actions/UpdateGallery';
 import { openModal } from '../store/actions/ToggleModal';
 import { setImage } from '../store/actions/SetImage';
 import GalleryItem from '../components/galleryItem';
+import GalleryContainer from '../components/galleryContainer';
 
 
 function mapStateToProps(state) {
@@ -31,8 +32,8 @@ function mapDispatchToProps(dispatch) {
       dispatch(updateGallery(gallery))
     },
     openModal: (id) => {
-      dispatch(openModal())
-      dispatch(setImage(id))
+      dispatch(openModal());
+      dispatch(setImage(id));
     }
   }
 }
@@ -68,15 +69,6 @@ class Gallery extends Component {
     let currentPortfolio = images[selectedGallery].filter(function(n) {
       return n.hidden !== true;
     });
-
-    let galleryItems = (
-      <div className="gallery__container">
-        {currentPortfolio.map(function (s, i) {
-          return (
-          <GalleryItem image={s.url} id={s.id}/>
-        )}.bind(this))}
-      </div>
-    )
 
     let galleryList = [];
 
@@ -128,7 +120,7 @@ class Gallery extends Component {
         {filters}
         {list}
         </div>
-        {galleryItems}
+        <GalleryContainer gallery={currentPortfolio} />
       </div>
     )
   }

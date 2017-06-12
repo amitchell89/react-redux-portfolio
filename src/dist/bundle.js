@@ -73,7 +73,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	__webpack_require__(/*! ./css/index.scss */ 314);
+	__webpack_require__(/*! ./css/index.scss */ 310);
 	
 	_reactDom2.default.render(_react2.default.createElement(_router2.default, null), document.getElementById('app'));
 	;
@@ -22084,39 +22084,39 @@
 	
 	var _appContainer2 = _interopRequireDefault(_appContainer);
 	
-	var _gallery = __webpack_require__(/*! ./gallery */ 303);
+	var _gallery = __webpack_require__(/*! ./gallery */ 315);
 	
 	var _gallery2 = _interopRequireDefault(_gallery);
 	
-	var _projects = __webpack_require__(/*! ./projects */ 306);
+	var _projects = __webpack_require__(/*! ./projects */ 303);
 	
 	var _projects2 = _interopRequireDefault(_projects);
 	
-	var _about = __webpack_require__(/*! ./about */ 307);
+	var _about = __webpack_require__(/*! ./about */ 304);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _contact = __webpack_require__(/*! ./contact */ 308);
+	var _contact = __webpack_require__(/*! ./contact */ 305);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _terms = __webpack_require__(/*! ./terms */ 309);
+	var _terms = __webpack_require__(/*! ./terms */ 306);
 	
 	var _terms2 = _interopRequireDefault(_terms);
 	
-	var _privacy = __webpack_require__(/*! ./privacy */ 310);
+	var _privacy = __webpack_require__(/*! ./privacy */ 307);
 	
 	var _privacy2 = _interopRequireDefault(_privacy);
 	
-	var _post = __webpack_require__(/*! ./post */ 311);
+	var _post = __webpack_require__(/*! ./post */ 317);
 	
 	var _post2 = _interopRequireDefault(_post);
 	
-	var _notFound = __webpack_require__(/*! ./notFound */ 312);
+	var _notFound = __webpack_require__(/*! ./notFound */ 308);
 	
 	var _notFound2 = _interopRequireDefault(_notFound);
 	
-	var _meta_info = __webpack_require__(/*! ../store/constants/meta_info */ 313);
+	var _meta_info = __webpack_require__(/*! ../store/constants/meta_info */ 309);
 	
 	var meta = _interopRequireWildcard(_meta_info);
 	
@@ -31213,15 +31213,15 @@
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _header = __webpack_require__(/*! ./header */ 297);
+	var _header = __webpack_require__(/*! ../components/header */ 297);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _footer = __webpack_require__(/*! ./footer */ 299);
+	var _footer = __webpack_require__(/*! ../components/footer */ 299);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _modal = __webpack_require__(/*! ./modal */ 300);
+	var _modal = __webpack_require__(/*! ../components/modal */ 300);
 	
 	var _modal2 = _interopRequireDefault(_modal);
 	
@@ -32994,9 +32994,9 @@
 
 /***/ },
 /* 297 */
-/*!*****************************!*\
-  !*** ./src/views/header.js ***!
-  \*****************************/
+/*!**********************************!*\
+  !*** ./src/components/header.js ***!
+  \**********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33094,9 +33094,9 @@
 	    return;
 	  }
 	
-	  __REACT_HOT_LOADER__.register(Header, 'Header', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/header.js');
+	  __REACT_HOT_LOADER__.register(Header, 'Header', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/header.js');
 	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/header.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/header.js');
 	}();
 
 	;
@@ -33112,9 +33112,9 @@
 
 /***/ },
 /* 299 */
-/*!*****************************!*\
-  !*** ./src/views/footer.js ***!
-  \*****************************/
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33189,18 +33189,18 @@
 	    return;
 	  }
 	
-	  __REACT_HOT_LOADER__.register(Footer, 'Footer', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/footer.js');
+	  __REACT_HOT_LOADER__.register(Footer, 'Footer', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/footer.js');
 	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/footer.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/footer.js');
 	}();
 
 	;
 
 /***/ },
 /* 300 */
-/*!****************************!*\
-  !*** ./src/views/modal.js ***!
-  \****************************/
+/*!*********************************!*\
+  !*** ./src/components/modal.js ***!
+  \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33411,13 +33411,13 @@
 	    return;
 	  }
 	
-	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/modal.js');
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/modal.js');
 	
-	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/modal.js');
+	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/modal.js');
 	
-	  __REACT_HOT_LOADER__.register(Modal, 'Modal', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/modal.js');
+	  __REACT_HOT_LOADER__.register(Modal, 'Modal', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/modal.js');
 	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/modal.js');
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/modal.js');
 	}();
 
 	;
@@ -33511,364 +33511,6 @@
 
 /***/ },
 /* 303 */
-/*!******************************!*\
-  !*** ./src/views/gallery.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(/*! react-dom */ 33);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 201);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 210);
-	
-	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
-	
-	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
-	
-	var _UpdateGallery = __webpack_require__(/*! ../store/actions/UpdateGallery */ 304);
-	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 301);
-	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 302);
-	
-	var _galleryItem = __webpack_require__(/*! ./galleryItem */ 305);
-	
-	var _galleryItem2 = _interopRequireDefault(_galleryItem);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	function mapStateToProps(state) {
-	  return {
-	    images: state.gallery.images,
-	    selectedGallery: state.gallery.selected,
-	    modal: state.modal.display
-	  };
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	  return {
-	    onClick: function onClick(gallery) {
-	      dispatch((0, _UpdateGallery.updateGallery)(gallery));
-	      _reactRouter.browserHistory.push('/gallery/' + gallery);
-	    },
-	    filterGallery: function filterGallery(event) {
-	      dispatch((0, _UpdateGallery.updateGallery)(event.target.value));
-	      _reactRouter.browserHistory.push('/gallery/' + event.target.value);
-	    },
-	    updateGalleryOnLoad: function updateGalleryOnLoad(gallery) {
-	      dispatch((0, _UpdateGallery.updateGallery)(gallery));
-	    },
-	    openModal: function openModal(id) {
-	      dispatch((0, _ToggleModal.openModal)());
-	      dispatch((0, _SetImage.setImage)(id));
-	    }
-	  };
-	}
-	
-	var Gallery = function (_Component) {
-	  _inherits(Gallery, _Component);
-	
-	  function Gallery() {
-	    _classCallCheck(this, Gallery);
-	
-	    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).apply(this, arguments));
-	  }
-	
-	  _createClass(Gallery, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      if (this.props.params.set) {
-	        for (var key in this.props.images) {
-	          if (this.props.params.set == key) {
-	            this.props.updateGalleryOnLoad(this.props.params.set);
-	            break;
-	          }
-	        }
-	      }
-	      if (this.props.params.image) {
-	        this.props.openModal(this.props.params.image);
-	      }
-	
-	      // Fade In
-	      var elem = _reactDom2.default.findDOMNode(this);
-	      elem.style.opacity = 0;
-	      window.requestAnimationFrame(function () {
-	        elem.style.transition = "opacity 500ms";
-	        elem.style.opacity = 1;
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _props = this.props,
-	          images = _props.images,
-	          selectedGallery = _props.selectedGallery;
-	
-	
-	      var currentPortfolio = images[selectedGallery].filter(function (n) {
-	        return n.hidden !== true;
-	      });
-	
-	      var galleryItems = _react2.default.createElement(
-	        'div',
-	        { className: 'gallery__container' },
-	        currentPortfolio.map(function (s, i) {
-	          return _react2.default.createElement(_galleryItem2.default, { image: s.url, id: s.id });
-	        }.bind(this))
-	      );
-	
-	      var galleryList = [];
-	
-	      for (var key in images) {
-	        galleryList.push(key);
-	      }
-	
-	      var filters = _react2.default.createElement(
-	        'div',
-	        { className: 'select-wrapper gallery__nav--select' },
-	        _react2.default.createElement(
-	          'select',
-	          { title: 'select', onChange: this.props.filterGallery },
-	          _react2.default.createElement(
-	            'option',
-	            { selected: true, disabled: true },
-	            'Select a Portfolio'
-	          ),
-	          galleryList.map(function (s, i) {
-	            var name = s[0].toUpperCase() + s.slice(1);
-	            return _react2.default.createElement(
-	              'option',
-	              { value: s },
-	              name
-	            );
-	          }.bind(this))
-	        )
-	      );
-	
-	      var list = _react2.default.createElement(
-	        'ul',
-	        { className: 'gallery__nav--list' },
-	        galleryList.map(function (s, i) {
-	          var name = s[0].toUpperCase() + s.slice(1);
-	          var listClass = null;
-	          if (s == selectedGallery) {
-	            listClass = 'list--selected';
-	          }
-	          return _react2.default.createElement(
-	            'li',
-	            { className: listClass, onClick: this.props.onClick.bind(this, s) },
-	            name
-	          );
-	        }.bind(this))
-	      );
-	
-	      var og_image = currentPortfolio[0].url;
-	
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_reactHelmet2.default, {
-	          title: 'Aaron Mitchell: Gallery',
-	          meta: [{ name: "description", content: this.props.route.meta.meta_gallery }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Gallery' }, { property: "og:url", content: 'https://mitchellaaron.com/gallery/' + selectedGallery }, { property: "og:image", content: 'https://mitchellaaron.com/images/' + og_image }]
-	        }),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'gallery__nav' },
-	          filters,
-	          list
-	        ),
-	        galleryItems
-	      );
-	    }
-	  }]);
-	
-	  return Gallery;
-	}(_react.Component);
-	
-	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Gallery);
-	
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/gallery.js');
-	
-	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/gallery.js');
-	
-	  __REACT_HOT_LOADER__.register(Gallery, 'Gallery', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/gallery.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/gallery.js');
-	}();
-
-	;
-
-/***/ },
-/* 304 */
-/*!********************************************!*\
-  !*** ./src/store/actions/UpdateGallery.js ***!
-  \********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.updateGallery = updateGallery;
-	
-	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 273);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function updateGallery(name) {
-	  console.log('action dispatched', name);
-	  return {
-	    type: types.UPDATE_GALLERY,
-	    name: name
-	  };
-	}
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(updateGallery, 'updateGallery', '/Users/aaronmitchell/src/react-redux-portfolio/src/store/actions/UpdateGallery.js');
-	}();
-
-	;
-
-/***/ },
-/* 305 */
-/*!**********************************!*\
-  !*** ./src/views/galleryItem.js ***!
-  \**********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 201);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 210);
-	
-	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 301);
-	
-	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 302);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	function mapStateToProps(state) {
-	  return {
-	    selectedGallery: state.gallery.selected
-	  };
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	  return {
-	    openModal: function openModal(gallery, id) {
-	      dispatch((0, _ToggleModal.openModal)());
-	      dispatch((0, _SetImage.setImage)(id));
-	      _reactRouter.browserHistory.push('/gallery/' + gallery + '/' + id);
-	    }
-	  };
-	}
-	
-	var GalleryItem = function (_Component) {
-	  _inherits(GalleryItem, _Component);
-	
-	  function GalleryItem() {
-	    _classCallCheck(this, GalleryItem);
-	
-	    return _possibleConstructorReturn(this, (GalleryItem.__proto__ || Object.getPrototypeOf(GalleryItem)).apply(this, arguments));
-	  }
-	
-	  _createClass(GalleryItem, [{
-	    key: 'render',
-	    value: function render() {
-	      var _props = this.props,
-	          image = _props.image,
-	          id = _props.id,
-	          selectedGallery = _props.selectedGallery;
-	
-	
-	      var bkgdImg = {
-	        backgroundImage: 'url(../images/' + image + ')'
-	      };
-	
-	      return _react2.default.createElement('div', { className: 'gallery__item', style: bkgdImg, onClick: this.props.openModal.bind(this, selectedGallery, id) });
-	    }
-	  }]);
-	
-	  return GalleryItem;
-	}(_react.Component);
-	
-	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(GalleryItem);
-	
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/galleryItem.js');
-	
-	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/galleryItem.js');
-	
-	  __REACT_HOT_LOADER__.register(GalleryItem, 'GalleryItem', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/galleryItem.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/galleryItem.js');
-	}();
-
-	;
-
-/***/ },
-/* 306 */
 /*!*******************************!*\
   !*** ./src/views/projects.js ***!
   \*******************************/
@@ -34072,7 +33714,7 @@
 	;
 
 /***/ },
-/* 307 */
+/* 304 */
 /*!****************************!*\
   !*** ./src/views/about.js ***!
   \****************************/
@@ -34263,7 +33905,7 @@
 	;
 
 /***/ },
-/* 308 */
+/* 305 */
 /*!******************************!*\
   !*** ./src/views/contact.js ***!
   \******************************/
@@ -34389,7 +34031,7 @@
 	;
 
 /***/ },
-/* 309 */
+/* 306 */
 /*!****************************!*\
   !*** ./src/views/terms.js ***!
   \****************************/
@@ -34639,7 +34281,7 @@
 	;
 
 /***/ },
-/* 310 */
+/* 307 */
 /*!******************************!*\
   !*** ./src/views/privacy.js ***!
   \******************************/
@@ -34750,117 +34392,7 @@
 	;
 
 /***/ },
-/* 311 */
-/*!***************************!*\
-  !*** ./src/views/post.js ***!
-  \***************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 210);
-	
-	var _notFound = __webpack_require__(/*! ./notFound */ 312);
-	
-	var _notFound2 = _interopRequireDefault(_notFound);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Post = function (_Component) {
-	  _inherits(Post, _Component);
-	
-	  function Post() {
-	    _classCallCheck(this, Post);
-	
-	    return _possibleConstructorReturn(this, (Post.__proto__ || Object.getPrototypeOf(Post)).apply(this, arguments));
-	  }
-	
-	  _createClass(Post, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
-	      this.setState({ status: this.props.location.query.post || null });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      if (this.state.status !== 'success' && this.state.status !== 'fail') {
-	        return _react2.default.createElement(_notFound2.default, null);
-	      }
-	      var postMessage = 'Your Message Has been sent! Thanks for reaching out.';
-	      var returnToContact = null;
-	
-	      if (this.state.status == 'fail') {
-	        postMessage = 'I\'m sorry. There was an issue and your message did not send.';
-	        returnToContact = _react2.default.createElement(
-	          'p',
-	          null,
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/contact' },
-	            'Try Sending Your Message Again'
-	          )
-	        );
-	      }
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(
-	          'h3',
-	          null,
-	          postMessage
-	        ),
-	        returnToContact,
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/' },
-	            'Return to Home'
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Post;
-	}(_react.Component);
-	
-	var _default = Post;
-	exports.default = _default;
-	;
-	
-	var _temp = function () {
-	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-	    return;
-	  }
-	
-	  __REACT_HOT_LOADER__.register(Post, 'Post', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/post.js');
-	
-	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/post.js');
-	}();
-
-	;
-
-/***/ },
-/* 312 */
+/* 308 */
 /*!*******************************!*\
   !*** ./src/views/notFound.js ***!
   \*******************************/
@@ -34930,7 +34462,7 @@
 	;
 
 /***/ },
-/* 313 */
+/* 309 */
 /*!******************************************!*\
   !*** ./src/store/constants/meta_info.js ***!
   \******************************************/
@@ -34983,7 +34515,7 @@
 	;
 
 /***/ },
-/* 314 */
+/* 310 */
 /*!****************************!*\
   !*** ./src/css/index.scss ***!
   \****************************/
@@ -34992,10 +34524,10 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?sourceMap!./index.scss */ 315);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader?sourceMap!./index.scss */ 311);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 318)(content, {});
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 314)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -35012,24 +34544,24 @@
 	}
 
 /***/ },
-/* 315 */
+/* 311 */
 /*!*********************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader?sourceMap!./src/css/index.scss ***!
   \*********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 316)();
+	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 312)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n/* Base Styles */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #eeeeee;\n  font-family: \"Open Sans\", helvetica, arial, sans-serif;\n  font-weight: 300;\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #00AEEF; }\n\na:hover {\n  color: #0076a3; }\n\np {\n  line-height: 1.5;\n  color: #666666; }\n\nul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nli {\n  cursor: pointer; }\n\nselect {\n  padding: 0.75rem 1rem;\n  font-size: 1rem;\n  background: none;\n  border: 0;\n  border-radius: 0;\n  border: 1px solid #aaaaaa;\n  border-radius: 10px;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  position: relative;\n  text-align: left;\n  cursor: pointer;\n  width: 100%; }\n\nselect:focus, select:active {\n  outline: none;\n  border: 1px solid #aaaaaa; }\n\n.select-wrapper {\n  position: relative; }\n\n.select-wrapper:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-left: 8px solid transparent;\n  border-right: 8px solid transparent;\n  border-top: 10px solid #aaaaaa;\n  position: absolute;\n  top: 20px;\n  right: 1rem;\n  pointer-events: none; }\n\nbutton {\n  cursor: pointer;\n  font-size: 1rem; }\n\nbutton:focus {\n  outline: 0; }\n\nh1 {\n  font-weight: 300;\n  margin: 0; }\n\nh1, h2, h4 {\n  font-family: \"Ubuntu\", helvetica, arial, sans-serif; }\n\n.highlight {\n  color: #ED1C24; }\n\n.site_wrapper {\n  width: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 2rem;\n  box-sizing: border-box; }\n\n.site_wrapper--main {\n  background: #ffffff; }\n\n.content_wrapper {\n  margin: 2rem 0;\n  clear: both; }\n\n@media (max-width: 767px) {\n  .content_wrapper {\n    margin: 1rem 0; } }\n\n@media (max-width: 414px) {\n  .site_wrapper {\n    padding: 0 1rem; } }\n\n/* About Styles */\n.about--portrait {\n  float: left;\n  width: 300px;\n  height: 300px;\n  background-image: url(" + __webpack_require__(/*! ../images/Aaron_Mitchell_Portrait.jpg */ 317) + ");\n  background-size: cover;\n  border-radius: 50%;\n  overflow: hidden; }\n\n.about--copy {\n  float: left;\n  margin-left: 2rem;\n  width: calc(100% - 300px - 2rem); }\n\n@media screen and (max-width: 767px) {\n  .about--portrait {\n    float: none;\n    margin: 0 auto; }\n  .about--copy {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Gallery Styles */\n.list--selected {\n  font-weight: bold; }\n\n.gallery__nav {\n  width: 96px;\n  float: left; }\n\n.gallery__nav li {\n  margin-bottom: 0.5rem; }\n\n.gallery__nav--select {\n  display: none; }\n\n.gallery__container {\n  width: calc(100% - 96px - 2rem);\n  float: right;\n  margin-left: 2rem; }\n\n.gallery__item {\n  height: calc((100vw - 96px - 13rem) / 4);\n  width: calc((100vw - 96px - 13rem) / 4);\n  max-width: 224px;\n  max-height: 224px;\n  background-size: cover;\n  background-position: center;\n  float: left;\n  margin-bottom: 2rem;\n  cursor: pointer; }\n\n.gallery__item:nth-child(4n - 6) {\n  margin-left: 2rem;\n  margin-right: 1rem; }\n\n.gallery__item:nth-child(4n - 5) {\n  margin-left: 1rem;\n  margin-right: 2rem; }\n\n@media (max-width: 967px) {\n  .gallery__item {\n    height: calc((100vw - 96px - 11rem) / 3);\n    width: calc((100vw - 96px - 11rem) / 3);\n    max-width: none;\n    max-height: none; }\n  .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 2rem;\n    margin-right: 2rem; } }\n\n@media (max-width: 767px) {\n  .gallery__nav {\n    float: none;\n    width: 100%;\n    margin-bottom: 1.5rem; }\n  .gallery__container {\n    float: none;\n    width: 100%;\n    margin-left: 0; }\n  .gallery__nav--select {\n    display: block; }\n  .gallery__nav--list {\n    display: none; }\n  .gallery__item {\n    height: calc((100vw - 9rem) / 3);\n    width: calc((100vw - 9rem) / 3); } }\n\n@media (max-width: 575px) {\n  .gallery__item {\n    height: calc((100vw - 7rem) / 2);\n    width: calc((100vw - 7rem) / 2); }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(odd) {\n    margin-right: 1rem; }\n  .gallery__item:nth-child(even) {\n    margin-left: 1rem; } }\n\n@media (max-width: 414px) {\n  .gallery__item {\n    height: calc(100vw - 3rem);\n    width: calc(100vw - 3rem); }\n  .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {\n    margin-left: 0;\n    margin-right: 0; } }\n\n/* Code Projects Stles */\n.code__header {\n  border-bottom: 1px solid #eeeeee;\n  padding-bottom: 1rem; }\n\n.project {\n  border-bottom: 1px solid #eeeeee;\n  padding: 2rem 0 1rem; }\n  .project:after {\n    content: \"\";\n    display: table;\n    clear: both; }\n\n.project__img {\n  height: 200px;\n  width: 200px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  float: left; }\n\n.project__info {\n  width: calc(100% - 200px - 2rem);\n  float: left;\n  margin-left: 2rem; }\n  .project__info h4 {\n    margin-top: 0; }\n\n.project__link:after {\n  content: \" | \";\n  color: #aaaaaa; }\n\n.project__link:last-child:after {\n  content: \"\"; }\n\n@media screen and (max-width: 766px) {\n  .project__img {\n    width: 150px;\n    height: 150px; }\n  .project__info {\n    width: calc(100% - 150px - 1rem);\n    margin-left: 1rem; } }\n\n@media screen and (max-width: 500px) {\n  .project__img {\n    display: none; }\n  .project__info {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Header Styles */\nheader {\n  border-bottom: 1px solid #eeeeee;\n  height: calc(2rem + 40px);\n  padding-bottom: 4rem;\n  padding-top: 1rem; }\n\n.header__logo {\n  float: left; }\n  .header__logo img {\n    width: 100px;\n    height: auto;\n    float: left; }\n  .header__logo h1 {\n    color: #666666;\n    float: left;\n    margin-left: 0.75rem;\n    margin-top: 0.5rem; }\n\n.header__nav {\n  float: right;\n  margin-top: 1rem; }\n\n.header__nav a:nth-child(n+2) {\n  margin-left: 1rem; }\n\nfooter {\n  clear: both;\n  text-align: center;\n  padding: 2rem 0; }\n\n@media (max-width: 767px) {\n  header h1 {\n    font-size: 28px; }\n  .header__nav {\n    font-size: 0.875rem;\n    margin-top: 0.5rem; } }\n\n@media (max-width: 575px) {\n  header {\n    padding-top: 1rem;\n    padding-bottom: 5.5rem; }\n  .header__logo {\n    float: none;\n    text-align: center;\n    margin: 0 auto; }\n    .header__logo h1 {\n      display: none; }\n    .header__logo img {\n      float: none; }\n  .header__nav {\n    float: none;\n    text-align: center;\n    margin-top: 0.25rem; } }\n\n/* Modal Styles */\n.modal {\n  background: rgba(0, 0, 0, 0.9);\n  position: fixed;\n  z-index: 10;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: auto;\n  padding: 2rem 0; }\n\n.modal__info {\n  font-size: 0.875rem;\n  padding: 2rem;\n  margin-right: 2rem;\n  width: 230px;\n  float: left;\n  box-sizing: border-box;\n  background: #111;\n  border-radius: 10px; }\n\n.modal__info p {\n  color: #ffffff; }\n\n.modal__img {\n  float: left;\n  width: calc(100% - 230px - 2rem);\n  height: calc(100vh - 4rem);\n  background-size: contain;\n  background-repeat: no-repeat; }\n\n.modal__buttons {\n  position: absolute;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  text-align: center;\n  background: #111;\n  padding: 0.75rem 1rem 0.5rem;\n  width: 230px;\n  border-radius: 10px 10px 0 0; }\n\n.btn--modal {\n  background: none;\n  border: 2px solid #ffffff;\n  color: #ffffff;\n  border-radius: 10px;\n  padding: 0 0.5rem;\n  font-size: 0.825rem;\n  vertical-align: middle;\n  height: 42px;\n  width: 42px; }\n\n.btn--modal:nth-child(n+2) {\n  margin-left: 1rem; }\n\n.btn--modal--disabled {\n  color: #666666;\n  border: 2px solid #666666; }\n\n.btn--modal--info {\n  display: none; }\n\n@media (max-width: 767px) {\n  .modal {\n    padding: 1rem 0; }\n  .modal__info {\n    display: none;\n    width: 250px;\n    background: rgba(17, 17, 17, 0.9);\n    border: 2px solid #ffffff;\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 6rem;\n    margin: 0 auto;\n    padding: 1rem 2rem; }\n  .modal__info--show {\n    display: block; }\n  .modal__img {\n    width: calc(100%);\n    background-position: center;\n    height: calc(100vh - 6rem); }\n  .modal__buttons {\n    left: 0;\n    margin: 0 auto;\n    background: rgba(17, 17, 17, 0.75);\n    width: 250px; }\n  .btn--modal--info {\n    display: inline; } }\n\n/* Contact Styles */\n.contact {\n  width: 100%;\n  max-width: 400px;\n  margin-bottom: 2rem; }\n\n.contact input, .contact textarea {\n  display: block;\n  font-size: 0.875rem;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #aaaaaa;\n  width: 100%; }\n\n.contact label {\n  display: block;\n  margin-bottom: 0.5rem; }\n\n.btn--contact {\n  background: none;\n  border: 2px solid #00AEEF;\n  border-radius: 10px;\n  color: #00AEEF;\n  padding: 1rem; }\n\n@media (max-width: 767px) {\n  .contact {\n    max-width: 100%; }\n  .btn--contact {\n    width: 100%; } }\n", ""]);
+	exports.push([module.id, "/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n/* Base Styles */\n* {\n  box-sizing: border-box; }\n\nbody {\n  background: #eeeeee;\n  font-family: \"Open Sans\", helvetica, arial, sans-serif;\n  font-weight: 300;\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #00AEEF; }\n\na:hover {\n  color: #0076a3; }\n\np {\n  line-height: 1.5;\n  color: #666666; }\n\nul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nli {\n  cursor: pointer; }\n\nselect {\n  padding: 0.75rem 1rem;\n  font-size: 1rem;\n  background: none;\n  border: 0;\n  border-radius: 0;\n  border: 1px solid #aaaaaa;\n  border-radius: 10px;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  position: relative;\n  text-align: left;\n  cursor: pointer;\n  width: 100%; }\n\nselect:focus, select:active {\n  outline: none;\n  border: 1px solid #aaaaaa; }\n\n.select-wrapper {\n  position: relative; }\n\n.select-wrapper:after {\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-left: 8px solid transparent;\n  border-right: 8px solid transparent;\n  border-top: 10px solid #aaaaaa;\n  position: absolute;\n  top: 20px;\n  right: 1rem;\n  pointer-events: none; }\n\nbutton {\n  cursor: pointer;\n  font-size: 1rem; }\n\nbutton:focus {\n  outline: 0; }\n\nh1 {\n  font-weight: 300;\n  margin: 0; }\n\nh1, h2, h4 {\n  font-family: \"Ubuntu\", helvetica, arial, sans-serif; }\n\n.highlight {\n  color: #ED1C24; }\n\n.site_wrapper {\n  width: 100%;\n  max-width: 1200px;\n  margin: 0 auto;\n  padding: 0 2rem;\n  box-sizing: border-box; }\n\n.site_wrapper--main {\n  background: #ffffff; }\n\n.content_wrapper {\n  margin: 2rem 0;\n  clear: both; }\n\n@media (max-width: 767px) {\n  .content_wrapper {\n    margin: 1rem 0; } }\n\n@media (max-width: 414px) {\n  .site_wrapper {\n    padding: 0 1rem; } }\n\n/* About Styles */\n.about--portrait {\n  float: left;\n  width: 300px;\n  height: 300px;\n  background-image: url(" + __webpack_require__(/*! ../images/Aaron_Mitchell_Portrait.jpg */ 313) + ");\n  background-size: cover;\n  border-radius: 50%;\n  overflow: hidden; }\n\n.about--copy {\n  float: left;\n  margin-left: 2rem;\n  width: calc(100% - 300px - 2rem); }\n\n@media screen and (max-width: 767px) {\n  .about--portrait {\n    float: none;\n    margin: 0 auto; }\n  .about--copy {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Gallery Styles */\n.list--selected {\n  font-weight: bold; }\n\n.gallery__nav {\n  width: 96px;\n  float: left; }\n\n.gallery__nav li {\n  margin-bottom: 0.5rem; }\n\n.gallery__nav--select {\n  display: none; }\n\n.gallery__container {\n  width: calc(100% - 96px - 2rem);\n  float: right;\n  margin-left: 2rem; }\n\n.gallery__item {\n  height: calc((100vw - 96px - 13rem) / 4);\n  width: calc((100vw - 96px - 13rem) / 4);\n  max-width: 224px;\n  max-height: 224px;\n  background-size: cover;\n  background-position: center;\n  float: left;\n  margin-bottom: 2rem;\n  cursor: pointer; }\n\n.gallery__item:nth-child(4n - 6) {\n  margin-left: 2rem;\n  margin-right: 1rem; }\n\n.gallery__item:nth-child(4n - 5) {\n  margin-left: 1rem;\n  margin-right: 2rem; }\n\n@media (max-width: 967px) {\n  .gallery__item {\n    height: calc((100vw - 96px - 11rem) / 3);\n    width: calc((100vw - 96px - 11rem) / 3);\n    max-width: none;\n    max-height: none; }\n  .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 2rem;\n    margin-right: 2rem; } }\n\n@media (max-width: 767px) {\n  .gallery__nav {\n    float: none;\n    width: 100%;\n    margin-bottom: 1.5rem; }\n  .gallery__container {\n    float: none;\n    width: 100%;\n    margin-left: 0; }\n  .gallery__nav--select {\n    display: block; }\n  .gallery__nav--list {\n    display: none; }\n  .gallery__item {\n    height: calc((100vw - 9rem) / 3);\n    width: calc((100vw - 9rem) / 3); } }\n\n@media (max-width: 575px) {\n  .gallery__item {\n    height: calc((100vw - 7rem) / 2);\n    width: calc((100vw - 7rem) / 2); }\n  .gallery__item:nth-child(3n - 4) {\n    margin-left: 0;\n    margin-right: 0; }\n  .gallery__item:nth-child(odd) {\n    margin-right: 1rem; }\n  .gallery__item:nth-child(even) {\n    margin-left: 1rem; } }\n\n@media (max-width: 414px) {\n  .gallery__item {\n    height: calc(100vw - 3rem);\n    width: calc(100vw - 3rem); }\n  .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {\n    margin-left: 0;\n    margin-right: 0; } }\n\n/* Code Projects Stles */\n.code__header {\n  border-bottom: 1px solid #eeeeee;\n  padding-bottom: 1rem; }\n\n.project {\n  border-bottom: 1px solid #eeeeee;\n  padding: 2rem 0 1rem; }\n  .project:after {\n    content: \"\";\n    display: table;\n    clear: both; }\n\n.project__img {\n  height: 200px;\n  width: 200px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center;\n  float: left; }\n\n.project__info {\n  width: calc(100% - 200px - 2rem);\n  float: left;\n  margin-left: 2rem; }\n  .project__info h4 {\n    margin-top: 0; }\n\n.project__link:after {\n  content: \" | \";\n  color: #aaaaaa; }\n\n.project__link:last-child:after {\n  content: \"\"; }\n\n@media screen and (max-width: 766px) {\n  .project__img {\n    width: 150px;\n    height: 150px; }\n  .project__info {\n    width: calc(100% - 150px - 1rem);\n    margin-left: 1rem; } }\n\n@media screen and (max-width: 500px) {\n  .project__img {\n    display: none; }\n  .project__info {\n    float: none;\n    width: 100%;\n    margin-left: 0; } }\n\n/* Header Styles */\nheader {\n  border-bottom: 1px solid #eeeeee;\n  height: calc(2rem + 40px);\n  padding-bottom: 4rem;\n  padding-top: 1rem; }\n\n.header__logo {\n  float: left; }\n  .header__logo img {\n    width: 100px;\n    height: auto;\n    float: left; }\n  .header__logo h1 {\n    color: #666666;\n    float: left;\n    margin-left: 0.75rem;\n    margin-top: 0.5rem; }\n\n.header__nav {\n  float: right;\n  margin-top: 1rem; }\n\n.header__nav a:nth-child(n+2) {\n  margin-left: 1rem; }\n\nfooter {\n  clear: both;\n  text-align: center;\n  padding: 2rem 0; }\n\n@media (max-width: 767px) {\n  header h1 {\n    font-size: 28px; }\n  .header__nav {\n    font-size: 0.875rem;\n    margin-top: 0.5rem; } }\n\n@media (max-width: 575px) {\n  header {\n    padding-top: 1rem;\n    padding-bottom: 5.5rem; }\n  .header__logo {\n    float: none;\n    text-align: center;\n    margin: 0 auto; }\n    .header__logo h1 {\n      display: none; }\n    .header__logo img {\n      float: none; }\n  .header__nav {\n    float: none;\n    text-align: center;\n    margin-top: 0.25rem; } }\n\n/* Modal Styles */\n.modal {\n  background: rgba(0, 0, 0, 0.9);\n  position: fixed;\n  z-index: 10;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  overflow: auto;\n  padding: 2rem 0; }\n\n.modal__info {\n  font-size: 0.875rem;\n  padding: 2rem;\n  margin-right: 2rem;\n  width: 230px;\n  float: left;\n  box-sizing: border-box;\n  background: #111;\n  border-radius: 10px; }\n\n.modal__info p {\n  color: #ffffff; }\n\n.modal__img {\n  float: left;\n  width: calc(100% - 230px - 2rem);\n  height: calc(100vh - 4rem);\n  background-size: contain;\n  background-repeat: no-repeat; }\n\n.modal__buttons {\n  position: absolute;\n  bottom: 0;\n  left: 2rem;\n  right: 0;\n  text-align: center;\n  background: #111;\n  padding: 0.75rem 1rem 0.5rem;\n  width: 230px;\n  border-radius: 10px 10px 0 0; }\n\n.btn--modal {\n  background: none;\n  border: 2px solid #ffffff;\n  color: #ffffff;\n  border-radius: 10px;\n  padding: 0 0.5rem;\n  font-size: 0.825rem;\n  vertical-align: middle;\n  height: 42px;\n  width: 42px; }\n\n.btn--modal:nth-child(n+2) {\n  margin-left: 1rem; }\n\n.btn--modal--disabled {\n  color: #666666;\n  border: 2px solid #666666; }\n\n.btn--modal--info {\n  display: none; }\n\n@media (max-width: 767px) {\n  .modal {\n    padding: 1rem 0; }\n  .modal__info {\n    display: none;\n    width: 250px;\n    background: rgba(17, 17, 17, 0.9);\n    border: 2px solid #ffffff;\n    position: absolute;\n    left: 0;\n    right: 0;\n    bottom: 6rem;\n    margin: 0 auto;\n    padding: 1rem 2rem; }\n  .modal__info--show {\n    display: block; }\n  .modal__img {\n    width: calc(100%);\n    background-position: center;\n    height: calc(100vh - 6rem); }\n  .modal__buttons {\n    left: 0;\n    margin: 0 auto;\n    background: rgba(17, 17, 17, 0.75);\n    width: 250px; }\n  .btn--modal--info {\n    display: inline; } }\n\n/* Contact Styles */\n.contact {\n  width: 100%;\n  max-width: 400px;\n  margin-bottom: 2rem; }\n\n.contact input, .contact textarea {\n  display: block;\n  font-size: 0.875rem;\n  padding: 0.5rem;\n  margin-bottom: 1rem;\n  border: 1px solid #aaaaaa;\n  width: 100%; }\n\n.contact label {\n  display: block;\n  margin-bottom: 0.5rem; }\n\n.btn--contact {\n  background: none;\n  border: 2px solid #00AEEF;\n  border-radius: 10px;\n  color: #00AEEF;\n  padding: 1rem; }\n\n@media (max-width: 767px) {\n  .contact {\n    max-width: 100%; }\n  .btn--contact {\n    width: 100%; } }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 316 */
+/* 312 */
 /*!**************************************!*\
   !*** ./~/css-loader/lib/css-base.js ***!
   \**************************************/
@@ -35088,7 +34620,7 @@
 
 
 /***/ },
-/* 317 */
+/* 313 */
 /*!************************************************!*\
   !*** ./src/images/Aaron_Mitchell_Portrait.jpg ***!
   \************************************************/
@@ -35097,7 +34629,7 @@
 	module.exports = __webpack_require__.p + "Aaron_Mitchell_Portrait.jpg";
 
 /***/ },
-/* 318 */
+/* 314 */
 /*!*************************************!*\
   !*** ./~/style-loader/addStyles.js ***!
   \*************************************/
@@ -35350,6 +34882,474 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 315 */
+/*!******************************!*\
+  !*** ./src/views/gallery.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 33);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 201);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 210);
+	
+	var _reactHelmet = __webpack_require__(/*! react-helmet */ 287);
+	
+	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+	
+	var _UpdateGallery = __webpack_require__(/*! ../store/actions/UpdateGallery */ 316);
+	
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 301);
+	
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 302);
+	
+	var _galleryItem = __webpack_require__(/*! ../components/galleryItem */ 318);
+	
+	var _galleryItem2 = _interopRequireDefault(_galleryItem);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function mapStateToProps(state) {
+	  return {
+	    images: state.gallery.images,
+	    selectedGallery: state.gallery.selected,
+	    modal: state.modal.display
+	  };
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	  return {
+	    onClick: function onClick(gallery) {
+	      dispatch((0, _UpdateGallery.updateGallery)(gallery));
+	      _reactRouter.browserHistory.push('/gallery/' + gallery);
+	    },
+	    filterGallery: function filterGallery(event) {
+	      dispatch((0, _UpdateGallery.updateGallery)(event.target.value));
+	      _reactRouter.browserHistory.push('/gallery/' + event.target.value);
+	    },
+	    updateGalleryOnLoad: function updateGalleryOnLoad(gallery) {
+	      dispatch((0, _UpdateGallery.updateGallery)(gallery));
+	    },
+	    openModal: function openModal(id) {
+	      dispatch((0, _ToggleModal.openModal)());
+	      dispatch((0, _SetImage.setImage)(id));
+	    }
+	  };
+	}
+	
+	var Gallery = function (_Component) {
+	  _inherits(Gallery, _Component);
+	
+	  function Gallery() {
+	    _classCallCheck(this, Gallery);
+	
+	    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).apply(this, arguments));
+	  }
+	
+	  _createClass(Gallery, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      if (this.props.params.set) {
+	        for (var key in this.props.images) {
+	          if (this.props.params.set == key) {
+	            this.props.updateGalleryOnLoad(this.props.params.set);
+	            break;
+	          }
+	        }
+	      }
+	      if (this.props.params.image) {
+	        this.props.openModal(this.props.params.image);
+	      }
+	
+	      // Fade In
+	      var elem = _reactDom2.default.findDOMNode(this);
+	      elem.style.opacity = 0;
+	      window.requestAnimationFrame(function () {
+	        elem.style.transition = "opacity 500ms";
+	        elem.style.opacity = 1;
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          images = _props.images,
+	          selectedGallery = _props.selectedGallery;
+	
+	
+	      var currentPortfolio = images[selectedGallery].filter(function (n) {
+	        return n.hidden !== true;
+	      });
+	
+	      var galleryItems = _react2.default.createElement(
+	        'div',
+	        { className: 'gallery__container' },
+	        currentPortfolio.map(function (s, i) {
+	          return _react2.default.createElement(_galleryItem2.default, { image: s.url, id: s.id });
+	        }.bind(this))
+	      );
+	
+	      var galleryList = [];
+	
+	      for (var key in images) {
+	        galleryList.push(key);
+	      }
+	
+	      var filters = _react2.default.createElement(
+	        'div',
+	        { className: 'select-wrapper gallery__nav--select' },
+	        _react2.default.createElement(
+	          'select',
+	          { title: 'select', onChange: this.props.filterGallery },
+	          _react2.default.createElement(
+	            'option',
+	            { selected: true, disabled: true },
+	            'Select a Portfolio'
+	          ),
+	          galleryList.map(function (s, i) {
+	            var name = s[0].toUpperCase() + s.slice(1);
+	            return _react2.default.createElement(
+	              'option',
+	              { value: s },
+	              name
+	            );
+	          }.bind(this))
+	        )
+	      );
+	
+	      var list = _react2.default.createElement(
+	        'ul',
+	        { className: 'gallery__nav--list' },
+	        galleryList.map(function (s, i) {
+	          var name = s[0].toUpperCase() + s.slice(1);
+	          var listClass = null;
+	          if (s == selectedGallery) {
+	            listClass = 'list--selected';
+	          }
+	          return _react2.default.createElement(
+	            'li',
+	            { className: listClass, onClick: this.props.onClick.bind(this, s) },
+	            name
+	          );
+	        }.bind(this))
+	      );
+	
+	      var og_image = currentPortfolio[0].url;
+	
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_reactHelmet2.default, {
+	          title: 'Aaron Mitchell: Gallery',
+	          meta: [{ name: "description", content: this.props.route.meta.meta_gallery }, { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Gallery' }, { property: "og:url", content: 'https://mitchellaaron.com/gallery/' + selectedGallery }, { property: "og:image", content: 'https://mitchellaaron.com/images/' + og_image }]
+	        }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'gallery__nav' },
+	          filters,
+	          list
+	        ),
+	        galleryItems
+	      );
+	    }
+	  }]);
+	
+	  return Gallery;
+	}(_react.Component);
+	
+	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Gallery);
+	
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(Gallery, 'Gallery', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/gallery.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/gallery.js');
+	}();
+
+	;
+
+/***/ },
+/* 316 */
+/*!********************************************!*\
+  !*** ./src/store/actions/UpdateGallery.js ***!
+  \********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.updateGallery = updateGallery;
+	
+	var _ActionTypes = __webpack_require__(/*! ../constants/ActionTypes */ 273);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function updateGallery(name) {
+	  console.log('action dispatched', name);
+	  return {
+	    type: types.UPDATE_GALLERY,
+	    name: name
+	  };
+	}
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(updateGallery, 'updateGallery', '/Users/aaronmitchell/src/react-redux-portfolio/src/store/actions/UpdateGallery.js');
+	}();
+
+	;
+
+/***/ },
+/* 317 */
+/*!***************************!*\
+  !*** ./src/views/post.js ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 210);
+	
+	var _notFound = __webpack_require__(/*! ./notFound */ 308);
+	
+	var _notFound2 = _interopRequireDefault(_notFound);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Post = function (_Component) {
+	  _inherits(Post, _Component);
+	
+	  function Post() {
+	    _classCallCheck(this, Post);
+	
+	    return _possibleConstructorReturn(this, (Post.__proto__ || Object.getPrototypeOf(Post)).apply(this, arguments));
+	  }
+	
+	  _createClass(Post, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.setState({ status: this.props.location.query.post || null });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      if (this.state.status !== 'success' && this.state.status !== 'fail') {
+	        return _react2.default.createElement(_notFound2.default, null);
+	      }
+	      var postMessage = 'Your Message Has been sent! Thanks for reaching out.';
+	      var returnToContact = null;
+	
+	      if (this.state.status == 'fail') {
+	        postMessage = 'I\'m sorry. There was an issue and your message did not send.';
+	        returnToContact = _react2.default.createElement(
+	          'p',
+	          null,
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/contact' },
+	            'Try Sending Your Message Again'
+	          )
+	        );
+	      }
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          postMessage
+	        ),
+	        returnToContact,
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/' },
+	            'Return to Home'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Post;
+	}(_react.Component);
+	
+	var _default = Post;
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(Post, 'Post', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/post.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/views/post.js');
+	}();
+
+	;
+
+/***/ },
+/* 318 */
+/*!***************************************!*\
+  !*** ./src/components/galleryItem.js ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 201);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 210);
+	
+	var _ToggleModal = __webpack_require__(/*! ../store/actions/ToggleModal */ 301);
+	
+	var _SetImage = __webpack_require__(/*! ../store/actions/SetImage */ 302);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function mapStateToProps(state) {
+	  return {
+	    selectedGallery: state.gallery.selected
+	  };
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	  return {
+	    openModal: function openModal(gallery, id) {
+	      dispatch((0, _ToggleModal.openModal)());
+	      dispatch((0, _SetImage.setImage)(id));
+	      _reactRouter.browserHistory.push('/gallery/' + gallery + '/' + id);
+	    }
+	  };
+	}
+	
+	var GalleryItem = function (_Component) {
+	  _inherits(GalleryItem, _Component);
+	
+	  function GalleryItem() {
+	    _classCallCheck(this, GalleryItem);
+	
+	    return _possibleConstructorReturn(this, (GalleryItem.__proto__ || Object.getPrototypeOf(GalleryItem)).apply(this, arguments));
+	  }
+	
+	  _createClass(GalleryItem, [{
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          image = _props.image,
+	          id = _props.id,
+	          selectedGallery = _props.selectedGallery;
+	
+	
+	      var bkgdImg = {
+	        backgroundImage: 'url(../images/' + image + ')'
+	      };
+	
+	      return _react2.default.createElement('div', { className: 'gallery__item', style: bkgdImg, onClick: this.props.openModal.bind(this, selectedGallery, id) });
+	    }
+	  }]);
+	
+	  return GalleryItem;
+	}(_react.Component);
+	
+	var _default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(GalleryItem);
+	
+	exports.default = _default;
+	;
+	
+	var _temp = function () {
+	  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+	    return;
+	  }
+	
+	  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/galleryItem.js');
+	
+	  __REACT_HOT_LOADER__.register(mapDispatchToProps, 'mapDispatchToProps', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/galleryItem.js');
+	
+	  __REACT_HOT_LOADER__.register(GalleryItem, 'GalleryItem', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/galleryItem.js');
+	
+	  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/aaronmitchell/src/react-redux-portfolio/src/components/galleryItem.js');
+	}();
+
+	;
 
 /***/ }
 /******/ ]);

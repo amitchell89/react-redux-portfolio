@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 export default class Contact extends Component {
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     // Fade In
     var elem = ReactDOM.findDOMNode(this);
     elem.style.opacity = 0;

@@ -68,7 +68,7 @@ class Projects extends Component {
         />
         <div className="code__header">
           <h2>
-          Project Portfolio
+          UI / UX / Code
           </h2>
           <p>
           As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Vue, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.

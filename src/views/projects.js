@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import { Link } from 'react-router'
 import Helmet from "react-helmet";
+import GalleryNav from '../components/galleryNav';
 
 function mapStateToProps(state) {
    return {
@@ -66,18 +67,23 @@ class Projects extends Component {
             { property: "og:url", content: 'https://mitchellaaron.com/code/'},
           ] }
         />
-        <div className="code__header">
-          <h2>
-          UI / UX / Code
-          </h2>
-          <p>
-          As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Vue, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.
-          </p>
-          <p>
-          Below is a list of projects I have worked on as both a freelancer and as an employee at Cogo Labs. For more information on a project, or to request wireframes and mockups, please <Link to="contact">send me a message</Link>.
-          </p>
+        <div className="col__left">
+          <GalleryNav />
         </div>
-        {projectsList}
+        <div className="col__right">
+          <div className="code__header">
+            <h2>
+            UI / UX / Code
+            </h2>
+            <p>
+            As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Vue, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.
+            </p>
+            <p>
+            Below is a list of projects I have worked on as both a freelancer and as an employee at Cogo Labs. For more information on a project, or to request wireframes and mockups, please <Link to="contact">send me a message</Link>.
+            </p>
+          </div>
+          {projectsList}
+        </div>
       </div>
     )
   }

@@ -148,3 +148,29 @@ h1, h2, h4 {
     padding: 0 1rem;
   }
 }
+
+/* Gallery Nav Sidebar Spacing */
+
+.col__left {
+  width: 96px;
+  float: left;
+}
+
+.col__right {
+  width: calc(100% - 96px - 2rem);
+  float: right;
+  margin-left: 2rem;
+}
+
+@media (max-width: 767px) {
+  .col__left {
+    float: none;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .col__right {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+}

@@ -8,6 +8,7 @@ import { openModal } from '../store/actions/ToggleModal';
 import { setImage } from '../store/actions/SetImage';
 import GalleryItem from '../components/galleryItem';
 import GalleryContainer from '../components/galleryContainer';
+import GalleryNav from '../components/galleryNav';
 
 
 function mapStateToProps(state) {
@@ -24,9 +25,9 @@ function mapDispatchToProps(dispatch) {
       dispatch(updateGallery(gallery))
       browserHistory.push('/gallery/' + gallery)
     },
-    filterGallery: (event) => {
+    filterGallery: (event, path) => {
       dispatch(updateGallery(event.target.value))
-      browserHistory.push('/gallery/' + event.target.value)
+      browserHistory.push(path)
     },
     updateGalleryOnLoad: (gallery) => {
       dispatch(updateGallery(gallery))
@@ -65,7 +66,7 @@ class Gallery extends Component {
   }
 
   render() {
-    const { images, selectedGallery } = this.props;
+    const { images, selectedGallery, onClick, filterGallery } = this.props;
 
     let currentPortfolio = images[selectedGallery].filter(function(n) {
       return n.hidden !== true;
@@ -76,33 +77,6 @@ class Gallery extends Component {
     for (var key in images) {
       galleryList.push(key)
     }
-
-    let filters = (
-      <div className="select-wrapper gallery__nav--select">
-        <select title="select" onChange={this.props.filterGallery}>
-          <option selected disabled>Select a Portfolio</option>
-          {galleryList.map(function (s, i) {
-            let name = s[0].toUpperCase() + s.slice(1);
-            return (
-            <option value={s}>{name}</option>
-          )}.bind(this))}
-        </select>
-      </div>
-    )
-
-    let list = (
-      <ul className="gallery__nav--list">
-        {galleryList.map(function (s, i) {
-          let name = s[0].toUpperCase() + s.slice(1);
-          let listClass = null;
-          if (s == selectedGallery) {
-            listClass = 'list--selected'
-          }
-          return (
-           <li className={listClass} onClick={this.props.onClick.bind(this, s)}>{name}</li>
-        )}.bind(this))}
-      </ul>
-    )
 
     let og_image = currentPortfolio[0].url
 
@@ -117,10 +91,7 @@ class Gallery extends Component {
             { property: "og:image", content: 'https://mitchellaaron.com/images/' + og_image},
           ] }
         />
-        <div className="gallery__nav">
-        {filters}
-        {list}
-        </div>
+        <GalleryNav images={images} selectedGallery={selectedGallery} onClick={onClick} filter={filterGallery}/>
         <GalleryContainer gallery={currentPortfolio} />
       </div>
     )

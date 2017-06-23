@@ -83,6 +83,18 @@ button:focus {
   outline: 0;
 }
 
+.btn {
+  background: none;
+  border: 2px solid $color-link;
+  border-radius: 10px;
+  color: $color-link;
+  padding: 1rem;
+}
+
+.btn--300 {
+  max-width: 300px;
+}
+
 h1 {
   font-weight: 300;
   margin: 0;
@@ -92,8 +104,22 @@ h1, h2, h4 {
   font-family: $font-headline;
 }
 
-.highlight {
-  color: $color-primary;
+.headline {
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: 300;
+}
+
+// .highlight {
+//   color: $color-primary;
+// }
+
+.center {
+  text-align: center;
+}
+
+.centered {
+  margin: 0 auto;
 }
 
 .site_wrapper {

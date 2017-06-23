@@ -41,6 +41,7 @@ function mapDispatchToProps(dispatch) {
 class Gallery extends Component {
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     if (this.props.params.set) {
       for (var key in this.props.images) {
         if (this.props.params.set == key ) {

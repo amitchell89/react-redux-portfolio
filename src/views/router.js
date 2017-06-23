@@ -6,7 +6,7 @@ import store from '../store/reducers';
 import AppContainer from './appContainer'
 import Gallery from './gallery'
 import Projects from './projects'
-import About from './about'
+import Home from './home'
 import Contact from './contact'
 import Terms from './terms'
 import Privacy from './privacy'
@@ -24,7 +24,7 @@ export default class Routes extends Component {
       <Provider store={store}>
         <Router history={browserHistory}>
           <Route path='/' component={AppContainer} meta={meta}>
-            <IndexRoute component={About} meta={meta} />
+            <IndexRoute component={Home} meta={meta} />
             <Route path='/gallery(/:set)(/:image)' component={Gallery} meta={meta} />
             <Route path='/projects' component={Projects} meta={meta} />
             <Route path='/contact' component={Contact} meta={meta} />

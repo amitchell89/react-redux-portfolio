@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
 import Helmet from "react-helmet";
 
 export default class Terms extends Component {

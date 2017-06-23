@@ -20,16 +20,32 @@
   float: right;
   margin-left: 2rem;
 }
+
+.gallery__container--home {
+  margin: 2rem auto;
+  float: none;
+  @include clearfix();
+}
+
 .gallery__item {
-  height: calc((100vw - 96px - 13rem) / 4);
   width: calc((100vw - 96px - 13rem) / 4);
   max-width: 224px;
-  max-height: 224px;
-  background-size: cover;
-  background-position: center;
   float: left;
   margin-bottom: 2rem;
   cursor: pointer;
+}
+
+.gallery__image {
+  background-size: cover;
+  background-position: center;
+  height: calc((100vw - 96px - 13rem) / 4);
+  width: 100%;
+  max-width: 224px;
+  max-height: 224px;
+}
+
+.gallery__label {
+  text-align: center;
 }
 
 // second item in every row of 4

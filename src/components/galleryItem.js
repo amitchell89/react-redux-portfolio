@@ -30,10 +30,12 @@ class GalleryItem extends Component {
     }
 
     return (
-      <div
-        className="gallery__item"
-        style={bkgdImg}
-        onClick={this.props.openModal.bind(this, selectedGallery, id)}>
+      <div className="gallery__item">
+        <div
+          className="gallery__image"
+          style={bkgdImg}
+          onClick={this.props.openModal.bind(this, selectedGallery, id)}>
+        </div>
       </div>
     )
   }

@@ -16,14 +16,11 @@ export default class Header extends Component {
           </Link>
         </div>
         <div className="header__nav">
+          <Link to="/">
+            Home
+          </Link>
           <Link to="/gallery">
             Gallery
-          </Link>
-          <Link to="/projects">
-            Projects
-          </Link>
-          <Link to="/">
-            About
           </Link>
           <Link to="/contact">
             Contact

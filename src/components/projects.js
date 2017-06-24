@@ -11,16 +11,6 @@ function mapStateToProps(state) {
 }
 class Projects extends Component {
 
-  componentDidMount() {
-    // Fade In
-    var elem = ReactDOM.findDOMNode(this);
-    elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-      elem.style.transition = "opacity 500ms";
-      elem.style.opacity = 1;
-    });
-  }
-  
   render() {
     var { projects } = this.props;
 
@@ -57,17 +47,9 @@ class Projects extends Component {
 
     return (
       <div>
-        <Helmet
-          title="Aaron Mitchell: Project Portfolio"
-          meta={ [
-            { name: "description", content: this.props.route.meta.meta_code },
-            { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Coding Projects'},
-            { property: "og:url", content: 'https://mitchellaaron.com/code/'},
-          ] }
-        />
         <div className="code__header">
           <h2>
-          Project Portfolio
+          UI / UX / Code
           </h2>
           <p>
           As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Vue, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.

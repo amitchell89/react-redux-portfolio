@@ -5,6 +5,7 @@
   max-width: 400px;
   margin-bottom: 2rem;
 }
+
 .contact input, .contact textarea  {
   display: block;
   font-size: 0.875rem;
@@ -13,22 +14,17 @@
   border: 1px solid $color-gray-mid;
   width: 100%;
 }
+
 .contact label {
   display: block;
   margin-bottom: 0.5rem;
-}
-.btn--contact {
-  background: none;
-  border: 2px solid $color-link;
-  border-radius: 10px;
-  color: $color-link;
-  padding: 1rem;
 }
 
 @media (max-width: 767px) {
   .contact {
     max-width: 100%;
   }
+  
   .btn--contact {
     width: 100%;
   }

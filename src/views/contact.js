@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 export default class Contact extends Component {
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     // Fade In
     var elem = ReactDOM.findDOMNode(this);
     elem.style.opacity = 0;
@@ -37,7 +38,7 @@ export default class Contact extends Component {
           <input type="text" name="email" placeholder="Your Email"></input>
           <label>Your Message</label>
           <textarea type="text" name="message" placeholder="Your Message" rows="7"></textarea>
-          <button type="submit" form="contact_form" value="Submit" className="btn--contact">Send Message</button>
+          <button type="submit" form="contact_form" value="Submit" className="btn">Send Message</button>
         </form>
       </div>
     )

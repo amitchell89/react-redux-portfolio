@@ -24,7 +24,7 @@ export default class Home extends Component {
       {
         name: "UI / UX / Code",
         url: "projects/logos/react__logo.jpg",
-        link: "/projects"
+        link: "/gallery/projects"
       },
       {
         name: "Design",

@@ -10,12 +10,13 @@ import GalleryItem from '../components/galleryItem';
 import GalleryContainer from '../components/galleryContainer';
 import GalleryNav from '../components/galleryNav';
 
+import Projects from '../components/projects';
 
 function mapStateToProps(state) {
    return {
     images: state.gallery.images,
     selectedGallery: state.gallery.selected,
-    modal: state.modal.display
+    modal: state.modal.display,
   };
 }
 
@@ -25,9 +26,9 @@ function mapDispatchToProps(dispatch) {
       dispatch(updateGallery(gallery))
       browserHistory.push('/gallery/' + gallery)
     },
-    filterGallery: (event, path) => {
+    filterGallery: (event) => {
       dispatch(updateGallery(event.target.value))
-      browserHistory.push(path)
+      browserHistory.push('/gallery/' +  event.target.value)
     },
     updateGalleryOnLoad: (gallery) => {
       dispatch(updateGallery(gallery))
@@ -43,17 +44,17 @@ class Gallery extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
+    console.log('check', this.props.params)
     if (this.props.params.set) {
-      for (var key in this.props.images) {
-        if (this.props.params.set == key ) {
-          this.props.updateGalleryOnLoad(this.props.params.set);
-          break;
-        }
-      }
+      this.props.updateGalleryOnLoad(this.props.params.set);
+    } else {
+      this.props.updateGalleryOnLoad('projects');
     }
-    if (this.props.params.image) {
-      this.props.openModal(this.props.params.image)
-    }
+
+    // Images not loading if we open modal on page load, need to fix
+    // if (this.props.params.image) {
+    //   this.props.openModal(this.props.params.image)
+    // }
 
     // Fade In
     var elem = ReactDOM.findDOMNode(this);
@@ -68,17 +69,19 @@ class Gallery extends Component {
   render() {
     const { images, selectedGallery, onClick, filterGallery } = this.props;
 
-    let currentPortfolio = images[selectedGallery].filter(function(n) {
-      return n.hidden !== true;
-    });
-
+    let currentPortfolio = null;
+    let og_image = 'projects/logos/react__logo.jpg';
+    if (selectedGallery !== 'projects') {
+      currentPortfolio = images[selectedGallery].filter(function(n) {
+        return n.hidden !== true;
+      });
+      og_image = currentPortfolio[0].url;
+    }
     let galleryList = [];
 
     for (var key in images) {
       galleryList.push(key)
     }
-
-    let og_image = currentPortfolio[0].url
 
     return (
       <div>
@@ -91,8 +94,19 @@ class Gallery extends Component {
             { property: "og:image", content: 'https://mitchellaaron.com/images/' + og_image},
           ] }
         />
-        <GalleryNav images={images} selectedGallery={selectedGallery} onClick={onClick} filter={filterGallery}/>
-        <GalleryContainer gallery={currentPortfolio} />
+        <div className="col__left">
+          <GalleryNav images={images} selectedGallery={selectedGallery} onClick={onClick} filter={filterGallery}/>
+        </div>
+        <div className="col__right">
+          { selectedGallery === 'projects'
+            ?
+              <Projects />
+            : 
+              <div className="clearFix">
+                <GalleryContainer gallery={currentPortfolio} />
+              </div>
+          }
+        </div>
       </div>
     )
   }

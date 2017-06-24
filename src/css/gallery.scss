@@ -3,10 +3,10 @@
 .list--selected {
   font-weight: bold;
 }
+
 .gallery__nav {
-  width: 96px;
-  float: left;
 }
+
 .gallery__nav li {
   margin-bottom: 0.5rem;
 }
@@ -16,12 +16,10 @@
 }
 
 .gallery__container {
-  width: calc(100% - 96px - 2rem);
-  float: right;
-  margin-left: 2rem;
 }
 
 .gallery__container--home {
+  width: calc(100% - 96px - 2rem);
   margin: 2rem auto;
   float: none;
   @include clearfix();
@@ -53,6 +51,7 @@
   margin-left: 2rem;
   margin-right: 1rem;
 }
+
 // third item in every row of 4
 .gallery__item:nth-child(4n - 5) {
   margin-left: 1rem;
@@ -65,16 +64,19 @@
     max-width: none;
     max-height: none;
   }
+
   .gallery__image {
     height: calc((100vw - 96px - 11rem) / 3);
     max-width: none;
     max-height: none;
   }
+
   // reset nth child
   .gallery__item:nth-child(4n - 6), .gallery__item:nth-child(4n - 5) {
     margin-left: 0;
     margin-right: 0;
   }
+
   // second item in every row of 3
   .gallery__item:nth-child(3n - 4) {
     margin-left: 2rem;
@@ -83,25 +85,18 @@
 }
 
 @media (max-width: 767px) {
-  .gallery__nav {
-    float: none;
-    width: 100%;
-    margin-bottom: 1.5rem;
-  }
-  .gallery__container  {
-    float: none;
-    width: 100%;
-    margin-left: 0;
-  }
   .gallery__nav--select {
     display: block
   }
+
   .gallery__nav--list {
     display: none
   }
+
   .gallery__item {
     width: calc((100vw - 9rem) / 3);
   }
+
   .gallery__image {
     height: calc((100vw - 9rem) / 3);
   }
@@ -111,16 +106,20 @@
   .gallery__item {
     width: calc((100vw - 7rem) / 2);
   }
+
   .gallery__image {
     height: calc((100vw - 7rem) / 2);
   }
+
   .gallery__item:nth-child(3n - 4) {
     margin-left: 0;
     margin-right: 0;
   }
+
   .gallery__item:nth-child(odd) {
     margin-right: 1rem;
   }
+
   .gallery__item:nth-child(even) {
     margin-left: 1rem;
   }
@@ -130,9 +129,11 @@
   .gallery__item {
     width: calc(100vw - 3rem);
   }
+
   .gallery__image {
     height: calc(100vw - 3rem);
   }
+  
   .gallery__item:nth-child(odd), .gallery__item:nth-child(even) {
     margin-left: 0;
     margin-right: 0;

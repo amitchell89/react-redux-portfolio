@@ -17,11 +17,11 @@ export default class GalleryNav extends Component {
       <div className="select-wrapper gallery__nav--select">
         <select title="select" onChange={this.props.filter}>
           <option selected disabled>Select a Portfolio</option>
-          <option value='projects' path="/projects">UI /UX / Code</option>
+          <option value='projects'>UI /UX / Code</option>
           {galleryList.map(function (s, i) {
             let name = s[0].toUpperCase() + s.slice(1);
             return (
-            <option value={s} path={'/gallery/' + s}>{name}</option>
+            <option value={s}>{name}</option>
           )}.bind(this))}
         </select>
       </div>
@@ -32,7 +32,7 @@ export default class GalleryNav extends Component {
         <div className="gallery__nav">
           {filters}
           <ul className="gallery__nav--list">
-            <li onClick={() => { browserHistory.push('/projects') }}>UI/UX/Code</li>
+            <li onClick={onClick.bind(this, 'projects')}>UI/UX/Code</li>
             {galleryList.map(function (s, i) {
               let name = s[0].toUpperCase() + s.slice(1);
               let listClass = null;

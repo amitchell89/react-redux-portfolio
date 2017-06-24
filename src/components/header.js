@@ -22,9 +22,6 @@ export default class Header extends Component {
           <Link to="/gallery">
             Gallery
           </Link>
-          <Link to="/projects">
-            UI / UX / Code
-          </Link>
           <Link to="/contact">
             Contact
           </Link>

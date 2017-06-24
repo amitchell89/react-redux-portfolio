@@ -122,6 +122,10 @@ h1, h2, h4 {
   margin: 0 auto;
 }
 
+.clearFix {
+  @include clearfix();
+}
+
 .site_wrapper {
   width: 100%;
   max-width: 1200px;

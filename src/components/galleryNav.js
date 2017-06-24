@@ -32,7 +32,12 @@ export default class GalleryNav extends Component {
         <div className="gallery__nav">
           {filters}
           <ul className="gallery__nav--list">
-            <li onClick={onClick.bind(this, 'projects')}>UI/UX/Code</li>
+            <li 
+              onClick={onClick.bind(this, 'projects')}
+              className={selectedGallery === 'projects' ? 'list--selected' : null}
+            > 
+              UI/UX/Code
+            </li>
             {galleryList.map(function (s, i) {
               let name = s[0].toUpperCase() + s.slice(1);
               let listClass = null;

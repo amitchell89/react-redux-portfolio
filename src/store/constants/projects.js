@@ -4,7 +4,7 @@ export const projects = [
        image: "projects/logos/react__logo.jpg",
        url: "https://mitchellaaron.com",
        git: "https://github.com/amitchell89/react-redux-portfolio",
-       about: "This website is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css.",
+       about: "This very website is my first portfolio piece. The goal of the site was to create a React / Redux site from scratch so I could learn more about the process, all while showing off my designs, artwork and web projects. The site uses an express framework. Its bundled using webpack and uses a sass preprocessor for the css. It is hosted on Digital Ocean using a Caddy server.",
        hidden: false
     },
     {
@@ -12,7 +12,7 @@ export const projects = [
        image: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
        url: "http://www.schillaciguitars.com",
        git: "https://github.com/amitchell89/schillaci_guitars",
-       about: "Schillaci Guitars is a website I designed and built as a freelancer. It was made for a guitar luthier to showcase his past projects and to promote sales. The site is built using React and Redux on an express framework. Its bundled using webpack and uses a sass preprocessor for the css.",
+       about: "Schillaci Guitars is a react / redux website that I built for guitar luthier Darren Schillaci. The goal of the site was to create a clean and professional portfolio to showcase his custom guitars and necks and to promote sails via direct contact. I originally built the site in 2012 using php without a framework, and rebuilt it using React and Redux on an express framework in spring 2017. It’s bundled using webpack and uses a sass preprocessor for the css. It is a freelance project.",
        hidden: false
     },
     {
@@ -20,7 +20,7 @@ export const projects = [
        image: "projects/logos/ombrely_logo.png",
        url: "https://ombrely.com",
        git: "https://github.com/amitchell89/ombrely",
-       about: "Ombrély is a simple website built using Vue JS that allows users to generate random gradients with the ability to view the css and copy that code to the clipboard.",
+       about: "Ombrély is a personal project built around my love of gradients (I know I’ll take some flak here but that’s fine by my). It started as a simple JavaScript exercise that I decided to turn into a full site using VueJs. Users can generate random gradients with the ability to view the css and copy that code to the clipboard.",
        hidden: false
     },
     {
@@ -29,7 +29,7 @@ export const projects = [
        wireframe: "../images/projects/mockups/Link_Ventures_Wireframe.jpg",
        mockup: "../images/projects/mockups/Link_Ventures_Mockup.jpg",
        image: "projects/logos/link_ventures.jpg",
-       about: "Link Ventures is a portfolio site for the investment firm that backs my Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. It was built on a proprietary framework that utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
+       about: "Link Ventures is the Venture Capital Firm behind Cogo Labs in Cambridge, MA. I did the rebranding in 2015 and then designed their website and helped implement it. The goal of the site was to create a clean and modern portfolio site to showcase the Link Ventures brand and the portfolio of companies they had invested in. \n\nThe first step was researching other venture capital firms such as Greylock, Sequoia Capital and First Round Capitol to learn more about the space and find inspiration. From there I took the site requirements and created a wireframe, then gathered feedback from the investors. After reorganizing a few features I made a high fidelity mockup and got approval. I then worked with the Cogo Labs Web Engineering Team to build the site. I handled all the styling and responsive work. The site utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
        hidden: false
     },
     {
@@ -39,7 +39,7 @@ export const projects = [
        wireframe: "../images/projects/mockups/Umbrella_Check_Wireframe.png",
        mockup: "../images/projects/mockups/Umbrella_Check_Mockup.jpg",
        styleGuide: "../images/projects/mockups/Umbrella_Check_Style_Guide.jpg",
-       about: "Umbrella Check is a weather site I worked on at Cogo Labs. I created the wireframe and site layout, designed the mockup, contributed in building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker.",
+       about: "Umbrella Check is a weather site I worked on at Cogo Labs. The goal of the site was to leverage readily available weather API’s to make a mobile first weather application. I worked with a group of designers to plan the site and features, with the idea of umbrella alerts giving quick access to expected rain as our differentiating feature. After researching popular weather sites such as Wundergound, Accuweather and Forecast.io (now darksky.net), I reviewed the available data, I created the wireframe and gathered feedback from the design team. From there I designed a high fidelity mockup. then worked with the Cogo Labs Web Engineering Team to build the site. I helped building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker.",
        hidden: false
     },
     {
@@ -48,7 +48,7 @@ export const projects = [
        wireframe: "../images/projects/mockups/ThriveMedicare_Wireframe.png",
        mockup: "../images/projects/mockups/ThriveMedicare_Mockup.jpg",
        styleGuide: "../images/projects/mockups/ThriveMedicare_Style_Guide.png",
-       about: "Thrive Medicare is a healthcare marketplace lead generation website I worked on at Cogo Labs, for one of our portfolio companies, Equate Analytics. I designed the brand and logo, created the wireframe and site layout, designed the mockup, worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery.",
+       about: "Thrive Medicare is a brand and website I designed for Equate Analytics, a Link Ventures company based out of Washington, DC. I worked on the project remotely. The goal of the site was to create a healthcare marketplace lead generation website using a modern design similar to www.healthcare.gov/. After researching the space I designed the logo and created a wireframe to review with the team. From there I made a high fidelity mockup and then worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery. Equate Analytics and Thrive Medicare are no longer active.",
        hidden: false
     },
     {
@@ -56,14 +56,14 @@ export const projects = [
        wireframe: "../images/projects/mockups/Rekindld_Wireframe.jpg",
        mockup: "../images/projects/mockups/Rekindld_Mockup.jpg",
        image: "projects/logos/rekindld_logo.jpg",
-       about: "Rekindld was a senior dating website I worked on at Cogo Labs. I designed the brand and logo, created the wireframe and site layout, designed the mockup and worked with our engineers to build the site. The site was deprioritized and is no longer active.",
+       about: "Rekindld was a 50+ dating website I worked on at Cogo Labs. The goal was to create a dating web application marketed to users above 50 years old. The first step was research and exploring the differences in marketing and audience between sites such as match.com, ourtime.com and farmersonly.com and the differences in approach, characterized by the full extensive profiles of okcupid.com and the brief, picture heavy focus of apps like Tinder. We decided to marry the modern tinder like dating experience with a desktop accessible web app. From there I designed a wireframe, gathered feedback and made a high fidelity mockup. I then worked worked with our engineers to build an MVP version of the site. As soon as we had a working prototype of the site we organized a user test, bringing in users between the ages of 40 and 75 into the office to demo the app, and interview them about their online dating experiences. The user testing sessions were a revelation. Besides uncovering bugs and confusing UI elements, we also learned that our ‘senior dating’ marketing message and collateral was not aligned with out user base who did not view themselves in that light. Taking this info, we updated our messaging to be more inclusive and launched. The site was active for several months and experienced decent user growth, but was eventually deprioritized due to other projects and concerns about monitoring user-generated content. The site is no longer active.",
        hidden: false
     },
     {
        name: "Cogo Labs 404 Page",
        image: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
        url: "http://www.cogolabs.com/404",
-       about: "I was tasked with creating a fun and interesting 404 easter egg page for my works main website. It features a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse.",
+       about: "I was tasked with creating a fun and interesting 404 easter egg page for www.cogolabs.com. Much of our branding plays on space and exploration themes, so I envisioned a crash landing on an alien planet being the perfect metaphor for being lost. The final scene reminded me of the choose your own adventure books I read as a kid, so I opted for two mystery call to actions, with the ‘embrace the dark side’ leading to our careers page. It features CSS animation and a a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse. ",
        hidden: false
     },
     {

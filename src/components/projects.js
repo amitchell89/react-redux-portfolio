@@ -31,7 +31,6 @@ class Projects extends Component {
           let bkgdImg = {
             backgroundImage: 'url(../images/' + s.image + ')',
           }
-
           return (
           <div className="project">
             <div className="project__img" style={bkgdImg}></div>

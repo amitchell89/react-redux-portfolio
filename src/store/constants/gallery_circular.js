@@ -1,5 +1,21 @@
 export const circular = [
   {
+    name: "Red I",
+    year: "2017",
+    medium: "Ink & Watercolor",
+    about: "",
+    url: "circular/Aaron_Mitchell_Red_1.jpg",
+    hidden: false
+  },
+  {
+    name: "Red II",
+    year: "2017",
+    medium: "Ink & Watercolor",
+    about: "",
+    url: "circular/Aaron_Mitchell_Red_2.jpg",
+    hidden: false
+  },
+  {
     name: "Circular I",
     year: "2011",
     medium: "Pen & Colored Pencil",

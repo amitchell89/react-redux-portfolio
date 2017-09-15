@@ -40,7 +40,7 @@ export const projects = [
        mockup: "../images/projects/mockups/Umbrella_Check_Mockup.jpg",
        styleGuide: "../images/projects/mockups/Umbrella_Check_Style_Guide.jpg",
        about: "Umbrella Check is a weather site I worked on at Cogo Labs. The goal of the site was to leverage readily available weather API’s to make a mobile first weather application. I worked with a group of designers to plan the site and features, with the idea of umbrella alerts giving quick access to expected rain as our differentiating feature. After researching popular weather sites such as Wundergound, Accuweather and Forecast.io (now darksky.net), I reviewed the available data, I created the wireframe and gathered feedback from the design team. From there I designed a high fidelity mockup. then worked with the Cogo Labs Web Engineering Team to build the site. I helped building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker.",
-       hidden: false
+       hidden: true
     },
     {
        name: "Thrive Medicare",
@@ -49,7 +49,7 @@ export const projects = [
        mockup: "../images/projects/mockups/ThriveMedicare_Mockup.jpg",
        styleGuide: "../images/projects/mockups/ThriveMedicare_Style_Guide.png",
        about: "Thrive Medicare is a brand and website I designed for Equate Analytics, a Link Ventures company based out of Washington, DC. I worked on the project remotely. The goal of the site was to create a healthcare marketplace lead generation website using a modern design similar to www.healthcare.gov/. After researching the space I designed the logo and created a wireframe to review with the team. From there I made a high fidelity mockup and then worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery. Equate Analytics and Thrive Medicare are no longer active.",
-       hidden: false
+       hidden: true
     },
     {
        name: "Rekindld",
@@ -57,7 +57,7 @@ export const projects = [
        mockup: "../images/projects/mockups/Rekindld_Mockup.jpg",
        image: "projects/logos/rekindld_logo.jpg",
        about: "Rekindld was a 50+ dating website I worked on at Cogo Labs. The goal was to create a dating web application marketed to users above 50 years old. The first step was research and exploring the differences in marketing and audience between sites such as match.com, ourtime.com and farmersonly.com and the differences in approach, characterized by the full extensive profiles of okcupid.com and the brief, picture heavy focus of apps like Tinder. We decided to marry the modern tinder like dating experience with a desktop accessible web app. From there I designed a wireframe, gathered feedback and made a high fidelity mockup. I then worked worked with our engineers to build an MVP version of the site. As soon as we had a working prototype of the site we organized a user test, bringing in users between the ages of 40 and 75 into the office to demo the app, and interview them about their online dating experiences. The user testing sessions were a revelation. Besides uncovering bugs and confusing UI elements, we also learned that our ‘senior dating’ marketing message and collateral was not aligned with out user base who did not view themselves in that light. Taking this info, we updated our messaging to be more inclusive and launched. The site was active for several months and experienced decent user growth, but was eventually deprioritized due to other projects and concerns about monitoring user-generated content. The site is no longer active.",
-       hidden: false
+       hidden: true
     },
     {
        name: "Cogo Labs 404 Page",
@@ -72,7 +72,7 @@ export const projects = [
        url: "http://www.fuck2016.com",
        git: "https://github.com/amitchell89/fuck2016",
        about: "Fuck2016 is brand I developed to capitalize on the 2016 presidential election. The site was quickly stood up without a framework to host a Shopify iframed online store. The products were created using theprintful.com, a site that allows you to upload designs, create products based on those designs, and fulfill individually printed orders received from your Shopify store. The site features Facebook and Twitter widgets, as well as Google Analytics tracking. I also maintained Facebook and Twitter pages for the brand. For advertising I was shut out of my initial plan to advertise on Facebook due to their profanity guidelines, but did end up seeing some sales from my Facebook page, Reddit and organic traffic after the results of the election and a John Oliver segment that happened to use the same message.",
-       hidden: false
+       hidden: true
     },
     {
        name: "Table Flipper",

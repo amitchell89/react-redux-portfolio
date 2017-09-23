@@ -4,7 +4,7 @@ export const collage = [
     year: "2012",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Calm_Down_Billy.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Calm_Down_Billy.jpg",
     hidden: false
   },
   {
@@ -12,7 +12,7 @@ export const collage = [
     year: "2012",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Failure_Failure.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Failure_Failure.jpg",
     hidden: false
   },
   {
@@ -20,7 +20,7 @@ export const collage = [
     year: "2009",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Floating_On_The_Bottom_Of_The_Sky.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Floating_On_The_Bottom_Of_The_Sky.jpg",
     hidden: false
   },
   {
@@ -28,7 +28,7 @@ export const collage = [
     year: "2009",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_I_Wish_We_Had_Predator_Drones.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_I_Wish_We_Had_Predator_Drones.jpg",
     hidden: false
   },
   {
@@ -36,7 +36,7 @@ export const collage = [
     year: "2009",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_In_Love_with_a_Machine.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_In_Love_with_a_Machine.jpg",
     hidden: false
   },
   {
@@ -44,7 +44,7 @@ export const collage = [
     year: "2009",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Injection.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Injection.jpg",
     hidden: false
   },
   {
@@ -52,7 +52,7 @@ export const collage = [
     year: "2010",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Orbit_The_Sun.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Orbit_The_Sun.jpg",
     hidden: true
   },
   {
@@ -60,7 +60,7 @@ export const collage = [
     year: "2011",
     medium: "Collage / Pen & Ink",
     about: "",
-    url: "collage/Aaron_Mitchell_Salmon.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Salmon.jpg",
     hidden: true
   },
   {
@@ -68,7 +68,7 @@ export const collage = [
     year: "2012",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Sampson_And_The_Light.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Sampson_And_The_Light.jpg",
     hidden: false
   },
   {
@@ -76,7 +76,7 @@ export const collage = [
     year: "2010",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_The_Eye.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_The_Eye.jpg",
     hidden: false
   },
   {
@@ -84,7 +84,7 @@ export const collage = [
     year: "2009",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_The_Sinking_Sound.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_The_Sinking_Sound.jpg",
     hidden: false
   },
   {
@@ -92,7 +92,7 @@ export const collage = [
     year: "2011",
     medium: "Digital Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Things_Fall_Apart.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Things_Fall_Apart.jpg",
     hidden: false
   },
   {
@@ -100,7 +100,7 @@ export const collage = [
     year: "2010",
     medium: "Digital Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Disco_Sargent.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Disco_Sargent.jpg",
     hidden: true
   },
   {
@@ -108,7 +108,7 @@ export const collage = [
     year: "2010",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Piper.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Piper.jpg",
     hidden: false
   },
   {
@@ -116,7 +116,7 @@ export const collage = [
     year: "2010",
     medium: "Collage",
     about: "",
-    url: "collage/Aaron_Mitchell_Walk_To_School.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Walk_To_School.jpg",
     hidden: true
   }
 ]

@@ -4,7 +4,7 @@ export const design = [
     year: "2012",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
     hidden: false
   },
   {
@@ -12,7 +12,7 @@ export const design = [
     year: "2015",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Fuck_2016_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Fuck_2016_700.jpg",
     hidden: false
   },
   {
@@ -20,7 +20,7 @@ export const design = [
     year: "2016",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_MacCallum_Group_Logo_700.jpg",
     hidden: false
   },
   {
@@ -28,7 +28,7 @@ export const design = [
     year: "2016",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Ghost_Hunter_Logo_700.jpg",
     hidden: false
   },
   {
@@ -36,7 +36,7 @@ export const design = [
     year: "2016",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Rekindld_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Rekindld_Logo_700.jpg",
     hidden: false
   },
   {
@@ -44,7 +44,7 @@ export const design = [
     year: "2017",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Canoe_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Canoe_Logo_700.jpg",
     hidden: false
   },
   {
@@ -52,7 +52,7 @@ export const design = [
     year: "2016",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Thrive_Medicare_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Thrive_Medicare_Logo_700.jpg",
     hidden: false
   },
   {
@@ -60,7 +60,7 @@ export const design = [
     year: "2012",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_SL_Logix_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_SL_Logix_Logo_700.jpg",
     hidden: false
   },
   {
@@ -68,7 +68,7 @@ export const design = [
     year: "2015",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Dorbly_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Dorbly_Logo_700.jpg",
     hidden: false
   },
   {
@@ -76,7 +76,7 @@ export const design = [
     year: "2015",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_QuizHive_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_QuizHive_Logo_700.jpg",
     hidden: false
   },
   {
@@ -84,7 +84,7 @@ export const design = [
     year: "2015",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_MGS_Design_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_MGS_Design_Logo_700.jpg",
     hidden: false
   },
   {
@@ -92,7 +92,7 @@ export const design = [
     year: "2014",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg",
     hidden: false
   },
   {
@@ -100,7 +100,7 @@ export const design = [
     year: "2015",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Link_Ventures_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Link_Ventures_Logo_700.jpg",
     hidden: false
   },
   {
@@ -108,7 +108,7 @@ export const design = [
     year: "2011",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Coastal_Farms_Logo_700.jpg",
     hidden: false
   },
   {
@@ -116,7 +116,7 @@ export const design = [
     year: "2011",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Lobster_Fest_Shirt_700.jpg",
     hidden: false
   },
   {
@@ -124,7 +124,7 @@ export const design = [
     year: "2016",
     medium: "Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Dagreez_Logo_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Dagreez_Logo_700.jpg",
     hidden: false
   },
   {
@@ -132,7 +132,7 @@ export const design = [
     year: "2013",
     medium: "Photo / Digital",
     about: "",
-    url: "design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Afghan_Strangers_Album_700.jpg",
     hidden: true
   },
 ]

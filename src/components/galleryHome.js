@@ -11,7 +11,7 @@ export default class GalleryHome extends Component {
       <div className="gallery__container gallery__container--home">
         {gallery.map(function (s, i) {
           const bkgdImg = {
-            backgroundImage: 'url(../images/' + s.url + ')',
+            backgroundImage: 'url(' + s.url + ')',
           }
           return (
             <div className="gallery__item">

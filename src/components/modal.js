@@ -54,7 +54,7 @@ class Modal extends Component {
     const prevId = image.id - 1;
     const nextId = image.id + 1;
     const bkgdImg = {
-      backgroundImage: 'url(/../images/' + image.url + ')',
+      backgroundImage: 'url(' + image.url + ')',
     }
 
     let prevClass = 'btn--modal'

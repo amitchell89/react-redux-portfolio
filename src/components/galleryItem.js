@@ -26,7 +26,7 @@ class GalleryItem extends Component {
     const { image, id, selectedGallery } = this.props;
 
     const bkgdImg = {
-      backgroundImage: 'url(../images/' + image + ')',
+      backgroundImage: 'url(' + image + ')',
     }
 
     return (

@@ -4,7 +4,7 @@ export const posters = [
     year: "2017",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_King_Gizzard_And_The_Lizard_Wizard_Royale_Boston_Flyer_1.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_King_Gizzard_And_The_Lizard_Wizard_Royale_Boston_Flyer_1.jpg",
     hidden: false
   },
   {
@@ -12,7 +12,7 @@ export const posters = [
     year: "2016",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg",
     hidden: false
   },
   {
@@ -20,7 +20,7 @@ export const posters = [
     year: "2015",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -28,7 +28,7 @@ export const posters = [
     year: "2015",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Tobias_Jessos_Jr_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Tobias_Jessos_Jr_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -36,7 +36,7 @@ export const posters = [
     year: "2017",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Jacuzzi_Boys_Lilypad_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Jacuzzi_Boys_Lilypad_Cambridge.jpg",
     hidden: false
   },
   {
@@ -44,7 +44,7 @@ export const posters = [
     year: "2016",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Boogarins_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Boogarins_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -52,7 +52,7 @@ export const posters = [
     year: "2015",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Halloween_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -60,7 +60,7 @@ export const posters = [
     year: "2016",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Morgan_Delt_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Morgan_Delt_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -68,7 +68,7 @@ export const posters = [
     year: "2016",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Nobunny_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Nobunny_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -76,7 +76,7 @@ export const posters = [
     year: "2016",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Sunflower_Beam_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Sunflower_Beam_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -84,7 +84,7 @@ export const posters = [
     year: "2015",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Pile_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -92,7 +92,7 @@ export const posters = [
     year: "2015",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Jacco_Gardner_Middle_East_Cambridge.jpg",
     hidden: false
   },
   {
@@ -100,7 +100,7 @@ export const posters = [
     year: "2016",
     medium: "Digital Illustration",
     about: "",
-    url: "posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_All_Of_The_Animals_John_Harvards_Cambridge.jpg",
     hidden: true
   }
 ]

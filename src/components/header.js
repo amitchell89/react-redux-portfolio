@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
 
-import logo from '../images/Aaron_Mitchell_Logo.png';
+var logo = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/Aaron_Mitchell_Logo.png';
 
 export default class Header extends Component {
   render() {

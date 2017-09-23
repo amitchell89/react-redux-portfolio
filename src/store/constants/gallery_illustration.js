@@ -4,7 +4,7 @@ export const illustration = [
     year: "2015",
     medium: "Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Cogo_Labs_Halloween_Shirt.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Cogo_Labs_Halloween_Shirt.jpg",
     hidden: false
   },
   {
@@ -12,7 +12,7 @@ export const illustration = [
     year: "2014",
     medium: "Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Shirt.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Shirt.jpg",
     hidden: false
   },
   {
@@ -20,7 +20,7 @@ export const illustration = [
     year: "2015",
     medium: "Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
     hidden: false
   },
   {
@@ -28,7 +28,7 @@ export const illustration = [
     year: "2016",
     medium: "Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Sticker.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Cogo_Labs_Rocket_Sticker.jpg",
     hidden: false
   },
   {
@@ -36,7 +36,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Best_Hotel_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Best_Hotel_700.jpg",
     hidden: false
   },
   {
@@ -44,7 +44,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Black_Gold_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Black_Gold_700.jpg",
     hidden: false
   },
   {
@@ -52,7 +52,7 @@ export const illustration = [
     year: "2010",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Phish_Poster_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Phish_Poster_700.jpg",
     hidden: false
   },
   {
@@ -60,7 +60,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_The_Ring_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_The_Ring_700.jpg",
     hidden: false
   },
   {
@@ -68,7 +68,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_The_Watch_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_The_Watch_700.jpg",
     hidden: false
   },
   {
@@ -76,7 +76,7 @@ export const illustration = [
     year: "2012",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Deer_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Deer_700.jpg",
     hidden: false
   },
   {
@@ -84,7 +84,7 @@ export const illustration = [
     year: "2013",
     medium: "Pen",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Covered_In_Bees_Shirt_700.jpg",
     hidden: false
   },
   {
@@ -92,7 +92,7 @@ export const illustration = [
     year: "2013",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Stone_Church_Burger_700.jpg",
     hidden: false
   },
   {
@@ -100,7 +100,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Baseball_Banner_700.jpg",
     hidden: true
   },
   {
@@ -108,7 +108,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Cinderella_Sewing_700.jpg",
     hidden: false
   },
   {
@@ -116,7 +116,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Cinderella_Carriage_700.jpg",
     hidden: false
   },
   {
@@ -124,7 +124,7 @@ export const illustration = [
     year: "2010",
     medium: "Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Heart_Of_Darkness_700.jpg",
     hidden: true
   },
   {
@@ -132,7 +132,7 @@ export const illustration = [
     year: "2010",
     medium: "Pen & Ink / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Jess_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Jess_700.jpg",
     hidden: true
   },
   {
@@ -140,7 +140,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital / Collage",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Lobster_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Lobster_700.jpg",
     hidden: false
   },
   {
@@ -148,7 +148,7 @@ export const illustration = [
     year: "2011",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Manchester_American_Flag_700.jpg",
     hidden: true
   },
   {
@@ -156,7 +156,7 @@ export const illustration = [
     year: "2010",
     medium: "Pen / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Rocky_Dog_700.jpg",
     hidden: true
   },
   {
@@ -164,7 +164,7 @@ export const illustration = [
     year: "2010",
     medium: "Pen & Ink / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Self_Portrait_With_Basketball_700.jpg",
     hidden: false
   },
   {
@@ -172,7 +172,7 @@ export const illustration = [
     year: "2010",
     medium: "Pen & Ink / Digital",
     about: "",
-    url: "illustrations/Aaron_Mitchell_Towers.jpg",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Towers.jpg",
     hidden: true
   }
 ]

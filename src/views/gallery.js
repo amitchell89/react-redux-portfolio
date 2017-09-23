@@ -70,7 +70,7 @@ class Gallery extends Component {
     const { images, selectedGallery, onClick, filterGallery } = this.props;
 
     let currentPortfolio = null;
-    let og_image = 'projects/logos/react__logo.jpg';
+    let og_image = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg';
     if (selectedGallery !== 'projects') {
       currentPortfolio = images[selectedGallery].filter(function(n) {
         return n.hidden !== true;
@@ -91,7 +91,7 @@ class Gallery extends Component {
             { name: "description", content: this.props.route.meta.meta_gallery },
             { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Gallery'},
             { property: "og:url", content: 'https://mitchellaaron.com/gallery/' + selectedGallery},
-            { property: "og:image", content: 'https://mitchellaaron.com/images/' + og_image},
+            { property: "og:image", content: og_image},
           ] }
         />
         <div className="col__left">

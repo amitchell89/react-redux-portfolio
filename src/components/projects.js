@@ -29,7 +29,7 @@ class Projects extends Component {
           let styleGuide = s.styleGuide ? <a className="project__link" href={s.styleGuide} target="_blank">Style Guide</a> : null;
 
           let bkgdImg = {
-            backgroundImage: 'url(../images/' + s.image + ')',
+            backgroundImage: 'url(' + s.image + ')',
           }
           return (
           <div className="project">

@@ -23,42 +23,42 @@ export default class Home extends Component {
     const gallery = [
       {
         name: "UI / UX / Code",
-        url: "projects/logos/react__logo.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg",
         link: "/gallery/projects"
       },
       {
         name: "Design",
-        url: "design/Aaron_Mitchell_Fuck_2016_700.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Fuck_2016_700.jpg",
         link: "/gallery/design"
       },
       {
         name: "Illustration",
-        url: "illustrations/Aaron_Mitchell_Cogo_Labs_Halloween_Shirt.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Cogo_Labs_Halloween_Shirt.jpg",
         link: "/gallery/illustration"
       },
       {
         name: "Painting",
-        url: "paintings/Aaron_Mitchell_Painting_In_Between_700.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/paintings/Aaron_Mitchell_Painting_In_Between_700.jpg",
         link: "/gallery/painting"
       },
       {
         name: "Gig Posters",
-        url: "posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg",
         link: "/gallery/posters"
       },
       {
         name: "Abstract",
-        url: "circular/Aaron_Mitchell_Circular_9.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/circular/Aaron_Mitchell_Circular_9.jpg",
         link: "/gallery/circular"
       },
       {
         name: "Comics",
-        url: "comics/Aaron_Mitchell_She_Wore_Razor_Red.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/comics/Aaron_Mitchell_She_Wore_Razor_Red.jpg",
         link: "/gallery/comics"
       },
       {
         name: "Collage",
-        url: "collage/Aaron_Mitchell_Things_Fall_Apart.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Things_Fall_Apart.jpg",
         link: "/gallery/collage"
       },
     ]

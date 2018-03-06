@@ -1,3 +1,7 @@
+///////////////////
+// Requirements //
+/////////////////
+
 var express = require('express')
 var app = express()
 var path    = require("path");
@@ -6,7 +10,10 @@ var nodemailer = require('nodemailer');
 var helmet = require('helmet')
 var xss = require('xss');
 
-// Helmet setup
+//////////////////
+// Helmet setup //
+//////////////////
+
 app.use(helmet())
 app.use(express.static('src'))
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,6 +32,10 @@ var transporter = nodemailer.createTransport("SMTP", {
     pass: password
   }
 });
+
+/////////////
+// Router //
+////////////
 
 app.get('*.js', function (req, res, next) {
   req.url = req.url + '.gz';

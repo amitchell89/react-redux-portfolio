@@ -32,7 +32,7 @@ class Projects extends Component {
             backgroundImage: 'url(' + s.image + ')',
           }
           return (
-          <div className="project">
+          <div className="project" key={i}>
             <div className="project__img" style={bkgdImg}></div>
             <div className="project__info">
               <h4>{s.name}</h4>

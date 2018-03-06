@@ -21,7 +21,7 @@ export default class GalleryNav extends Component {
           {galleryList.map(function (s, i) {
             let name = s[0].toUpperCase() + s.slice(1);
             return (
-            <option value={s}>{name}</option>
+            <option key={i} value={s}>{name}</option>
           )}.bind(this))}
         </select>
       </div>
@@ -45,7 +45,7 @@ export default class GalleryNav extends Component {
                 listClass = 'list--selected'
               }
               return (
-               <li className={listClass} onClick={onClick.bind(this, s)}>{name}</li>
+               <li className={listClass} key={i} onClick={onClick.bind(this, s)}>{name}</li>
             )}.bind(this))}
           </ul>
         </div>

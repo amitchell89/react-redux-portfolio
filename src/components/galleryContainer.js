@@ -10,7 +10,7 @@ export default class GalleryContainer extends Component {
       <div className="gallery__container">
         {gallery.map(function (s, i) {
           return (
-          <GalleryItem image={s.url} id={s.id} />
+          <GalleryItem image={s.url} id={s.id} key={s.id} />
         )}.bind(this))}
       </div>
     )

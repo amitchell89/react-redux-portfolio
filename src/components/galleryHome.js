@@ -14,7 +14,7 @@ export default class GalleryHome extends Component {
             backgroundImage: 'url(' + s.url + ')',
           }
           return (
-            <div className="gallery__item">
+            <div key={i} className="gallery__item">
               <Link to={s.link}>
                 <div
                   className="gallery__image"

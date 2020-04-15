@@ -5,24 +5,8 @@
 }
 
 body {
-  background: $color-gray-light;
-  font-family: $font-primary;
-  font-weight: 300;
   margin: 0;
   padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: $color-link;
-}
-a:hover {
-  color: darken($color-link, 15%)
-}
-
-p {
-  line-height: 1.5;
-  color: $color-gray-dark;
 }
 
 ul {
@@ -94,25 +78,6 @@ button:focus {
 .btn--300 {
   max-width: 300px;
 }
-
-h1 {
-  font-weight: 300;
-  margin: 0;
-}
-
-h1, h2, h4 {
-  font-family: $font-headline;
-}
-
-.headline {
-  text-align: center;
-  margin: 2rem auto;
-  font-weight: 300;
-}
-
-// .highlight {
-//   color: $color-primary;
-// }
 
 .center {
   text-align: center;

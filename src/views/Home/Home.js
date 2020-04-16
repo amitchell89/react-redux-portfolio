@@ -64,16 +64,18 @@ export default class Home extends Component {
     ]
     return (
       <div>
-        <About />
-        <h2 className="headline">Galleries</h2>
-        <GalleryHome gallery={gallery} />
-        <div className="Home__contact center">
-          <h1 className="big-headline">Want to talk?</h1>
-          <Link to="contact">
-            <div className="btn btn--300 centered">
-              Send me a message
-            </div>
-          </Link>
+        <div className="site_wrapper site_wrapper--main">
+          <About />
+          <h2 className="headline">Galleries</h2>
+          <GalleryHome gallery={gallery} />
+          <div className="Home__contact center">
+            <h1 className="big-headline">Want to talk?</h1>
+            <Link to="contact">
+              <div className="btn btn--300 centered">
+                Send me a message
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     )

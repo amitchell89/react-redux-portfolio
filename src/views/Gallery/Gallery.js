@@ -93,19 +93,21 @@ class Gallery extends Component {
             { property: "og:image", content: og_image},
           ] }
         />
-        <div className="col__left">
-          <GalleryNav images={images} selectedGallery={selectedGallery} onClick={onClick} filter={filterGallery}/>
-        </div>
-        <div className="col__right">
-          <h1>{selectedGallery}</h1>
-          { selectedGallery === 'projects'
-            ?
-              <Projects />
-            : 
-              <div className="clearFix">
-                <GalleryContainer gallery={currentPortfolio} />
-              </div>
-          }
+        <div className="site_wrapper site_wrapper--main">
+          <div className="col__left">
+            <GalleryNav images={images} selectedGallery={selectedGallery} onClick={onClick} filter={filterGallery}/>
+          </div>
+          <div className="col__right">
+            <h1>{selectedGallery}</h1>
+            { selectedGallery === 'projects'
+              ?
+                <Projects />
+              : 
+                <div className="clearFix">
+                  <GalleryContainer gallery={currentPortfolio} />
+                </div>
+            }
+          </div>
         </div>
       </div>
     )

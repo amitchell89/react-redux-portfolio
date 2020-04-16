@@ -26,11 +26,13 @@ export default class Post extends Component {
     }
     return (
       <div>
-        <h3>
-        {postMessage}
-        </h3>
-        {returnToContact}
-        <p><Link to="/">Return to Home</Link></p>
+        <div className="site_wrapper site_wrapper--main">
+          <h3>
+          {postMessage}
+          </h3>
+          {returnToContact}
+          <p><Link to="/">Return to Home</Link></p>
+        </div>
       </div>
     )
   }

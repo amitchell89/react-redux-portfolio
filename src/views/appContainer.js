@@ -43,13 +43,13 @@ class AppContainer extends Component {
           ] }
         />
         {modal}
-        <div className="site_wrapper site_wrapper--main">
-          <Header />
-          <div className="content_wrapper">
-            {this.props.children}
-          </div>
-          <Footer />
+        <Header />
+        
+        <div className="content_wrapper">
+          {this.props.children}
         </div>
+  
+        <Footer />
       </div>
     )
   }

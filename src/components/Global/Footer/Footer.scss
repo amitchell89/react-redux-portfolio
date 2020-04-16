@@ -1,0 +1,30 @@
+footer {
+	margin-top: 4rem;
+}
+
+.footer__top {
+	background: $neutral_95;
+	padding: 4rem 0;
+}
+
+.footer__bottom {
+	background: $neutral_30;
+	padding: 1rem 0;
+	p, a {
+		color: $neutral_100;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.footer__grid {
+	display: grid;
+	grid-template-columns: repeat(4, max-content);
+  grid-gap: 3rem;
+}
+
+@media (max-width: 767px) {
+	.footer__grid {
+		grid-template-columns: auto;
+	}
+}

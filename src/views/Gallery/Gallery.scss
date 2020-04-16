@@ -1,0 +1,17 @@
+.Gallery__page {
+	margin-top: 6rem;
+
+	.col__right h1 {
+		text-transform: capitalize;
+		margin-bottom: 3rem;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.Gallery__page {
+		margin-top: 1.5rem;
+	}
+
+}

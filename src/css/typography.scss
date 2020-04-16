@@ -19,24 +19,24 @@ p {
 
 h1 {
   font-weight: 300;
-  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-headline;
   color: $font_color_primary;
   font-weight: 700;
+  margin-top: 0;
 }
 
 .big-headline {
 	font-size: 48px;
 }
 
-.headline {
-  text-align: center;
-  margin: 2rem auto;
-  font-weight: 300;
-}
+// .headline {
+//   text-align: center;
+//   margin: 2rem auto;
+//   font-weight: 300;
+// }
 
 // .highlight {
 //   color: $color-primary;

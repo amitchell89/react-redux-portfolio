@@ -3,12 +3,12 @@
 }
 
 .gallery__nav {
-}
+	color: $color_link;
 
-.gallery__nav li {
-  margin-bottom: 0.5rem;
+	li {
+		margin-bottom: 0.5rem;
+	}
 }
-
 .gallery__nav--select {
   display: none
 }
@@ -18,7 +18,8 @@
     display: block
   }
 
-  .gallery__nav--list {
+  .gallery__nav--list, .gallery__nav__label {
     display: none
   }
+
 }

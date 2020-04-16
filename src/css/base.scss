@@ -122,12 +122,12 @@ button:focus {
 /* Gallery Nav Sidebar Spacing */
 
 .col__left {
-  width: 96px;
+  width: 144px;
   float: left;
 }
 
 .col__right {
-  width: calc(100% - 96px - 2rem);
+  width: calc(100% - 144px - 2rem);
   float: right;
   margin-left: 2rem;
 }

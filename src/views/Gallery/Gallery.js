@@ -83,7 +83,7 @@ class Gallery extends Component {
     }
 
     return (
-      <div>
+      <div className="Gallery__page">
         <Helmet
           title="Aaron Mitchell: Gallery"
           meta={ [
@@ -97,6 +97,7 @@ class Gallery extends Component {
           <GalleryNav images={images} selectedGallery={selectedGallery} onClick={onClick} filter={filterGallery}/>
         </div>
         <div className="col__right">
+          <h1>{selectedGallery}</h1>
           { selectedGallery === 'projects'
             ?
               <Projects />

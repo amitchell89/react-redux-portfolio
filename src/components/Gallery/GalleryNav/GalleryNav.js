@@ -29,6 +29,7 @@ export default class GalleryNav extends Component {
 
     return (
       <div>
+        <h2 className="gallery__nav__label">Galleries</h2>
         <div className="gallery__nav">
           {filters}
           <ul className="gallery__nav--list">

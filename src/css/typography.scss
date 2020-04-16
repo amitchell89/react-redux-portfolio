@@ -1,7 +1,7 @@
 body {
-  background: $color-gray-light;
   font-family: $font-primary;
   font-weight: 300;
+  color: $font_color_primary;
 }
 
 a {
@@ -24,6 +24,7 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-headline;
+  color: $font_color_primary;
   font-weight: 700;
 }
 
@@ -40,3 +41,9 @@ h1, h2, h3, h4, h5, h6 {
 // .highlight {
 //   color: $color-primary;
 // }
+
+@media screen and (max-width: 767px) {
+  .big-headline {
+    font-size: 32px;
+  }
+}

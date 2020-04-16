@@ -1,34 +1,34 @@
-/* About Styles */
+// /* About Styles */
 
-.About {
-  @include clearfix();
-}
+// .About {
+//   @include clearfix();
+// }
 
-.About--portrait {
-  float: left;
-  width: 300px;
-  height: 300px;
-  background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/aaron_mitchell_profile_picture.jpg');
-  background-size: cover;
-  border-radius: 50%;
-  overflow: hidden;
-}
+// .About--portrait {
+//   float: left;
+//   width: 300px;
+//   height: 300px;
+//   background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/aaron_mitchell_designer_portrait.jpg');
+//   background-size: cover;
+//   border-radius: 50%;
+//   overflow: hidden;
+// }
 
-.About--copy {
-  float: left;
-  margin-left: 2rem;
-  width: calc(100% - 300px - 2rem);
-}
+// .About--copy {
+//   float: left;
+//   margin-left: 2rem;
+//   width: calc(100% - 300px - 2rem);
+// }
 
-@media screen and (max-width: 767px) {
-  .About--portrait {
-    float: none;
-    margin: 0 auto;
-  }
+// @media screen and (max-width: 767px) {
+//   .About--portrait {
+//     float: none;
+//     margin: 0 auto;
+//   }
   
-  .About--copy {
-    float: none;
-    width: 100%;
-    margin-left: 0;
-  }
-}
+//   .About--copy {
+//     float: none;
+//     width: 100%;
+//     margin-left: 0;
+//   }
+// }

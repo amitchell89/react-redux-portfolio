@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
 
-var logo = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/Aaron_Mitchell_Logo.png';
+// var logo = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/Aaron_Mitchell_Logo.png';
 
 export default class Header extends Component {
   render() {
@@ -9,10 +9,9 @@ export default class Header extends Component {
       <header>
         <div className="header__logo">
           <Link to="/">
-            <img src={logo} />
-            <h1>
-              Aaron Mitchell
-            </h1>
+            <h2>
+              Aaron Mitchell Design
+            </h2>
           </Link>
         </div>
         <div className="header__nav">

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { combineReducers, createStore } from 'redux';
 import { connect } from 'react-redux';
 import Helmet from "react-helmet";
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from '../components/Global/Header'
+import Footer from '../components/Global/Footer'
 import Modal from '../components/modal'
 
 function mapStateToProps(state) {

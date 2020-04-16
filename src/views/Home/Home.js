@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import Helmet from "react-helmet";
 
-import About from '../../components/about';
-import GalleryHome from '../../components/galleryHome';
+import About from '../../components/About';
+import GalleryHome from '../../components/Gallery/GalleryHome';
 
 export default class Home extends Component {
 

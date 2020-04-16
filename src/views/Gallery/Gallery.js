@@ -6,11 +6,10 @@ import Helmet from "react-helmet";
 import { updateGallery } from '../../store/actions/UpdateGallery';
 import { openModal } from '../../store/actions/ToggleModal';
 import { setImage } from '../../store/actions/SetImage';
-import GalleryItem from '../../components/galleryItem';
-import GalleryContainer from '../../components/galleryContainer';
-import GalleryNav from '../../components/galleryNav';
-
-import Projects from '../../components/projects';
+import GalleryItem from '../../components/Gallery/GalleryItem';
+import GalleryContainer from '../../components/Gallery/GalleryContainer';
+import GalleryNav from '../../components/Gallery/GalleryNav';
+import Projects from '../../components/Gallery/Projects';
 
 function mapStateToProps(state) {
    return {

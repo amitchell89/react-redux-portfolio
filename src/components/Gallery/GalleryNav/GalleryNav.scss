@@ -1,0 +1,24 @@
+.list--selected {
+  font-weight: bold;
+}
+
+.gallery__nav {
+}
+
+.gallery__nav li {
+  margin-bottom: 0.5rem;
+}
+
+.gallery__nav--select {
+  display: none
+}
+
+@media (max-width: 767px) {
+  .gallery__nav--select {
+    display: block
+  }
+
+  .gallery__nav--list {
+    display: none
+  }
+}

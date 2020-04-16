@@ -68,7 +68,7 @@ export default class Home extends Component {
         <h2 className="headline">Explore Work</h2>
         <GalleryHome gallery={gallery} />
         <div className="Home__contact center">
-          <h2 className="headline">Want to talk?</h2>
+          <h1 className="big-headline">Want to talk?</h1>
           <Link to="contact">
             <div className="btn btn--300 centered">
               Send me a message

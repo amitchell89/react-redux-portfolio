@@ -3,10 +3,11 @@
 @import 'mixins';
 @import 'typography';
 @import 'base';
-@import 'about';
-@import 'gallery';
 @import 'projects';
 @import 'modal';
 @import 'contact';
 @import '../components/index.scss';
 @import '../views/index.scss';
+
+
+@import 'gallery';

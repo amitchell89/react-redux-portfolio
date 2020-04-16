@@ -45,7 +45,7 @@ class AppContainer extends Component {
         {modal}
         <Header />
         
-        <div className="content_wrapper">
+        <div>
           {this.props.children}
         </div>
   

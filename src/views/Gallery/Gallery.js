@@ -9,6 +9,7 @@ import { setImage } from '../../store/actions/SetImage';
 import GalleryItem from '../../components/Gallery/GalleryItem';
 import GalleryContainer from '../../components/Gallery/GalleryContainer';
 import GalleryNav from '../../components/Gallery/GalleryNav';
+import GalleryHero from '../../components/Gallery/GalleryHero';
 import Projects from '../../components/Gallery/Projects';
 
 function mapStateToProps(state) {
@@ -95,6 +96,7 @@ class Gallery extends Component {
             { property: "og:image", content: og_image},
           ] }
         />
+        <GalleryHero />
         <div className="site_wrapper site_wrapper--main">
           <div className="col__left">
             <GalleryNav images={images} selectedGallery={selectedGallery} onClick={onClick} filter={filterGallery}/>

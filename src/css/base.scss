@@ -21,13 +21,12 @@ li {
 }
 
 select {
-  padding: 0.75rem 1rem;
+  padding: 0 0 1rem 0;
   font-size: 1rem;
   background: none;
   border: 0;
-  border-radius: 0;
-  border: 1px solid $color-gray-mid;
-  border-radius: 10px;
+  border-bottom: 2px solid $neutral-10;
+  // border-radius: 10px;
   -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
@@ -52,10 +51,10 @@ select:focus, select:active {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 10px solid $color-gray-mid;
+  border-top: 8px solid $color-link;
   position: absolute;
-  top: 20px;
-  right: 1rem;
+  top: 8px;
+  right: 0.5rem;
   pointer-events: none;
 }
 

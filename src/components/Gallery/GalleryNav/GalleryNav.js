@@ -15,6 +15,7 @@ export default class GalleryNav extends Component {
 
     let filters = (
       <div className="select-wrapper gallery__nav--select">
+        <h4>
         <select title="select" onChange={this.props.filter}>
           <option selected disabled>Select a Portfolio</option>
           <option value='projects'>UI /UX / Code</option>
@@ -24,6 +25,7 @@ export default class GalleryNav extends Component {
             <option key={i} value={s}>{name}</option>
           )}.bind(this))}
         </select>
+        </h4>
       </div>
     )
 

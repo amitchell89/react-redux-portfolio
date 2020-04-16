@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import GalleryItem from './galleryItem';
+import GalleryItem from '../galleryItem';
 import { Link } from 'react-router';
 
 export default class GalleryHome extends Component {

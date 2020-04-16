@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
 import Helmet from "react-helmet";
-import { updateGallery } from '../store/actions/UpdateGallery';
-import { openModal } from '../store/actions/ToggleModal';
-import { setImage } from '../store/actions/SetImage';
-import GalleryItem from '../components/galleryItem';
-import GalleryContainer from '../components/galleryContainer';
-import GalleryNav from '../components/galleryNav';
+import { updateGallery } from '../../store/actions/UpdateGallery';
+import { openModal } from '../../store/actions/ToggleModal';
+import { setImage } from '../../store/actions/SetImage';
+import GalleryItem from '../../components/galleryItem';
+import GalleryContainer from '../../components/galleryContainer';
+import GalleryNav from '../../components/galleryNav';
 
-import Projects from '../components/projects';
+import Projects from '../../components/projects';
 
 function mapStateToProps(state) {
    return {

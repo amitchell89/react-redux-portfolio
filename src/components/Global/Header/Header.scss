@@ -1,64 +1,71 @@
-/* Header Styles */
 
+/////////////
+// Header //
+///////////
+
+// Give header height to offset for fixed header
 header {
-  border-bottom: 1px solid $color-gray-light;
-  // height: calc(2rem + 40px);
-  // padding-bottom: 4rem;
-  // padding-top: 1rem;
-  padding: 1rem 0;
+  height: 4rem;
+}
+
+.header__container {
   @include clearfix;
+  box-shadow: $box_shadow;
+  background: $neutral_100;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .header__logo {
   float: left;
-  // img {
-  //   width: 100px;
-  //   height: auto;
-  //   float: left;
-  // }
-  h2 {
-    margin: 0;
-  }
 }
 
-.header__nav {
+.header__title--desktop {
+  display: block;
+  margin: 0;
+}
+
+.header__title--mobile {
+  display: none;
+  margin: 0;
+  padding-top: 4px;
+}
+
+.header__nav--desktop {
   float: right;
   margin-top: 0.5rem;
 }
-.header__nav a:nth-child(n+2) {
+
+.header__nav--desktop a:nth-child(n+2) {
   margin-left: 1rem;
 }
 
-@media (max-width: 767px) {
-  header h1 {
-    font-size: 28px;
-  }
-  .header__nav {
-    font-size: 0.875rem;
-    margin-top: 0.5rem;
-  }
+.header__nav--mobile {
+  float: right;
+  display: none;
+  line-height: 0; 
 }
 
 @media (max-width: 575px) {
-  header {
-    // padding-top: 1rem;
-    // padding-bottom: 5.5rem;
-  }
-  // .header__logo {
-  //   float: none;
-  //   text-align: center;
-  //   margin: 0 auto;
-  //   h1 {
-  //     display: none;
-  //   }
-  //   img {
-  //     float: none;
-  //   }
-  // }
-  .header__nav {
-    // float: none;
-    // text-align: center;
-    // margin-top: 0.25rem;
+
+  .header__title--desktop {
     display: none;
+  }
+
+  .header__title--mobile {
+    display: block;
+  }
+
+  .header__nav--desktop {
+    display: none;
+  } 
+
+  .header__nav--mobile {
+    display: block;
   }
 }

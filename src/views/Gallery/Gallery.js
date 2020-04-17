@@ -44,7 +44,6 @@ class Gallery extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    console.log('check', this.props.params)
     if (this.props.params.set) {
       this.props.updateGalleryOnLoad(this.props.params.set);
     } else {

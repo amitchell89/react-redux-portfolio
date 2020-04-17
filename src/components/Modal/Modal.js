@@ -40,12 +40,16 @@ class Modal extends Component {
 
     let image = images[selectedGallery].find(function(s) {
       return s.id == selectedImage;
-    });
+    }); 
 
     if (image == null) {
       // close modal if id is not found
       this.props.closeModal(selectedGallery)
     }
+
+    let galleryLength = images[selectedGallery].length;
+    let imageCount = image.id + 1;
+    console.log('check', imageCount, galleryLength)
 
     const prevId = image.id - 1;
     const nextId = image.id + 1;
@@ -101,6 +105,10 @@ class Modal extends Component {
                 >
                   <img src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/icons/icon_next.svg" />
                 </button>
+
+                <div className="modal__image-count">
+                {imageCount} of {galleryLength}
+                </div>
 
                 <button
                   className="button--icon modal__button__close"

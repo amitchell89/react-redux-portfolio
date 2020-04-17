@@ -7,8 +7,7 @@ import MobileNavigationDrawer from '../MobileNavigationDrawer';
 
 function mapStateToProps(state) {
    return {
-      mobileNavIsOpen: state.mobileNav.display,
-      state: state
+      mobileNavIsOpen: state.mobileNav.display
    };
 }
 
@@ -33,7 +32,7 @@ class Header extends Component {
 
   render() {
 
-    const { mobileNavIsOpen, state } = this.props;
+    const { mobileNavIsOpen, closeMobileNav } = this.props;
 
     return (
       <header>
@@ -41,7 +40,7 @@ class Header extends Component {
           <div className="site_wrapper site_wrapper--main">
 
             <div className="header__logo">
-              <Link to="/">
+              <Link to="/" onClick={closeMobileNav}>
                 <h2 className="header__title--desktop">
                   Aaron Mitchell Design
                 </h2>

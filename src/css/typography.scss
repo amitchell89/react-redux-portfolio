@@ -8,6 +8,7 @@ a {
   text-decoration: none;
   color: $color_link;
 }
+
 a:hover {
   color: darken($color_link, 15%)
 }

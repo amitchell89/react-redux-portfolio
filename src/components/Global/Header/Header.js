@@ -77,7 +77,7 @@ class Header extends Component {
         </div>
 
         {mobileNavIsOpen ?
-          <MobileNavigationDrawer />
+          <MobileNavigationDrawer onClick={this.toggleDrawer.bind(this, mobileNavIsOpen)}  />
           :
           null
         }

@@ -18,7 +18,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 99;
 }
 
 .header__logo {
@@ -49,10 +49,6 @@ header {
   float: right;
   display: none;
   line-height: 0; 
-}
-
-.header__nav__drawer {
-  margin-top: 6rem; // for testing
 }
 
 @media (max-width: 575px) {

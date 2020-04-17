@@ -3,55 +3,37 @@ import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import { openMobileNav, closeMobileNav } from '../../../store/actions/ToggleMobileNav';
 
-import NavigationLinks from '../NavigationLinks';
+import MobileNavigationDrawer from '../MobileNavigationDrawer';
 
 function mapStateToProps(state) {
    return {
       mobileNavIsOpen: state.mobileNav.display,
-      // selectedImage: state.modal.selectedImage,
-      // selectedGallery: state.gallery.selected,
-      // images: state.gallery.images
       state: state
    };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    openMobileNav: () => dispatch(openMobileNav()), 
+    openMobileNav: () => dispatch(openMobileNav()),
     closeMobileNav: () => dispatch(closeMobileNav()) 
-
-    // closeModal: (gallery, e) => {
-    //   dispatch(closeModal())
-    //   browserHistory.push('/gallery/' + gallery)
-    // },
-    // switchImage: (gallery, id) => {
-    //   if (id < 0) {
-    //     return;
-    //   }
-    //   dispatch(setImage(id))
-    //   browserHistory.push('/gallery/' + gallery + '/' + id)
-    // }
   }
 }
 
 class Header extends Component {
 
-
   toggleDrawer(mobileNavIsOpen) {
     console.log('toggle', mobileNavIsOpen);
 
     if (mobileNavIsOpen) {
-      closeMobileNav();
+      this.props.closeMobileNav();
     } else {
-      openMobileNav();
+      this.props.openMobileNav();
     }
   }
 
   render() {
 
     const { mobileNavIsOpen, state } = this.props;
-
-    console.log('nav', mobileNavIsOpen, state)
 
     return (
       <header>
@@ -94,9 +76,12 @@ class Header extends Component {
 
         </div>
 
-        <div className="header__nav__drawer">
-          <h2>Nav goes here</h2>
-        </div>
+        {mobileNavIsOpen ?
+          <MobileNavigationDrawer />
+          :
+          null
+        }
+
       </header>
     )
   }

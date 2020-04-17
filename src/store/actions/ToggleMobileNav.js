@@ -7,7 +7,7 @@ export function openMobileNav() {
   };
 }
 
-export function closeMobileNavl() {
+export function closeMobileNav() {
   console.log('action dispatched: close mobile nav')
   return {
     type: types.CLOSE_MOBILE_NAV

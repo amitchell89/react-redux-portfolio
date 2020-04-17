@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { browserHistory } from 'react-router'
 import Helmet from "react-helmet";
-import { closeModal } from '../../store/actions/ToggleModal'
-import { setImage } from '../../store/actions/SetImage'
+import { closeModal } from '../../store/actions/ToggleModal';
+import { setImage } from '../../store/actions/SetImage';
 
 function mapStateToProps(state) {
    return {

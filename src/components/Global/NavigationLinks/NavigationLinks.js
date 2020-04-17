@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
+import { updateGallery } from '../../../store/actions/UpdateGallery';
+
 function mapStateToProps(state) {
    return {
       state: state,
@@ -10,10 +12,22 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {}
+  return {
+    updateGallery: (gallery) => {
+      dispatch(updateGallery(gallery))
+    }
+  }
 }
 
 class NavigationLinks extends Component {
+
+
+  selectGallery(gallery) {
+    console.log('gallery', gallery)
+    this.props.updateGallery(gallery);
+    this.props.onClick();
+  }
+
   render() {
 
     const { onClick, state, galleries } = this.props;
@@ -65,7 +79,7 @@ class NavigationLinks extends Component {
                <li key={i}>
                 <Link
                   to={`/gallery/${s}`} 
-                  onClick={onClick}
+                  onClick={this.selectGallery.bind(this, s)}
                 >
                   {name}
                 </Link>

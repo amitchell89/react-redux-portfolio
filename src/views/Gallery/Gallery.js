@@ -69,8 +69,6 @@ class Gallery extends Component {
   render() {
     const { images, selectedGallery, onClick, filterGallery } = this.props;
 
-    console.log('images', images)
-
     let currentPortfolio = null;
     let og_image = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg';
     if (selectedGallery !== 'projects') {

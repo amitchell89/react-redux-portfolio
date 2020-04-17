@@ -25,6 +25,14 @@ class AppContainer extends Component {
     });
   }
 
+  componentDidUpdate() {
+    if (this.props.modal) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+  }
+
   render() {
     let modal = null;
 

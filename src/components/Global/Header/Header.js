@@ -21,8 +21,6 @@ function mapDispatchToProps(dispatch) {
 class Header extends Component {
 
   toggleDrawer(mobileNavIsOpen) {
-    console.log('toggle', mobileNavIsOpen);
-
     if (mobileNavIsOpen) {
       this.props.closeMobileNav();
     } else {

@@ -80,6 +80,20 @@ button:focus {
   max-width: 300px;
 }
 
+.button--icon {
+  background: none;
+  border: 0;
+  padding: 0;
+  img {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.button--icon--disabled {
+  opacity: 0.3;
+}
+
 .center {
   text-align: center;
 }

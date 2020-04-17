@@ -1,0 +1,77 @@
+
+.modal {
+  background: $modal-background;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+.modal__container {
+	@include clearfix();
+	width: 100%;
+	padding: 3rem;
+	background: $neutral_100;
+	margin: 3rem 0; // this should be centered long term
+	display: grid;
+	grid-template-columns: auto 336px;
+	grid-column-gap: 3rem;
+}
+
+.modal__img {
+	width: 100%;
+	height: auto;
+}
+
+.modal__navigation {
+	@include clearfix();
+	margin-bottom: 3rem;
+}
+
+.modal__button__previous {
+	margin-right: 1.5rem;
+}
+
+.modal__button__close {
+	float: right;
+}
+
+@media (max-width: 967px) {
+
+	.modal__container {
+		padding: 2rem;
+		grid-template-columns: auto 240px;
+		grid-column-gap: 2rem;
+}
+}
+
+@media (max-width: 767px) {
+
+	.modal .site_wrapper {
+		padding: 0;
+	}
+
+	.modal__container {
+		padding: 1rem;
+		margin: 0 0 3rem 0;
+		grid-template-columns: auto;
+		grid-column-gap: 0;
+		grid-row-gap: 1.5rem;
+	}
+
+	.modal__navigation {
+		background: $neutral_100;
+		box-shadow: $box_shadow_reverse;
+		width: 100%;
+		padding: 1rem;
+		margin: 0;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+}

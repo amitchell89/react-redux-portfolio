@@ -23,7 +23,6 @@ function mapDispatchToProps(dispatch) {
 
 class NavigationLinksGalleries extends Component {
 
-
   selectGallery(gallery) {
     this.props.updateGallery(gallery);
     this.props.onClick();

@@ -22,10 +22,6 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    onClick: (gallery) => {
-      dispatch(updateGallery(gallery))
-      browserHistory.push('/gallery/' + gallery)
-    },
     filterGallery: (event) => {
       dispatch(updateGallery(event.target.value))
       browserHistory.push('/gallery/' +  event.target.value)
@@ -66,7 +62,7 @@ class Gallery extends Component {
   }
 
   render() {
-    const { images, selectedGallery, onClick, filterGallery } = this.props;
+    const { images, selectedGallery, filterGallery } = this.props;
 
     let currentPortfolio = null;
     let og_image = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg';
@@ -96,7 +92,7 @@ class Gallery extends Component {
         <GalleryHero />
         <div className="site_wrapper site_wrapper--main">
           <div className="col__left">
-            <GalleryNav images={images} selectedGallery={selectedGallery} onClick={onClick} filter={filterGallery}/>
+            <GalleryNav images={images} filter={filterGallery}/>
           </div>
           <div className="col__right">
             <h1>{selectedGallery}</h1>

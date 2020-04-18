@@ -1,19 +1,10 @@
-.list--selected {
-  font-weight: bold;
-}
 
-.gallery__nav {
-	color: $color_link;
-
-	li {
-		margin-bottom: 0.5rem;
-	}
-}
 .gallery__nav--select {
   display: none
 }
 
 @media (max-width: 767px) {
+  
   .gallery__nav--select {
     display: block
   }

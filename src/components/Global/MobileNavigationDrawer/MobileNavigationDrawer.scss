@@ -14,6 +14,13 @@
 	z-index: 98;
 }
 
+.NavigationLinks {
+	li {
+		color: $color_link;
+		cursor: pointer;
+	}
+}
+
 .NavigationLinks__section {
 	margin-bottom: 1.5rem;
 }

@@ -1,13 +1,17 @@
 footer {
 	margin-top: 6rem;
+
+	.NavigationLinks {
+		li, a {
+			color: $font_color_primary;
+		}
+	}
+	
 }
 
 .footer__top {
 	background: $neutral_95;
 	padding: 4rem 0;
-	a {
-		color: $font_color_primary;
-	}
 }
 
 .footer__bottom {

@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { browserHistory } from 'react-router';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
+
+import NavigationLinksGalleries from '../../Global/Navigation/NavigationLinksGalleries';
 
 export default class GalleryNav extends Component {
 
   render() {
-    const { images, selectedGallery, onClick, filter } = this.props;
+    const { images, filter } = this.props;
     let galleryList = [];
 
     for (var key in images) {
@@ -18,7 +20,7 @@ export default class GalleryNav extends Component {
         <h4>
         <select title="select" onChange={this.props.filter}>
           <option selected disabled>Select a Portfolio</option>
-          <option value='projects'>UI /UX / Code</option>
+          <option value='projects'>Web Development</option>
           {galleryList.map(function (s, i) {
             let name = s[0].toUpperCase() + s.slice(1);
             return (
@@ -34,23 +36,11 @@ export default class GalleryNav extends Component {
         <h2 className="gallery__nav__label">Galleries</h2>
         <div className="gallery__nav">
           {filters}
-          <ul className="gallery__nav--list">
-            <li 
-              onClick={onClick.bind(this, 'projects')}
-              className={selectedGallery === 'projects' ? 'list--selected' : null}
-            > 
-              UI/UX/Code
-            </li>
-            {galleryList.map(function (s, i) {
-              let name = s[0].toUpperCase() + s.slice(1);
-              let listClass = null;
-              if (s == selectedGallery) {
-                listClass = 'list--selected'
-              }
-              return (
-               <li className={listClass} key={i} onClick={onClick.bind(this, s)}>{name}</li>
-            )}.bind(this))}
-          </ul>
+
+          <div className="gallery__nav--list">
+            <NavigationLinksGalleries />
+          </div>
+
         </div>
       </div>
     )

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
 
 import { updateGallery } from '../../../../store/actions/UpdateGallery';
 
@@ -13,7 +14,9 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     updateGallery: (gallery) => {
-      dispatch(updateGallery(gallery))
+      dispatch(updateGallery(gallery));
+      browserHistory.push('/gallery/' + gallery);
+      window.scrollTo(0,0);
     }
   }
 }
@@ -22,7 +25,6 @@ class NavigationLinksGalleries extends Component {
 
 
   selectGallery(gallery) {
-    console.log('gallery', gallery)
     this.props.updateGallery(gallery);
     this.props.onClick();
   }
@@ -40,24 +42,14 @@ class NavigationLinksGalleries extends Component {
     return (
       <div className="NavigationLinks NavigationLinks__Galleries">
         <ul>
-          <li> 
-            <Link
-              to='gallery/projects' 
-              onClick={onClick}
-            >
-              Web Development
-            </Link>
+          <li onClick={this.selectGallery.bind(this, 'projects')}> 
+            Web Development
           </li>
           {galleryList.map(function (s, i) {
             let name = s[0].toUpperCase() + s.slice(1);
             return (
-             <li key={i}>
-              <Link
-                to={`/gallery/${s}`} 
-                onClick={this.selectGallery.bind(this, s)}
-              >
-                {name}
-              </Link>
+             <li key={i} onClick={this.selectGallery.bind(this, s)}>
+              {name}
              </li>
           )}.bind(this))}
         </ul>

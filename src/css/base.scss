@@ -94,6 +94,11 @@ button:focus {
   }
 }
 
+.button--icon--social img {
+  height: 48px;
+  width: 48px;
+}
+
 .button--icon--disabled {
   opacity: 0.3;
 }

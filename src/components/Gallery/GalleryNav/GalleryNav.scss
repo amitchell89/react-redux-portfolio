@@ -1,15 +1,15 @@
 
-.gallery__nav--select {
+.gallery__nav__select {
   display: none
 }
 
 @media (max-width: 767px) {
   
-  .gallery__nav--select {
+  .gallery__nav__select {
     display: block
   }
 
-  .gallery__nav--list, .gallery__nav__label {
+  .gallery__nav__list {
     display: none
   }
 

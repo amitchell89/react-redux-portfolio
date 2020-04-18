@@ -6,19 +6,18 @@ import { Link } from 'react-router';
 import NavigationLinksGalleries from '../../Global/Navigation/NavigationLinksGalleries';
 import NavigationDropdownGalleries from '../../Global/Navigation/NavigationDropdownGalleries';
 
-
 export default class GalleryNav extends Component {
 
   render() {
 
     return (        
       <div className="gallery__nav">
-        <h2 className="gallery__nav__label">Galleries</h2>
-        <div className="gallery__nav--select">
-          <NavigationDropdownGalleries />
-        </div>
-        <div className="gallery__nav--list">
+        <div className="gallery__nav__list">
+          <h2>Galleries</h2>
           <NavigationLinksGalleries />
+        </div>
+        <div className="gallery__nav__select">
+          <NavigationDropdownGalleries />
         </div>
       </div>
     )

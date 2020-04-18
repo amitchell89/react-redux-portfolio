@@ -2,5 +2,11 @@
 	height: 300px;
 	width: 100%;
 	background: $neutral_95;
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
+}
+
+@media (max-width: 767px) {
+	.GalleryHero {
+		margin-bottom: 1.5rem;
+	}
 }

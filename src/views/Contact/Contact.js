@@ -40,7 +40,7 @@ export default class Contact extends Component {
               <input type="text" name="email" placeholder="Your Email"></input>
               <label>Your Message</label>
               <textarea type="text" name="message" placeholder="Your Message" rows="7"></textarea>
-              <button type="submit" form="contact_form" value="Submit" className="btn">Send Message</button>
+              <button type="submit" form="contact_form" value="Submit" className="btn btn--contact">Send Message</button>
             </form>
           </div>
         </div>

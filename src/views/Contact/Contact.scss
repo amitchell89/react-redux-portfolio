@@ -1,0 +1,19 @@
+//////////////
+// Contact //
+////////////
+
+.contact {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 4rem;
+}
+
+@media (max-width: 767px) {
+  .contact {
+    max-width: 100%;
+  }
+  
+  .btn--contact {
+    width: 100%;
+  }
+}

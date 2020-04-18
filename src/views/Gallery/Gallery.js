@@ -36,16 +36,24 @@ class Gallery extends Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    if (this.props.params.set) {
-      this.props.updateGalleryOnLoad(this.props.params.set);
+
+    let gallery = this.props.params.set;
+    let lastGalleryId = this.props.images[gallery].length - 1;
+    let imageId = this.props.params.image;
+
+    if (gallery) {
+      this.props.updateGalleryOnLoad(gallery);
     } else {
       this.props.updateGalleryOnLoad('projects');
     }
 
-    // Images not loading if we open modal on page load, need to fix
-    // if (this.props.params.image) {
-    //   this.props.openModal(this.props.params.image)
-    // }
+    // Open Modal
+    // Check if URL includes imageId, if it does and that ID is valid, open modal. 
+    if (imageId && imageId <= lastGalleryId) {
+      this.props.openModal(imageId)
+    } else {
+      // ToDo: Remove invalid ImageId from url
+    }
 
     // Fade In
     var elem = ReactDOM.findDOMNode(this);

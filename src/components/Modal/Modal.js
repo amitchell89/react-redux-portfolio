@@ -49,7 +49,6 @@ class Modal extends Component {
 
     let galleryLength = images[selectedGallery].length;
     let imageCount = image.id + 1;
-    console.log('check', imageCount, galleryLength)
 
     const prevId = image.id - 1;
     const nextId = image.id + 1;

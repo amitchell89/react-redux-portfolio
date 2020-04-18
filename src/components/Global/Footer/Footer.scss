@@ -5,6 +5,9 @@ footer {
 .footer__top {
 	background: $neutral_95;
 	padding: 4rem 0;
+	a {
+		color: $font_color_primary;
+	}
 }
 
 .footer__bottom {
@@ -20,11 +23,15 @@ footer {
 .footer__grid {
 	display: grid;
 	grid-template-columns: repeat(4, max-content);
-  grid-gap: 3rem;
+  grid-column-gap: 3rem;
 }
 
 @media (max-width: 767px) {
 	.footer__grid {
 		grid-template-columns: auto;
+		grid-row-gap: 1.5rem;
+		h4 {
+			margin-bottom: 0.5rem;
+		}
 	}
 }

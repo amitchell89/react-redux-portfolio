@@ -99,7 +99,7 @@ class Gallery extends Component {
             <GalleryNav />
           </div>
           <div className="col__right">
-            <h1>{selectedGallery}</h1>
+            <h1 className="Gallery__title">{selectedGallery}</h1>
             { selectedGallery === 'projects'
               ?
                 <Projects />

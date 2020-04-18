@@ -7,7 +7,8 @@ import { updateGallery } from '../../../../store/actions/UpdateGallery';
 
 function mapStateToProps(state) {
    return {
-      galleries: state.gallery.images
+      galleries: state.gallery.images,
+      selectedGallery: state.gallery.selected,
    };
 }
 
@@ -26,10 +27,9 @@ class NavigationDropdownGalleries extends Component {
 
   render() {
 
-    const { galleries } = this.props;
+    const { galleries, selectedGallery } = this.props;
 
     let galleryList = [];
-
     for (var key in galleries) {
       galleryList.push(key)
     }
@@ -37,7 +37,7 @@ class NavigationDropdownGalleries extends Component {
     return (
       <div className="NavigationDropdownGalleries select-wrapper">
         <h4>
-          <select title="select" onChange={this.props.updateGallery}>
+          <select value={selectedGallery} title="select" onChange={this.props.updateGallery}>
             <option selected disabled>Select a Portfolio</option>
             <option value='projects'>Web Development</option>
             {galleryList.map(function (s, i) {

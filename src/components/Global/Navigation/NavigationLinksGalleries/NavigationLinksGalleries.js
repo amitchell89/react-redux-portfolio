@@ -41,7 +41,7 @@ class NavigationLinksGalleries extends Component {
     return (
       <div className="NavigationLinks NavigationLinks__Galleries">
         <ul>
-          <li onClick={this.selectGallery.bind(this, 'projects')}> 
+          <li onClick={this.selectGallery.bind(this, 'development')}> 
             Web Development
           </li>
           {galleryList.map(function (s, i) {

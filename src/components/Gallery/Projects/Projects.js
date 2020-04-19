@@ -23,7 +23,7 @@ class Projects extends Component {
         {projects.map(function (s, i) {
 
           let url = s.url ? <a className="project__link" href={s.url} target="_blank">Website</a> : null;
-          let git = s.git ? <a className="project__link" href={s.git} target="_blank">Git</a> : null;
+          let git = s.git ? <a className="project__link" href={s.git} target="_blank">Github</a> : null;
           let wireframe = s.wireframe ? <a className="project__link" href={s.wireframe} target="_blank">Wireframe</a> : null;
           let mockup = s.mockup ? <a className="project__link" href={s.mockup} target="_blank">Mockup</a> : null;
           let styleGuide = s.styleGuide ? <a className="project__link" href={s.styleGuide} target="_blank">Style Guide</a> : null;
@@ -35,7 +35,7 @@ class Projects extends Component {
           <div className="project" key={i}>
             <div className="project__img" style={bkgdImg}></div>
             <div className="project__info">
-              <h4>{s.name}</h4>
+              <h3>{s.name}</h3>
               <div className="project__links">{url} {git} {wireframe} {mockup} {styleGuide}</div>
               <p>{s.about}</p>
             </div>
@@ -47,9 +47,6 @@ class Projects extends Component {
     return (
       <div>
         <div className="code__header">
-          <h2>
-          UI / UX / Code
-          </h2>
           <p>
           As a UI Designer I have worked on websites from wireframe to design to coding the front end. I have experience working with HTML, CSS, Javascript, Jade, Haml, Sass, Stylus, React, Redux, Vue, Flux, Node, jQuery, Ruby on Rails, WordPress and Php. I have extensive experience doing responsive web design and designing, coding and debugging html emails. I have also done design work for iPhone and Android apps.
           </p>

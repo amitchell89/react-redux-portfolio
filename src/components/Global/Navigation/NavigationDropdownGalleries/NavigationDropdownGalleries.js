@@ -39,7 +39,7 @@ class NavigationDropdownGalleries extends Component {
         <h4>
           <select value={selectedGallery} title="select" onChange={this.props.updateGallery}>
             <option selected disabled>Select a Portfolio</option>
-            <option value='projects'>Web Development</option>
+            <option value='development'>Web Development</option>
             {galleryList.map(function (s, i) {
               let name = s[0].toUpperCase() + s.slice(1);
               return (

@@ -38,13 +38,14 @@ class Gallery extends Component {
     window.scrollTo(0, 0);
 
     let gallery = this.props.params.set;
-    let lastGalleryId = this.props.images[gallery].length - 1;
+
+    let lastGalleryId = this.props.images[gallery] ? this.props.images[gallery].length - 1 : null; // accomodate for projects not being in gallery array
     let imageId = this.props.params.image;
 
     if (gallery) {
       this.props.updateGalleryOnLoad(gallery);
     } else {
-      this.props.updateGalleryOnLoad('projects');
+      this.props.updateGalleryOnLoad('development');
     }
 
     // Open Modal
@@ -70,7 +71,7 @@ class Gallery extends Component {
 
     let currentPortfolio = null;
     let og_image = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg';
-    if (selectedGallery !== 'projects') {
+    if (selectedGallery !== 'development') {
       currentPortfolio = images[selectedGallery].filter(function(n) {
         return n.hidden !== true;
       });
@@ -99,13 +100,18 @@ class Gallery extends Component {
             <GalleryNav />
           </div>
           <div className="col__right">
-            <h1 className="Gallery__title">{selectedGallery}</h1>
-            { selectedGallery === 'projects'
+            { selectedGallery === 'development'
               ?
-                <Projects />
+                <div>
+                  <h1 className="Gallery__title">Web Development</h1>
+                  <Projects />
+                </div>
               : 
-                <div className="clearFix">
-                  <GalleryContainer gallery={currentPortfolio} />
+                <div>
+                  <h1 className="Gallery__title">{selectedGallery}</h1>
+                  <div className="clearFix">
+                    <GalleryContainer gallery={currentPortfolio} />
+                  </div>
                 </div>
             }
           </div>

@@ -22,9 +22,9 @@ export default class Home extends Component {
 
     const gallery = [
       {
-        name: "UI / UX / Code",
+        name: "Web Development",
         url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg",
-        link: "/gallery/projects"
+        link: "/gallery/development"
       },
       {
         name: "Design",

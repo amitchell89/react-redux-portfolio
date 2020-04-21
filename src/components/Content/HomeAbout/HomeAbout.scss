@@ -5,7 +5,8 @@
 .HomeAbout {
   width: 100%;
   max-width: 720px;
-  margin: 3rem auto;
+  margin: 0 auto;
+  padding-top: 4rem; // Using padding instead of margin to account for learn more link
 }
 
 .inline-image {
@@ -30,4 +31,18 @@
 .inline-image--right {
   float: right;
   margin-left: 2rem;
+}
+
+@media (max-width: 767px) {
+
+  .inline-image { 
+    width: 100%;
+  }
+
+  .inline-image--left, .inline-image--right {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 }

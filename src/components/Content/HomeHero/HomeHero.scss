@@ -2,18 +2,18 @@
 // About //
 //////////
 
-.About {
+.HomeHero {
   display: flex;
   align-items: center;
   margin: 6rem 0;
 }
 
-.About--copy {
+.HomeHero__copy {
   margin-right: 3rem;
   width: calc(100% - 320px - 3rem);
 }
 
-.About--portrait {
+.HomeHero__portrait {
   width: 320px;
   height: 320px;
   background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/aaron_mitchell_designer_portrait.jpg');
@@ -24,19 +24,19 @@
 
 @media screen and (max-width: 767px) {
 
-  .About {
+  .HomeHero {
     flex-wrap: wrap;
     margin: 4rem 0;
     flex-direction: column;
   }
 
-  .About--copy {
+  .HomeHero__copy {
     width: 100%;
     margin-right: 0;
     margin-bottom: 1.5rem;
   }
 
-  .About--portrait {
+  .HomeHero__portrait {
     height: 192px;
     width: 192px;
     align-self: flex-end;

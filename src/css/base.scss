@@ -129,6 +129,14 @@ button:focus {
   @include clearfix();
 }
 
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
 .site_wrapper {
   width: 100%;
   max-width: 1200px;

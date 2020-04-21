@@ -1,0 +1,148 @@
+///////////////////////
+// BackgroundShapes //
+/////////////////////
+
+.elevate-above-shapes {
+  position: relative;
+  z-index: 5;
+}
+
+.BackgroundShapes {
+
+}
+
+.BackgroundShapes__Shape {
+  position: absolute;
+  z-index: 1;
+}
+
+// Blue Square
+.BackgroundShapes__Shape--1 {
+  background: #F4FAFD;
+  height: 288px;
+  width: 288px;
+  right: -160px;
+  top: 120px;
+}
+
+// Yellow Circle
+.BackgroundShapes__Shape--2 {
+  background: #FFFBEB;
+  height: 576px;
+  width: 576px;
+  border-radius: 576px;;
+  top: 325px;
+  right: 120px;
+}
+
+// Red Square
+.BackgroundShapes__Shape--3 {
+  background: #FFF6F7;
+  width: 384px;
+  height: 384px;
+  transform: rotate(-15deg);
+  left: -250px;
+  top: 350px;
+}
+
+// Gray Triangle
+.BackgroundShapes__Shape--4 {
+  width: 0; 
+  height: 0; 
+  border-left: 448px solid transparent;
+  border-right: 448px solid transparent;
+  border-bottom: 768px solid #F8F8F8;
+  transform: rotate(-25deg);
+  right: 125px;
+  top: -600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .BackgroundShapes__Shape--1 {
+
+  }
+  
+  .BackgroundShapes__Shape--2 {
+    height: 448px;
+    width: 448px;
+    right: 200px;
+  }
+
+  .BackgroundShapes__Shape--3 {
+    left: -200px;
+  }
+
+  .BackgroundShapes__Shape--4 {
+    border-left: 320px solid transparent;
+    border-right: 320px solid transparent;
+    border-bottom: 640px solid #F8F8F8;
+    right: 225px;
+    top: -400px;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .BackgroundShapes__Shape--1 {
+    top: 180px;
+  }
+
+  .BackgroundShapes__Shape--2 {
+    right: 125px;
+    top: 400px;
+    height: 400px;
+    width: 400px;
+  }
+
+  .BackgroundShapes__Shape--3 {
+    left: -250px;
+    top: 325px;
+  }
+
+  .BackgroundShapes__Shape--4 {
+    left: 100px;
+  }  
+}
+
+@media screen and (max-width: 767px) {
+  .BackgroundShapes__Shape--1 {
+    height: 160px;
+    width: 160px;
+    top: 175px;
+    right: -50px;
+  }
+
+  .BackgroundShapes__Shape--2 {
+    top: 350px;
+    right: 200px;
+  }
+
+  .BackgroundShapes__Shape--3 {
+    height: 196px;
+    width: 196px;
+    left: -100px;
+    top: 125px;
+  }
+
+  .BackgroundShapes__Shape--4 {
+    left: 0;
+    top: -550px;
+  }  
+}
+
+@media screen and (max-width: 525px) {
+  .BackgroundShapes__Shape--1 {
+  }
+
+  .BackgroundShapes__Shape--2 {
+    right: 175px;
+  }
+
+  .BackgroundShapes__Shape--3 {
+    left: -125px;
+    top: 100px;
+  }
+
+  .BackgroundShapes__Shape--4 {
+    top: -600px;
+  }  
+}

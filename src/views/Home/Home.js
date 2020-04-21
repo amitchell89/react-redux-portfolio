@@ -67,8 +67,10 @@ export default class Home extends Component {
       <div>
         <div className="site_wrapper site_wrapper--main">
           <HomeHero />
-          <h2 className="headline">Galleries</h2>
-          <GalleryHome gallery={gallery} />
+          <div className="elevate-above-shapes">
+            <h2 className="headline">Galleries</h2>
+            <GalleryHome gallery={gallery} />
+          </div>
 
           <HomeAbout />
 

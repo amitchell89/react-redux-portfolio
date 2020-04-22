@@ -7,6 +7,7 @@ import HomeAbout from '../../components/Content/HomeAbout';
 import HomeHero from '../../components/Content/HomeHero';
 import BackgroundShapes from '../../components/Content/BackgroundShapes';
 import GalleryHome from '../../components/Gallery/GalleryHome';
+import GalleryHomeWork from '../../components/Gallery/GalleryHomeWork';
 
 export default class Home extends Component {
 
@@ -84,10 +85,13 @@ export default class Home extends Component {
         <div className="site_wrapper site_wrapper--main">
           <div className="elevate-above-shapes">
             <HomeHero />
-            <div className="elevate-above-shapes">
-              <h2 className="headline">Galleries</h2>
-              <GalleryHome gallery={gallery} />
-            </div>
+
+            <h2>Work Samples</h2>
+            <GalleryHomeWork />
+
+            <h2 className="headline">Galleries</h2>
+            <GalleryHome gallery={gallery} />
+
 
             <HomeAbout />
 

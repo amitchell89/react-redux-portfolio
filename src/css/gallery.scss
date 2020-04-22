@@ -16,12 +16,18 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  box-shadow: $box_shadow_light;
 }
 
 // Home layout: 4 column
-.gallery__container--home .gallery__image {
+.gallery__container--full-width .gallery__image {
   height: calc((100vw - 10rem) / 4);
   max-height: 260px;
+}
+
+// Home work sample layout. 2 column
+.GalleryHomeWork.gallery__container {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 
@@ -37,7 +43,7 @@
   }
   
   // Home layout: 3 column
-  .gallery__container--home .gallery__image {
+  .gallery__container--full-width .gallery__image {
     height: calc((100vw - 8rem) / 3);
     max-height: 280px;
   }
@@ -57,12 +63,22 @@
 
   .gallery__container {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
 
   // All Gallery layout: 2 column
-  .gallery__image, .gallery__container--home .gallery__image {
+  .gallery__image, .gallery__container--full-width .gallery__image {
     height: calc((100vw - 6rem) / 2);
     max-height: none;
+  }
+
+  // Home work sample layout. 1 column
+  .GalleryHomeWork.gallery__container {
+    grid-template-columns: repeat(1, 1fr);
+
+    .gallery__image {
+      max-height: 240px;
+    }
   }
 
 }
@@ -74,7 +90,7 @@
   }
 
   // All Gallery layout: 1 column
-  .gallery__image, .gallery__container--home .gallery__image {
+  .gallery__image, .gallery__container--full-width .gallery__image {
     height: calc(100vw - 2rem);
   }
 

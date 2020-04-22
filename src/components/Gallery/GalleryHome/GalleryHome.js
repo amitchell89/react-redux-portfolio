@@ -8,7 +8,7 @@ export default class GalleryHome extends Component {
     const { gallery } = this.props;
 
     return (
-      <div className="gallery__container gallery__container--home">
+      <div className="gallery__container gallery__container--full-width">
 
         {gallery.map(function (s, i) {
           const bkgdImg = {

@@ -8,7 +8,11 @@
 }
 
 .BackgroundShapes {
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .BackgroundShapes__Shape {
@@ -41,7 +45,7 @@
   width: 384px;
   height: 384px;
   transform: rotate(-15deg);
-  left: -250px;
+  right: 1000px;
   top: 350px;
 }
 
@@ -59,9 +63,8 @@
 
 @media screen and (max-width: 1024px) {
   .BackgroundShapes__Shape--1 {
-
   }
-  
+
   .BackgroundShapes__Shape--2 {
     height: 448px;
     width: 448px;
@@ -131,6 +134,7 @@
 
 @media screen and (max-width: 525px) {
   .BackgroundShapes__Shape--1 {
+    top: 150px;
   }
 
   .BackgroundShapes__Shape--2 {

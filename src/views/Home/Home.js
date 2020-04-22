@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 
 import HomeAbout from '../../components/Content/HomeAbout';
 import HomeHero from '../../components/Content/HomeHero';
+import BackgroundShapes from '../../components/Content/BackgroundShapes';
 import GalleryHome from '../../components/Gallery/GalleryHome';
 
 export default class Home extends Component {
@@ -13,11 +14,26 @@ export default class Home extends Component {
     // Fade In
     var elem = ReactDOM.findDOMNode(this);
     elem.style.opacity = 0;
+
     window.requestAnimationFrame(function() {
       elem.style.transition = "opacity 500ms";
       elem.style.opacity = 1;
     });
+
+    // Reduce shape opacity on scroll
+    window.addEventListener('scroll', this.handleScroll, true);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var opacity = -scroll/700 + 2;
+
+    document.getElementById('BackgroundShapes').style.opacity = opacity;
+  };
 
   render() {
 
@@ -66,23 +82,26 @@ export default class Home extends Component {
     return (
       <div>
         <div className="site_wrapper site_wrapper--main">
-          <HomeHero />
           <div className="elevate-above-shapes">
-            <h2 className="headline">Galleries</h2>
-            <GalleryHome gallery={gallery} />
-          </div>
+            <HomeHero />
+            <div className="elevate-above-shapes">
+              <h2 className="headline">Galleries</h2>
+              <GalleryHome gallery={gallery} />
+            </div>
 
-          <HomeAbout />
+            <HomeAbout />
 
-          <div className="Home__contact center">
-            <h1 className="big-headline">Want to talk?</h1>
-            <Link to="contact">
-              <div className="btn btn--300 centered">
-                Send me a message
-              </div>
-            </Link>
+            <div className="Home__contact center">
+              <h1 className="big-headline">Want to talk?</h1>
+              <Link to="contact">
+                <div className="btn btn--300 centered">
+                  Send me a message
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
+        <BackgroundShapes />
       </div>
     )
   }

@@ -7,10 +7,27 @@ export default class GalleryHomeCaseStudy extends Component {
 
     return (
       <div className="GalleryHomeCaseStudy gallery__container gallery__container--full-width">
-        <div className="gallery__image">
+
+        <div className="gallery__item">
+          <Link to="">
+            <div className="gallery__image">
+            </div>
+            <p className="gallery__label">
+              Label
+            </p>
+          </Link>
         </div>
-        <div className="gallery__image">
+
+        <div className="gallery__item">
+          <Link to="">
+            <div className="gallery__image">
+            </div>
+            <p className="gallery__label">
+              Label
+            </p>
+          </Link>
         </div>
+
       </div>
     )
   }

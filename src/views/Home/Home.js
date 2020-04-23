@@ -86,7 +86,7 @@ export default class Home extends Component {
           <div className="elevate-above-shapes">
             <HomeHero />
 
-            <h2>Work Samples</h2>
+            <h2>Case Studies</h2>
             <GalleryHomeCaseStudy />
 
             <h2 className="headline">Galleries</h2>

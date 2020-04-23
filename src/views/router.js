@@ -4,13 +4,16 @@ import { Provider } from 'react-redux';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
 import store from '../store/reducers';
 import AppContainer from './appContainer';
-import Gallery from './gallery';
-import Home from './home';
-import Contact from './contact';
-import Terms from './terms';
-import Privacy from './privacy';
-import Post from './post';
-import NotFound from './notFound';
+
+import CaseStudy from './CaseStudy'
+import Contact from './Contact';
+import Gallery from './Gallery';
+import Home from './Home';
+import NotFound from './NotFound';
+import Post from './Post';
+import Privacy from './Privacy';
+import Terms from './Terms';
+
 import * as meta from '../store/constants/meta_info';
 
 export default class Routes extends Component {
@@ -29,6 +32,7 @@ export default class Routes extends Component {
             <Route path='/terms' component={Terms} meta={meta} />
             <Route path='/privacy' component={Privacy} meta={meta} />
             <Route path='/post' component={Post} />
+            <Route path='/case-study' component={CaseStudy} />
             <Route path='*' component={NotFound} meta={meta} />
           </Route>
         </Router>

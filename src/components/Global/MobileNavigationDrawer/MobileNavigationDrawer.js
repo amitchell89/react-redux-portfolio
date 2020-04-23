@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router';
 
 import NavigationLinksMain from '../Navigation/NavigationLinksMain';
-import NavigationLinksWork from '../Navigation/NavigationLinksWork';
+import NavigationLinksCaseStudies from '../Navigation/NavigationLinksCaseStudies';
 import NavigationLinksGalleries from '../Navigation/NavigationLinksGalleries';
 
 export default class MobileNavigationDrawer extends Component {
@@ -22,8 +22,8 @@ export default class MobileNavigationDrawer extends Component {
           </div>
 
           <div className="NavigationLinks__section NavigationLinks__work">
-            <h4>Work Samples</h4>
-            <NavigationLinksWork onClick={onClick} />
+            <h4>Case Studies</h4>
+            <NavigationLinksCaseStudies onClick={onClick} />
           </div>
 
           <div className="NavigationLinks__section NavigationLinks__galleries">

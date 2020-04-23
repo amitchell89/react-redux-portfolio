@@ -7,7 +7,7 @@ import HomeAbout from '../../components/Content/HomeAbout';
 import HomeHero from '../../components/Content/HomeHero';
 import BackgroundShapes from '../../components/Content/BackgroundShapes';
 import GalleryHome from '../../components/Gallery/GalleryHome';
-import GalleryHomeWork from '../../components/Gallery/GalleryHomeWork';
+import GalleryHomeCaseStudy from '../../components/Gallery/GalleryHomeCaseStudy';
 
 export default class Home extends Component {
 
@@ -87,11 +87,10 @@ export default class Home extends Component {
             <HomeHero />
 
             <h2>Work Samples</h2>
-            <GalleryHomeWork />
+            <GalleryHomeCaseStudy />
 
             <h2 className="headline">Galleries</h2>
             <GalleryHome gallery={gallery} />
-
 
             <HomeAbout />
 

@@ -10,7 +10,7 @@ function mapDispatchToProps(dispatch) {
   return {}
 }
 
-class NavigationLinksWork extends Component {
+class NavigationLinksCaseStudies extends Component {
 
   render() {
 
@@ -31,4 +31,4 @@ class NavigationLinksWork extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(NavigationLinksWork);
+export default connect(mapStateToProps, mapDispatchToProps)(NavigationLinksCaseStudies);

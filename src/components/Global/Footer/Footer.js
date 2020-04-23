@@ -2,10 +2,9 @@ import React, {Component} from 'react';
 import { Link } from 'react-router'
 
 import NavigationLinksMain from '../Navigation/NavigationLinksMain';
-import NavigationLinksWork from '../Navigation/NavigationLinksWork';
+import NavigationLinksCaseStudies from '../Navigation/NavigationLinksCaseStudies';
 import NavigationLinksGalleries from '../Navigation/NavigationLinksGalleries';
 import NavigationLinksSocial from '../Navigation/NavigationLinksSocial';
-
 
 export default class Footer extends Component {
   render() {
@@ -23,8 +22,8 @@ export default class Footer extends Component {
               </div>
 
               <div className="footer__grid__item">
-                <h4>Work Samples</h4>
-                <NavigationLinksWork />
+                <h4>Case Studies</h4>
+                <NavigationLinksCaseStudies />
               </div>
 
               <div className="footer__grid__item">

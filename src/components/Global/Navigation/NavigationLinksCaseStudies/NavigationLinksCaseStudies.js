@@ -14,14 +14,19 @@ class NavigationLinksCaseStudies extends Component {
 
   render() {
 
-    const { onClick, state, galleries } = this.props;
+    const { onClick } = this.props;
 
     return (
       <div className="NavigationLinks NavigationLinks__Work">
         <ul>
           <li>
             <Link to="/" onClick={onClick}>
-              To be filled in (work)
+              Rover Homepage Vision
+            </Link>
+          </li>
+          <li>
+            <Link to="/" onClick={onClick}>
+              Rover CRO / Growth
             </Link>
           </li>
 

@@ -1,11 +1,28 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
+import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
 import Helmet from "react-helmet";
 
 import GalleryHero from '../../components/Gallery/GalleryHero';
 import GalleryNav from '../../components/Gallery/GalleryNav';
 
-export default class CaseStudy extends Component {
+function mapStateToProps(state) {
+   return {
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+  }
+}
+
+class CaseStudy extends Component {
+
+  componentDidMount() {
+    let study = this.props.params.study;
+  }
+
   render() {
     return (
       <div className="CaseStudy">
@@ -29,6 +46,8 @@ export default class CaseStudy extends Component {
     )
   }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(CaseStudy);
 
         // <Helmet
         //     title="Aaron Mitchell: Terms of Service"

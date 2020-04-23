@@ -32,7 +32,7 @@ export default class Routes extends Component {
             <Route path='/terms' component={Terms} meta={meta} />
             <Route path='/privacy' component={Privacy} meta={meta} />
             <Route path='/post' component={Post} />
-            <Route path='/case-study' component={CaseStudy} />
+            <Route path='/case-study(/:study)' component={CaseStudy} />
             <Route path='*' component={NotFound} meta={meta} />
           </Route>
         </Router>

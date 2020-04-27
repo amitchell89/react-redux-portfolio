@@ -7,6 +7,9 @@ import Helmet from "react-helmet";
 import GalleryHero from '../../components/Gallery/GalleryHero';
 import GalleryNav from '../../components/Gallery/GalleryNav';
 
+import RoverHomepageVision from '../../components/Content/CaseStudy/RoverHomepageVision';
+import RoverCRO from '../../components/Content/CaseStudy/RoverCRO';
+
 function mapStateToProps(state) {
    return {
   };
@@ -24,6 +27,9 @@ class CaseStudy extends Component {
   }
 
   render() {
+
+    let study = this.props.params.study;
+
     return (
       <div className="CaseStudy">
         <GalleryHero />
@@ -36,7 +42,13 @@ class CaseStudy extends Component {
           <div className="col__right">
 
             <div>
-              <h1>Case Studies</h1>
+              { study === 'rover-cro'
+                ?
+                <RoverCRO />
+                :
+                <RoverHomepageVision />
+              }
+              
             </div>
 
           </div>

@@ -20,12 +20,12 @@ class NavigationLinksCaseStudies extends Component {
       <div className="NavigationLinks NavigationLinks__Work">
         <ul>
           <li>
-            <Link to="/" onClick={onClick}>
+            <Link to="/case-study/rover-homepage-vision" onClick={onClick}>
               Rover Homepage Vision
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={onClick}>
+            <Link to="/case-study/rover-cro" onClick={onClick}>
               Rover CRO / Growth
             </Link>
           </li>

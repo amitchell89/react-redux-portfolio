@@ -26,6 +26,22 @@ li {
   padding: 0.25rem 0;
 }
 
+ul.numbered-list {
+  list-style: decimal;
+  list-style-position: inside;
+  li {
+    padding: 0;
+  }
+}
+
+ul.bullet-list {
+  list-style: disc;
+  list-style-position: inside;
+  li {
+    padding: 0;
+  }
+}
+
 label {
   display: block;
   margin-bottom: 0.5rem;
@@ -152,6 +168,11 @@ button:focus {
 
 .content_wrapper {
   margin: 2rem 0;
+  clear: both;
+}
+
+section {
+  margin-bottom: 3rem;
   clear: both;
 }
 

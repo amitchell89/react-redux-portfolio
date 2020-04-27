@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
+import InlineImage from '../../Global/InlineImage';
+
 export default class HomeAbout extends Component {
 
   render() {
@@ -9,19 +11,21 @@ export default class HomeAbout extends Component {
 
         <h1>About Me</h1>
 
-        <div className="inline-image inline-image--right">
-          <img src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/portraits/aaron_mitchell_portrait_moose_almighty.jpg" />
-          <p>Performing in Moose Almighty. 2020</p>
-        </div>
+        <InlineImage 
+          src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/portraits/aaron_mitchell_portrait_moose_almighty.jpg"
+          position="right"
+          label="Performing in Moose Almighty. 2020"
+        />
 
         <p>
         I was born in Bangor, Maine and raised in the midcoast town of Belfast. In 2011, I graduated from the New Hampshire Institute of Art in Manchester, NH with a Bachelor of Fine Arts. I majored in Illustration, focusing on both digital skills and traditional fine art mediums such as oil painting. Since July 2012, I have been working as a professional designer in the tech industry. In the last 8 years I’ve had the opportunity to work at a small mobile marketing startup (Liquid Wireless in Portland, ME. 2012 - 2014), a venture-backed startup accelerator (Cogo Labs in Cambridge, MA. 2014 - 2017) and an international pet care marketplace (Rover in Seattle, WA. 2017 - Present). I’ve learned skills at every stage of the product development pipeline including UX/UI design, wireframing, prototyping, front-end development, user research, A/B testing, CRO, SEO, branding, entrepreneurship, idea generation and group facilitation among others. When not at work, you’ll find me building out my latest side project, or playing bass in my band Moose Almighty. 
         </p>
 
-        <div className="inline-image inline-image--left">
-          <img src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/portraits/aaron_mitchell_portrait_graffiti.jpg" />
-          <p>Making Street Art in Melbourne, Australia. 2018</p>
-        </div>     
+        <InlineImage 
+          src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/portraits/aaron_mitchell_portrait_graffiti.jpg"
+          position="left"
+          label="Making Street Art in Melbourne, Australia. 2018"
+        />  
 
         <h3>Rover</h3>
         <p>
@@ -34,11 +38,11 @@ export default class HomeAbout extends Component {
         Other notable projects I have worked on include designing a new experience for unauthenticated users on our mobile apps, numerous CRO improvements to our search and sitter profile pages, redesigning our careers page, and adding the ability to edit a booked service on Rover which reduced operational costs of our customer service team by 30%. 
         </p>
 
-        
-        <div className="inline-image inline-image--right">
-          <img src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/portraits/aaron_mitchell_portrait_cogo_labs.jpg" />
-          <p>Cogo Labs. 2015</p>
-        </div>
+        <InlineImage 
+          src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/portraits/aaron_mitchell_portrait_cogo_labs.jpg"
+          position="right"
+          label="Cogo Labs. 2015"
+        />  
 
         <h3>Cogo Labs</h3>
         <p>

@@ -16,8 +16,8 @@
 
 // Gallery layout: 4 column + sidebar
 .gallery__image {
-  height: calc((100vw - 144px - 12rem) / 4);
-  max-height: 228px;
+  height: calc((100vw - 192px - 12rem) / 4);
+  max-height: 204px;
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -44,7 +44,7 @@
 
   // Gallery layout: 3 column + sidebar
   .gallery__image {
-    height: calc((100vw - 144px - 10rem) / 3);
+    height: calc((100vw - 192px - 10rem) / 3);
   }
   
   // Home layout: 3 column

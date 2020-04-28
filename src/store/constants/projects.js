@@ -1,7 +1,7 @@
 export const projects = [
     {
        name: "My Personal Portfolio",
-       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg",
+       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/react_logo.png",
        url: "https://mitchellaaron.com",
        git: "https://github.com/amitchell89/react-redux-portfolio",
        about: "This very website is my first portfolio piece. The goal of the site was to create a React / Redux site from scratch so I could learn more about the process, all while showing off my designs, artwork and web projects. The site uses an express framework. Its bundled using webpack and uses a sass preprocessor for the css. It is hosted on Digital Ocean using a Caddy server.",

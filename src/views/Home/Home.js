@@ -41,12 +41,12 @@ export default class Home extends Component {
     const gallery = [
       {
         name: "Web Development",
-        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/react_logo.png",
         link: "/gallery/development"
       },
       {
         name: "Design",
-        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Fuck_2016_700.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/schillaci_guitars_logo_background.jpg",
         link: "/gallery/design"
       },
       {
@@ -66,7 +66,7 @@ export default class Home extends Component {
       },
       {
         name: "Abstract",
-        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/circular/Aaron_Mitchell_Circular_9.jpg",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/abstract_art_cover.jpg",
         link: "/gallery/circular"
       },
       {

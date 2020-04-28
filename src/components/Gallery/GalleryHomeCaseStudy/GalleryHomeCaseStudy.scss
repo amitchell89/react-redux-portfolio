@@ -3,5 +3,29 @@
 }
 
 .GalleryHomeCaseStudy .gallery__image {
-	background: $neutral_95;
+
+}
+
+.gallery__image--rover-homepage-vision {
+	background: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/case-study/case_study_cover_rover_homepage_vision_desktop--dog.jpg');
+	background-size: cover;
+	background-position: left center;
+}
+
+.gallery__image--rover-cro {
+	background: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/case-study/case_study_cover_rover_cro_desktop.jpg');
+	background-size: cover;
+	background-position: left center;
+}
+
+@media screen and (max-width: 414px) {
+
+	.gallery__image--rover-homepage-vision {
+		background: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/case-study/case_study_cover_rover_homepage_vision_mobile--dog.jpg');
+	}
+
+	.gallery__image--rover-cro {
+		background: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/case-study/case_study_cover_rover_cro_mobile.jpg');
+	}
+
 }

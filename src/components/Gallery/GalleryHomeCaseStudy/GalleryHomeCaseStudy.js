@@ -10,20 +10,20 @@ export default class GalleryHomeCaseStudy extends Component {
 
         <div className="gallery__item">
           <Link to="">
-            <div className="gallery__image">
+            <div className="gallery__image gallery__image--rover-homepage-vision">
             </div>
             <p className="gallery__label">
-              Label
+              Rover Homepage Vision
             </p>
           </Link>
         </div>
 
         <div className="gallery__item">
           <Link to="">
-            <div className="gallery__image">
+            <div className="gallery__image gallery__image--rover-cro">
             </div>
             <p className="gallery__label">
-              Label
+              Rover Growth & CRO
             </p>
           </Link>
         </div>

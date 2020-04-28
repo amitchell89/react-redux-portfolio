@@ -3,14 +3,25 @@
 ////////////
 
 .contact {
-  width: 100%;
-  max-width: 400px;
-  margin-top: 4rem;
+	margin-top: 6rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  grid-gap: 6rem;
+  align-items: center;
+}
+
+.contact__form {
+}
+
+.contact__art img {
+	width: 100%;
+	height: auto;
+	box-shadow: $box_shadow;
 }
 
 @media (max-width: 767px) {
   .contact {
-    max-width: 100%;
+    grid-template-columns: 1fr;
   }
   
   .btn--contact {

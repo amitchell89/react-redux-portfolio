@@ -42,7 +42,7 @@ class CaseStudy extends Component {
           <div className="col__right">
 
             <div>
-              { study === 'rover-cro'
+              { study === 'rover-growth-cro'
                 ?
                 <RoverCRO />
                 :

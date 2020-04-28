@@ -25,8 +25,8 @@ class NavigationLinksCaseStudies extends Component {
             </Link>
           </li>
           <li>
-            <Link to="/case-study/rover-cro" onClick={onClick}>
-              Rover CRO / Growth
+            <Link to="/case-study/rover-growth-cro" onClick={onClick}>
+              Rover Growth & CRO
             </Link>
           </li>
 

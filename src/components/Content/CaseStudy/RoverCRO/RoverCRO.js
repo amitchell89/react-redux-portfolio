@@ -33,21 +33,20 @@ export default class RoverCRO extends Component {
 
         </section>
 
-
         <section>
 
 	        <h2>Mobile Web Profile - Reorganize content and add Navigation</h2>
 
-	        
-
 	        <p>
 	        Our first priority was looking at the pet sitter profile, which is a crucial step for the customer to evaluate sitters and determine if they are willing to leave their pets in the sitters care. The sitter profile was performing significantly worse on mobile web than on desktop or our native apps. With a majority of our web traffic coming on mobile, it’s underperformance was a huge opportunity for optimization. 
 	        </p>
+
 	        <InlineImage 
 		        src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/case-study/cro/rover_cro_profile_update_navigation.jpg"
 		        position="left"
 		        label="Left: Leading with the about section. Right: Profile Navigation"
 		      />
+		      
 	        <p>
 	        Our hypothesis was that the content on the mobile web profile was incredibly long, unorganized and frankly hadn’t been considered in any meaningful way. The layout was primarily dictated by the fact that the desktop sidebar was placed above the main content on mobile. Also the information architecture was inconsistent, content that should be grouped together wasn’t, meaning users would have to hunt on the page to find what they were looking for. 
 	        </p>
@@ -76,13 +75,11 @@ export default class RoverCRO extends Component {
 	       	<p> 
 	      	To start this project, I mapped out the entire Rover app experience in a flowchart so we could evaluate each view and determine whether it should be accessible to an unauthenticated customer. I began marking different views as green, to keep, or red, to hide behind authentication. This quickly created a visual representation of what the project would look like that we could discuss with the developers to begin planning the backend infrastructure requirements before I had even started designing. This was a crucial step in saving us time and reducing scope, as the developers could weigh in on the effort of allowing access to each view. Once we had finalized the new unauthenticated site map, I designed the UX changes, which focused on updating the authentication screens, and removing inaccessible navigation items across the app. I then produced a high fidelity spec which merged these UX changes with the sitemap to create a working document for the developers to reference. 
 	      	</p>
-	      	
 	      	<p>
 	      	The first moment of success for me was in the bug bash prior to launch, We had no significant issues come up which was a testament to the close collaboration we had with the developers starting at kickoff, and helped us get this project out the door on schedule. The test was also a success, as we saw the ‘Install to Book’ Metric rise from 4.52% to 4.69%, allowing us to deploy the change to 100% of users in March 2020. 
 	      	</p>
 
 	      </section>
-
 
       </div>
     )

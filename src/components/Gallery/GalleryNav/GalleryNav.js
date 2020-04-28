@@ -14,10 +14,14 @@ export default class GalleryNav extends Component {
     return (        
       <div className="gallery__nav">
         <div className="gallery__nav__list">
-          <h2>Case Studies</h2>
-          <NavigationLinksCaseStudies />
-          <h2>Galleries</h2>
-          <NavigationLinksGalleries />
+          <div className="gallery__nav_-section--1">
+            <h3>Case Studies</h3>
+            <NavigationLinksCaseStudies />
+          </div>
+          <div className="gallery__nav_-section--2">
+            <h3>Galleries</h3>
+            <NavigationLinksGalleries />
+          </div>
         </div>
         <div className="gallery__nav__select">
           <NavigationDropdownGalleries />

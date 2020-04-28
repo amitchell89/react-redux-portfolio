@@ -92,12 +92,14 @@ export default class RoverHomepageVision extends Component {
 	        After researching, we led a design workshop with our fellow designers and product managers to gather ideas and sketch homepage concepts. We then wireframed and refined those concepts, before user testing 7 concepts to test their usability and how effectively we were building trust. From there we continued to refine the designs with 2 more rounds of user testing that touched the desktop, mobile and native platforms. All in all we conducted 56 rounds of user testing before landing on a final north star vision. 
 	        </p>
 
-	        <InlineImage 
-	          src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/case-study/homepage-vision/rover_homepage_vision_concept_sketching_workshop.jpg"
-	          position="full"
-	          label="Homepage concept sketching design workshop"
-	        />
+	      </section>
 
+	      <section>
+		      <InlineImage 
+		        src="https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/case-study/homepage-vision/rover_homepage_vision_concept_sketching_workshop.jpg"
+		        position="full"
+		        label="Homepage concept sketching design workshop"
+		      />
 	      </section>
 
 	      <section>

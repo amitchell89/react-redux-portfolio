@@ -32,7 +32,7 @@ class CaseStudy extends Component {
 
     return (
       <div className="CaseStudy">
-        <GalleryHero />
+        <GalleryHero page="case-study" />
 
         <div className="site_wrapper site_wrapper--main">
 

@@ -5,11 +5,6 @@ export default class GalleryHero extends Component {
 
     const { page } = this.props;
 
-    // const bkgdImg = {
-    //   backgroundImage: 'url(' + image + ')',
-    // }
-
-
     let HeroClassName = `GalleryHero GalleryHero--${page}`
 
     return (
@@ -18,5 +13,3 @@ export default class GalleryHero extends Component {
     )
   }
 }
-
-// style={bkgdImg}>

@@ -13,6 +13,10 @@
 	}
 }
 
+.GalleryHero--case-study {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_rover_desktop.png');
+}
+
 .GalleryHero--design {
 	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_schillaci_desktop.jpg');
 }
@@ -46,7 +50,11 @@
 }
 
 @media (max-width: 414px) {
-	
+
+	.GalleryHero--case-study {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_rover_mobile.png');
+	}
+
 	.GalleryHero--design {
 		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_schillaci_mobile.jpg');
 	}

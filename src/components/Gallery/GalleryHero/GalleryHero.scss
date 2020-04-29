@@ -13,7 +13,7 @@
 	}
 }
 
-.GalleryHero--case-study {
+.GalleryHero--rover-homepage-vision, .GalleryHero--rover-growth-cro  {
 	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_rover_desktop.png');
 }
 
@@ -51,7 +51,11 @@
 
 @media (max-width: 414px) {
 
-	.GalleryHero--case-study {
+	.GalleryHero {
+		height: 240px;
+	}
+	
+	.GalleryHero--rover-homepage-vision, .GalleryHero--rover-growth-cro   {
 		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_rover_mobile.png');
 	}
 

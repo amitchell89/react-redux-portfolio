@@ -16,21 +16,23 @@ function mapDispatchToProps(dispatch) {
     updateGallery: (gallery) => {
       dispatch(updateGallery(gallery));
       browserHistory.push('/gallery/' + gallery);
-      window.scrollTo(0,0);
+      // window.scrollTo(0,0);
     }
   }
 }
 
 class NavigationLinksGalleries extends Component {
 
-  selectGallery(gallery) {
-    this.props.updateGallery(gallery);
-    this.props.onClick();
-  }
+  // selectGallery(gallery) {
+
+  //   console.log('props', this.props)
+  //   this.props.updateGallery(gallery);
+  //   this.props.onClick();
+  // }
 
   render() {
 
-    const { onClick, galleries } = this.props;
+    const { galleries, updateGallery } = this.props;
 
     let galleryList = [];
 
@@ -41,13 +43,13 @@ class NavigationLinksGalleries extends Component {
     return (
       <div className="NavigationLinks NavigationLinks__Galleries">
         <ul>
-          <li onClick={this.selectGallery.bind(this, 'development')}> 
+          <li onClick={updateGallery.bind(this, 'development')}> 
             Web Development
           </li>
           {galleryList.map(function (s, i) {
             let name = s[0].toUpperCase() + s.slice(1);
             return (
-             <li key={i} onClick={this.selectGallery.bind(this, s)}>
+             <li key={i} onClick={updateGallery.bind(this, s)}>
               {name}
              </li>
           )}.bind(this))}

@@ -12,6 +12,9 @@ import GalleryHero from '../../components/Gallery/GalleryHero';
 import GalleryNav from '../../components/Gallery/GalleryNav';
 import Projects from '../../components/Gallery/Projects';
 
+import RoverHomepageVision from '../../components/Content/CaseStudy/RoverHomepageVision';
+import RoverCRO from '../../components/Content/CaseStudy/RoverCRO';
+
 function mapStateToProps(state) {
    return {
     images: state.gallery.images,
@@ -35,13 +38,15 @@ function mapDispatchToProps(dispatch) {
 class Gallery extends Component {
 
   componentDidMount() {
-    window.scrollTo(0, 0);
+    console.log('I MOUNTED')
+    // window.scrollTo(0, 0);
 
     let gallery = this.props.params.set;
 
     let lastGalleryId = this.props.images[gallery] ? this.props.images[gallery].length - 1 : null; // accomodate for projects not being in gallery array
     let imageId = this.props.params.image;
 
+    // If no gallery, open the default gallery
     if (gallery) {
       this.props.updateGalleryOnLoad(gallery);
     } else {
@@ -57,12 +62,12 @@ class Gallery extends Component {
     }
 
     // Fade In
-    var elem = ReactDOM.findDOMNode(this);
-    elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-      elem.style.transition = "opacity 500ms";
-      elem.style.opacity = 1;
-    });
+    // var elem = ReactDOM.findDOMNode(this);
+    // elem.style.opacity = 0;
+    // window.requestAnimationFrame(function() {
+    //   elem.style.transition = "opacity 500ms";
+    //   elem.style.opacity = 1;
+    // });
 
   }
 
@@ -72,25 +77,34 @@ class Gallery extends Component {
     let currentPortfolio = null;
     let og_image = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg';
 
+    // Determine Gallery Type to decide which content component to show
+    let galleryType = null;
+
+    switch(selectedGallery) {
+      case 'rover-growth-cro':
+        galleryType = 'case-study';
+        break;
+      case 'rover-homepage-vision':
+        galleryType = 'case-study';
+        break;
+      case 'development':
+        galleryType = 'projects'
+        break;
+      default:
+        galleryType = 'gallery'
+        currentPortfolio = images[selectedGallery].filter(function(n) {
+          return n.hidden !== true;
+        });
+        og_image = currentPortfolio[0].url;
+    } 
 
     // This shit is hacky as fuck. Fix this later
-
-   // if (gallery === 'rover-homepage-vision' || gallery === 'rover-growth-cro') {
-
-    // if (selectedGallery !== 'development') {
-    if (images[selectedGallery]) {
-      currentPortfolio = images[selectedGallery].filter(function(n) {
-        return n.hidden !== true;
-      });
-      og_image = currentPortfolio[0].url;
-    }
-
-
-    let galleryList = [];
-
-    for (var key in images) {
-      galleryList.push(key)
-    }
+    // if (images[selectedGallery]) {
+    //   currentPortfolio = images[selectedGallery].filter(function(n) {
+    //     return n.hidden !== true;
+    //   });
+    //   og_image = currentPortfolio[0].url;
+    // }
 
     return (
       <div className="Gallery__page">
@@ -105,24 +119,45 @@ class Gallery extends Component {
         />
         <GalleryHero page={selectedGallery} />
         <div className="site_wrapper site_wrapper--main">
+
           <div className="col__left">
             <GalleryNav />
           </div>
+
           <div className="col__right">
-            { selectedGallery === 'development'
-              ?
-                <div>
+
+            { galleryType === 'projects'
+            ?
+              <div>
                   <h1 className="Gallery__title">Web Development</h1>
                   <Projects />
                 </div>
-              : 
+            : null
+            }
+
+            { galleryType === 'gallery'
+              ?
                 <div>
                   <h1 className="Gallery__title">{selectedGallery}</h1>
                   <div className="clearFix">
                     <GalleryContainer gallery={currentPortfolio} />
                   </div>
                 </div>
+              : null
             }
+
+            { galleryType === 'case-study' && selectedGallery === 'rover-homepage-vision'
+              ?
+                <RoverHomepageVision />
+              : null
+            }
+
+            { galleryType === 'case-study' && selectedGallery === 'rover-growth-cro'
+              ?
+                <RoverCRO />
+              : null
+            }
+
           </div>
         </div>
       </div>
@@ -130,3 +165,6 @@ class Gallery extends Component {
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Gallery);
+
+
+

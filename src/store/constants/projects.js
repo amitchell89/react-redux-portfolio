@@ -9,7 +9,7 @@ export const projects = [
     },
     {
        name: "Schillaci Guitars",
-       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
+       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/schillaci_guitars_logo_background.jpg",
        url: "http://www.schillaciguitars.com",
        git: "https://github.com/amitchell89/schillaci_guitars",
        about: "Schillaci Guitars is a react / redux website that I built for guitar luthier Darren Schillaci. The goal of the site was to create a clean and professional portfolio to showcase his custom guitars and necks and to promote sails via direct contact. I originally built the site in 2012 using php without a framework, and rebuilt it using React and Redux on an express framework in spring 2017. It’s bundled using webpack and uses a sass preprocessor for the css. It is a freelance project.",

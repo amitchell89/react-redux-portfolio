@@ -94,7 +94,7 @@ class Gallery extends Component {
             { property: "og:image", content: og_image},
           ] }
         />
-        <GalleryHero />
+        <GalleryHero page={selectedGallery} />
         <div className="site_wrapper site_wrapper--main">
           <div className="col__left">
             <GalleryNav />

@@ -3,6 +3,8 @@
 	width: 100%;
 	background: $neutral_95;
 	margin-bottom: 4rem;
+	background-size: cover;
+	background-position: center;
 }
 
 @media (max-width: 767px) {
@@ -10,3 +12,72 @@
 		margin-bottom: 1.5rem;
 	}
 }
+
+.GalleryHero--design {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_schillaci_desktop.jpg');
+}
+
+.GalleryHero--posters {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_posters_desktop.jpg');
+}
+
+.GalleryHero--development {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_development_desktop.png');
+}
+
+.GalleryHero--paintings {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_painting_desktop.jpg');
+}
+
+.GalleryHero--circular {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_abstract_desktop.jpg');
+}
+
+.GalleryHero--collage {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_collage_desktop.jpg');
+}
+
+.GalleryHero--photos {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Boston_By_Boat.jpg');
+}
+
+.GalleryHero--illustration {
+	background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_illustration_desktop.jpg');
+}
+
+@media (max-width: 414px) {
+	
+	.GalleryHero--design {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_schillaci_mobile.jpg');
+	}
+
+	.GalleryHero--posters {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_posters_mobile.jpg');
+	}
+
+	.GalleryHero--development {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_development_mobile.png');
+	}
+
+	.GalleryHero--paintings {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_painting_mobile.jpg');
+	}
+
+	.GalleryHero--circular {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_abstract_mobile.jpg');
+	}
+
+	.GalleryHero--collage {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_collage_mobile.jpg');
+	}
+
+	.GalleryHero--photos {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_photos_mobile.jpg');
+	}
+
+	.GalleryHero--illustration {
+		background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/heros/aaron_mitchell_design_hero_illustration_mobile.jpg');
+	}
+
+}
+

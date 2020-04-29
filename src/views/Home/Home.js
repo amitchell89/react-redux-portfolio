@@ -57,7 +57,7 @@ export default class Home extends Component {
       {
         name: "Painting",
         url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/paintings/Aaron_Mitchell_Painting_In_Between_700.jpg",
-        link: "/gallery/painting"
+        link: "/gallery/paintings"
       },
       {
         name: "Gig Posters",

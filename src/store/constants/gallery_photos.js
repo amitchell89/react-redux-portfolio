@@ -1,5 +1,60 @@
 export const photos =  [
   {
+    name: "Labyrinth. Bainbridge Island",
+    year: "2019",
+    medium: "Photo",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Labyrinth_Bainbridge_Island.jpg"
+  },
+  {
+    name: "Seattle by Boat",
+    year: "2017",
+    medium: "Photo",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Seattle_By_Boat.jpg"
+  },
+  {
+    name: "Friday Night Lights",
+    year: "2018",
+    medium: "Photo",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Friday_Night_Lights.jpg"
+  },
+  {
+    name: "Fort Casey. Whidbey island",
+    year: "2018",
+    medium: "Photo",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron-Mitchell_Fort_Casey_Whidbey_Island.jpg"
+  },
+  {
+    name: "City Center. Seattle",
+    year: "2018",
+    medium: "Photo",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Seattle_City_Center.jpg"
+  },
+  {
+    name: "Wake",
+    year: "2017",
+    medium: "Photo",
+    about: "Detail of Richard Serra's Wake at the Olympic Sculpture Park in Seattle, WA",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Richard_Serra_Wake_Olympic_Sculpture%20Park.jpg"
+  },
+  {
+    name: "Behemoth. Outside Reykjavik, Iceland",
+    year: "2017",
+    medium: "Photo",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Iceland_Cloud.jpg"
+  },
+
+
+
+
+
+
+  {
     name: "Defend Progress",
     year: "2017",
     medium: "Photo",
@@ -82,5 +137,12 @@ export const photos =  [
     medium: "Photo",
     about: "",
     url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Black_Square_Study.jpg"
+  },
+  {
+    name: "Branches. Portland, ME",
+    year: "2011",
+    medium: "Photo",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Branches.jpg"
   }
 ]

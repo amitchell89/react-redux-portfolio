@@ -12,7 +12,7 @@ export const images = {
   design: design,
   paintings: paintings,
   posters: posters,
-  comics: comics,
+  // comics: comics,
   collage: collage,
   circular: circular,
   photos: photos

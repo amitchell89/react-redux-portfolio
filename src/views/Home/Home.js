@@ -69,15 +69,20 @@ export default class Home extends Component {
         url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/abstract_art_cover.jpg",
         link: "/gallery/circular"
       },
-      {
-        name: "Comics",
-        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/comics/Aaron_Mitchell_She_Wore_Razor_Red.jpg",
-        link: "/gallery/comics"
-      },
+      // {
+      //   name: "Comics",
+      //   url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/comics/Aaron_Mitchell_She_Wore_Razor_Red.jpg",
+      //   link: "/gallery/comics"
+      // },
       {
         name: "Collage",
         url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Things_Fall_Apart.jpg",
         link: "/gallery/collage"
+      },
+      {
+        name: "Photos",
+        url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/photos/Aaron_Mitchell_Boston_By_Boat.jpg",
+        link: "/gallery/photos"
       },
     ]
     return (

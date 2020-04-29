@@ -174,5 +174,21 @@ export const illustration = [
     about: "",
     url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Towers.jpg",
     hidden: true
-  }
+  },
+  {
+    name: "I am Thinking of a Wave",
+    year: "2011",
+    medium: "Pen / Digital",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/comics/Aaron_Mitchell_I_Am_Thinking_of_a_Wave.jpg",
+    hidden: false
+  },
+  {
+    name: "The Ptrousist",
+    year: "2011",
+    medium: "Pen / Digital",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/comics/Aaron_Mitchell_Ptourists.jpg",
+    hidden: false
+  },
 ]

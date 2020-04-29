@@ -72,12 +72,20 @@ class Gallery extends Component {
     let currentPortfolio = null;
     let og_image = 'https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/react__logo.jpg';
 
-    if (selectedGallery !== 'development') {
+
+    // This shit is hacky as fuck. Fix this later
+
+   // if (gallery === 'rover-homepage-vision' || gallery === 'rover-growth-cro') {
+
+    // if (selectedGallery !== 'development') {
+    if (images[selectedGallery]) {
       currentPortfolio = images[selectedGallery].filter(function(n) {
         return n.hidden !== true;
       });
       og_image = currentPortfolio[0].url;
     }
+
+
     let galleryList = [];
 
     for (var key in images) {

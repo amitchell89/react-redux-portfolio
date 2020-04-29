@@ -12,6 +12,7 @@ import RoverCRO from '../../components/Content/CaseStudy/RoverCRO';
 
 function mapStateToProps(state) {
    return {
+    isAuthenticated: state.authentication.isAuthenticated,
   };
 }
 
@@ -22,8 +23,18 @@ function mapDispatchToProps(dispatch) {
 
 class CaseStudy extends Component {
 
+  componentWillMount() {
+    let isAuthenticated = this.props.isAuthenticated;
+    console.log('is auth?', isAuthenticated)
+
+    if (isAuthenticated === false) {
+      console.log('REROUTING TO LOGIN')
+      browserHistory.push('/login');
+    }
+  }
+
   componentDidMount() {
-    let study = this.props.params.study;
+    console.log('case study did mount')
   }
 
   render() {

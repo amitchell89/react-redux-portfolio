@@ -9,6 +9,7 @@ import CaseStudy from './CaseStudy'
 import Contact from './Contact';
 import Gallery from './Gallery';
 import Home from './Home';
+import Login from './Login';
 import NotFound from './NotFound';
 import Post from './Post';
 import Privacy from './Privacy';
@@ -33,6 +34,7 @@ export default class Routes extends Component {
             <Route path='/privacy' component={Privacy} meta={meta} />
             <Route path='/post' component={Post} />
             <Route path='/case-study(/:study)' component={CaseStudy} />
+            <Route path='/login' component={Login} />
             <Route path='*' component={NotFound} meta={meta} />
           </Route>
         </Router>

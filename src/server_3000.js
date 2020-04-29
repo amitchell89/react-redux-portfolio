@@ -51,6 +51,15 @@ app.listen(3000, function () {
   console.log('Site listening on port 3000!')
 })
 
+//include the routes file
+var authRoute = require('./api/routes/authentication');
+app.use(authRoute);
+
+
+//////////////
+// Contact //
+////////////
+
 app.post('/contact', function(req, res) {
   var payload = req.body;
   var name = xss(payload.name)

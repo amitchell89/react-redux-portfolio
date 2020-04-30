@@ -11,8 +11,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    updateGallery: (event) => {
-      let gallery = event.target.value;
+    updateGallery: (gallery) => {
       dispatch(updateGallery(gallery));
       browserHistory.push('/gallery/' + gallery);
       // window.scrollTo(0,0);
@@ -29,15 +28,11 @@ class NavigationLinksCaseStudies extends Component {
     return (
       <div className="NavigationLinks NavigationLinks__Work">
         <ul>
-          <li>
-            <Link to="/gallery/rover-homepage-vision" onClick={updateGallery.bind(this, 'rover-homepage-vision')}>
-              Rover Homepage Vision
-            </Link>
+          <li onClick={updateGallery.bind(this, 'rover-homepage-vision')}>
+            Rover Homepage Vision
           </li>
-          <li>
-            <Link to="/gallery/rover-growth-cro" onClick={updateGallery.bind(this, 'rover-growth-cro')}>
-              Rover Growth & CRO
-            </Link>
+          <li to="/gallery/rover-growth-cro" onClick={updateGallery.bind(this, 'rover-growth-cro')}>
+            Rover Growth & CRO
           </li>
 
         </ul>

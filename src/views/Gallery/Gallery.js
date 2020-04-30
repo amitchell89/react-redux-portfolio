@@ -20,6 +20,7 @@ function mapStateToProps(state) {
     images: state.gallery.images,
     selectedGallery: state.gallery.selected,
     modal: state.modal.display,
+    isAuthenticated: state.authentication.isAuthenticated,
   };
 }
 
@@ -37,8 +38,26 @@ function mapDispatchToProps(dispatch) {
 
 class Gallery extends Component {
 
+  rerouteIfProtected(gallery) {
+    let { isAuthenticated } = this.props;
+
+    console.log('is auth?', isAuthenticated)
+
+    let protectedPages = ['rover-homepage-vision', 'rover-growth-cro']
+
+    if (isAuthenticated === false && protectedPages.includes(gallery) ) {
+      console.log('REROUTING TO LOGIN')
+      browserHistory.push('/login');
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.selectedGallery !== this.props.selectedGallery) {
+      this.rerouteIfProtected(this.props.selectedGallery)
+    }
+  }
+
   componentDidMount() {
-    console.log('I MOUNTED')
     // window.scrollTo(0, 0);
 
     let gallery = this.props.params.set;
@@ -52,6 +71,8 @@ class Gallery extends Component {
     } else {
       this.props.updateGalleryOnLoad('development');
     }
+
+    this.rerouteIfProtected(gallery);
 
     // Open Modal
     // Check if URL includes imageId, if it does and that ID is valid, open modal. 

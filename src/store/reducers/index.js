@@ -1,4 +1,4 @@
-import { combineReducers, createStore, applyMiddleware  } from 'redux';
+import { combineReducers, createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
@@ -22,19 +22,13 @@ const rootReducer = combineReducers({
 const middleware = [thunk, logger];
 
 /* eslint-disable no-underscore-dangle */
-const store = createStore(rootReducer, initialState, applyMiddleware(...middleware))
+const store = createStore(
+	rootReducer, 
+	initialState, 
+	composeWithDevTools(
+    applyMiddleware(...middleware)
+  )
+);
 /* eslint-enable */
 
 export default store;
-
-
-// /* eslint-disable no-underscore-dangle */
-// const store = createStore(
-//   reducer,
-//   composeWithDevTools(
-//     applyMiddleware(thunk, logger)
-//   )
-// );
-// /* eslint-enable */
-
-

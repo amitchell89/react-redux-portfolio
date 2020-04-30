@@ -42,25 +42,21 @@ class LoginForm extends Component {
     const {  } = this.props;
  
     return (
-      <div className="LoginForm">
-
-        <form name="loginForm" onSubmit={this.login}>
-          <div className="formRow">
-            <label>Please enter password</label>
-            <input 
-              type="password" 
-              name="password" 
-              placeholder="Password"
-              value={password} 
-              onChange={e => this.setState({password: e.target.value})}  
-            />
-          </div>
-          <p>
-            <input className="btn btn--primary btn--100" type="submit" value="Login" />
-          </p>
-        </form>
-
-      </div>
+      <form name="LoginForm" onSubmit={this.login}>
+        <div className="formRow">
+          <label>Please enter password</label>
+          <input 
+            type="password" 
+            name="password" 
+            placeholder="Password"
+            value={password} 
+            onChange={e => this.setState({password: e.target.value})}  
+          />
+        </div>
+        <p>
+          <input className="btn btn--primary btn--100" type="submit" value="Login" />
+        </p>
+      </form>
     )
   }
 }

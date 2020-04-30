@@ -25,7 +25,7 @@ export default class Post extends Component {
       )
     }
     return (
-      <div>
+      <div className="Post">
         <div className="site_wrapper site_wrapper--main">
           <h3>
           {postMessage}

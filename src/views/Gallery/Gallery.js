@@ -7,7 +7,7 @@ import Helmet from "react-helmet";
 import { updateGallery } from '../../store/actions/UpdateGallery';
 import { openModal } from '../../store/actions/ToggleModal';
 import { setImage } from '../../store/actions/SetImage';
-import { setDestinationPage } from '../../store/actions/Authentication';
+import { checkForAuthTokenAndRerouteIfProtected } from '../../store/actions/Authentication';
 
 import GalleryContainer from '../../components/Gallery/GalleryContainer';
 import GalleryHero from '../../components/Gallery/GalleryHero';
@@ -21,7 +21,7 @@ function mapStateToProps(state) {
     images: state.gallery.images,
     selectedGallery: state.gallery.selected.galleryName,
     modal: state.modal.display,
-    isAuthenticated: state.authentication.isAuthenticated,
+    isAuthenticated: state.authentication.isAuthenticated
   };
 }
 
@@ -34,8 +34,8 @@ function mapDispatchToProps(dispatch) {
       dispatch(openModal());
       dispatch(setImage(id));
     },
-    setDestinationPage: (page) => {
-      dispatch(setDestinationPage(page));
+    checkForAuthTokenAndRerouteIfProtected: (page) => {
+      dispatch(checkForAuthTokenAndRerouteIfProtected(page))
     }
   }
 }
@@ -45,14 +45,10 @@ class Gallery extends Component {
   rerouteIfProtected(gallery) {
     let { isAuthenticated } = this.props;
 
-    console.log('is auth?', isAuthenticated)
-
     let protectedPages = ['rover-homepage-vision', 'rover-growth-cro']
 
     if (isAuthenticated !== true && protectedPages.includes(gallery) ) {
-      console.log('REROUTING TO LOGIN')
-      this.props.setDestinationPage(`/gallery/${gallery}`)
-      browserHistory.push(`/login`);
+      this.props.checkForAuthTokenAndRerouteIfProtected(gallery)
     }
   }
 
@@ -105,8 +101,6 @@ class Gallery extends Component {
 
     // Determine Gallery Type to decide which content component to show
     let galleryType = null;
-
-    console.log('selected gallery', selectedGallery)
 
     switch(selectedGallery) {
       case undefined: 

@@ -7,8 +7,6 @@ import Header from '../components/Global/Header';
 import Footer from '../components/Global/Footer';
 import Modal from '../components/modal';
 
-import { checkForAuthToken } from '../store/actions/Authentication';
-
 function mapStateToProps(state) {
    return {
     modal: state.modal.display,
@@ -18,17 +16,10 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    checkForAuthToken: () => {
-      dispatch(checkForAuthToken())
-    },
   }
 }
 
 class AppContainer extends Component {
-
-  componentWillMount() {
-    this.props.checkForAuthToken();
-  }
 
   componentDidMount() {
     // Fade In

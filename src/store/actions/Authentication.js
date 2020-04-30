@@ -7,25 +7,40 @@ import store from '../reducers';
 // Check if Auth Token exists & verify it //
 ///////////////////////////////////////////
 
-export function checkForAuthToken() {
+export function checkForAuthTokenAndRerouteIfProtected(page) {
   return dispatch => {
-    let token = window.localStorage.getItem('MitchysSecretToken');
-    console.log('CHECK FOR TOKEN', token)
+      
+    console.log('checking auth for: ', page)
 
-    if (token) {
-      let data = { token: token }
+      // Look for authorization token in local storage
+      let token = window.localStorage.getItem('MitchysSecretToken');
+      console.log('Page is protected. Checking token', token)
 
-      dispatch(authenticationPending(true));
-      verifyAuthToken(data, error => {
-        if (!error) {
-          console.log('SUCCESS')
-          dispatch(authenticationSuccess(true));
-        } else {
-          console.log('FAIL')
-          dispatch(authenticationFail());
-        }
-      });
-    }
+      dispatch(setDestinationPage(`/gallery/${page}`))
+
+      if (token) {
+        // If authorization token exists, verify it is correct
+        let data = { token: token }
+
+        dispatch(authenticationPending(true));
+        verifyAuthToken(data, error => {
+          if (!error) {
+            // If authorization token is correct, authenticate user
+            console.log('SUCCESS')
+            dispatch(authenticationSuccess(true));
+          } else {
+            // If authorization token isn't correct, reroute to login
+            console.log('FAIL')
+            dispatch(authenticationFail());
+            browserHistory.push('/login');
+          }
+        });
+      } else {
+        // If authorization token doesnt exist, reroute to login
+        console.log('no token found, rerouting to login')
+        dispatch(authenticationFail());
+        browserHistory.push('/login');
+      }
 
   }
 }
@@ -40,8 +55,6 @@ function verifyAuthToken(data,callback) {
     body: JSON.stringify(data)
    }).then(function(response) {
     Promise.resolve(response).then(function(value) {
-
-      console.log('RESPONSE', value)
       switch (response.status) {
         case 400: 
           return callback(new Error('400: Token Verification Failure: Server error'));

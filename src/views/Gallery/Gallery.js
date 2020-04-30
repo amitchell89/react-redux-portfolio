@@ -189,6 +189,3 @@ class Gallery extends Component {
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Gallery);
-
-
-

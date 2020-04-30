@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import Helmet from "react-helmet";
-import { browserHistory } from 'react-router';
 
 import LoginForm from '../../components/LoginForm';
 

@@ -5,7 +5,6 @@ import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 're
 import store from '../store/reducers';
 import AppContainer from './appContainer';
 
-import CaseStudy from './CaseStudy'
 import Contact from './Contact';
 import Gallery from './Gallery';
 import Home from './Home';
@@ -33,7 +32,6 @@ export default class Routes extends Component {
             <Route path='/terms' component={Terms} meta={meta} />
             <Route path='/privacy' component={Privacy} meta={meta} />
             <Route path='/post' component={Post} />
-            <Route path='/case-study(/:study)' component={CaseStudy} />
             <Route path='/login' component={Login} />
             <Route path='*' component={NotFound} meta={meta} />
           </Route>

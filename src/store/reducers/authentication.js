@@ -28,6 +28,13 @@ const authentication = (state = false, action) => {
         isAuthenticated: false
       }
 
+    case types.AUTHENTICATION_FAIL:
+      return {
+        ...state,
+        authenticationPending: false,
+        isAuthenticated: false
+      }
+
     case types.SET_DESTINATION_PAGE:
       return {
         ...state,

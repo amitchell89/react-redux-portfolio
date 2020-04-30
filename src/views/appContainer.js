@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import { combineReducers, createStore } from 'redux';
+// import { combineReducers, createStore } from 'redux';
 import { connect } from 'react-redux';
 import Helmet from "react-helmet";
-import Header from '../components/Global/Header'
-import Footer from '../components/Global/Footer'
-import Modal from '../components/modal'
+import Header from '../components/Global/Header';
+import Footer from '../components/Global/Footer';
+import Modal from '../components/modal';
+
+import { checkForAuthToken } from '../store/actions/Authentication';
 
 function mapStateToProps(state) {
    return {
@@ -14,7 +16,19 @@ function mapStateToProps(state) {
   };
 }
 
+function mapDispatchToProps(dispatch) {
+  return {
+    checkForAuthToken: () => {
+      dispatch(checkForAuthToken())
+    },
+  }
+}
+
 class AppContainer extends Component {
+
+  componentWillMount() {
+    this.props.checkForAuthToken();
+  }
 
   componentDidMount() {
     // Fade In
@@ -66,4 +80,4 @@ class AppContainer extends Component {
   }
 }
 
-export default connect(mapStateToProps)(AppContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(AppContainer);

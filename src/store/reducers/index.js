@@ -9,7 +9,9 @@ import mobileNav from './mobileNav';
 import modal from './modal';
 import projects from './projects';
 
-const reducer = combineReducers({
+const initialState = {};
+
+const rootReducer = combineReducers({
 	authentication,
   gallery,
   modal,
@@ -17,13 +19,22 @@ const reducer = combineReducers({
   projects
 });
 
+const middleware = [thunk, logger];
+
 /* eslint-disable no-underscore-dangle */
-const store = createStore(
-  reducer,
-  composeWithDevTools(
-    applyMiddleware(thunk, logger)
-  )
-);
+const store = createStore(rootReducer, initialState, applyMiddleware(...middleware))
 /* eslint-enable */
 
 export default store;
+
+
+// /* eslint-disable no-underscore-dangle */
+// const store = createStore(
+//   reducer,
+//   composeWithDevTools(
+//     applyMiddleware(thunk, logger)
+//   )
+// );
+// /* eslint-enable */
+
+

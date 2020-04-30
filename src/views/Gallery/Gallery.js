@@ -18,7 +18,7 @@ import RoverCRO from '../../components/Content/CaseStudy/RoverCRO';
 function mapStateToProps(state) {
    return {
     images: state.gallery.images,
-    selectedGallery: state.gallery.selected,
+    selectedGallery: state.gallery.selected.galleryName,
     modal: state.modal.display,
     isAuthenticated: state.authentication.isAuthenticated,
   };
@@ -45,7 +45,7 @@ class Gallery extends Component {
 
     let protectedPages = ['rover-homepage-vision', 'rover-growth-cro']
 
-    if (isAuthenticated === false && protectedPages.includes(gallery) ) {
+    if (isAuthenticated !== true && protectedPages.includes(gallery) ) {
       console.log('REROUTING TO LOGIN')
       browserHistory.push('/login');
     }
@@ -101,7 +101,11 @@ class Gallery extends Component {
     // Determine Gallery Type to decide which content component to show
     let galleryType = null;
 
+    console.log('selected gallery', selectedGallery)
+
     switch(selectedGallery) {
+      case undefined: 
+        break;
       case 'rover-growth-cro':
         galleryType = 'case-study';
         break;
@@ -109,10 +113,10 @@ class Gallery extends Component {
         galleryType = 'case-study';
         break;
       case 'development':
-        galleryType = 'projects'
+        galleryType = 'projects';
         break;
       default:
-        galleryType = 'gallery'
+        galleryType = 'gallery';
         currentPortfolio = images[selectedGallery].filter(function(n) {
           return n.hidden !== true;
         });

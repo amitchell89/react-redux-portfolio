@@ -8,7 +8,7 @@ import { updateGallery } from '../../../../store/actions/UpdateGallery';
 function mapStateToProps(state) {
    return {
       galleries: state.gallery.images,
-      selectedGallery: state.gallery.selected,
+      selectedGallery: state.gallery.selected.galleryName,
    };
 }
 

@@ -8,7 +8,7 @@ import { setImage } from '../../store/actions/SetImage';
 function mapStateToProps(state) {
    return {
       selectedImage: state.modal.selectedImage,
-      selectedGallery: state.gallery.selected,
+      selectedGallery: state.gallery.selected.galleryName,
       images: state.gallery.images
    };
 }

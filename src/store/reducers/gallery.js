@@ -18,18 +18,23 @@ const images = (state = mappedImages, action) => {
   switch (action.type) {
     case types.WHATEVER:
       return [
-      ...state,
-      action.images
-    ]
+        ...state,
+        action.images
+      ]
     default:
       return state;
   }
 }
 
-const selected = (state = 'illustration', action) => {
+// const selected = (state = 'illustration', action) => {
+const selected = (state = false, action) => {
+  console.log('ACTION', action)
   switch (action.type) {
     case types.UPDATE_GALLERY:
-      return action.name;
+      return {
+        ...state,
+        galleryName: action.name
+      }
     default:
       return state;
   }

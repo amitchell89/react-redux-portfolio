@@ -1,6 +1,6 @@
 import * as types from '../constants/ActionTypes';
 
-const authentication= (state = false, action) => {
+const authentication = (state = false, action) => {
   switch (action.type) {
     case types.AUTHENTICATION_PENDING:
       return {
@@ -29,10 +29,7 @@ const authentication= (state = false, action) => {
       }
 
     default:
-      return {
-        ...state,
-        isAuthenticated: false
-      }
+      return state;
 
   }
 }

@@ -1,0 +1,14 @@
+.login {
+	margin-top: 6rem;
+}
+
+.login__wrapper {
+	width: 100%;
+	max-width: 360px;
+}
+
+@media (max-width: 767px) {
+.login__wrapper {
+	max-width: 100%;
+}
+}

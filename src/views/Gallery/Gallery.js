@@ -7,11 +7,12 @@ import Helmet from "react-helmet";
 import { updateGallery } from '../../store/actions/UpdateGallery';
 import { openModal } from '../../store/actions/ToggleModal';
 import { setImage } from '../../store/actions/SetImage';
+import { setDestinationPage } from '../../store/actions/Authentication';
+
 import GalleryContainer from '../../components/Gallery/GalleryContainer';
 import GalleryHero from '../../components/Gallery/GalleryHero';
 import GalleryNav from '../../components/Gallery/GalleryNav';
 import Projects from '../../components/Gallery/Projects';
-
 import RoverHomepageVision from '../../components/Content/CaseStudy/RoverHomepageVision';
 import RoverCRO from '../../components/Content/CaseStudy/RoverCRO';
 
@@ -32,6 +33,9 @@ function mapDispatchToProps(dispatch) {
     openModal: (id) => {
       dispatch(openModal());
       dispatch(setImage(id));
+    },
+    setDestinationPage: (page) => {
+      dispatch(setDestinationPage(page));
     }
   }
 }
@@ -47,7 +51,8 @@ class Gallery extends Component {
 
     if (isAuthenticated !== true && protectedPages.includes(gallery) ) {
       console.log('REROUTING TO LOGIN')
-      browserHistory.push('/login');
+      this.props.setDestinationPage(`/gallery/${gallery}`)
+      browserHistory.push(`/login`);
     }
   }
 

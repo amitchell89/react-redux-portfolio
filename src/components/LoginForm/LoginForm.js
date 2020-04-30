@@ -6,6 +6,7 @@ import { login, signup } from '../../store/actions/Authentication';
 
 function mapStateToProps(state) {
    return {
+    destinationPage: state.authentication.destinationPage
    }
 }
 
@@ -29,7 +30,8 @@ class LoginForm extends Component {
 
   login(e) {
     e.preventDefault();
-    let { password } = this.state;
+    let { password, destinationPage } = this.state;
+    console.log('destination', destinationPage)
     this.props.login(password);
     this.setState({
       password: ''

@@ -10,8 +10,10 @@ export default class Login extends Component {
     return (
       <div className="login">
         <div className="site_wrapper site_wrapper--main">
-          <h1>Login</h1>
-          <LoginForm />
+          <div className="login__wrapper">
+            <h1>Login</h1>
+            <LoginForm />
+          </div>
         </div>
       </div>
     )

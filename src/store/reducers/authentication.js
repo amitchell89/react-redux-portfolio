@@ -28,6 +28,12 @@ const authentication = (state = false, action) => {
         isAuthenticated: false
       }
 
+    case types.SET_DESTINATION_PAGE:
+      return {
+        ...state,
+        destinationPage: action.destination
+      }
+
     default:
       return state;
 

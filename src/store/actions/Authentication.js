@@ -1,11 +1,15 @@
-import * as types from '../constants/ActionTypes';
+import { browserHistory } from 'react-router';
 
+import * as types from '../constants/ActionTypes';
+import store from '../reducers';
 
 export function login(password) {
 	console.log('LOGIN ACTION', password)
 	let data = {
 	  password: password,
 	}
+
+  console.log('checking store', store.getState().authentication.destinationPage)
 
   return dispatch => {
     dispatch(authenticationPending(true));
@@ -17,8 +21,14 @@ export function login(password) {
       dispatch(authenticationPending(false));
       if (!error) {
         dispatch(authenticationSuccess(true));
-        // dispatch(loadUserFromToken())
-        // browserHistory.push('/'); 
+        // advance to page that triggered login
+        let destinationPage = store.getState().authentication.destinationPage;
+        if (destinationPage) {
+          browserHistory.push(destinationPage); 
+        } else {
+          browserHistory.push('/'); 
+        }
+
       } else {
         dispatch(authenticationError(error));
       }
@@ -60,23 +70,30 @@ function callAuthenticationApi(data, callback) {
 
 }
 
-function authenticationPending(signupPending) {
+function authenticationPending(authenticationPending) {
   return {
     type: types.AUTHENTICATION_PENDING,
     authenticationPending
   };
 }
  
-function authenticationSuccess(signupSuccess) {
+function authenticationSuccess(authenticationSuccess) {
   return {
     type: types.AUTHENTICATION_SUCCESS,
     authenticationSuccess
   };
 }
  
-function authenticationError(signupError) {
+function authenticationError(authenticationError) {
   return {
     type: types.AUTHENTICATION_ERROR,
     authenticationError
+  }
+}
+
+export function setDestinationPage(destination) {
+  return {
+    type: types.SET_DESTINATION_PAGE,
+    destination
   }
 }

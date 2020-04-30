@@ -26,9 +26,7 @@ const images = (state = mappedImages, action) => {
   }
 }
 
-// const selected = (state = 'illustration', action) => {
 const selected = (state = false, action) => {
-  console.log('ACTION', action)
   switch (action.type) {
     case types.UPDATE_GALLERY:
       return {

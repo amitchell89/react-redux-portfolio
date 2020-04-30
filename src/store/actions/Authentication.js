@@ -10,37 +10,31 @@ import store from '../reducers';
 export function checkForAuthTokenAndRerouteIfProtected(page) {
   return dispatch => {
       
-    console.log('checking auth for: ', page)
+    // Look for authorization token in local storage
+    let token = window.localStorage.getItem('MitchysSecretToken');
 
-      // Look for authorization token in local storage
-      let token = window.localStorage.getItem('MitchysSecretToken');
-      console.log('Page is protected. Checking token', token)
+    dispatch(setDestinationPage(`/gallery/${page}`))
 
-      dispatch(setDestinationPage(`/gallery/${page}`))
+    if (token) {
+      // If authorization token exists, verify it is correct
+      let data = { token: token }
 
-      if (token) {
-        // If authorization token exists, verify it is correct
-        let data = { token: token }
-
-        dispatch(authenticationPending(true));
-        verifyAuthToken(data, error => {
-          if (!error) {
-            // If authorization token is correct, authenticate user
-            console.log('SUCCESS')
-            dispatch(authenticationSuccess(true));
-          } else {
-            // If authorization token isn't correct, reroute to login
-            console.log('FAIL')
-            dispatch(authenticationFail());
-            browserHistory.push('/login');
-          }
-        });
-      } else {
-        // If authorization token doesnt exist, reroute to login
-        console.log('no token found, rerouting to login')
-        dispatch(authenticationFail());
-        browserHistory.push('/login');
-      }
+      dispatch(authenticationPending(true));
+      verifyAuthToken(data, error => {
+        if (!error) {
+          // If authorization token is correct, authenticate user
+          dispatch(authenticationSuccess(true));
+        } else {
+          // If authorization token isn't correct, reroute to login
+          dispatch(authenticationFail());
+          browserHistory.push('/login');
+        }
+      });
+    } else {
+      // If authorization token doesnt exist, reroute to login
+      dispatch(authenticationFail());
+      browserHistory.push('/login');
+    }
 
   }
 }
@@ -83,7 +77,6 @@ export function login(password) {
     dispatch(authenticationError(null));
 
     callAuthenticationApi(data, error => {
-      console.log('store: api callback')
       dispatch(authenticationPending(false));
       if (!error) {
         dispatch(authenticationSuccess(true));
@@ -105,7 +98,6 @@ export function login(password) {
 }
 
 function callAuthenticationApi(data, callback) {
-  console.log('STORE: call authentication api', data)
 
   fetch('/signup', {
     method: 'POST',
@@ -121,7 +113,6 @@ function callAuthenticationApi(data, callback) {
       //sessionStorage = persisted only in current tab. LocalStorage = across all windows and tabs
       localStorage.setItem('MitchysSecretToken', value.token)
 
-      console.log('RESPONSE', value)
       switch (response.status) {
         case 400: 
           return callback(new Error('400: Signup Failure: Server error'));

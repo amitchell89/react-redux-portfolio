@@ -28,18 +28,14 @@ li {
 
 ul.numbered-list {
   list-style: decimal;
-  list-style-position: inside;
-  li {
-    padding: 0;
-  }
+  list-style-position: outside;
+  margin-left: 1.1rem;
 }
 
 ul.bullet-list {
-  list-style: disc;
-  list-style-position: inside;
-  li {
-    padding: 0;
-  }
+  margin-left: 1.1rem;
+  list-style: square;
+  list-style-position: outside;
 }
 
 label {

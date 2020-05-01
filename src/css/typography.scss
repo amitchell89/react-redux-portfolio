@@ -1,5 +1,5 @@
 body {
-  font-family: $font-primary;
+  font-family: $font_primary;
   font-weight: 300;
   color: $font_color_primary;
 }
@@ -23,7 +23,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-headline;
+  font-family: $font_headline;
   color: $font_color_primary;
   font-weight: 700;
   margin-top: 0;
@@ -33,16 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 .big-headline {
 	font-size: 48px;
 }
-
-// .headline {
-//   text-align: center;
-//   margin: 2rem auto;
-//   font-weight: 300;
-// }
-
-// .highlight {
-//   color: $color-primary;
-// }
 
 @media screen and (max-width: 767px) {
   .big-headline {

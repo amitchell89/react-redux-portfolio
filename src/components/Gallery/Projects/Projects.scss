@@ -24,13 +24,12 @@
   }
 }
 
-.project__link:after {
-  content: " | ";
-  color: $color-gray-mid;
+.project__link {
+  margin-right: 1rem;
 }
 
-.project__link:last-child:after {
-  content: "";
+.project__link:last-child {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -45,7 +44,6 @@
 }
 @media screen and (max-width: 575px) {
   .project__img {
-    // display: none;
     width: 100%;
     height: calc(100vw - 2rem);
     margin-bottom: 1.5rem;

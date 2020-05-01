@@ -1,4 +1,6 @@
-/* Base Styles */
+//////////////////
+// Base Styles //
+////////////////
 
 * {
   box-sizing: border-box;
@@ -75,6 +77,7 @@ select {
   background: none;
   border: 0;
   border-bottom: 2px solid $neutral-10;
+  border-radius: 0;
   -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
@@ -86,7 +89,7 @@ select {
 
 select:focus, select:active {
   outline: none;
-  border: 1px solid $color-gray-mid;
+  border-bottom: 2px solid $color_link;
 }
 
 .select-wrapper {
@@ -99,7 +102,7 @@ select:focus, select:active {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid $color-link;
+  border-top: 8px solid $color_link;
   position: absolute;
   top: 8px;
   right: 0.5rem;
@@ -121,9 +124,9 @@ button:focus {
 
 .btn {
   background: none;
-  border: 2px solid $color-link;
+  border: 2px solid $color_link;
   border-radius: 10px;
-  color: $color-link;
+  color: $color_link;
   padding: 1rem;
 }
 

@@ -6,6 +6,8 @@ import { login, signup } from '../../store/actions/Authentication';
 
 function mapStateToProps(state) {
    return {
+      authenticationPending: state.authentication.authenticationPending,
+      authenticationErrorMessage: state.authentication.authenticationErrorMessage
    }
 }
 
@@ -39,24 +41,37 @@ class LoginForm extends Component {
   render() {
     const { password } = this.state;
 
-    const {  } = this.props;
+    const { authenticationPending, authenticationErrorMessage } = this.props;
  
     return (
-      <form name="LoginForm" onSubmit={this.login}>
-        <div className="formRow">
-          <label>Please enter password</label>
-          <input 
-            type="password" 
-            name="password" 
-            placeholder="Password"
-            value={password} 
-            onChange={e => this.setState({password: e.target.value})}  
-          />
-        </div>
-        <p>
-          <input className="btn btn--primary btn--100" type="submit" value="Login" />
-        </p>
-      </form>
+      <div className="LoginForm">
+        <form name="LoginForm" onSubmit={this.login}>
+          <div className="formRow">
+            <label>Please enter password</label>
+            <input 
+              type="password" 
+              name="password" 
+              placeholder="Password"
+              value={password} 
+              onChange={e => this.setState({password: e.target.value})}  
+            />
+          </div>
+          <p>
+            <input className="btn btn--primary btn--100" type="submit" value="Login" />
+          </p>
+        </form>
+        { authenticationPending 
+          ?
+          <p>pending</p>
+          : null
+        }
+
+        { authenticationErrorMessage
+          ?
+          <p className="LoginForm__error">{authenticationErrorMessage}</p>
+          : null
+        }
+      </div>
     )
   }
 }

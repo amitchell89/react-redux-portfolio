@@ -9,6 +9,7 @@ const authentication = (state = false, action) => {
         authenticationPending: true,
         authenticationSuccess: false,
         authenticationError: false,
+        authenticationErrorMessage: null,
         isAuthenticated: false
       }
 
@@ -16,21 +17,28 @@ const authentication = (state = false, action) => {
       return {
         ...state,
         // authenticationSuccess: action.authenticationSuccess,
+        authenticationSuccess: true,
         authenticationPending: false,
-        isAuthenticated: true
+        authenticationErrorMessage: null,
+        authenticationError: false,
+        isAuthenticated: true,
+
       }
 
     case types.AUTHENTICATION_ERROR:
       return {
         ...state,
-        // authenticationError: action.authenticationError,
+        authenticationSuccess: false,
         authenticationPending: false,
+        authenticationError: true,
+        authenticationErrorMessage: `Ah ah ah! You didn't say the magic word!`,
         isAuthenticated: false
       }
 
     case types.AUTHENTICATION_FAIL:
       return {
         ...state,
+        authenticationSuccess: false,
         authenticationPending: false,
         isAuthenticated: false
       }

@@ -33,7 +33,7 @@ export const illustration = [
     hidden: false
   },
   {
-    name: "Coog Labs Rocket Stickers",
+    name: "Cogo Labs Rocket Stickers",
     year: "2016",
     medium: "Digital",
     about: "Sticker designs for Cogo Labs. Cambridge, MA",

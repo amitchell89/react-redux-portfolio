@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-// import { combineReducers, createStore } from 'redux';
 import { connect } from 'react-redux';
 import Helmet from "react-helmet";
 import Header from '../components/Global/Header';
@@ -27,7 +26,7 @@ class AppContainer extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.location !== this.props.location) {
+    if (prevProps.location.pathname !== this.props.location.pathname) {
       this.scrollToTop()
     }
 

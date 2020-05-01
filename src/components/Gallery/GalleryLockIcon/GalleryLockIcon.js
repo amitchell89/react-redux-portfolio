@@ -1,13 +1,30 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
-export default class GalleryLockIcon extends Component {
+function mapStateToProps(state) {
+   return {
+    isAuthenticated: state.authentication.isAuthenticated,
+  };
+}
+
+class GalleryLockIcon extends Component {
   render() {
+
+  	const { isAuthenticated } = this.props;
+
     return (
-      <div className="GalleryLockIcon">
-        <div className="GalleryLockIcon__Lock"></div>
-        <div className="GalleryLockIcon__Background"></div>
-      </div>
+    	<div>
+	    	{ !isAuthenticated ?
+		  		<div className="GalleryLockIcon">
+		        <div className="GalleryLockIcon__Lock"></div>
+		        <div className="GalleryLockIcon__Background"></div>
+		      </div>
+	      : null
+	    	}
+    	</div>
+      
     )
   }
 }
 
+export default connect(mapStateToProps)(GalleryLockIcon);

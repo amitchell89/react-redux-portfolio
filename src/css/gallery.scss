@@ -3,9 +3,11 @@
 // Gallery Layout Styles //
 //////////////////////////
 
+
 .gallery__label {
   text-align: center;
   margin-bottom: 0;
+  margin-top: 0.5rem;
 }
 
 .gallery__container {
@@ -69,6 +71,12 @@
   .gallery__container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+  }
+
+  // Giving extra room to offset gallery labels
+  .GalleryHome.gallery__container, 
+  .GalleryHomeCaseStudy.gallery__container  {
+    grid-gap: 1.5rem;  
   }
 
   // All Gallery layout: 2 column

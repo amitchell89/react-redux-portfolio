@@ -3,17 +3,6 @@ import ReactDOM from 'react-dom';
 import Helmet from "react-helmet";
 
 export default class Contact extends Component {
-
-  componentDidMount() {
-    window.scrollTo(0, 0);
-    // Fade In
-    var elem = ReactDOM.findDOMNode(this);
-    elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-      elem.style.transition = "opacity 500ms";
-      elem.style.opacity = 1;
-    });
-  }
   
   render() {
 

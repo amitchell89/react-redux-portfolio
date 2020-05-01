@@ -12,16 +12,6 @@ import GalleryHomeCaseStudy from '../../components/Gallery/GalleryHomeCaseStudy'
 export default class Home extends Component {
 
   componentDidMount() {
-    // Fade In
-    var elem = ReactDOM.findDOMNode(this);
-    elem.style.opacity = 0;
-
-    window.requestAnimationFrame(function() {
-      elem.style.transition = "opacity 500ms";
-      elem.style.opacity = 1;
-    });
-
-    // Reduce shape opacity on scroll
     window.addEventListener('scroll', this.handleScroll, true);
   }
 
@@ -29,6 +19,7 @@ export default class Home extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 
+  // Reduce shape opacity on scroll
   handleScroll = () => {
     var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     var opacity = -scroll/700 + 2;

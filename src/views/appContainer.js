@@ -22,23 +22,35 @@ function mapDispatchToProps(dispatch) {
 class AppContainer extends Component {
 
   componentDidMount() {
-    // Fade In
-    var elem = ReactDOM.findDOMNode(this);
-    elem.style.opacity = 0;
-    window.requestAnimationFrame(function() {
-      elem.style.transition = "opacity 500ms";
-      elem.style.opacity = 1;
-    });
+    this.scrollToTop()
+    this.fadeIn();
   }
 
-  componentDidUpdate() {
-    let {modal, mobileNav} = this.props;
+  componentDidUpdate(prevProps) {
+    if (prevProps.location !== this.props.location) {
+      this.scrollToTop()
+    }
 
+    let {modal, mobileNav} = this.props;
     if (modal || mobileNav) {
       document.body.classList.add('modal-open');
     } else {
       document.body.classList.remove('modal-open');
     }
+  }
+
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
+  fadeIn() {
+    var elem = ReactDOM.findDOMNode(this);
+    elem.style.opacity = 0;
+
+    window.requestAnimationFrame(function() {
+      elem.style.transition = "opacity 1000ms";
+      elem.style.opacity = 1;
+    });
   }
 
   render() {

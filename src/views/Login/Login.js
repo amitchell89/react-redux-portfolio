@@ -6,10 +6,6 @@ import LoginForm from '../../components/LoginForm';
 
 export default class Login extends Component {
 
-  componentWillMount() {
-    window.scrollTo(0, 0);
-  }
-
   render() {
     return (
       <div className="Login">

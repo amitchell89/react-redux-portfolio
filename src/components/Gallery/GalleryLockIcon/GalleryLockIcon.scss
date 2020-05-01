@@ -1,0 +1,27 @@
+// The parent element needs to have position relative
+.gallery__item {
+  position: relative;
+}
+
+.GalleryLockIcon__Background:after {
+  content: "";
+  background-color: $neutral_85;
+  border-radius: 0 0 0 16px;
+  height: 3.5rem;
+  width: 3.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 7;
+}
+
+.GalleryLockIcon__Lock:after {
+  content: "";
+  background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/icons/icon_lock.svg');
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 8;
+}

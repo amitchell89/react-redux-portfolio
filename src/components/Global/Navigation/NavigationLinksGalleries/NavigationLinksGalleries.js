@@ -55,9 +55,11 @@ class NavigationLinksGalleries extends Component {
             Web Development
           </li>
           {galleryList.map(function (s, i) {
-            let name = s[0].toUpperCase() + s.slice(1);
+            
+            let name = s.replace('_',' ');
+
             return (
-             <li key={i} onClick={this.selectGallery.bind(this, s)}>
+             <li className="capitalize" key={i} onClick={this.selectGallery.bind(this, s)}>
               {name}
              </li>
           )}.bind(this))}

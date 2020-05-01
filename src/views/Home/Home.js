@@ -36,9 +36,9 @@ export default class Home extends Component {
         link: "/gallery/development"
       },
       {
-        name: "Design",
+        name: "Branding",
         url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/schillaci_guitars_logo_background.jpg",
-        link: "/gallery/design"
+        link: "/gallery/branding"
       },
       {
         name: "Illustration",
@@ -51,9 +51,9 @@ export default class Home extends Component {
         link: "/gallery/paintings"
       },
       {
-        name: "Gig Posters",
+        name: "Concert Posters",
         url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_King_Gizzard_Sinclair_Cambridge.jpg",
-        link: "/gallery/posters"
+        link: "/gallery/concert_posters"
       },
       {
         name: "Abstract",

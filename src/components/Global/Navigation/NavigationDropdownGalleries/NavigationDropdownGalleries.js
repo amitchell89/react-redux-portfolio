@@ -36,18 +36,20 @@ class NavigationDropdownGalleries extends Component {
     return (
       <div className="NavigationDropdownGalleries select-wrapper">
         <h4>
-          <select value={selectedGallery} title="select" onChange={this.props.updateGallery}>
+          <select className="capitalize" value={selectedGallery} title="select" onChange={this.props.updateGallery}>
             <option selected disabled>Select a Portfolio</option>
-
             <option set='case-study' value='rover-homepage-vision'>Rover Homepage Vision</option>
             <option value='rover-growth-cro'>Rover Growth & CRO</option>
             <option value='development'>Web Development</option>
 
             {galleryList.map(function (s, i) {
-              let name = s[0].toUpperCase() + s.slice(1);
+
+              let name = s.replace('_',' ');
+
               return (
               <option key={i} value={s}>{name}</option>
             )}.bind(this))}
+
           </select>
         </h4>
       </div>

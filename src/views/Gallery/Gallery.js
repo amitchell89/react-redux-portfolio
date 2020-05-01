@@ -101,6 +101,7 @@ class Gallery extends Component {
 
     // Determine Gallery Type to decide which content component to show
     let galleryType = null;
+    let galleryHeadline = null;
 
     switch(selectedGallery) {
       case undefined: 
@@ -120,15 +121,10 @@ class Gallery extends Component {
           return n.hidden !== true;
         });
         og_image = currentPortfolio[0].url;
-    } 
 
-    // This shit is hacky as fuck. Fix this later
-    // if (images[selectedGallery]) {
-    //   currentPortfolio = images[selectedGallery].filter(function(n) {
-    //     return n.hidden !== true;
-    //   });
-    //   og_image = currentPortfolio[0].url;
-    // }
+        // Clean up gallery name
+        galleryHeadline = selectedGallery.replace('_',' ');
+    } 
 
     return (
       <div className="Gallery__page">
@@ -162,7 +158,7 @@ class Gallery extends Component {
             { galleryType === 'gallery'
               ?
                 <div>
-                  <h1 className="Gallery__title">{selectedGallery}</h1>
+                  <h1 className="Gallery__title capitalize">{galleryHeadline}</h1>
                   <div className="clearFix">
                     <GalleryContainer gallery={currentPortfolio} />
                   </div>

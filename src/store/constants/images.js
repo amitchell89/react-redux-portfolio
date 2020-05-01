@@ -1,6 +1,6 @@
 import { paintings } from './gallery_paintings'
 import { illustration } from './gallery_illustration'
-import { design } from './gallery_design'
+import { branding } from './gallery_design'
 import { posters } from './gallery_posters'
 import { collage } from './gallery_collage'
 import { circular } from './gallery_circular'
@@ -9,9 +9,9 @@ import { photos } from './gallery_photos'
 
 export const images = {
   illustration: illustration,
-  design: design,
+  branding: branding,
   paintings: paintings,
-  posters: posters,
+  concert_posters: posters,
   // comics: comics,
   collage: collage,
   circular: circular,

@@ -1,4 +1,4 @@
-export const design = [
+export const branding = [
  {
     name: "Moose Almighty Logo",
     year: "2018",

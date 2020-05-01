@@ -6,7 +6,9 @@ import { browserHistory } from 'react-router';
 import { updateGallery } from '../../../../store/actions/UpdateGallery';
 
 function mapStateToProps(state) {
-   return {}
+   return {
+    isAuthenticated: state.authentication.isAuthenticated
+   }
 }
 
 function mapDispatchToProps(dispatch) {
@@ -14,7 +16,6 @@ function mapDispatchToProps(dispatch) {
     updateGallery: (gallery) => {
       dispatch(updateGallery(gallery));
       browserHistory.push('/gallery/' + gallery);
-      // window.scrollTo(0,0);
     }
   }
 }
@@ -28,27 +29,31 @@ class NavigationLinksCaseStudies extends Component {
   } 
 
   selectGallery(gallery) {
-    const { updateGallery, onClick } = this.props;
+    const { updateGallery, onClick, isAuthenticated } = this.props;
 
     this.props.updateGallery(gallery);
 
     if (onClick) {
       this.props.onClick();
     }
-    
   }
 
   render() {
 
-    const {} = this.props;
+    const { isAuthenticated } = this.props;
+
+    let isLockedClass = null;
+    if (!isAuthenticated) {
+      isLockedClass = 'li--locked'
+    }
 
     return (
       <div className="NavigationLinks NavigationLinks__Work">
         <ul>
-          <li onClick={this.selectGallery.bind(this, 'rover-homepage-vision')}>
+          <li className={isLockedClass} onClick={this.selectGallery.bind(this, 'rover-homepage-vision')}>
             Rover Homepage Vision
           </li>
-          <li to="/gallery/rover-growth-cro" onClick={this.selectGallery.bind(this, 'rover-growth-cro')}>
+          <li className={isLockedClass} to="/gallery/rover-growth-cro" onClick={this.selectGallery.bind(this, 'rover-growth-cro')}>
             Rover Growth & CRO
           </li>
 

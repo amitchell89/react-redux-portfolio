@@ -16,7 +16,6 @@ function mapDispatchToProps(dispatch) {
     updateGallery: (gallery) => {
       dispatch(updateGallery(gallery));
       browserHistory.push('/gallery/' + gallery);
-      // window.scrollTo(0,0);
     }
   }
 }

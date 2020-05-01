@@ -38,6 +38,15 @@ ul.bullet-list {
   list-style-position: outside;
 }
 
+.li--locked:before{
+  content: '';
+  display: inline-block;
+  height: 0.75rem;
+  width: 0.75rem;
+  margin-right: 0.5rem;
+  background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/icons/icon_lock.svg');
+}
+
 label {
   display: block;
   margin-bottom: 0.5rem;

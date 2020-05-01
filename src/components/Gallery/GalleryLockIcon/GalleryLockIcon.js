@@ -22,7 +22,6 @@ class GalleryLockIcon extends Component {
 	      : null
 	    	}
     	</div>
-      
     )
   }
 }

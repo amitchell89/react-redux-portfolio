@@ -18,7 +18,6 @@ function mapDispatchToProps(dispatch) {
       let gallery = event.target.value;
       dispatch(updateGallery(gallery));
       browserHistory.push('/gallery/' + gallery);
-      window.scrollTo(0,0);
     }
   }
 }

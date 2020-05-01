@@ -21,17 +21,34 @@ function mapDispatchToProps(dispatch) {
 
 class NavigationLinksCaseStudies extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.selectGallery = this.selectGallery.bind(this);
+  } 
+
+  selectGallery(gallery) {
+    const { updateGallery, onClick } = this.props;
+
+    this.props.updateGallery(gallery);
+
+    if (onClick) {
+      this.props.onClick();
+    }
+    
+  }
+
   render() {
 
-    const { updateGallery } = this.props;
+    const {} = this.props;
 
     return (
       <div className="NavigationLinks NavigationLinks__Work">
         <ul>
-          <li onClick={updateGallery.bind(this, 'rover-homepage-vision')}>
+          <li onClick={this.selectGallery.bind(this, 'rover-homepage-vision')}>
             Rover Homepage Vision
           </li>
-          <li to="/gallery/rover-growth-cro" onClick={updateGallery.bind(this, 'rover-growth-cro')}>
+          <li to="/gallery/rover-growth-cro" onClick={this.selectGallery.bind(this, 'rover-growth-cro')}>
             Rover Growth & CRO
           </li>
 

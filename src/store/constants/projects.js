@@ -16,11 +16,18 @@ export const projects = [
        hidden: false
     },
     {
+       name: "Moose Almighty",
+       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/aaron_mitchell_moose_almighty_logo.png",
+       url: "https://www.moosealmighty.com/",
+       about: "I built a website for my band Moose Almighty using the MERN stack (MongoDB, Express, React/Redux and Node). The goal of the site was to create a platform for us to share our music with both fans and booking agents. The site features a press kit section, videos and recordings of our live performances, band photos, a calendar of upcoming shows powered by song kick, an email collection form and an online store powered by Shopify and Prihtful",
+       hidden: false
+    },
+    {
        name: "Ombrely",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/ombrely_logo.png",
        url: "https://ombrely.com",
        git: "https://github.com/amitchell89/ombrely",
-       about: "Ombrély is a personal project built around my love of gradients (I know I’ll take some flak here but that’s fine by my). It started as a simple JavaScript exercise that I decided to turn into a full site using VueJs. Users can generate random gradients with the ability to view the css and copy that code to the clipboard.",
+       about: "Ombrély is a personal project built around my love of gradients (I know I’ll take some flak here but that’s fine by me). It started as a simple JavaScript exercise that I decided to turn into a full site using VueJs. Users can generate random gradients with the ability to view the css and copy that code to the clipboard.",
        hidden: false
     },
     {
@@ -64,7 +71,7 @@ export const projects = [
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Cogo_Labs_404_Page.jpg",
        url: "http://www.cogolabs.com/404",
        about: "I was tasked with creating a fun and interesting 404 easter egg page for www.cogolabs.com. Much of our branding plays on space and exploration themes, so I envisioned a crash landing on an alien planet being the perfect metaphor for being lost. The final scene reminded me of the choose your own adventure books I read as a kid, so I opted for two mystery call to actions, with the ‘embrace the dark side’ leading to our careers page. It features CSS animation and a a digital illustration I made that has been layered to create a parallax effect based on the location of the mouse. ",
-       hidden: false
+       hidden: true
     },
     {
        name: "Fuck 2016",

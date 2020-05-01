@@ -1,5 +1,14 @@
 export const illustration = [
   {
+    name: "Trapped by Fur Trapper. In Da Lab. Album Art",
+    year: "2019",
+    medium: "Digital",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Fur_Trapper_In_Da_Lab_Album_Art.jpg",
+    hidden: false
+  },
+
+  {
     name: "Cogo Labs Halloween Shirt",
     year: "2015",
     medium: "Digital",

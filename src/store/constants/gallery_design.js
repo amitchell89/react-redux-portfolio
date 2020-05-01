@@ -1,4 +1,12 @@
 export const design = [
+ {
+    name: "Moose Almighty Logo",
+    year: "2018",
+    medium: "Digital",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/aaron_mitchell_moose_almighty_logo.png",
+    hidden: false
+  },
   {
     name: "Schillaci Guitars Logo",
     year: "2012",
@@ -7,6 +15,26 @@ export const design = [
     url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Schillaci_Guitars_Logo_700.jpg",
     hidden: false
   },
+  {
+    name: "Paige Marie Locke Kitchen Design Logo",
+    year: "2019",
+    medium: "Digital",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/aaron_mitchell_paige_marie_locke_kitchen_design.png",
+    hidden: false
+  },
+  {
+    name: "Janes Colony Logo",
+    year: "2017",
+    medium: "Digital",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/aaron_mitchell_janes_colony_logo.png",
+    hidden: false
+  },
+
+
+
+
   {
     name: "Fuck 2016 Logo",
     year: "2015",
@@ -93,7 +121,7 @@ export const design = [
     medium: "Digital",
     about: "",
     url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/Aaron_Mitchell_Rotary_Golf_Logo_700.jpg",
-    hidden: false
+    hidden: true
   },
   {
     name: "Link Ventures Logo",

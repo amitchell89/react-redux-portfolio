@@ -24,6 +24,33 @@
   box-shadow: $box_shadow_light;
 }
 
+.gallery__item {
+  position: relative;
+}
+
+.gallery__item__locked:after {
+  content: "";
+  background-color: $neutral_85;
+  border-radius: 0 0 0 16px;
+  height: 3.5rem;
+  width: 3.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 7;
+}
+
+.gallery__item__locked--icon:after {
+  content: "";
+  background-image: url('https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/icons/icon_lock.svg');
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 8;
+}
+
 // Home layout: 4 column
 .gallery__container--full-width .gallery__image {
   height: calc((100vw - 10rem) / 4);

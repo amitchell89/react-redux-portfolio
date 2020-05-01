@@ -9,5 +9,7 @@ npm-debug.log
 # Ignore Caddy
 Caddyfile
 
+.env
+
 # Ignore Dist
 # src/dist/*

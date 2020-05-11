@@ -4,7 +4,7 @@ export const projects = [
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/react_logo.png",
        url: "https://mitchellaaron.com",
        git: "https://github.com/amitchell89/react-redux-portfolio",
-       about: "This very website is my first portfolio piece. The goal of the site was to create a React / Redux site from scratch so I could learn more about the process, all while showing off my designs, artwork and web projects. The site uses an express framework. Its bundled using webpack and uses a sass preprocessor for the css. It is hosted on Digital Ocean using a Caddy server.",
+       about: "I built this website, my personal portfolio, to showcase my professional work, my personal artwork and my web development projects. I focused heavily on creating a clean, professional gallery setting that lets the work speak for itself. The site is mobile responsive, and was built from scratch using React, Redux, Node and Express. The site features basic authentication to password protect certain galleries on the site. It is bundled using webpack and uses a sass preprocessor for the css. It is hosted on DigitalOcean using a Caddy server. I would recommend anyone evaluating my coding skills to explore the public code on GitHub. ",
        hidden: false
     },
     {
@@ -12,22 +12,14 @@ export const projects = [
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/schillaci_guitars_logo_background.jpg",
        url: "http://www.schillaciguitars.com",
        git: "https://github.com/amitchell89/schillaci_guitars",
-       about: "Schillaci Guitars is a react / redux website that I built for guitar luthier Darren Schillaci. The goal of the site was to create a clean and professional portfolio to showcase his custom guitars and necks and to promote sails via direct contact. I originally built the site in 2012 using php without a framework, and rebuilt it using React and Redux on an express framework in spring 2017. It’s bundled using webpack and uses a sass preprocessor for the css. It is a freelance project.",
+       about: "One of my first freelance web development projects was building a website for guitar luthier Darren Schillaci. The goal of the site was to create a clean and professional portfolio to showcase his custom guitars and necks and to promote sails via direct contact. I originally built the site in 2012 using php, and later rebuilt it in 2017 using the MERN stack (MongoDB, Express, React/Redux and Node). It’s bundled using webpack and uses a sass preprocessor for the css. The site is mobile responsive and features email collection and contact forms to generate leads. ",
        hidden: false
     },
     {
        name: "Moose Almighty",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/aaron_mitchell_moose_almighty_logo.png",
        url: "https://www.moosealmighty.com/",
-       about: "I built a website for my band Moose Almighty using the MERN stack (MongoDB, Express, React/Redux and Node). The goal of the site was to create a platform for us to share our music with both fans and booking agents. The site features a press kit section, videos and recordings of our live performances, band photos, a calendar of upcoming shows powered by song kick, an email collection form and an online store powered by Shopify and Prihtful",
-       hidden: false
-    },
-    {
-       name: "Ombrely",
-       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/ombrely_logo.png",
-       url: "https://ombrely.com",
-       git: "https://github.com/amitchell89/ombrely",
-       about: "Ombrély is a personal project built around my love of gradients (I know I’ll take some flak here but that’s fine by me). It started as a simple JavaScript exercise that I decided to turn into a full site using VueJs. Users can generate random gradients with the ability to view the css and copy that code to the clipboard.",
+       about: "I built a website for my band Moose Almighty using the MERN stack (MongoDB, Express, React/Redux and Node). The goal of the site was to create a platform for us to share our music with both fans and booking agents. The site is mobile responsive and features a press kit section, videos and recordings of our live performances, band photos, a calendar of upcoming shows powered by song kick, an email collection form and an online store powered by Shopify and Printful.",
        hidden: false
     },
     {
@@ -36,7 +28,31 @@ export const projects = [
        wireframe: "../images/projects/mockups/Link_Ventures_Wireframe.jpg",
        mockup: "../images/projects/mockups/Link_Ventures_Mockup.jpg",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/link_ventures.jpg",
-       about: "Link Ventures is the Venture Capital Firm behind Cogo Labs in Cambridge, MA. I did the rebranding in 2015 and then designed their website and helped implement it. The goal of the site was to create a clean and modern portfolio site to showcase the Link Ventures brand and the portfolio of companies they had invested in. \n\nThe first step was researching other venture capital firms such as Greylock, Sequoia Capital and First Round Capitol to learn more about the space and find inspiration. From there I took the site requirements and created a wireframe, then gathered feedback from the investors. After reorganizing a few features I made a high fidelity mockup and got approval. I then worked with the Cogo Labs Web Engineering Team to build the site. I handled all the styling and responsive work. The site utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
+       about: "Link Ventures is the Venture Capital Firm behind Cogo Labs in Cambridge, MA. While working at Cogo Labs in 2015, I led the rebranding of Link Ventures which included designing a new logo and website for the firm. The goal of the rebranding was to create a clean and modern website to showcase the Link Ventures brand and the portfolio of companies they had invested in. I began by doing competitive analysis of other venture capital firms such as Greylock, Sequoia Capital and First Round Capital. Next I met with key stakeholders to build a list of requirements. I then created a wireframe and gathered feedback from the investors. After incorporating their feedback I made a high fidelity mockup and we were approved to build. I worked with the Cogo Labs Web Engineering Team to build the site. I handled all the content, styling and responsive work while they focused on the back end infrastructure . The site utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
+       hidden: false
+    },
+    {
+       name: "Janes Colony",
+       url: "https://www.janescolony.com/",
+       git: "",
+       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/design/aaron_mitchell_janes_colony_logo.png",
+       about: "Jane’s Colony is a marijuana lifestyle brand that I developed in 2017. I used the project to explore and research the burgeoning legal marijuana industry. I designed the logo and branding, built a website, and ran an instagram account that helped me learn about social media marketing. The website was built using the MERN stack (MongoDB, Express, React/Redux and Node). It featured an interactive map showcasing which states had legalized marijuana, laws from each state, an email collection form and a comprehensive guide on how to grow marijuana at home.",
+       hidden: false
+    },
+    {
+       name: "Boxes From Fucking Box Space",
+       url: "https://boxesfromspace.com/",
+       git: "",
+       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/aaron_mitchell_boxes_from_space.png",
+       about: "In 2018 I began exploring the VR space after getting a Samsung Gear VR headset and learning about A-Frame, a web framework for building Virtual Reality Experiences. I built out several experiences, but the most complete was ‘Boxes from Fucking Box Space’ a simple VR shooter inspired by Tetris and Space Invaders that put the user up against an invading army of boxes from space. Each box destroyed would increase their score, while each that hit you would lower your life. In typical retro gaming fashion, the difficulty level of the game ramped up the more successful you were. One issue I learned about building web VR experiences, was that you are severely limited since there are no universal controllers users will have access to when using web VR. I instead opted to utilize the users ‘gaze’ as the games controller, with the gun moving around to wherever the user happened to be looking. Once their gaze was locked on to a box, a projectile would fire and it would be destroyed. While elegant in theory, I will admit that user testing this game with my friends proved this mechanic to be slightly vomit inducing when played inside a VR headset. Learning this, I limited the field of vision that boxes would emerge from to reduce the head movement needed to play. While a VR experience the game is also playable in a normal browser on desktop and mobile web.",
+       hidden: false
+    },
+    {
+       name: "Ombrely",
+       image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/ombrely_logo.png",
+       url: "https://ombrely.com",
+       git: "https://github.com/amitchell89/ombrely",
+       about: "Ombrély is a personal project built around my love of gradients (I know I’ll take some flak here but that’s fine by me). It started as a simple JavaScript exercise that I decided to turn into a full site using VueJs. Users can generate random gradients with the ability to view the css and copy that code to the clipboard.",
        hidden: false
     },
     {

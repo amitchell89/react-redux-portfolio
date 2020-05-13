@@ -76,8 +76,20 @@ export default class Home extends Component {
         link: "/gallery/photos"
       },
     ]
+    let og_image = "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/aaron_mitchell_designer_portrait.jpg";
+    
     return (
       <div>
+        <Helmet
+          title="Aaron Mitchell Design"
+          meta={ [
+            { name: "description", content: "Explore the online portfolio of Aaron Mitchell, a designer from Seattle, WA" },
+            { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Home'},
+            { property: "og:url", content: "https://mitchellaaron.com"},
+            { property: "og:image", content: og_image},
+          ] }
+        />
+
         <div className="site_wrapper site_wrapper--main">
           <div className="elevate-above-shapes">
             <HomeHero />

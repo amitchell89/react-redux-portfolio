@@ -25,6 +25,11 @@ class NavigationLinksMain extends Component {
             </Link>
           </li>
           <li>
+            <Link to="https://aaronmitchell.substack.com/" onClick={onClick} target="_blank">
+              Substack
+            </Link>
+          </li>
+          <li>
             <Link to="/contact" onClick={onClick}>
               Contact
             </Link>

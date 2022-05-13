@@ -1,6 +1,14 @@
 export const illustration = [
   {
-    name: "n Da Lab",
+    name: "Spare Parts",
+    year: "2021",
+    medium: "Digital",
+    about: "Album art for 'Spare Parts' by Moose Almighty",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/illustrations/Aaron_Mitchell_Moose_Almighty_Spare_Parts_Album_Cover.jpg",
+    hidden: false
+  },
+  {
+    name: "In Da Lab",
     year: "2019",
     medium: "Digital",
     about: "Album art for 'In Da Lab' by Trapped by Fur Trapper",

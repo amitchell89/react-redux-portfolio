@@ -23,6 +23,71 @@ export const posters = [
     url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_King_Gizzard_Middle_East_Cambridge.jpg",
     hidden: false
   },
+
+  {
+    name: "Fremont Solstic Celebration",
+    year: "June 18, 2022",
+    medium: "Digital Illustration",
+    about: "Commissioned by Nectar Lounge",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Solstice_Celebration_flyer.jpg",
+    hidden: false
+  },
+   {
+    name: "Living Daylights at Nectar Lounge in Seattle, WA",
+    year: "June 1, 2022",
+    medium: "Digital Illustration",
+    about: "Commissioned by Nectar Lounge",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_living_daylights_flyer.jpg",
+    hidden: false
+  },
+
+  {
+    name: "Moose Almighty at the High Dive in Seattle, WA",
+    year: "June 9, 2022",
+    medium: "Digital Illustration",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Moose_Almighty_Flyer_High_Dive_June_2022.jpg",
+    hidden: false
+  },
+  {
+    name: "Moose Almighty at The Airport Tavern in Tacoma, WA",
+    year: "June 10, 2022",
+    medium: "Digital Illustration",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Moose_Almighty_Flyer_Airport_Tavern.jpg",
+    hidden: false
+  },
+  {
+    name: "Moose Almighty at Schweinhaus in Bellingham, WA",
+    year: "June 11, 2022",
+    medium: "Digital Illustration",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Moose_Almighty_Flyer_Schweinhaus.jpg",
+    hidden: false
+  },
+  {
+    name: "Moose Almighty at The High Desert Music Hall in Redmond, OR",
+    year: "May 5, 2022",
+    medium: "Digital Illustration",
+    about: "This show was cancelled due to covid, but is still an awesome poster!",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Moose_Almighty_Flyer_High_Desert_Music_Hall.jpg",
+    hidden: false
+  },
+  {
+    name: "Moose Almighty at The Blue Moon Tavern in Seattle, WA",
+    year: "July 4, 2021",
+    medium: "Digital Illustration",
+    about: "",
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Moose_Almighty_Blue_Moon_July_2021_Flyer.jpg",
+    hidden: false
+  },
+
+
+
+
+
+
+
   {
     name: "Tobias Jessos Jr at The Middle East in Cambridge, MA",
     year: "March 28, 2015",
@@ -109,7 +174,7 @@ export const posters = [
     medium: "Digital Collage",
     about: "",
     url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/posters/Aaron_Mitchell_Poster_20190824_Moose_Almighty_Hood_Rover.jpg",
-    hidden: true
+    hidden: false
   },
   {
     name: "Moose Almighty at Le Voyeur in Olympia, WA",

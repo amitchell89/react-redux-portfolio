@@ -55,6 +55,9 @@ class Header extends Component {
               <Link to="/gallery">
                 Gallery
               </Link>
+              <Link to="https://aaronmitchell.substack.com/" target="_blank">
+              Substack
+            </Link>
               <Link to="/contact">
                 Contact
               </Link>

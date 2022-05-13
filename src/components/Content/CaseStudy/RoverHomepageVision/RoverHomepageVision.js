@@ -41,7 +41,7 @@ export default class RoverHomepageVision extends Component {
 
 	      <section>
 
-	        <h2>Home page Requirements</h2>
+	        <h2>Home page requirements</h2>
 	        <p>
 	        We created the following requirements that our new homepage vision would have to include. 
 	        </p>

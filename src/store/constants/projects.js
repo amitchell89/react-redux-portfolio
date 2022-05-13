@@ -45,7 +45,7 @@ export const projects = [
        git: "",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/aaron_mitchell_boxes_from_space.png",
        about: "In 2018 I began exploring the VR space after getting a Samsung Gear VR headset and learning about A-Frame, a web framework for building Virtual Reality Experiences. I built out several experiences, but the most complete was ‘Boxes from Fucking Box Space’ a simple VR shooter inspired by Tetris and Space Invaders that put the user up against an invading army of boxes from space. Each box destroyed would increase their score, while each that hit you would lower your life. In typical retro gaming fashion, the difficulty level of the game ramped up the more successful you were. One issue I learned about building web VR experiences, was that you are severely limited since there are no universal controllers users will have access to when using web VR. I instead opted to utilize the users ‘gaze’ as the games controller, with the gun moving around to wherever the user happened to be looking. Once their gaze was locked on to a box, a projectile would fire and it would be destroyed. While elegant in theory, I will admit that user testing this game with my friends proved this mechanic to be slightly vomit inducing when played inside a VR headset. Learning this, I limited the field of vision that boxes would emerge from to reduce the head movement needed to play. While a VR experience the game is also playable in a normal browser on desktop and mobile web.",
-       hidden: false
+       hidden: true
     },
     {
        name: "Ombrely",
@@ -53,7 +53,7 @@ export const projects = [
        url: "https://ombrely.com",
        git: "https://github.com/amitchell89/ombrely",
        about: "Ombrély is a personal project built around my love of gradients (I know I’ll take some flak here but that’s fine by me). It started as a simple JavaScript exercise that I decided to turn into a full site using VueJs. Users can generate random gradients with the ability to view the css and copy that code to the clipboard.",
-       hidden: false
+       hidden: true
     },
     {
        name: "Umbrella Check",

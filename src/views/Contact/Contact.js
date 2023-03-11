@@ -24,7 +24,6 @@ export default class Contact extends Component {
               Contact
               </h2>
               <p>Want to talk? Send me a message and let's get the conversation started.</p>
-              <p>aaronmitchellart [at] gmail [dot] com</p>
               <form id="contact_form" method="post">
                 <label>Your Name</label>
                 <input type="text" name="name" placeholder="Your Name"></input>

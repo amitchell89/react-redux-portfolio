@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var helmet = require('helmet')
 var xss = require('xss');
+require('dotenv').config();
 
 ///////////////////
 // Configuration //

@@ -60,7 +60,7 @@ Old bundles may already be in caches or the Wayback Machine, and that can't be u
 ## Open: needs droplet work (plan a dedicated session)
 
 - [ ] **Node 10 has been end-of-life since April 2021** and gets no security fixes. Upgrading Node on the droplet also means retesting the server packages: `express`, `body-parser`, `helmet`, `nodemailer` 0.7 (from 2014), `dotenv`, `xss`, and `forever` (consider pm2 or systemd).
-- [ ] **Dependency alerts.** GitHub Dependabot reports 21 and `npm audit` reports 188. Most are in build tooling, but fix the server-side ones along with the Node upgrade. Don't run `npm audit fix` on Node 10; it upgrades to versions that don't run there.
+- [ ] **Dependency alerts.** GitHub Dependabot reports 106 (it jumped from 21 once `package-lock.json` let it see nested dependencies) and `npm audit` reports 188. Most are in build tooling, but fix the server-side ones along with the Node upgrade. Don't run `npm audit fix` on Node 10; it upgrades to versions that don't run there.
 - [ ] **Local build tooling is frozen in 2016–2018:** webpack 1, Babel 6, node-sass 4, React 16, react-router 3. It only builds under Node 10 (an x64 build via Rosetta on Apple Silicon). This is local-only because the droplet never builds, but it's the biggest long-term upkeep cost. The modern path is webpack 5 or Vite, Dart Sass, and a newer React/router.
 
 ## Done

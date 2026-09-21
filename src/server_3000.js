@@ -22,7 +22,11 @@ const site_name = 'Aaron Mitchell Design';  // This should come from meta_info f
 //////////////////
 
 app.use(helmet())
-app.use(express.static('src'))
+// Only the built bundle and favicon are public, not the rest of src/ (server code etc.)
+app.use('/dist', express.static(path.join(__dirname, 'dist')))
+app.get('/favicon.ico', function (req, res) {
+  res.sendFile(path.join(__dirname, 'favicon.ico'));
+})
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -44,18 +48,14 @@ var transporter = nodemailer.createTransport("SMTP", {
 // Router //
 ////////////
 
-app.get('*.js', function (req, res, next) {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
-
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname +'/index.html'));
 })
 
-app.listen(3000, function () {
-  console.log('Site listening on port 3000!')
+var port = process.env.PORT || 3000
+
+app.listen(port, function () {
+  console.log('Site listening on port ' + port + '!')
 })
 
 //include the routes file
@@ -108,9 +108,25 @@ app.use(authRoute);
 
 app.post('/contact', function(req, res) {
   var payload = req.body;
-  var name = xss(payload.name);
-  var email = xss(payload.email);
-  var message = xss(payload.message);
+
+  // Honeypot: people never see the "website" field, but bots fill it in.
+  // Pretend it worked so the bot moves on.
+  if (payload.website) {
+    console.log('Contact form: discarded a message that filled in the honeypot field');
+    return res.redirect('/post?post=success');
+  }
+
+  var name = String(payload.name || '').trim();
+  var email = String(payload.email || '').trim();
+  var message = String(payload.message || '').trim();
+
+  if (!name || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return res.redirect('/post?post=fail');
+  }
+
+  name = xss(name);
+  email = xss(email);
+  message = xss(message);
   var email_message = '<b>From:</b> ' + name + '<br /><br /><b>Email:</b> ' + email + '<br /><br /><b>Message:</b> ' + message;
   var subject = `${site_name} - New Message`;
   var sendToAddress = 'aaronmitchellart@gmail.com'

@@ -38,7 +38,6 @@ router.post('/verifyAuthToken', function(req, res) {
   var userToken = payload.token;
   var secretCookieToken = process.env.SECRET_COOKIE_TOKEN || null;
 
-  console.log(userToken, secretCookieToken)
   if (userToken === secretCookieToken) {
     // console.log('verify token success')
     return res.status(200).send("Token Verification Successful");   

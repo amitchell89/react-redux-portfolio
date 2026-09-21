@@ -38,7 +38,7 @@ Batch these so the droplet only restarts once. Nothing is open here right now; p
 
 The password gate only hides the case studies in the page. Their full text and image URLs are readable in:
 - the public GitHub repo: current code and every past commit ([RoverCRO.js](../src/components/Content/CaseStudy/RoverCRO/RoverCRO.js), [RoverHomepageVision.js](../src/components/Content/CaseStudy/RoverHomepageVision/RoverHomepageVision.js))
-- the live `bundle.js`, and until the next deploy, the live `bundle.js.map`
+- the live `bundle.js` (the public source map was taken down on 2026-09-21)
 - the case-study image URLs in DigitalOcean Spaces, which are public-read
 
 **Status:** deferred on 2026-09-21. The current Rover case studies aren't very sensitive, so this will be handled when new case studies are added.
@@ -67,7 +67,8 @@ Old bundles may already be in caches or the Wayback Machine, and that can't be u
 
 ### 2026-09-21
 - Local setup on the new machine: added `.nvmrc` (10.22.0), updated `node-sass` to 4.14.1 and capped `webpack-dev-server` at `^3.11.3` for Node 10, and added `package-lock.json`. Pushed as `6ef138b`.
-- **Server batch.** Deploying it needs `git pull` plus a restart of the Node process.
+- **Deployed to production and checked live on 2026-09-21** (`f635873`, `398b8ce`). On the droplet this needed moving an untracked `package-lock.json` aside before `git pull`, then restarting the site with `forever restart <index>`.
+- **Server batch:**
   - Only `src/dist` and `favicon.ico` are served now. Source files like `/server_3000.js` return the site page instead of code.
   - Deleted the `console.log` that printed the secret token.
   - Contact form: added a hidden honeypot field (`website`). Bot messages that fill it are discarded but look successful to the bot, and the server logs each one. Empty fields and invalid email addresses are rejected before any email is sent.

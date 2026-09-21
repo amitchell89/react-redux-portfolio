@@ -59,7 +59,7 @@ export default class Terms extends Component {
             If you print off, copy or download any part of the Website in breach of these General Terms, your right to use the Website will cease immediately and you must, at our option, return or destroy any copies of the materials you have made.
             </p>
             <p>
-            If you wish to make any use of material on our site, please send us a message using the <Link to="contact">contact form.</Link>
+            If you wish to make any use of material on our site, please send us a message using the <Link to="/contact">contact form.</Link>
             </p>
             <h4>Acceptable Use</h4>
             <p>
@@ -100,7 +100,7 @@ export default class Terms extends Component {
             </p>
             <h4>Contact</h4>
             <p>
-            For more information, question about use of material on our site and all other inquiries please send us a message using the <Link to="contact">contact form.</Link>
+            For more information, question about use of material on our site and all other inquiries please send us a message using the <Link to="/contact">contact form.</Link>
             </p>
         </div>
       </div>

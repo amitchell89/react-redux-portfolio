@@ -16,7 +16,7 @@ export default class Home extends Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll, true);
   }
 
   // Reduce shape opacity on scroll
@@ -83,7 +83,7 @@ export default class Home extends Component {
         <Helmet
           title="Aaron Mitchell Design"
           meta={ [
-            { name: "description", content: "Explore the online portfolio of Aaron Mitchell, a designer from Seattle, WA" },
+            { name: "description", content: "Explore the online portfolio of Aaron Mitchell, a designer based in Raleigh, NC" },
             { property: "og:title", content: 'Aaron Mitchell\'s Online Portfolio: Home'},
             { property: "og:url", content: "https://mitchellaaron.com"},
             { property: "og:image", content: og_image},
@@ -104,7 +104,7 @@ export default class Home extends Component {
 
             <div className="Home__contact center">
               <h1 className="big-headline">Want to talk?</h1>
-              <Link to="contact">
+              <Link to="/contact">
                 <div className="btn btn--300 centered">
                   Send me a message
                 </div>

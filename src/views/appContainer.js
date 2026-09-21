@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Helmet from "react-helmet";
 import Header from '../components/Global/Header';
 import Footer from '../components/Global/Footer';
-import Modal from '../components/modal';
+import Modal from '../components/Modal';
 
 function mapStateToProps(state) {
    return {

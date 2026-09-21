@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
 
-import GalleryItem from '../galleryItem';
+import GalleryItem from '../GalleryItem';
 import GalleryLockIcon from '../GalleryLockIcon';
 
 export default class GalleryHomeCaseStudy extends Component {
@@ -11,7 +11,7 @@ export default class GalleryHomeCaseStudy extends Component {
       <div className="GalleryHomeCaseStudy gallery__container gallery__container--full-width">
         <div className="gallery__item">
           <GalleryLockIcon />
-          <Link to="gallery/rover-homepage-vision">
+          <Link to="/gallery/rover-homepage-vision">
             <div className="gallery__image gallery__image--rover-homepage-vision">
             </div>
             <p className="gallery__label">
@@ -22,7 +22,7 @@ export default class GalleryHomeCaseStudy extends Component {
 
         <div className="gallery__item">
           <GalleryLockIcon />
-          <Link to="gallery/rover-growth-cro">
+          <Link to="/gallery/rover-growth-cro">
             <div className="gallery__image gallery__image--rover-cro">
             </div>
             <p className="gallery__label">

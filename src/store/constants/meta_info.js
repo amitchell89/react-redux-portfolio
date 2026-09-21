@@ -1,10 +1,10 @@
-export const meta_standard = 'Aaron Mitchell is a UI Designer, Front End Developer, Illustrator and Fine Artist currently working in Cambridge, MA.'
+export const meta_standard = 'Aaron Mitchell is a Lead Product Designer, Front End Developer, Illustrator and Fine Artist based in Raleigh, NC.'
 
 export const meta_about =  meta_standard + ' Explore galleries of work, view code samples and learn more about the artist.'
 
 export const meta_contact = 'Contact Aaron Mitchell for more information about his work or collaborating together. ' + meta_standard
 
-export const meta_gallery = 'Explore work from Aaron Mitchell inlcuding Graphic Design, Illustration, Oil Paintings, Concert Posters, Comics, Collages and Abstract Work. ' + meta_standard
+export const meta_gallery = 'Explore work from Aaron Mitchell including Graphic Design, Illustration, Oil Paintings, Concert Posters, Comics, Collages and Abstract Work. ' + meta_standard
 
 export const meta_code = 'View Code samples from Aaron Mitchell including work using Javascript, React, Redux, VueJs, Arduino and more. ' + meta_standard
 

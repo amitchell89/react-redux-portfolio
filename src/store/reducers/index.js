@@ -1,7 +1,6 @@
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import logger from 'redux-logger';
 
 import authentication from './authentication';
 import gallery from './gallery';
@@ -19,7 +18,7 @@ const rootReducer = combineReducers({
   projects
 });
 
-const middleware = [thunk, logger];
+const middleware = [thunk];
 
 /* eslint-disable no-underscore-dangle */
 const store = createStore(

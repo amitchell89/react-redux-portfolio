@@ -13,3 +13,6 @@ Caddyfile
 
 # Ignore Dist
 # src/dist/*
+
+# Source maps expose the full source code, so keep them out of the deploy
+src/dist/*.map

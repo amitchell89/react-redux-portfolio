@@ -25,3 +25,12 @@
     width: 100%;
   }
 }
+
+// Spam honeypot: kept off screen instead of display:none, since bots skip hidden fields
+.contact__hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

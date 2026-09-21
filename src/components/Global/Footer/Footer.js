@@ -41,7 +41,7 @@ export default class Footer extends Component {
 
         <div className="footer__bottom">
           <div className="site_wrapper">
-      	    <p>&copy; {year} Aaron Mitchell &nbsp;|&nbsp;<Link to="terms">Terms & Conditions</Link> &nbsp;|&nbsp; <Link to="privacy">Privacy Policy</Link></p>
+      	    <p>&copy; {year} Aaron Mitchell &nbsp;|&nbsp;<Link to="/terms">Terms & Conditions</Link> &nbsp;|&nbsp; <Link to="/privacy">Privacy Policy</Link></p>
     	    </div> 
         </div>
 

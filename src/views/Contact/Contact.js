@@ -26,11 +26,16 @@ export default class Contact extends Component {
               <p>Want to talk? Send me a message and let's get the conversation started.</p>
               <form id="contact_form" method="post">
                 <label>Your Name</label>
-                <input type="text" name="name" placeholder="Your Name"></input>
+                <input type="text" name="name" placeholder="Your Name" required></input>
                 <label>Your Email Address</label>
-                <input type="text" name="email" placeholder="Your Email"></input>
+                <input type="email" name="email" placeholder="Your Email" required></input>
                 <label>Your Message</label>
-                <textarea type="text" name="message" placeholder="Your Message" rows="7"></textarea>
+                <textarea type="text" name="message" placeholder="Your Message" rows="7" required></textarea>
+                {/* Honeypot: hidden from people, but spam bots fill it in and the server discards those messages */}
+                <div className="contact__hp" aria-hidden="true">
+                  <label>Leave this field empty</label>
+                  <input type="text" name="website" tabIndex="-1" autoComplete="off"></input>
+                </div>
                 <button type="submit" form="contact_form" value="Submit" className="btn btn--contact">Send Message</button>
               </form>
             </div>

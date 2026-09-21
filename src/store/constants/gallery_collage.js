@@ -116,7 +116,7 @@ export const collage = [
     year: "2010",
     medium: "Collage",
     about: "",
-    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Walk_To_School.jpg",
-    hidden: true
+    url: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/collage/Aaron_Mitchell_Walk_to_School.jpg",
+    hidden: false
   }
 ]

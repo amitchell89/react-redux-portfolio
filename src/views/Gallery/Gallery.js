@@ -15,6 +15,7 @@ import GalleryNav from '../../components/Gallery/GalleryNav';
 import Projects from '../../components/Gallery/Projects';
 import RoverHomepageVision from '../../components/Content/CaseStudy/RoverHomepageVision';
 import RoverCRO from '../../components/Content/CaseStudy/RoverCRO';
+import NotFound from '../NotFound';
 
 function mapStateToProps(state) {
    return {
@@ -77,7 +78,7 @@ class Gallery extends Component {
 
     // Open Modal
     // Check if URL includes imageId, if it does and that ID is valid, open modal. 
-    if (imageId && imageId <= lastGalleryId) {
+    if (imageId && lastGalleryId !== null && imageId <= lastGalleryId) {
       this.props.openModal(imageId)
     } else {
       // ToDo: Remove invalid ImageId from url
@@ -116,6 +117,10 @@ class Gallery extends Component {
         galleryType = 'projects';
         break;
       default:
+        // Show 404 for gallery names that don't exist
+        if (!images[selectedGallery]) {
+          return <NotFound />;
+        }
         galleryType = 'gallery';
         currentPortfolio = images[selectedGallery].filter(function(n) {
           return n.hidden !== true;

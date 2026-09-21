@@ -10,8 +10,8 @@ export const projects = [
     {
        name: "Schillaci Guitars",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/covers/schillaci_guitars_logo_background.jpg",
-       url: "http://www.schillaciguitars.com",
-       git: "https://github.com/amitchell89/schillaci_guitars",
+       url: "https://schillaciguitars.com/",
+       git: "https://github.com/amitchell89/schillaci_react",
        about: "One of my first freelance web development projects was building a website for guitar luthier Darren Schillaci. The goal of the site was to create a clean and professional portfolio to showcase his custom guitars and necks and to promote sails via direct contact. I originally built the site in 2012 using php, and later rebuilt it in 2017 using the MERN stack (MongoDB, Express, React/Redux and Node). It’s bundled using webpack and uses a sass preprocessor for the css. The site is mobile responsive and features email collection and contact forms to generate leads. ",
        hidden: false
     },
@@ -25,8 +25,8 @@ export const projects = [
     {
        name: "Link Ventures",
        url: "http://www.linkventures.com",
-       wireframe: "../images/projects/mockups/Link_Ventures_Wireframe.jpg",
-       mockup: "../images/projects/mockups/Link_Ventures_Mockup.jpg",
+       wireframe: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/Link_Ventures_Wireframe.jpg",
+       mockup: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/Link_Ventures_Mockup.jpg",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/link_ventures.jpg",
        about: "Link Ventures is the Venture Capital Firm behind Cogo Labs in Cambridge, MA. While working at Cogo Labs in 2015, I led the rebranding of Link Ventures which included designing a new logo and website for the firm. The goal of the rebranding was to create a clean and modern website to showcase the Link Ventures brand and the portfolio of companies they had invested in. I began by doing competitive analysis of other venture capital firms such as Greylock, Sequoia Capital and First Round Capital. Next I met with key stakeholders to build a list of requirements. I then created a wireframe and gathered feedback from the investors. After incorporating their feedback I made a high fidelity mockup and we were approved to build. I worked with the Cogo Labs Web Engineering Team to build the site. I handled all the content, styling and responsive work while they focused on the back end infrastructure . The site utilized node, jade, stylus, jQuery and keystone JS for the CMS.",
        hidden: false
@@ -59,25 +59,25 @@ export const projects = [
        name: "Umbrella Check",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/umbrella_check.jpg",
        url: "http://www.umbrellacheck.com",
-       wireframe: "../images/projects/mockups/Umbrella_Check_Wireframe.png",
-       mockup: "../images/projects/mockups/Umbrella_Check_Mockup.jpg",
-       styleGuide: "../images/projects/mockups/Umbrella_Check_Style_Guide.jpg",
+       wireframe: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/Umbrella_Check_Wireframe.png",
+       mockup: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/Umbrella_Check_Mockup.jpg",
+       styleGuide: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/Umbrella_Check_Style_Guide.jpg",
        about: "Umbrella Check is a weather site I worked on at Cogo Labs. The goal of the site was to leverage readily available weather API’s to make a mobile first weather application. I worked with a group of designers to plan the site and features, with the idea of umbrella alerts giving quick access to expected rain as our differentiating feature. After researching popular weather sites such as Wundergound, Accuweather and Forecast.io (now darksky.net), I reviewed the available data, I created the wireframe and gathered feedback from the design team. From there I designed a high fidelity mockup. then worked with the Cogo Labs Web Engineering Team to build the site. I helped building out the front end and handled all the styling and responsive work. The brand and logo were created by a coworker.",
        hidden: true
     },
     {
        name: "Thrive Medicare",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/thrive_medicare.jpg",
-       wireframe: "../images/projects/mockups/ThriveMedicare_Wireframe.png",
-       mockup: "../images/projects/mockups/ThriveMedicare_Mockup.jpg",
-       styleGuide: "../images/projects/mockups/ThriveMedicare_Style_Guide.png",
+       wireframe: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/ThriveMedicare_Wireframe.png",
+       mockup: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/ThriveMedicare_Mockup.jpg",
+       styleGuide: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/ThriveMedicare_Style_Guide.png",
        about: "Thrive Medicare is a brand and website I designed for Equate Analytics, a Link Ventures company based out of Washington, DC. I worked on the project remotely. The goal of the site was to create a healthcare marketplace lead generation website using a modern design similar to www.healthcare.gov/. After researching the space I designed the logo and created a wireframe to review with the team. From there I made a high fidelity mockup and then worked with their lead developer in building out the front end and handled all the styling and responsive work. The site is built using Ruby on Rails, Html, Sass and jQuery. Equate Analytics and Thrive Medicare are no longer active.",
        hidden: true
     },
     {
        name: "Rekindld",
-       wireframe: "../images/projects/mockups/Rekindld_Wireframe.jpg",
-       mockup: "../images/projects/mockups/Rekindld_Mockup.jpg",
+       wireframe: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/Rekindld_Wireframe.jpg",
+       mockup: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/mockups/Rekindld_Mockup.jpg",
        image: "https://blacksquare.nyc3.digitaloceanspaces.com/portfolio/projects/logos/rekindld_logo.jpg",
        about: "Rekindld was a 50+ dating website I worked on at Cogo Labs. The goal was to create a dating web application marketed to users above 50 years old. The first step was research and exploring the differences in marketing and audience between sites such as match.com, ourtime.com and farmersonly.com and the differences in approach, characterized by the full extensive profiles of okcupid.com and the brief, picture heavy focus of apps like Tinder. We decided to marry the modern tinder like dating experience with a desktop accessible web app. From there I designed a wireframe, gathered feedback and made a high fidelity mockup. I then worked worked with our engineers to build an MVP version of the site. As soon as we had a working prototype of the site we organized a user test, bringing in users between the ages of 40 and 75 into the office to demo the app, and interview them about their online dating experiences. The user testing sessions were a revelation. Besides uncovering bugs and confusing UI elements, we also learned that our ‘senior dating’ marketing message and collateral was not aligned with out user base who did not view themselves in that light. Taking this info, we updated our messaging to be more inclusive and launched. The site was active for several months and experienced decent user growth, but was eventually deprioritized due to other projects and concerns about monitoring user-generated content. The site is no longer active.",
        hidden: true

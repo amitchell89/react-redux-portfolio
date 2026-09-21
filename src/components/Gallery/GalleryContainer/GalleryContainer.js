@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import GalleryItem from '../galleryItem';
+import GalleryItem from '../GalleryItem';
 
 export default class GalleryContainer extends Component {
   render() {

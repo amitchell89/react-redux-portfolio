@@ -54,12 +54,15 @@ function verifyAuthToken(data,callback) {
           return callback(new Error('400: Token Verification Failure: Server error'));
         case 401:
           return callback(new Error('401: Token Verification Failure: Your token did not match'));
-        case 500: 
+        case 500:
           return callback(new Error('500: There was a problem verifying your token.'));
         default:
-          return callback();
+          return response.ok ? callback() : callback(new Error(response.status + ': There was a problem verifying your token.'));
       }
     });
+  }, function() {
+    // Network error, the request never reached the server
+    callback(new Error('There was a problem verifying your token.'));
   });
 }
 
@@ -72,9 +75,8 @@ export function login(password) {
 	let data = { password: password }
 
   return dispatch => {
+    // Pending also clears any previous success/error state
     dispatch(authenticationPending(true));
-    dispatch(authenticationSuccess(false));
-    dispatch(authenticationError(null));
 
     callAuthenticationApi(data, error => {
       dispatch(authenticationPending(false));
@@ -107,23 +109,31 @@ function callAuthenticationApi(data, callback) {
     },
     body: JSON.stringify(data)
    }).then(function(response) {
-    Promise.resolve(response.json()).then(function(value) {
+    response.json().catch(function() {
+      // Not JSON, e.g. an error page from the proxy
+      return {};
+    }).then(function(value) {
 
       //store Secret Cookie Token to local session storage 
       //sessionStorage = persisted only in current tab. LocalStorage = across all windows and tabs
-      localStorage.setItem('MitchysSecretToken', value.token)
+      if (value.token) {
+        localStorage.setItem('MitchysSecretToken', value.token)
+      }
 
       switch (response.status) {
         case 400: 
           return callback(new Error('400: Signup Failure: Server error'));
         case 401:
           return callback(new Error('401: Login Failure: Your password did not match'));
-        case 500: 
+        case 500:
           return callback(new Error('500: There was a problem signing in.'));
         default:
-          return callback();
+          return response.ok ? callback() : callback(new Error(response.status + ': There was a problem signing in.'));
       }
     });
+  }, function() {
+    // Network error, the request never reached the server
+    callback(new Error('There was a problem signing in.'));
   });
 
 }

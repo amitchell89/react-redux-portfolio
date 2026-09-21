@@ -38,13 +38,14 @@ class Modal extends Component {
   render() {
     const { selectedImage, selectedGallery, images } = this.props;
 
-    let image = images[selectedGallery].find(function(s) {
+    let image = (images[selectedGallery] || []).find(function(s) {
       return s.id == selectedImage;
-    }); 
+    });
 
     if (image == null) {
       // close modal if id is not found
       this.props.closeModal(selectedGallery)
+      return null;
     }
 
     let galleryLength = images[selectedGallery].length;

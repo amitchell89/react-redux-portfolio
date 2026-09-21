@@ -28,7 +28,7 @@
     "file-loader": "^0.9.0",
     "forever": "^0.15.3",
     "helmet": "^3.12.0",
-    "node-sass": "^3.13.0",
+    "node-sass": "^4.14.1",
     "nodemailer": "^0.7.1",
     "nodemailer-smtp-transport": "^2.7.2",
     "react": "^16.2.0",
@@ -53,6 +53,6 @@
     "babel-preset-stage-2": "^6.18.0",
     "compression-webpack-plugin": "^1.1.10",
     "concurrently": "^3.4.0",
-    "webpack-dev-server": ">=3.1.11"
+    "webpack-dev-server": "^3.11.3"
   }
 }

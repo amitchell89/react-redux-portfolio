@@ -53,6 +53,6 @@
     "babel-preset-stage-2": "^6.18.0",
     "compression-webpack-plugin": "^1.1.10",
     "concurrently": "^3.4.0",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^6.0.0"
   }
 }
